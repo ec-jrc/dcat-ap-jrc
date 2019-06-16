@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF 
+  xmlns:dc   = "http://purl.org/dc/elements/1.1/"
+  xmlns:dct  = "http://purl.org/dc/terms/"
+  xmlns:owl  = "http://www.w3.org/2002/07/owl#"
+  xmlns:rdf  = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs = "http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:skos = "http://www.w3.org/2004/02/skos/core#"
+>
+ 
+  <skos:ConceptScheme rdf:about="http://data.jrc.ec.europa.eu/access-rights">
+    <dct:title xml:lang="en">Access restrictions for distributions of datasets published on the JRC Data Catalogue</dct:title>
+    <rdfs:label xml:lang="en">Access restrictions for distributions of datasets published on the JRC Data Catalogue</rdfs:label>
+  </skos:ConceptScheme>
+ 
+  <rdf:Description rdf:about="http://data.jrc.ec.europa.eu/access-rights/no-limitations">
+    <owl:differentFrom rdf:resource="http://data.jrc.ec.europa.eu/access-rights/registration-required"/>
+    <owl:differentFrom rdf:resource="http://data.jrc.ec.europa.eu/access-rights/authorisation-required"/>
+    <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/access-rights"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+    <dc:identifier>no-limitations</dc:identifier>
+    <skos:prefLabel xml:lang="en">No limitations</skos:prefLabel>
+    <rdfs:label xml:lang="en">No limitations</rdfs:label>
+    <skos:definition xml:lang="en">Anybody can directly and anonymously access the data, without being required to register or authenticate.</skos:definition>
+    <dct:description xml:lang="en">Anybody can directly and anonymously access the data, without being required to register or authenticate.</dct:description>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.jrc.ec.europa.eu/access-rights/registration-required">
+    <owl:differentFrom rdf:resource="http://data.jrc.ec.europa.eu/access-rights/no-limitations"/>
+    <owl:differentFrom rdf:resource="http://data.jrc.ec.europa.eu/access-rights/authorisation-required"/>
+    <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/access-rights"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+    <dc:identifier>registration-required</dc:identifier>
+    <skos:prefLabel xml:lang="en">Registration required</skos:prefLabel>
+    <rdfs:label xml:lang="en">Registration required</rdfs:label>
+    <skos:definition xml:lang="en">Anybody can access the data, but they have to register first. This corresponds to the notion of "non-discriminatory registration", i.e.: (a) any user can register; (b) any registered user can access the data.</skos:definition>
+    <dct:description xml:lang="en">Anybody can access the resource, but they have to register first. This corresponds to the notion of "non-discriminatory registration", i.e.: (a) any user can register; (b) any registered user can access the resource.</dct:description>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.jrc.ec.europa.eu/access-rights/authorisation-required">
+    <owl:differentFrom rdf:resource="http://data.jrc.ec.europa.eu/access-rights/no-limitations"/>
+    <owl:differentFrom rdf:resource="http://data.jrc.ec.europa.eu/access-rights/registration-required"/>
+    <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/access-rights"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+    <dc:identifier>authorisation-required</dc:identifier>
+    <skos:prefLabel xml:lang="en">Authorisation required</skos:prefLabel>
+    <rdfs:label xml:lang="en">Authorisation required</rdfs:label>
+    <skos:definition xml:lang="en">Only some users can access the resource.</skos:definition>
+    <dct:description xml:lang="en">Only some users can access the resource.</dct:description>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.jrc.ec.europa.eu/access-rights/unknown">
+    <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/access-rights"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+    <dc:identifier>unknown</dc:identifier>
+    <skos:prefLabel xml:lang="en">Unknown</skos:prefLabel>
+    <rdfs:label xml:lang="en">Unknown</rdfs:label>
+    <skos:definition xml:lang="en">Access restrictions are unknown.</skos:definition>
+    <dct:description xml:lang="en">Access restrictions are unknown.</dct:description>
+  </rdf:Description>
+
+</rdf:RDF>

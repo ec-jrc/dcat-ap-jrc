@@ -1,0 +1,17 @@
+  <dcat:Dataset rdf:about="http://data.europa.eu/89h/jrc-ghsl-10008">
+    ...
+
+    <owl:sameAs rdf:resource="https://doi.org/10.2905/jrc-ghsl-10008"/>
+    <adms:identifier>
+      <adms:Identifier>
+        <skos:notation>10.2905/jrc-ghsl-10008</skos:notation>
+        <adms:schemeAgency>DOI</adms:schemeAgency>
+        <dct:creator rdf:resource="https://doi.org/"/>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
+          2018-07-18
+        </dct:issued>
+      </adms:Identifier>
+    </adms:identifier>
+
+    ...
+  </dcat:Dataset>

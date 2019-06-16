@@ -1,0 +1,26 @@
+  <dcat:CatalogRecord rdf:about="https://data.jrc.ec.europa.eu/record/0987654321">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">
+      https://data.jrc.ec.europa.eu/record/0987654321
+    </dct:identifier>
+    <dcat:contactPoint>
+      <vcard:Kind>
+        <vcard:hasURL rdf:resource="https://data.jrc.ec.europa.eu/contact"/>
+      </vcard:Kind>
+    </dcat:contactPoint>
+    <foaf:primaryTopic rdf:resource="http://data.europa.eu/89h/1234567890"/>
+    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
+      2017-11-12T17:45:36
+    </dct:created>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
+      2018-01-24T13:26:02
+    </dct:modified>
+    <adms:status rdf:resource="http://publications.europa.eu/resource/authority/dataset-status/COMPLETED"/>
+
+<!-- The metadata schema this record conforms to -->
+
+    <dct:conformsTo rdf:resource="http://data.europa.eu/r5r/"/>
+
+<!-- The record from which the current one was derived -->
+
+    <dct:source rdf:resource="https://some-other-catalogue.org/record/1234567890"/>
+  </dcat:Catalog>

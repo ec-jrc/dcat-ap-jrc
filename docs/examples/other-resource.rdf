@@ -1,0 +1,37 @@
+  <dcat:Dataset rdf:about="http://data.europa.eu/89h/jrc-citsci-cs-jrc-ias">
+    ...
+
+  <!-- Other resource: an app for mobile phones to collect data on alien species -->
+
+    <dct:relation>
+      <rdf:Description>
+        <dcterms:title xml:lang="en">Invasive Alien Species in Europe app</dcterms:title>
+        <dcterms:description xml:lang="en">
+          Detailed description of the Invasive Alien Species in Europe, including download 
+          links (GooglePlay and iTunes), documentation and source code.
+        </dcterms:description>
+        <dct:accessRights rdf:resource="http://data.jrc.ec.europa.eu/access-rights/no-limitations"/>
+        <dct:license rdf:resource="http://publications.europa.eu/resource/authority/licence/COM_REUSE"/>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+        <dcat:accessURL rdf:resource="http://digitalearthlab.jrc.ec.europa.eu/app/invasive-alien-species-europe"/>
+      </rdf:Description>
+    </dct:relation>
+    
+  <!-- Other resource: the Web site of the EASIN network -->
+  
+    <dct:relation>
+      <rdf:Description>
+        <dcterms:title xml:lang="en">European Alien Species Information Network (EASIN)</dcterms:title>
+        <dcterms:description xml:lang="en">
+          Information system of the JRC which receives the validated observations from the Invasive 
+          Alien Species in Europe app for integration within its scientific data base.
+        </dcterms:description>
+        <dct:accessRights rdf:resource="http://data.jrc.ec.europa.eu/access-rights/no-limitations"/>
+        <dct:license rdf:resource="http://publications.europa.eu/resource/authority/licence/COM_REUSE"/>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML"/>
+        <dcat:accessURL rdf:resource="http://easin.jrc.ec.europa.eu/"/>
+      </rdf:Description>
+    </dct:relation>
+
+    ...
+  </dcat:Dataset>

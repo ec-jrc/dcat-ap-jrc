@@ -1,0 +1,13 @@
+  <dcat:Dataset rdf:about="http://data.europa.eu/89h/jrc-ghsl-10008">
+    ...
+
+<!-- Contact point -->
+
+    <dcat:contactPoint>
+      <vcard:Kind>
+        <vcard:hasEmail rdf:resource="mailto:jrc-ghsl-data@ec.europa.eu"/>
+      </vcard:Kind>
+    </dcat:contactPoint>
+
+    ...
+  </dcat:Dataset>
