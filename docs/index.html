@@ -282,7 +282,7 @@ For the other ones, our approach is as follows:</p>
 <li>Title (see <a class="no-sectionRef" href="#dataset-title"></a>).</li>
 <li>Publisher (see <a class="no-sectionRef" href="#dataset-publisher"></a>).</li>
 <li>Publication date (see <a class="no-sectionRef" href="#dataset-publication-date"></a>).</li>
-<li>Identifiers for both the dataset (<a class="no-sectionRef" href="#dataset-other-identifier"></a>) and the contributors (<a class="no-sectionRef" href="#agent-individual-other-identifier"></a>).</li>
+<li>Identifiers for both the dataset (<a class="no-sectionRef" href="#dataset-identifier"></a> and <a class="no-sectionRef" href="#dataset-other-identifier"></a>) and the contributors (<a class="no-sectionRef" href="#agent-individual-other-identifier"></a>).</li>
 </ul>
 
 <p>Finally, the information above has been complemented with a specific field for the full biliographic citation, which is meant to indicate which is the preferred way to cite a dataset. For more details, see <a class="no-sectionRef" href="#dataset-bibliographic-citation"></a>.</p>
@@ -434,7 +434,7 @@ For the other ones, our approach is as follows:</p>
 <li>In addition:
 <ul>
 <li>Internal / primary identifiers are specified, as literals, with <code>dct:identifier</code>.</li>
-<li>Additioanl / secondary identifiers are specified, as literals, with <code>adms:identifier</code>.</li>
+<li>Additional / secondary identifiers are specified, as literals, with <code>adms:identifier</code>.</li>
 </ul>
 </li>
 </ul>
@@ -452,7 +452,7 @@ For the other ones, our approach is as follows:</p>
 <p>It is worth noting that this use of <code title="http://www.w3.org/ns/dcat#contactPoint">dcat:contactPoint</code> does not respect the domain restriction of this property - namely, <code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code>. This property is however used also on other resource types as the alternative would have been defining a new one, with exactly the same semantics.</p>
 
 <aside class="ednote">
-<p>The current draft of the new version of [[VOCAB-DCAT-2]] have relaxed the domain restriction of <code title="http://www.w3.org/ns/dcat#contactPoint">dcat:contactPoint</code>, making it possible to use this property with other classes.</p> 
+<p>[[?VOCAB-DCAT-2]] has relaxed the domain restriction of <a data-cite="?VOCAB-DCAT-2#Property:resource_contact_point"><code title="http://www.w3.org/ns/dcat#contactPoint">dcat:contactPoint</code></a>, making it possible to use this property with other classes.</p> 
 </aside>
 
 <p>For more details on the use of contact points in DCAT-AP-JRC, see:</p>
@@ -533,6 +533,22 @@ For the other ones, our approach is as follows:</p>
 <p>This issue was already addressed in the framework of the DCAT-AP Implementation Guidelines [[DCAT-AP-IG]] - see <a href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/discussion/dt2-service-based-data-access"><cite>DT2: Service-based data access</cite></a>. DCAT-AP-JRC follows the approach defined there, by using the relevant values from the [[MDR-DT]] code list, and by specifying the service / API type via a <abbr title="Uniform Resource Identifier">URI</abbr> identifying it (see <a class="no-sectionRef" href="#registers-service-protocols"></a>).</p>
 <p>An additional issue concerns whether the distribution points to a resource which gives access to the data or instead provides a visualisation of it. It is worth noting that this case is ortogonal to the one of the distribution "type" outlined above, as whether a resource has an access or visualisation "function" it is independent of whether this is obtained via a direct link to a file / download page or via a service / API. Although there is not a specific code list for this purpose, the [[MDR-DT]] code list includes a value to state that a distribution provides data visualisation. Therefore, DCAT-AP-JRC uses it for that purpose, whereas when the distribution function is not specified, the assumption is that the distribution gives access to the data.</p>
 <p>For more details, see <a class="no-sectionRef" href="#distribution-type"></a> and <a class="no-sectionRef" href="#distribution-function"></a>.</p>
+
+</section>
+
+<section id="req-data-discoverability">
+
+<h2>Improving data discoverability on the Web</h2>
+
+<p>Last years have seen the publication of an increasing amount and variety of data and a consequent proliferation of data catalogues. If these has had clear benefits for data consumers, who are now no longer limited to domain expert, finding the data you are looking for is not easy, unless you know in advance where they are available from.</p>
+
+<p>In order to address this issue, more and more data catalogues are now taking care not only of documenting data, but also optimising their publication in order to make them discoverable by mainstream search engines.One of the techniques used for this purpose is to embed metadata in Web pages, with mechanisms as [[?HTML-RDFa]], [[?MICRODATA]], [[?JSON-LD]] (see <a data-cite="?JSON-LD#embedding-json-ld-in-html-documents">&sect;&nbsp;<span class="secno">6.20 </span>Embedding JSON-LD in HTML Documents</a>), and by using vocabularies as [[?DCTERMS]], [[?VOCAB-DCAT]], and [[?SCHEMA-ORG]] - which has been specifically developed for this purpose.</p>
+
+<p>To facilitate the indexing and discovery of datasets documented by using DCAT-AP-JRC, mapping rules have been defined to generate an [[?SCHEMA-ORG]] representation, that can be embedded in catalogue pages.</p>
+
+<p>Notably, the [[?SCHEMA-ORG]] subset for describing datasets is historically derived from [[?VOCAB-DCAT]], which in turn widely re-uses classes and properties from [[?DCTERMS]]. Consequently, the mapping between these vocabularies is pretty straightforward, although the conversion may lead to information loss - as illustrated by the [[?DCAT-AP]] to [[?SCHEMA-ORG]] mapping exercise documented in [[?DCAT-AP-2-SDO]].</p>
+
+<p>For more details, see <a class="no-sectionRef" href="#schema-org-mapping"></a>.</p>
 
 </section>
 <!--
@@ -1873,6 +1889,18 @@ For the other ones, our approach is as follows:</p>
 </thead>
 <tbody>
 <tr>
+<td><a href="#dataset-identifier">identifier</a></td>
+<td><strong>M</strong></td>
+<td>1</td>
+<td><a data-cite="VOCAB-DCAT#Property:dataset_identifier"><code title="http://purl.org/dc/terms/identifier">dct:identifier</code></a></td>
+<td><a data-cite="RDF-SCHEMA#ch_literal"><code title="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</code></a></td>
+<!--
+<td></td>
+-->
+<td><a class="scope" href="#metadata-scope">All</a></td>
+<td>[[DCAT-AP]]</td>
+</tr>
+<tr>
 <td><a href="#dataset-title">title</a></td>
 <td><strong>M</strong></td>
 <td>1*</td>
@@ -2008,18 +2036,6 @@ For the other ones, our approach is as follows:</p>
 <td>[[MDR-CB]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">All</a></td>
-<td>[[DCAT-AP]]</td>
-</tr>
-<tr>
-<td><a href="#dataset-identifier">identifier</a></td>
-<td><em>R</em></td>
-<td>1</td>
-<td><a data-cite="VOCAB-DCAT#Property:dataset_identifier"><code title="http://purl.org/dc/terms/identifier">dct:identifier</code></a></td>
-<td><a data-cite="RDF-SCHEMA#ch_literal"><code title="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</code></a></td>
-<!--
-<td></td>
--->
-<td><a class="scope" href="#metadata-scope">MM</a>, <a class="scope" href="#metadata-scope">MS</a></td>
 <td>[[DCAT-AP]]</td>
 </tr>
 <tr>
@@ -2244,6 +2260,57 @@ For the other ones, our approach is as follows:</p>
 <aside class="example" id="ex-dataset" title="Dataset">
 <pre data-include-format="text" data-include="./examples/dataset.rdf"></pre>
 </aside>
+
+<section id="dataset-identifier">
+
+<h2>Property: identifier</h2>
+
+<table class="simple definition">
+<tbody>
+<tr>
+<th>Label</th>
+<td>identifier</td>
+</tr>
+<tr>
+<th>Obligation</th>
+<td><strong>Mandatory</strong></td>
+</tr>
+<tr>
+<th>Max card.</th>
+<td>1</td>
+</tr>
+<tr>
+<th>RDF Property</th>
+<td><a data-cite="VOCAB-DCAT#Property:dataset_identifier"><code title="http://purl.org/dc/terms/identifier">dct:identifier</code></a></td>
+</tr>
+<tr>
+<th>Range</th>
+<td><a data-cite="RDF-SCHEMA#ch_literal"><code title="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</code></a></td>
+</tr>
+<tr>
+<th>Definition</th>
+<td>The internal identifier of the dataset.</td>
+</tr>
+<tr>
+<th>Usage note</th>
+<td>The value for this property MUST correspond to the dataset URI, and it MUST be a persistent identifier.</td>
+</tr>
+<tr>
+<th>Scope</th>
+<td><a class="scope" href="#metadata-scope">All</a></td>
+</tr>
+<tr>
+<th>Specification</th>
+<td>[[DCAT-AP]]</td>
+</tr>
+<tr>
+<th>Requirement</th>
+<td><a class="no-sectionRef" href="#req-identifiers"></a></td>
+</tr>
+</tbody>
+</table>
+
+</section>
 
 <section id="dataset-title">
 
@@ -2813,53 +2880,6 @@ author = family-name , ", " , given-name
 
 </section>
 
-<section id="dataset-identifier">
-
-<h2>Property: identifier</h2>
-
-<table class="simple definition">
-<tbody>
-<tr>
-<th>Label</th>
-<td>identifier</td>
-</tr>
-<tr>
-<th>Obligation</th>
-<td><em>Recommended</em></td>
-</tr>
-<tr>
-<th>Max card.</th>
-<td>1</td>
-</tr>
-<tr>
-<th>RDF Property</th>
-<td><a data-cite="VOCAB-DCAT#Property:dataset_identifier"><code title="http://purl.org/dc/terms/identifier">dct:identifier</code></a></td>
-</tr>
-<tr>
-<th>Range</th>
-<td><a data-cite="RDF-SCHEMA#ch_literal"><code title="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</code></a></td>
-</tr>
-<tr>
-<th>Definition</th>
-<td>The internal identifier of the dataset.</td>
-</tr>
-<tr>
-<th>Scope</th>
-<td><a class="scope" href="#metadata-scope">Metadata Management</a>, <a class="scope" href="#metadata-scope">Metadata Sharing and Re-use</a></td>
-</tr>
-<tr>
-<th>Specification</th>
-<td>[[DCAT-AP]]</td>
-</tr>
-<tr>
-<th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-identifiers"></a></td>
-</tr>
-</tbody>
-</table>
-
-</section>
-
 <section id="dataset-other-identifier">
 
 <h2>Property: other identifier</h2>
@@ -3190,7 +3210,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>The spatial coverage is specified as defined in [[DCAT-AP]], namely, either by using a geographical name or with a geometry. In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:spatial</code> MUST take as value one of the geographical names defined in [[!MDR-CONT]] (for continents), [[!MDR-COUNTRIES]] (for countries), and [[!UNSD-M49]] (for the other geographical areas). In the latter case, the geometry MUST be specified by using <code title="http://purl.org/dc/terms/Location">dct:Location</code>, with property <code title="http://www.w3.org/ns/locn#geometry">locn:geometry</code> [[!LOCN]] (see <a class="no-sectionRef" href="#spatial-coverage-geometry"></a>).</td>
+<td>The spatial coverage is specified as defined in [[DCAT-AP]], namely, either by using a geographical name or with a geometry. In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:spatial</code> MUST take as value one of the geographical names defined in [[!MDR-CONT]] (for continents), [[!MDR-COUNTRIES]] (for countries), and [[!UNSD-M49]] (for the other geographical areas). In the latter case, the geometry MUST be specified by using <code title="http://purl.org/dc/terms/Location">dct:Location</code>, with property <code title="http://www.w3.org/ns/locn#geometry">locn:geometry</code> [[!LOCN]] (see <a class="no-sectionRef" href="#spatial-coverage-geometry-geometry"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -10510,7 +10530,7 @@ In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:
 </thead>
 <tbody>
 <tr>
-<td><a href="#spatial-coverage-geometry">geometry</a></td>
+<td><a href="#spatial-coverage-geometry-geometry">geometry</a></td>
 <td><strong>C</strong></td>
 <td><a data-cite="LOCN#geometry"><code title="http://www.w3.org/ns/locn#geometry">locn:geometry</code></a></td>
 <td><a href="http://www.opengis.net/ont/geosparql#asWKT"><code title="http://www.opengis.net/ont/geosparql#asWKT">gsp:asWKT</code></a>, <a href="http://www.opengis.net/ont/geosparql#asGML"><code title="http://www.opengis.net/ont/geosparql#asGML">gsp:asGML</code></a></td>
@@ -10527,7 +10547,7 @@ In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:
 <pre data-include-format="text" data-include="./examples/spatial-coverage-geometry.rdf"></pre>
 </aside>
 
-<section id="spatial-coverage-geometry">
+<section id="spatial-coverage-geometry-geometry">
 
 <h2>Property: geometry</h2>
 
@@ -11364,10 +11384,10 @@ code list has been created, based on the identifier schemes supported in [[?Data
 
 <h2>Schema.org mapping</h2>
 
-<p>DCAT-AP-JRC is complemented with mapping rules for generating a [[?SCHEMA-ORG]] representation of metadata records, to be used for optimising the indexing of dataset pages.</p>
+<p>As explained in <a class="no-sectionRef" href="#req-data-discoverability"></a>, DCAT-AP-JRC is complemented with mapping rules for generating a [[?SCHEMA-ORG]] representation of metadata records, to be used for optimising the indexing of dataset pages.</p>
 <p>These mappings are based on those defined in [[?DCAT-AP-2-SDO]], partially revised to meet <a href="https://developers.google.com/search/docs/data-types/dataset">the Google guidelines for the description of datasets</a>. These guidelines are also used to choose the subset of DCAT-AP-JRC metadata to be mapped. The motivation for not using a full mapping of DCAT-AP-JRC records is that only a subset of [[?SCHEMA-ORG]] is used for indexing purposes by search engines. Consequently, the defined mappings cover only those classes and properties specified in the guidelines for creating records for the Google Dataset Search service. For the same reason, the mapping is limited to dataset metadata records - which are currently the only type of resource indexed in Google Dataset Search.</p>
 
-The following sections illustrate the defined mapping rules for the selected DCAT-AP-JRC classes and properties. Moreover, <a class="no-sectionRef" href="#schema-org-mapping-example"></a> shows an example of a [[?SCHEMA-ORG]] representation of a DCAT-AP-JRC record, obtained by applying the defined mapping rules.</p>
+<p>The following sections illustrate the defined mapping rules for the selected DCAT-AP-JRC classes and properties. Moreover, <a class="no-sectionRef" href="#schema-org-mapping-example"></a> shows an example of a [[?SCHEMA-ORG]] representation of a DCAT-AP-JRC record, obtained by applying the defined mapping rules.</p>
 
 <section id="schema-org-mapping-classes">
 
@@ -11595,7 +11615,7 @@ The following sections illustrate the defined mapping rules for the selected DCA
 
 <p>Identifiers are mapped differently depending of their type. More precisely:</p>
 <ol>
-<li>As <code>schema:Text</code> in case of DOIs and ORCIDs, by using the value specified by property <a class="no-sectionRef" href="##identifier-notation"><code>skos:notation</code></a> of class <code>adms:Identifier</code>. This approach follows the guidelines for the Google Dataset Service.</p>
+<li>As <code>schema:Text</code> in case of DOIs and ORCIDs, by using the value specified by property <a class="no-sectionRef" href="#identifier-notation"><code>skos:notation</code></a> of class <code>adms:Identifier</code>. This approach follows the guidelines for the Google Dataset Service.</li>
 <li>As <code>schema:PropertyValue</code> in all the other cases.</li>
 </ol>
 
@@ -11740,7 +11760,7 @@ The following sections illustrate the defined mapping rules for the selected DCA
 <td><a href="http://schema.org/Text"><code title="http://schema.org/Text">schema:Text</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#spatial-coverage-geometry">geometry</a></td>
+<td><a class="no-sectionRef" href="#spatial-coverage-geometry-geometry">geometry</a></td>
 <td><code title="http://www.w3.org/ns/locn#geometry">locn:geometry</code></td>
 <td><a href="http://schema.org/geo"><code title="http://schema.org/geo">schema:geo</code></a></td>
 <td><a href="http://schema.org/GeoShape"><code title="http://schema.org/GeoShape">schema:GeoShape</code></a></td>
