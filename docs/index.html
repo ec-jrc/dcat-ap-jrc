@@ -548,7 +548,7 @@ For the other ones, our approach is as follows:</p>
 
 <p>Last years have seen the publication of an increasing amount and variety of data and a consequent proliferation of data catalogues. If these has had clear benefits for data consumers, who are now no longer limited to domain expert, finding the data you are looking for is not easy, unless you know in advance where they are available from.</p>
 
-<p>In order to address this issue, more and more data catalogues are now taking care not only of documenting data, but also optimising their publication in order to make them discoverable by mainstream search engines.One of the techniques used for this purpose is to embed metadata in Web pages, with mechanisms as [[?HTML-RDFa]], [[?MICRODATA]], [[?JSON-LD]] (see <a data-cite="?JSON-LD#embedding-json-ld-in-html-documents">&sect;&nbsp;<span class="secno">6.20 </span>Embedding JSON-LD in HTML Documents</a>), and by using vocabularies as [[?DCTERMS]], [[?VOCAB-DCAT]], and [[?SCHEMA-ORG]] - which has been specifically developed for this purpose.</p>
+<p>In order to address this issue, more and more data catalogues are now taking care not only of documenting data, but also of optimising their publication in order to make them discoverable by mainstream search engines.One of the techniques used for this purpose is to embed metadata in Web pages, with mechanisms as [[?HTML-RDFa]], [[?MICRODATA]], [[?JSON-LD]] (see <a data-cite="?JSON-LD#embedding-json-ld-in-html-documents">&sect;&nbsp;<span class="secno">6.20 </span>Embedding JSON-LD in HTML Documents</a>), and by using vocabularies as [[?DCTERMS]], [[?VOCAB-DCAT]], and [[?SCHEMA-ORG]] - which has been specifically developed for this purpose.</p>
 
 <p>To facilitate the indexing and discovery of datasets documented by using DCAT-AP-JRC, mapping rules have been defined to generate an [[?SCHEMA-ORG]] representation, that can be embedded in catalogue pages.</p>
 
@@ -3649,6 +3649,10 @@ author = family-name , ", " , given-name
 <td>The catalogue where the dataset is documented.</td>
 </tr>
 <tr>
+<th>Usage note</th>
+<td>The catalogue is typically denoted with its URI. Alternatively, it MAY be described as defined in <a class="no-sectionRef" href="#catalogue"></a>. In both cases, it MUST be typed as a <code>dcat:Catalog</code>.</td>
+</tr>
+<tr>
 <th>Scope</th>
 <td><a class="scope" href="#metadata-scope">Metadata Management</a>, <a class="scope" href="#metadata-scope">Metadata Sharing and Re-use</a></td>
 </tr>
@@ -3697,7 +3701,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>The specification is typically denoted with its URI. Alternatively, it can be described as a document, as defined in <a class="no-sectionRef" href="#publication"></a>.</td>
+<td>The specification is typically denoted with its URI. Alternatively, it MAY be described as a document, as defined in <a class="no-sectionRef" href="#publication"></a>.</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -3751,7 +3755,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>The data policy is typically denoted with its URI. Alternatively, it can be described as a document, as defined in <a class="no-sectionRef" href="#publication"></a>. In both cases, it MUST be typed as a <code>dct:Policy</code>.</td>
+<td>The data policy is typically denoted with its URI. Alternatively, it MAY be described as a document, as defined in <a class="no-sectionRef" href="#publication"></a>. In both cases, it MUST be typed as a <code>dct:Policy</code>.</td>
 </tr>
 <tr>
 <th>Scope</th>
