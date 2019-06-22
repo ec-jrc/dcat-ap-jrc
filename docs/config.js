@@ -121,7 +121,7 @@ var respecConfig = {
         "authors":["DataCite Metadata Working Group"],
         "date":"3 February 2016"
       },
-      "DCAT-AP-2-SDO": {
+      "DCAT-AP-SDO": {
         "href": "https://ec-jrc.github.io/dcat-ap-to-schema-org/",
         "title": "DCAT-AP to Schema.org Mapping",
         "authors": ["Andrea Perego"],
