@@ -34,7 +34,7 @@ var respecConfig = {
       uri: "",
     }],    
 */
-//    license: "cc-by",
+    license: "cc-by",
     specStatus: "unofficial",
     shortName: "dcat-ap-jrc",
     canonicalURI: "https://ec-jrc.github.io/dcat-ap-jrc/",
@@ -84,8 +84,8 @@ var respecConfig = {
 //        href: ""
 //      }]
 //    }],
-    wg: "JRC Data Support Team",
-    wgURI: "https://data.jrc.ec.europa.eu/contact",
+//    wg: "JRC Data Support Team",
+//    wgURI: "https://data.jrc.ec.europa.eu/contact",
 //    wgPublicList: "",
 //    wgPatentURI: "",
     inlineCSS: "true",
