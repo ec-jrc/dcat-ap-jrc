@@ -9,7 +9,3 @@ The work documented here is the result of an ongoing activity. As such, it can b
 * [`docs/`](./docs/): Folder containing documentation on DCAT-AP-JRC, published at: https://ec-jrc.github.io/dcat-ap-jrc/
 * [`LICENCE.md`](./LICENCE.md): The licence for the resources available from this repository.
 * [`README.md`](./README.md): This document. 
-  
-#  Credits
-  
-This work is a joint activity carried out by Units B.6 &amp; I.3 of the <a href="https://ec.europa.eu/jrc/">Joint Research Centre of the European Commission</a>.
