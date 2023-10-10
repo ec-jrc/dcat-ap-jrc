@@ -1,0 +1,84 @@
+{
+  "@context":"http://schema.org",
+  "@type":"Dataset",
+  "@id":"http://data.europa.eu/89h/jrc-ghsl-10008",
+  "publishingPrinciples":"https://doi.org/10.2788/607378",
+  "name":"GHS built-up grid, derived from Sentinel-1 (2016), R2018A",
+  "description":"Information layer on the presence of built-up surfaces derived from global Sentinel-1 Synthetic Aperture Radar (SAR) satellite data, collected during 2016. The native spatial resolution of the data is 20 meters with a pixel spacing of 10 meters and dual polarisation acquisitions (VV and VH). The data was processed by fully automatic and reproducible methods based on statistical learning (Symbolic Machine Learning). No manual or ad-hoc rule-based editing of the results was applied in the post-processing. The product it is provided with a spatial resolution of 20 meters.",
+  "publisher":{
+    "@type":"Organization",
+    "name":"European Commission, Joint Research Centre (JRC)",
+    "url":"https://ec.europa.eu/jrc/"
+  },
+  "datePublished" : "2018-07-18",
+  "url":"http://data.europa.eu/89h/jrc-ghsl-10008",
+  "sameAs":"http://data.europa.eu/89h/jrc-ghsl-10008",
+  "identifier":"10.2905/jrc-ghsl-10008",
+  "keywords":"Copernicus; GHSL; Sentinel-1; big data; built-up; earth observation; global map; urban; Regions and cities; Science and technology",
+  "spatialCoverage":[{
+    "@type":"Place",
+    "@id":"https://unstats.un.org/unsd/methodology/m49/001",
+    "name":"World"
+  }],
+  "temporalCoverage":["2015-12-01/2017-12-31"],
+  "creator":[{
+    "@type":"Person",
+    "@id":"https://orcid.org/0000-0002-2670-1302",
+    "sameAs":"https://orcid.org/0000-0002-2670-1302",
+    "url":"https://orcid.org/0000-0002-2670-1302",
+    "identifier":"0000-0002-2670-1302",
+    "givenName":"Christina",
+    "familyName":"Corbane",
+    "name":"Corbane, Christina"
+    },{
+    "@type":"Person",
+    "givenName":"Panagiotis",
+    "familyName":"Politis",
+    "name":"Politis, Panagiotis"
+    },{
+    "@type":"Person",
+    "@id":"https://orcid.org/0000-0002-2262-0580",
+    "sameAs":"https://orcid.org/0000-0002-2262-0580",
+    "url":"https://orcid.org/0000-0002-2262-0580",
+    "identifier":"0000-0002-2262-0580",
+    "givenName":"Vasileios",
+    "familyName":"Syrris",
+    "name":"Syrris, Vasileios"
+    },{
+    "@type":"Person",
+    "@id":"https://orcid.org/0000-0003-0620-439X",
+    "sameAs":"https://orcid.org/0000-0003-0620-439X",
+    "url":"https://orcid.org/0000-0003-0620-439X",
+    "identifier":"0000-0003-0620-439X",
+    "givenName":"Martino",
+    "familyName":"Pesaresi",
+    "name":"Pesaresi, Martino"
+  }],
+  "distribution":[{
+    "@type":"DataDownload",
+    "name":"GHS_BUILT_S12016NODSM_GLOBE_R2018A",
+    "description":"The grid is provided as a VRT file (with GeoTIFF tiles), and with pyramids. Classification map depicting built-up presence: 0 = no built-up or no data; 1 = built-up area. Spatial resolution: 20m; CRS: EPSG:3857 (Pseudo Mercator).",
+    "fileFormat":"TIFF",
+    "contentUrl":"http://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S1NODSM_GLOBE_R2018A/GHS_BUILT_S1NODSM_GLOBE_R2018A_3857_20/"
+  }],
+  "citation":[{
+    "@type":"Article",
+    "name":"Big Earth Data Analytics on Sentinel-1 and Landsat imagery in support to global human settlements mapping",
+    "description":"Corban, C., Pesaresi, M., Politis, P., Syrris, V., Florczyk, A., Soille, P., Maffenini, L., Burger, A., Vasilev, V., Rodriguez Aseretto, R., Sabo, F., Dijkstra, L. and Kemper, T., Big Earth Data Analytics on Sentinel-1 and Landsat imagery in support to global human settlements mapping, In: Big Earth Data, 2017, ISSN 2096-4471, 1 (1-2), p. 118-144, JRC108814.",
+    "identifier":"10.1080/20964471.2017.1397899",
+    "@id":"https://doi.org/10.1080/20964471.2017.1397899",
+    "url":"https://doi.org/10.1080/20964471.2017.1397899"
+  },{
+    "@type":"Article",
+    "name":"A New Method for Earth Observation Data Analytics Based on Symbolic Machine Learning",
+    "description":"Pesaresi M; Syrris V; Julea A. A New Method for Earth Observation Data Analytics Based on Symbolic Machine Learning. REMOTE SENSING 8 (5); 2016. p. 399. JRC99747",
+    "identifier":"10.3390/rs8050399",
+    "@id":"https://doi.org/10.3390/rs8050399",
+    "url":"https://doi.org/10.3390/rs8050399"
+  }],  
+  "includedInDataCatalog":{
+    "@type":"DataCatalog",
+    "name":"JRC Data Catalogue",
+    "url":"https://data.jrc.ec.europa.eu/"
+  }
+}

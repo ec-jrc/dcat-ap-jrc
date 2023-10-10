@@ -1,0 +1,18 @@
+  <dcat:Dataset rdf:about="http://data.europa.eu/89h/1234567890">
+    ...
+
+<!-- Temporal coverage -->
+
+    <dct:temporal>
+      <dct:PeriodOfTime>
+        <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
+          2015-12-01
+        </schema:startDate>
+        <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
+          2017-12-31
+        </schema:endDate>
+      </dct:PeriodOfTime>
+    </dct:temporal>
+
+    ...
+  </dcat:Dataset>

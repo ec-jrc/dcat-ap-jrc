@@ -1,0 +1,79 @@
+  <dcat:Catalog rdf:about="https://data.jrc.ec.europa.eu/">
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">
+      https://data.jrc.ec.europa.eu/
+    </dct:identifier>
+    <dct:alternative>JRC Data Catalogue</dct:alternative>
+    <dct:title xml:lang="en">Joint Research Centre Data Catalogue</dct:title>
+    <dct:description xml:lang="en">
+      The JRC Data Catalogue gives access to the multidisciplinary 
+      data produced and maintained by the Joint Research Centre, 
+      the European Commission's in-house science service providing 
+      independent scientific advice and support to policies of the 
+      European Union.
+    </dct:description>
+    <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/JRC"/>
+    <dcat:contactPoint>
+      <vcard:Kind>
+        <vcard:hasURL rdf:resource="https://data.jrc.ec.europa.eu/contact"/>
+      </vcard:Kind>
+    </dcat:contactPoint>
+    <foaf:homepage rdf:resource="https://data.jrc.ec.europa.eu/"/>
+    
+<!-- Collections -->
+    
+    <dct:hasPart rdf:resource="http://data.jrc.ec.europa.eu/collection/eubss"/>
+    <dct:hasPart rdf:resource="http://data.jrc.ec.europa.eu/collection/liscoast"/>
+    ...
+    
+<!-- Datasets -->
+    
+    <dcat:dataset rdf:resource="http://data.europa.eu/89h/jrc-eubss-eubss-2007"/>
+    <dcat:dataset rdf:resource="http://data.europa.eu/89h/jrc-eubss-eubss-2008"/>
+    <dcat:dataset rdf:resource="http://data.europa.eu/89h/jrc-eubss-eubss-2009"/>
+    <dcat:dataset rdf:resource="http://data.europa.eu/89h/jrc-eubss-eubss-2010"/>
+    <dcat:dataset rdf:resource="http://data.europa.eu/89h/jrc-eubss-eubss-2011"/>
+    <dcat:dataset rdf:resource="http://data.europa.eu/89h/jrc-eubss-eubss-2012"/>
+    <dcat:dataset rdf:resource="http://data.europa.eu/89h/jrc-eubss-eubss-2013"/>
+    <dcat:dataset rdf:resource="http://data.europa.eu/89h/jrc-eubss-eubss-2014"/>
+    <dcat:dataset rdf:resource="http://data.europa.eu/89h/jrc-eubss-eubss-2015"/>
+    ...    
+    
+<!-- Other identifiers -->
+
+    <owl:sameAs rdf:resource="https://doi.org/10.17616/R3949C"/>
+    <adms:identifier>    
+      <adms:Identifier>    
+        <skos:notation>10.17616/R3949C</skos:notation>
+        <adms:schemeAgency>DOI</adms:schemeAgency>
+        <dct:creator rdf:resource="https://doi.org/"/>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
+          2018-01-24
+        </dct:issued>
+      </adms:Identifier>    
+    </adms:identifier>    
+    
+    <owl:sameAs rdf:resource="https://doi.org/10.25504/FAIRsharing.4e2z82"/>
+    <adms:identifier>    
+      <adms:Identifier>    
+        <skos:notation>10.25504/FAIRsharing.4e2z82</skos:notation>
+        <adms:schemeAgency>DOI</adms:schemeAgency>
+        <dct:creator rdf:resource="https://doi.org/"/>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
+          2018-02-14
+        </dct:issued>
+      </adms:Identifier>    
+    </adms:identifier>    
+    
+    <owl:sameAs rdf:resource="https://www.ebi.ac.uk/miriam/main/collections/MIR:00000644"/>
+    <adms:identifier>    
+      <adms:Identifier>    
+        <skos:notation>MIR:00000644</skos:notation>
+        <adms:schemeAgency>Identifiers.org</adms:schemeAgency>
+        <dct:creator rdf:resource="https://identifiers.org/"/>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
+          2018-02-15
+        </dct:issued>
+      </adms:Identifier>    
+    </adms:identifier>    
+    
+  </dcat:Catalog>

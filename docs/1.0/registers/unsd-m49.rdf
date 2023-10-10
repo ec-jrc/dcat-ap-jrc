@@ -1,0 +1,1413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF 
+  xmlns:dct="http://purl.org/dc/terms/" 
+  xmlns:gsp="http://www.opengis.net/ont/geosparql#" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:label xml:lang="en">UNSD - Methodology - Standard country or area codes for statistical use (M49)</rdfs:label>
+    <dct:title xml:lang="en">UNSD - Methodology - Standard country or area codes for statistical use (M49)</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-11-16T00:01:27+01:00</dct:modified>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/001">
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/continent/AFRICA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/continent/AMERICA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/continent/ANTARCTICA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/continent/ASIA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/continent/EUROPE"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/continent/OCEANIA"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</skos:notation>
+    <skos:prefLabel xml:lang="en">World</skos:prefLabel>
+    <rdfs:label xml:lang="en">World</rdfs:label>
+    <dct:title xml:lang="en">World</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/continent/AFRICA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/001"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/015"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/202"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/015">
+    <dct:isPartOf rdf:resource="http://publications.europa.eu/resource/authority/continent/AFRICA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/DZA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/EGY"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/LBY"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MAR"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SDN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/TUN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ESH"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">015</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">015</skos:notation>
+    <skos:prefLabel xml:lang="en">Northern Africa</skos:prefLabel>
+    <rdfs:label xml:lang="en">Northern Africa</rdfs:label>
+    <dct:title xml:lang="en">Northern Africa</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/DZA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/EGY">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/LBY">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MAR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SDN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/TUN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ESH">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/202">
+    <dct:isPartOf rdf:resource="http://publications.europa.eu/resource/authority/continent/AFRICA"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/017"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/018"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/011"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">202</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">202</skos:notation>
+    <skos:prefLabel xml:lang="en">Sub-Saharan Africa</skos:prefLabel>
+    <rdfs:label xml:lang="en">Sub-Saharan Africa</rdfs:label>
+    <dct:title xml:lang="en">Sub-Saharan Africa</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/014">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/202"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/IOT"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BDI"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/COM"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/DJI"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ERI"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ETH"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/FQ0"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/KEN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MDG"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MWI"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MUS"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MYT"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MOZ"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/REU"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/RWA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SYC"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SOM"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SSD"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/UGA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/TZA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ZMB"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ZWE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">014</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">014</skos:notation>
+    <skos:prefLabel xml:lang="en">Eastern Africa</skos:prefLabel>
+    <rdfs:label xml:lang="en">Eastern Africa</rdfs:label>
+    <dct:title xml:lang="en">Eastern Africa</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/IOT">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BDI">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/COM">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/DJI">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ERI">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ETH">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/FQ0">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/KEN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MDG">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MWI">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MUS">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MYT">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MOZ">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/REU">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/RWA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SYC">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SOM">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SSD">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/UGA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/TZA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ZMB">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ZWE">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/017">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/202"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/AGO"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/CMR"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/CAF"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/TCD"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/COG"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/COD"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/GNQ"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/GAB"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/STP"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">017</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">017</skos:notation>
+    <skos:prefLabel xml:lang="en">Middle Africa</skos:prefLabel>
+    <rdfs:label xml:lang="en">Middle Africa</rdfs:label>
+    <dct:title xml:lang="en">Middle Africa</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/AGO">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/017"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/CMR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/017"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/CAF">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/017"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/TCD">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/017"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/COG">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/017"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/COD">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/017"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/GNQ">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/017"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/GAB">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/017"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/STP">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/017"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/018">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/202"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BWA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SWZ"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/LSO"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/NAM"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ZAF"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">018</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">018</skos:notation>
+    <skos:prefLabel xml:lang="en">Southern Africa</skos:prefLabel>
+    <rdfs:label xml:lang="en">Southern Africa</rdfs:label>
+    <dct:title xml:lang="en">Southern Africa</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BWA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/018"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SWZ">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/018"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/LSO">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/018"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/NAM">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/018"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ZAF">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/018"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/011">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/202"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BEN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BFA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/CPV"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/CIV"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/GMB"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/GHA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/GIN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/GNB"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/LBR"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MLI"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MRT"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/NER"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/NGA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SHN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SEN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SLE"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/TGO"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">011</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">011</skos:notation>
+    <skos:prefLabel xml:lang="en">Western Africa</skos:prefLabel>
+    <rdfs:label xml:lang="en">Western Africa</rdfs:label>
+    <dct:title xml:lang="en">Western Africa</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BEN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BFA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/CPV">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/CIV">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/GMB">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/GHA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/GIN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/GNB">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/LBR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MLI">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MRT">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/NER">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/NGA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SHN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SEN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SLE">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/TGO">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/continent/AMERICA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/001"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/419"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/419">
+    <dct:isPartOf rdf:resource="http://publications.europa.eu/resource/authority/continent/AMERICA"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/013"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/005"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">419</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">419</skos:notation>
+    <skos:prefLabel xml:lang="en">Latin America and the Caribbean</skos:prefLabel>
+    <rdfs:label xml:lang="en">Latin America and the Caribbean</rdfs:label>
+    <dct:title xml:lang="en">Latin America and the Caribbean</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/029">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/419"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/AIA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ATG"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ABW"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BHS"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BRB"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BES"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/VGB"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/CYM"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/CUB"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/CUW"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/DMA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/DOM"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/GRD"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/GLP"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/HTI"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/JAM"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MTQ"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MSR"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/PRI"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BLM"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/KNA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/LCA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MAF"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/VCT"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SXM"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/TTO"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/TCA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/VIR"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">029</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">029</skos:notation>
+    <skos:prefLabel xml:lang="en">Caribbean</skos:prefLabel>
+    <rdfs:label xml:lang="en">Caribbean</rdfs:label>
+    <dct:title xml:lang="en">Caribbean</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/AIA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ATG">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ABW">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BHS">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BRB">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BES">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/VGB">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/CYM">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/CUB">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/CUW">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/DMA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/DOM">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/GRD">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/GLP">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/HTI">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/JAM">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MTQ">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MSR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/PRI">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BLM">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/KNA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/LCA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MAF">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/VCT">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SXM">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/TTO">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/TCA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/VIR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/013">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/419"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BLZ"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/CRI"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SLV"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/GTM"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/HND"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MEX"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/NIC"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/PAN"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">013</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">013</skos:notation>
+    <skos:prefLabel xml:lang="en">Central America</skos:prefLabel>
+    <rdfs:label xml:lang="en">Central America</rdfs:label>
+    <dct:title xml:lang="en">Central America</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BLZ">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/013"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/CRI">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/013"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SLV">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/013"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/GTM">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/013"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/HND">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/013"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MEX">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/013"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/NIC">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/013"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/PAN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/013"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/005">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/419"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ARG"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BOL"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BVT"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BRA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/CHL"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/COL"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ECU"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/FLK"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/GUF"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/GUY"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/PRY"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/PER"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SGS"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SUR"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/URY"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/VEN"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</skos:notation>
+    <skos:prefLabel xml:lang="en">South America</skos:prefLabel>
+    <rdfs:label xml:lang="en">South America</rdfs:label>
+    <dct:title xml:lang="en">South America</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ARG">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BOL">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BVT">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BRA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/CHL">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/COL">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ECU">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/FLK">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/GUF">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/GUY">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/PRY">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/PER">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SGS">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SUR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/URY">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/VEN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/021">
+    <dct:isPartOf rdf:resource="http://publications.europa.eu/resource/authority/continent/AMERICA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BMU"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/CAN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/GRL"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SPM"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/USA"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">021</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">021</skos:notation>
+    <skos:prefLabel xml:lang="en">Northern America</skos:prefLabel>
+    <rdfs:label xml:lang="en">Northern America</rdfs:label>
+    <dct:title xml:lang="en">Northern America</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BMU">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/CAN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/GRL">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SPM">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/USA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ATA">
+    <dct:isPartOf rdf:resource="http://publications.europa.eu/resource/authority/continent/ANTARCTICA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/continent/ASIA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/001"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/143"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/030"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/035"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/034"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/143">
+    <dct:isPartOf rdf:resource="http://publications.europa.eu/resource/authority/continent/ASIA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/KAZ"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/KGZ"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/TJK"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/TKM"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/UZB"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">143</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">143</skos:notation>
+    <skos:prefLabel xml:lang="en">Central Asia</skos:prefLabel>
+    <rdfs:label xml:lang="en">Central Asia</rdfs:label>
+    <dct:title xml:lang="en">Central Asia</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/KAZ">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/143"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/KGZ">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/143"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/TJK">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/143"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/TKM">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/143"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/UZB">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/143"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/030">
+    <dct:isPartOf rdf:resource="http://publications.europa.eu/resource/authority/continent/ASIA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/CHN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/HKG"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MAC"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/PRK"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/JPN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MNG"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/KOR"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">030</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">030</skos:notation>
+    <skos:prefLabel xml:lang="en">Eastern Asia</skos:prefLabel>
+    <rdfs:label xml:lang="en">Eastern Asia</rdfs:label>
+    <dct:title xml:lang="en">Eastern Asia</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/CHN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/030"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/HKG">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/030"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MAC">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/030"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/PRK">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/030"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/JPN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/030"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MNG">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/030"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/KOR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/030"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/035">
+    <dct:isPartOf rdf:resource="http://publications.europa.eu/resource/authority/continent/ASIA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BRN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/KHM"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/IDN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/LAO"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MYS"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MMR"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/PHL"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SGP"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/THA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/TLS"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/VNM"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">035</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">035</skos:notation>
+    <skos:prefLabel xml:lang="en">South-eastern Asia</skos:prefLabel>
+    <rdfs:label xml:lang="en">South-eastern Asia</rdfs:label>
+    <dct:title xml:lang="en">South-eastern Asia</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BRN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/035"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/KHM">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/035"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/IDN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/035"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/LAO">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/035"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MYS">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/035"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MMR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/035"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/PHL">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/035"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SGP">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/035"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/THA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/035"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/TLS">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/035"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/VNM">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/035"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/034">
+    <dct:isPartOf rdf:resource="http://publications.europa.eu/resource/authority/continent/ASIA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/AFG"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BGD"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BTN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/IND"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/IRN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MDV"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/NPL"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/PAK"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/LKA"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">034</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">034</skos:notation>
+    <skos:prefLabel xml:lang="en">Southern Asia</skos:prefLabel>
+    <rdfs:label xml:lang="en">Southern Asia</rdfs:label>
+    <dct:title xml:lang="en">Southern Asia</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/AFG">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/034"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BGD">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/034"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BTN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/034"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/IND">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/034"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/IRN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/034"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MDV">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/034"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/NPL">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/034"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/PAK">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/034"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/LKA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/034"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/145">
+    <dct:isPartOf rdf:resource="http://publications.europa.eu/resource/authority/continent/ASIA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ARM"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/AZE"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BHR"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/CYP"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/GEO"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/IRQ"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ISR"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/JOR"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/KWT"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/LBN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/OMN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/QAT"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SAU"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/PSE"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SYR"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/TUR"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ARE"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/YEM"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">145</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">145</skos:notation>
+    <skos:prefLabel xml:lang="en">Western Asia</skos:prefLabel>
+    <rdfs:label xml:lang="en">Western Asia</rdfs:label>
+    <dct:title xml:lang="en">Western Asia</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ARM">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/AZE">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BHR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/CYP">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/GEO">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/IRQ">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ISR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/JOR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/KWT">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/LBN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/OMN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/QAT">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SAU">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/PSE">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SYR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/TUR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ARE">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/YEM">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/continent/EUROPE">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/001"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/151"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/154"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/039"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/155"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/151">
+    <dct:isPartOf rdf:resource="http://publications.europa.eu/resource/authority/continent/EUROPE"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BLR"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BGR"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/CZE"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/HUN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/POL"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MDA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ROU"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/RUS"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SVK"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/UKR"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">151</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">151</skos:notation>
+    <skos:prefLabel xml:lang="en">Eastern Europe</skos:prefLabel>
+    <rdfs:label xml:lang="en">Eastern Europe</rdfs:label>
+    <dct:title xml:lang="en">Eastern Europe</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BLR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/151"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BGR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/151"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/CZE">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/151"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/HUN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/151"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/POL">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/151"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MDA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/151"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ROU">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/151"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/RUS">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/151"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SVK">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/151"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/UKR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/151"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/154">
+    <dct:isPartOf rdf:resource="http://publications.europa.eu/resource/authority/continent/EUROPE"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ALA"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/830"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/DNK"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/EST"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/FRO"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/FIN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ISL"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/IRL"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/IMN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/LVA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/LTU"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/NOR"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SJM"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SWE"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/GBR"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">154</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">154</skos:notation>
+    <skos:prefLabel xml:lang="en">Northern Europe</skos:prefLabel>
+    <rdfs:label xml:lang="en">Northern Europe</rdfs:label>
+    <dct:title xml:lang="en">Northern Europe</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ALA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/154"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/830">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/154"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/GGY"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/JEY"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/680"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">830</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">830</skos:notation>
+    <skos:prefLabel xml:lang="en">Channel Islands</skos:prefLabel>
+    <rdfs:label xml:lang="en">Channel Islands</rdfs:label>
+    <dct:title xml:lang="en">Channel Islands</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/GGY">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/830"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/JEY">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/830"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/680">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/830"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/DNK">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/154"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/EST">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/154"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/FRO">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/154"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/FIN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/154"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ISL">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/154"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/IRL">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/154"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/IMN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/154"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/LVA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/154"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/LTU">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/154"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/NOR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/154"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SJM">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/154"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SWE">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/154"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/GBR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/154"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/039">
+    <dct:isPartOf rdf:resource="http://publications.europa.eu/resource/authority/continent/EUROPE"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ALB"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/AND"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BIH"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/HRV"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/GIB"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/GRC"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/VAT"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ITA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MLT"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MNE"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/PRT"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SMR"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SRB"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SVN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ESP"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MKD"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">039</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">039</skos:notation>
+    <skos:prefLabel xml:lang="en">Southern Europe</skos:prefLabel>
+    <rdfs:label xml:lang="en">Southern Europe</rdfs:label>
+    <dct:title xml:lang="en">Southern Europe</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ALB">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/AND">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BIH">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/HRV">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/GIB">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/GRC">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/VAT">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ITA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MLT">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MNE">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/PRT">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SMR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SRB">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SVN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ESP">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MKD">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/155">
+    <dct:isPartOf rdf:resource="http://publications.europa.eu/resource/authority/continent/EUROPE"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/AUT"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/BEL"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/FRA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/DEU"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/LIE"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/LUX"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MCO"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/NLD"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/CHE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">155</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">155</skos:notation>
+    <skos:prefLabel xml:lang="en">Western Europe</skos:prefLabel>
+    <rdfs:label xml:lang="en">Western Europe</rdfs:label>
+    <dct:title xml:lang="en">Western Europe</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/AUT">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/155"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/BEL">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/155"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/FRA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/155"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/DEU">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/155"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/LIE">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/155"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/LUX">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/155"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MCO">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/155"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/NLD">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/155"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/CHE">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/155"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/continent/OCEANIA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/001"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/053"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/054"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/057"/>
+    <dct:hasPart rdf:resource="https://unstats.un.org/unsd/methodology/m49/061"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/053">
+    <dct:isPartOf rdf:resource="http://publications.europa.eu/resource/authority/continent/OCEANIA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/AUS"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/CXR"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/CCK"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/HMD"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/NZL"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/NFK"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">053</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">053</skos:notation>
+    <skos:prefLabel xml:lang="en">Australia and New Zealand</skos:prefLabel>
+    <rdfs:label xml:lang="en">Australia and New Zealand</rdfs:label>
+    <dct:title xml:lang="en">Australia and New Zealand</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/AUS">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/053"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/CXR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/053"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/CCK">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/053"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/HMD">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/053"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/NZL">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/053"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/NFK">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/053"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/054">
+    <dct:isPartOf rdf:resource="http://publications.europa.eu/resource/authority/continent/OCEANIA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/FJI"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/NCL"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/PNG"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/SLB"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/VUT"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">054</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">054</skos:notation>
+    <skos:prefLabel xml:lang="en">Melanesia</skos:prefLabel>
+    <rdfs:label xml:lang="en">Melanesia</rdfs:label>
+    <dct:title xml:lang="en">Melanesia</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/FJI">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/054"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/NCL">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/054"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/PNG">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/054"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/SLB">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/054"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/VUT">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/054"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/057">
+    <dct:isPartOf rdf:resource="http://publications.europa.eu/resource/authority/continent/OCEANIA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/GUM"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/KIR"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MHL"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/FSM"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/NRU"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/MNP"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/PLW"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/UMI"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">057</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">057</skos:notation>
+    <skos:prefLabel xml:lang="en">Micronesia</skos:prefLabel>
+    <rdfs:label xml:lang="en">Micronesia</rdfs:label>
+    <dct:title xml:lang="en">Micronesia</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/GUM">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/057"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/KIR">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/057"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MHL">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/057"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/FSM">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/057"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/NRU">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/057"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/MNP">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/057"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/PLW">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/057"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/UMI">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/057"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://unstats.un.org/unsd/methodology/m49/061">
+    <dct:isPartOf rdf:resource="http://publications.europa.eu/resource/authority/continent/OCEANIA"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ASM"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/COK"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/PYF"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/NIU"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/PCN"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/WSM"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/TKL"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/TON"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/TUV"/>
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/WLF"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+    <skos:inScheme rdf:resource="https://unstats.un.org/unsd/methodology/m49"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">061</dct:identifier>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">061</skos:notation>
+    <skos:prefLabel xml:lang="en">Polynesia</skos:prefLabel>
+    <rdfs:label xml:lang="en">Polynesia</rdfs:label>
+    <dct:title xml:lang="en">Polynesia</dct:title>
+    <rdfs:isDefinedBy rdf:resource="https://unstats.un.org/unsd/methodology/m49/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/ASM">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/061"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/COK">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/061"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/PYF">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/061"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/NIU">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/061"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/PCN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/061"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/WSM">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/061"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/TKL">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/061"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/TON">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/061"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/TUV">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/061"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/WLF">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/061"/>
+  </rdf:Description>
+
+<!-- Continents / countries in the relevant MDR NALs which are not included in the UNSD M49 regions -->  
+
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/continent/ANTARCTICA">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/001" />
+    <dct:hasPart rdf:resource="http://publications.europa.eu/resource/authority/country/ATA" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/1A0">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/039" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/CPT">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/013" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/country/TWN">
+    <dct:isPartOf rdf:resource="https://unstats.un.org/unsd/methodology/m49/030" />
+  </rdf:Description>
+
+</rdf:RDF>

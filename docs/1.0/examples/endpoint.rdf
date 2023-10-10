@@ -1,0 +1,46 @@
+  <rdf:Description rdf:about="http://data.jrc.ec.europa.eu/endpoint/liscoast">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+    <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Service"/>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">
+      http://data.jrc.ec.europa.eu/endpoint/liscoast
+    </dct:identifier>
+    <dct:title xml:lang="en">LISCOAST CSW endpoint</dct:title>
+    <dct:alternative>LISCOAST-CSW</dct:alternative>
+    <dct:description xml:lang="en">
+      CSW endpoint for the LISCOAST collection.
+    </dct:description>
+    <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/JRC"/>
+    <dcat:contactPoint>
+      <vcard:Kind>
+        <vcard:hasURL rdf:resource="https://data.jrc.ec.europa.eu/contact"/>
+      </vcard:Kind>
+    </dcat:contactPoint>
+
+    <!-- The endpoint catalogue -->     
+
+    <dct:isPartOf rdf:resource="http://geodata.jrc.ec.europa.eu/"/>
+
+    <!-- The endpoint collection -->     
+
+    <dct:isPartOf rdf:resource="http://data.jrc.ec.europa.eu/collection/liscoast"/>
+
+    <!-- The service protocol of the endpoint -->    
+
+    <dct:conformsTo rdf:resource="http://www.opengis.net/def/serviceType/ogc/csw"/>
+
+    <!-- The endpoint access URL -->     
+
+    <foaf:homepage rdf:resource="http://geodata.jrc.ec.europa.eu/GeoportalProxyWebServices/resources/OGCCSW202/LISCOAST"/>
+
+    <!-- The datasets whose records are served by the endpoint -->     
+
+    <dcat:dataset rdf:resource="http://data.europa.eu/89h/0026aa70-cc6d-4f6f-8c2f-554a2f9b17f2"/>
+    <dcat:dataset rdf:resource="http://data.europa.eu/89h/908ca3dc-bbba-41c6-bcbb-4eaedc990278"/>
+    <dcat:dataset rdf:resource="http://data.europa.eu/89h/944f6d9b-2fbf-422e-ae3e-4b3aa391ed48"/>
+    <dcat:dataset rdf:resource="http://data.europa.eu/89h/9e5ba6f1-8d03-4834-8488-2353e504560f"/>
+    <dcat:dataset rdf:resource="http://data.europa.eu/89h/a25677b7-2296-4eeb-82f2-70c78690ae10"/>
+    <dcat:dataset rdf:resource="http://data.europa.eu/89h/a565eea4-5422-4c7d-a000-2e10ae872da7"/>
+    <dcat:dataset rdf:resource="http://data.europa.eu/89h/deff5a62-074c-4175-bce4-f8f13e0437a3"/>
+    <dcat:dataset rdf:resource="http://data.europa.eu/89h/e9e42344-119d-479e-9bc7-57400d12a8a2"/>
+
+  </rdf:Description>

@@ -1,0 +1,55 @@
+  <dcat:Catalog rdf:about="https://data.jrc.ec.europa.eu/collection/datam">
+
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">
+      https://data.jrc.ec.europa.eu/collection/datam
+    </dct:identifier>
+
+    <dct:alternative>DataM</dct:alternative>
+
+    <dct:title xml:lang="en">
+      EC data portal of agro-economic research
+    </dct:title>
+
+    <dct:description xml:lang="en">
+      DataM is a portal of the European Commission's web site 
+      that gives access to a collection of data related to the 
+      scientific production of the European Commission and 
+      partners about the economics aspects of agriculture, 
+      bioeconomy, climate change, food and nutrition security 
+      and related sustainability.
+
+      Datasets of this collection consist mainly in modelling 
+      data and estimates. 
+
+      These are outlooks about future scenarios, and calculations 
+      concerning the past that overcome the lack of official 
+      statistical data.
+
+      Data is presented in terms of raw datasets (data-cubes) 
+      ready to download in CSV format and/or as interactive 
+      dashboards or infographics for the self-analysis of data.
+    </dct:description>
+
+    <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/JRC"/>
+
+    <dcat:contactPoint>
+      <vcard:Kind>
+        <vcard:hasEmail rdf:resource="mailto:jrc-datam@ec.europa.eu"/>
+      </vcard:Kind>
+    </dcat:contactPoint>
+
+    <foaf:homepage rdf:resource="https://datam.jrc.ec.europa.eu"/>
+    
+<!-- Catalogue -->
+    
+    <dct:isPartOf rdf:resource="https://data.jrc.ec.europa.eu/"/>
+    
+<!-- Datasets -->
+    
+    <dcat:dataset rdf:resource="https://data.jrc.ec.europa.eu/dataset/1ba64b54-246f-4888-8824-080971c46145"/>
+    <dcat:dataset rdf:resource="https://data.jrc.ec.europa.eu/dataset/5a06cad1-6c12-4d17-b008-4b58956ec3d8"/>
+    <dcat:dataset rdf:resource="https://data.jrc.ec.europa.eu/dataset/b6722b2e-483b-4f2e-ab45-4eb518939134"/>
+    <dcat:dataset rdf:resource="https://data.jrc.ec.europa.eu/dataset/c2f4a78e-5d11-4048-afb9-ac3bd261e67e"/>
+    ...
+
+  </dcat:Catalog>

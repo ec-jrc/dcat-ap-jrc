@@ -1,0 +1,54 @@
+  <foaf:Document rdf:about="http://publications.jrc.ec.europa.eu/repository/handle/JRC107691">
+
+    <dct:title xml:lang="en">
+      The JRC Multidisciplinary Research Data Infrastructure
+    </dct:title>
+
+    <dct:creator rdf:resource="http://data.jrc.ec.europa.eu/contributor/anders.friis-christensen"/>
+    <dct:creator rdf:resource="http://data.jrc.ec.europa.eu/contributor/andrea.perego"/>
+    <dct:creator rdf:resource="http://data.jrc.ec.europa.eu/contributor/chrysi.tsinaraki"/>
+    <dct:creator rdf:resource="http://data.jrc.ec.europa.eu/contributor/lorenzino.vaccari"/>
+    <dc:creator>Friis-Christensen, A; Perego, A; Tsinaraki, C; Vaccari, L</dc:creator>
+
+    <dc:publisher>ACM</dc:publisher>
+
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">
+      2017
+    </dct:issued>
+
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">
+      http://publications.jrc.ec.europa.eu/repository/handle/JRC107691
+    </dct:identifier>
+
+    <owl:sameAs rdf:resource="https://doi.org/10.1145/3151759.3151810"/>
+    <adms:identifier>    
+      <adms:Identifier>    
+        <skos:notation>10.1145/3151759.3151810</skos:notation>
+        <adms:schemeAgency>DOI</adms:schemeAgency>
+        <dct:creator rdf:resource="https://doi.org/"/>
+      </adms:Identifier>    
+    </adms:identifier>    
+
+    <dct:abstract xml:lang="en">
+      This paper presents the approach adopted by the European Commission’s 
+      Joint Research Centre (JRC) in order to facilitate open access to its 
+      research data created as support for EU policies, which is also in line 
+      with the general Open Data trend. The paper presents various initiatives 
+      and incentives that are put in place at the JRC in order to progressively 
+      implement a multi-disciplinary research data infrastructure for the 
+      fulfilment of the corporate data policy goals. These include, among 
+      others, the JRC metadata schema that is developed with the aim to 
+      harmonise the way data are described, as well as the architecture of a 
+      data infrastructure designed to support the multidisciplinary nature 
+      of the JRC activities.
+    </dct:abstract>
+
+    <dct:bibliographicCitation>
+      Friis-Christensen, A., Perego, A., Tsinaraki, C. and Vaccari, L., 
+      The JRC Multidisciplinary Research Data Infrastructure, In: 
+      The 19th International Conference on Information Integration and 
+      Web-based Applications and Services, 2017, ISBN 978-1-4503-5229-4, 
+      p. 338-342, JRC107691, DOI:10.1145/3151759.3151810
+    </dct:bibliographicCitation>
+
+  </foaf:Document>

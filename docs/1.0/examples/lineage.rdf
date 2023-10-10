@@ -1,0 +1,20 @@
+  <dcat:Dataset rdf:about="http://data.europa.eu/89h/022cdeed-159f-407d-be18-0dface69ef92">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    ...
+
+    <dct:provenance>
+      <dct:ProvenanceStatement>
+        <rdfs:label xml:lang="en">
+          Fire events information is based on remote sensing input data. 
+          Burnt area and fire severity are estimated with different methods. 
+          1 - Burnt areas: fire monitoring in EFFIS integrates different 
+          methodologies, from near real-time (NRT) to final best estimates 
+          of burnt area. The NRT fire monitoring is based on the detection 
+          of active fires (areas of high density of thermal anomalies, 
+          using both VIIRS and MODIS information). ... 
+        </rdfs:label>
+      </dct:ProvenanceStatement>
+    </dct:provenance>
+
+    ...
+  </dcat:Dataset>

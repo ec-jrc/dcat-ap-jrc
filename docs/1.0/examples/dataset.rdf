@@ -1,0 +1,137 @@
+  <dcat:Dataset rdf:about="http://data.europa.eu/89h/jrc-ghsl-10008">
+
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">
+      http://data.europa.eu/89h/jrc-ghsl-10008
+    </dct:identifier>
+
+    <dct:title xml:lang="en">
+      GHS built-up grid, derived from Sentinel-1 (2016), R2018A
+    </dct:title>
+
+    <dct:description xml:lang="en">
+      Information layer on the presence of built-up surfaces derived from global 
+      Sentinel-1 Synthetic Aperture Radar (SAR) satellite data, collected during 
+      2016. The native spatial resolution of the data is 20 meters with a pixel 
+      spacing of 10 meters and dual polarisation acquisitions (VV and VH). The 
+      data was processed by fully automatic and reproducible methods based on 
+      statistical learning (Symbolic Machine Learning). No manual or ad-hoc 
+      rule-based editing of the results was applied in the post-processing. The 
+      product it is provided with a spatial resolution of 20 meters.
+    </dct:description>
+
+    <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/JRC"/>
+
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
+      2018-07-18
+    </dct:issued>
+
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TECH"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI"/>
+
+    <dcat:keyword xml:lang="en">Sentinel-1</dcat:keyword>
+    <dcat:keyword xml:lang="en">Copernicus</dcat:keyword>
+    <dcat:keyword xml:lang="en">global map</dcat:keyword>
+    <dcat:keyword xml:lang="en">GHSL</dcat:keyword>
+    <dcat:keyword xml:lang="en">urban</dcat:keyword>
+    <dcat:keyword xml:lang="en">big data</dcat:keyword>
+    <dcat:keyword xml:lang="en">earth observation</dcat:keyword>
+    <dcat:keyword xml:lang="en">built-up</dcat:keyword>
+
+    <dcat:landingPage rdf:resource="https://ghsl.jrc.ec.europa.eu/"/>
+
+    <dcat:contactPoint>
+      <vcard:Kind>
+       <vcard:hasEmail rdf:resource="mailto:jrc-ghsl-data@ec.europa.eu"/>
+      </vcard:Kind>
+    </dcat:contactPoint>
+
+<!-- Contributors -->
+
+    <dct:creator rdf:resource="http://data.jrc.ec.europa.eu/contributor/christina.corbane"/>
+    <dct:creator rdf:resource="http://data.jrc.ec.europa.eu/contributor/panagiotis.politis"/>
+    <dct:creator rdf:resource="http://data.jrc.ec.europa.eu/contributor/vasileios.syrris"/>
+    <dct:creator rdf:resource="http://data.jrc.ec.europa.eu/contributor/martino.pesaresi"/>
+    <dc:creator>
+      Corbane, Christina; Politis, Panagiotis; Syrris, Vasileios; Pesaresi, Martino 
+    </dc:creator>
+
+    <dct:bibliographicCitation>
+      Corbane, Christina; Politis, Panagiotis; Syrris, Vasileios; Pesaresi, Martino 
+      (2018): GHS built-up grid, derived from Sentinel-1 (2016), R2018A. European 
+      Commission, Joint Research Centre (JRC) [Dataset] doi:10.2905/jrc-ghsl-10008 
+      PID: http://data.europa.eu/89h/jrc-ghsl-10008 
+    </dct:bibliographicCitation>
+
+<!-- Alternative identifier -->
+
+    <owl:sameAs rdf:resource="https://doi.org/10.2905/jrc-ghsl-10008"/>
+    <adms:identifier>
+      <adms:Identifier>
+        <skos:notation>10.2905/jrc-ghsl-10008</skos:notation>
+        <adms:schemeAgency>DOI</adms:schemeAgency>
+        <dct:creator rdf:resource="https://doi.org/"/>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
+          2018-07-18
+        </dct:issued>
+      </adms:Identifier>
+    </adms:identifier>
+
+<!-- Temporal coverage -->
+
+    <dct:temporal>
+      <dct:PeriodOfTime>
+        <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
+          2015-12-01
+        </schema:startDate>
+        <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
+          2017-12-31
+        </schema:endDate>
+      </dct:PeriodOfTime>
+    </dct:temporal>
+
+<!-- Spatial coverage -->
+
+    <dct:spatial rdf:resource="https://unstats.un.org/unsd/methodology/m49/001"/>
+
+<!-- Distribution -->
+
+    <dcat:distribution>
+      <dcat:Distribution>
+       <dcterms:title xml:lang="en">GHS_BUILT_S12016NODSM_GLOBE_R2018A</dcterms:title>
+       <dcterms:description xml:lang="en">
+         The grid is provided as a VRT file (with GeoTIFF tiles), and with pyramids. 
+         Classification map depicting built-up presence: 0 = no built-up or no data; 
+         1 = built-up area. Spatial resolution: 20m; CRS: EPSG:3857 (Pseudo Mercator).
+       </dcterms:description>
+       <dct:accessRights rdf:resource="http://data.jrc.ec.europa.eu/access-rights/no-limitations"/>
+       <dct:license rdf:resource="http://publications.europa.eu/resource/authority/licence/COM_REUSE"/>
+       <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/TIFF"/>
+       <dct:type rdf:resource="http://publications.europa.eu/resource/authority/distribution-type/DOWNLOADABLE_FILE"/>
+       <dcat:accessURL rdf:resource="http://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S1NODSM_GLOBE_R2018A/GHS_BUILT_S1NODSM_GLOBE_R2018A_3857_20/"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+
+<!-- Dataset-related publications -->
+
+    <dct:isReferencedBy rdf:resource="https://doi.org/10.3390/rs8050399"/>
+    <dct:isReferencedBy rdf:resource="https://doi.org/10.1080/20964471.2017.1397899"/>
+
+<!-- The catalogue where the record is documented -->
+
+    <dct:isPartOf>
+      <dcat:Catalog rdf:about="https://data.jrc.ec.europa.eu/"/>
+    </dct:isPartOf>
+
+<!-- The data policy (in this case, the JRC Data Policy) determining 
+     the motivation and criteria for the publication of the dataset, 
+     its use and access conditions, etc. -->
+
+    <dct:conformsTo>
+      <dct:Policy rdf:about="https://doi.org/10.2788/607378"/>
+    </dct:conformsTo>
+
+  </dcat:Dataset>
