@@ -24,7 +24,7 @@ var respecConfig = {
 //    copyrightHolder: "European Union",
 //    copyrightURL: "https://europa.eu/",
     copyrightStart: 2014,
-    publishDate: "2019-07-03",
+//    publishDate: "2019-07-03",
 /*
     alternateFormats: [{
       label: "PDF",
@@ -41,7 +41,7 @@ var respecConfig = {
 //    prevRecURI:           "",
 //    previousPublishDate:  "2016-08-02",
 //    previousMaturity:     "final",
-//    previousURI:          "",
+    previousURI:   "https://ec-jrc.github.io/dcat-ap-jrc/1.0/",
     latestVersion: "https://ec-jrc.github.io/dcat-ap-jrc/",
     edDraftURI:    "https://ec-jrc.github.io/dcat-ap-jrc/",
     issueBase:     "https://github.com/ec-jrc/dcat-ap-jrc/issues/",
@@ -49,17 +49,21 @@ var respecConfig = {
 //    overrideCopyright: '<p class="copyright"><a href="https://europa.eu/european-union/abouteuropa/legal_notices_en#copyright_notice">Copyright</a> © 2014-2019 <a href="https://europa.eu/">European Union</a>. This document is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" class="subfoot">Creative Commons Attribution 4.0 License</a>.</p>',
     editors: [
     {
-      name:       "Andrea Perego",
+      name:       "Hagar Lowenthal",
       company:    "European Commission, Joint Research Centre",
-      orcid:      "0000-0001-9300-2694",
       companyURL: "https://ec.europa.eu/jrc/"
+    },
+    {
+      name:       "Andrea Perego",
+      company:    "European Parliament",
+      orcid:      "0000-0001-9300-2694",
+      companyURL: "https://europarl.europa.eu/"
     }
     ],
     authors: [
     {
-      name:       "Andrea Perego",
+      name:       "Hagar Lowenthal",
       company:    "European Commission, Joint Research Centre",
-      orcid: "0000-0001-9300-2694",
       companyURL: "https://ec.europa.eu/jrc/"
     },
     {
@@ -67,6 +71,13 @@ var respecConfig = {
       company:    "European Commission, Joint Research Centre",
       companyURL: "https://ec.europa.eu/jrc/"
     },
+    {
+      name:       "Andrea Perego",
+      company:    "European Parliament",
+      orcid:      "0000-0001-9300-2694",
+      companyURL: "https://europarl.europa.eu/"
+    },
+/*
     {
       name:       "Lorenzino Vaccari",
       company:    "European Commission, Joint Research Centre",
@@ -77,6 +88,7 @@ var respecConfig = {
       company:    "European Commission, Joint Research Centre",
       companyURL: "https://ec.europa.eu/jrc/"
     }
+*/
     ],    
 //    otherLinks: [{
 //      key: "Contributors",
@@ -124,6 +136,14 @@ var respecConfig = {
         "title":"DataCite Dublin Core Application Profile (DC2AP). Version 1.8",
         "authors":["DataCite Metadata Working Group"],
         "date":"3 February 2016"
+      },
+      "DCAT-AP-JRC-1": {
+        "href": "https://ec-jrc.github.io/datacite-to-dcat-ap/1.0/",
+        "title": "DCAT-AP-JRC - Version 1",
+        "authors": ["Andrea Perego","Timothy Austin"],
+        "status": "Working Draft",
+        "publisher":"European Commission, Joint Research Centre (JRC)",
+        "date": "2019"
       },
       "DCAT-AP-SDO": {
         "href": "https://ec-jrc.github.io/dcat-ap-to-schema-org/",
@@ -272,13 +292,33 @@ var respecConfig = {
         "date": "2004",
         "isoNumber": "ISO 8061:2004"
       },
-      "JRC-DP": {
+      "JRC-DP-2015": {
         "href": "https://doi.org/10.2788/607378",
         "title": "JRC Data Policy",
         "authors": ["Catherine Doldirina"],
         "etAl": true,
         "publisher":"Publications Office of the European Union",
         "date": "2015"
+      },
+      "JRC-DP-2019": {
+        "href": "https://doi.org/10.2760/637912",
+        "title": "JRC Data Policy",
+        "authors": [
+          "Anders-Friis Christensen",
+          "Jean-Paul Triaille"
+        ],
+        "publisher":"Publications Office of the European Union",
+        "date": "2019"
+      },
+      "JRC-DP": {
+        "href": "https://doi.org/10.2760/637912",
+        "title": "JRC Data Policy",
+        "authors": [
+          "Anders-Friis Christensen",
+          "Jean-Paul Triaille"
+        ],
+        "publisher":"Publications Office of the European Union",
+        "date": "2019"
       },
       "KML": {
         "href": "http://www.opengeospatial.org/standards/kml",
@@ -434,6 +474,16 @@ var respecConfig = {
         "href":"https://unstats.un.org/unsd/methodology/m49/",
         "title":"Methodology - Standard country or area codes for statistical use (M49)",
         "publisher":"United Nations Statistics Division"
-       }
+       },
+      "HYDRA": {
+        authors: [
+          "Markus Lanthaler"
+        ],
+        href:"https://www.hydra-cg.com/spec/latest/core/",
+        title:"Hydra Core Vocabulary",
+        date:"15 March 2018",
+        publisher:"Hydra W3C Community Group",
+        status:"Unofficial Draft"
+      },
     }
   };
