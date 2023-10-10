@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-<title>DCAT-AP-JRC</title>
+<title>DCAT-AP-JRC - Version 2</title>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -45,7 +45,7 @@ table code, table pre {
 <header>
 </header>
 -->
-<p class="copyright"><a href="https://europa.eu/european-union/abouteuropa/legal_notices_en#copyright_notice">Copyright</a> © 2014-2019 <a href="https://europa.eu/">European Union</a>. This document is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" class="subfoot">Creative Commons Attribution 4.0 License</a>.</p>
+<p class="copyright"><a href="https://europa.eu/european-union/abouteuropa/legal_notices_en#copyright_notice">Copyright</a> © 2014-2023 <a href="https://europa.eu/">European Union</a>. This document is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" class="subfoot">Creative Commons Attribution 4.0 License</a>.</p>
 
 <aside id="disclaimer" class="disclaimer">
 The views expressed are purely those of the author and may not in any circumstances be regarded as stating an official position of the European Commission.
@@ -55,7 +55,7 @@ The views expressed are purely those of the author and may not in any circumstan
 <h2>Abstract</h2>
 <p>This document describes the profile of DCAT-AP developed by the European Commission's Joint Research Centre (<abbr title="Joint Research Centre">JRC</abbr>), and used in the JRC Data Catalogue for the documentation of multidisciplinary research data.</p>
 <aside class="ednote">
-<p>This specification is a living document meant to report work in progress concerning an activity, carried out at the <a href="https://ec.europa.eu/jrc/">Joint Research Centre of the European Commission</a> (JRC) (Units B.6 &amp; I.3), for documenting the multidisciplinary data produced and maintained by JRC.</p>
+<p>This specification is a living document meant to report work in progress concerning an activity, carried out at the <a href="https://ec.europa.eu/jrc/">Joint Research Centre of the European Commission</a> (JRC), for documenting the multidisciplinary data produced and maintained by JRC.</p>
 <p>The work documented here is the result of an ongoing activity. As such, it can be updated any time, and must be considered as reflecting the current status of the JRC profile of DCAT-AP (DCAT-AP-JRC).</p>
 <p>Comments and queries should be sent via <a href="https://github.com/ec-jrc/dcat-ap-jrc/issues/">the issue tracker of the dedicated GitHub repository</a>.</p>
 </aside>
@@ -109,6 +109,16 @@ The views expressed are purely those of the author and may not in any circumstan
 -->
 </ul>
 
+<section id="scope-of-the-revision" class="informative">
+
+<h2>Scope of the revision</h2>
+
+<p>This specification revises the first version of DCAT-AP-JRC [[DCAT-AP-JRC-1]] to align it with version 3 of DCAT-AP [[DCAT-AP-3]].</p>
+
+<p>In particular, the current version of DCAT-AP-JRC incorporates the notion of data service (<a href="#data-service"></a>).</p>
+
+</section>
+
 </section>
 
 <section id="background" class="informative">
@@ -117,7 +127,7 @@ The views expressed are purely those of the author and may not in any circumstan
 
 <p>The overall mission of the <a href="https://ec.europa.eu/jrc/">Joint Research Centre of the European Commission</a> (JRC) is to support EU policies with independent evidence throughout the whole policy life-cycle. The activities of the JRC span many different research areas, that address and ensure a healthy and safe environment, secure energy supplies, sustainable mobility and consumer health and safety. Thus, the JRC is a multidisciplinary research organisation and the diversity of its research activities poses challenges in the management of data, since different scientific disciplines have their own traditions, standards and best-practices on how to manage and disseminate research information.</p>
 <p>In order to provide a basis for better management of data, in 2014 the JRC developed a corporate data policy&nbsp;[[JRC-DP]], driven by the need of transparency in the policy development life-cycle, and to facilitate open access to research data, in line with the general Open Data trend.</p>
-<p>As part of the activities concerning the implementation of the JRC Data Policy, JRC has set up a <a href="http://data.jrc.ec.europa.eu/">corporate data catalogue</a>, which is meant to be a single point of access to data produced and/or maintained by JRC. In this context, metadata play a fundamental role, and are meant to address a number of requirements, which include (a) ensuring data documentation and inventory, (b) enabling data discovery and (c) publishing metadata on other catalogues operated by EU institutions and bodies - in particular, the <a href="http://data.europa.eu/euodp/">EU Open Data Portal</a>.</p>
+<p>As part of the activities concerning the implementation of the JRC Data Policy, JRC has set up a <a href="http://data.jrc.ec.europa.eu/">corporate data catalogue</a>, which is meant to be a single point of access to data produced and/or maintained by JRC. In this context, metadata play a fundamental role, and are meant to address a number of requirements, which include (a) ensuring data documentation and inventory, (b) enabling data discovery and (c) publishing metadata on other catalogues operated by EU institutions and bodies - in particular, the <a href="https://data.europa.eu/">European Data Portal</a>.</p>
 
 <p>For more details about the JRC Data Policy and its implementation, we refer the reader to [[iiWAS17-JRC]].</p>
 
@@ -125,7 +135,7 @@ The views expressed are purely those of the author and may not in any circumstan
 
 <p>The reference metadata standard used is the <em>DCAT application profile for European data portals</em> (DCAT-AP)&nbsp;[[DCAT-AP]], and the related domain-specific extensions - namely, [[GeoDCAT-AP]] (for geospatial metadata) and [[StatDCAT-AP]] (for statistical metadata).</p>
 
-<p>[[DCAT-AP]] is a metadata profile developed in the framework of the EU Programme <a href="http://ec.europa.eu/isa/"><em>Interoperability Solutions for European Public Administrations</em></a> (ISA), and based on and compliant with the W3C Data Catalog vocabulary (DCAT) [[VOCAB-DCAT]] - currently, one of the most widely used Semantic Web vocabularies for describing datasets and data catalogues.</p>
+<p>[[DCAT-AP]] is a metadata profile developed in the framework of the EU Programme <em>Interoperability Solutions for European Public Administrations</em> (now, <a href="https://joinup.ec.europa.eu/">Interoperable Europe</a>), and based on and compliant with the W3C Data Catalog vocabulary (DCAT) [[VOCAB-DCAT]] - currently, one of the most widely used Semantic Web vocabularies for describing datasets and data catalogues.</p>
 <p>The purpose of [[DCAT-AP]] is to define a common interchange metadata format for data portals of the EU and of EU Member States. In order to achieve this, [[DCAT-AP]] defines a set of classes and properties, grouped into mandatory, recommended and optional. Such classes and properties correspond to information on datasets and data catalogues that are shared by many European data portals, aiding interoperability.</p>
 
 <p>The motivation for using [[DCAT-AP]] as the reference metadata schema is manifold:</p>
@@ -154,8 +164,8 @@ The views expressed are purely those of the author and may not in any circumstan
 <p>The reference metadata specifications on which DCAT-AP-JRC is based are the following ones:</p>
 
 <ul>
-<li>DCAT-AP 1.2.1 (May 2019) [[DCAT-AP-20190528]]</li>
-<li>GeoDCAT-AP 1.0.1 (August 2016) [[GeoDCAT-AP-20160802]]</li>
+<li>DCAT-AP 2.0.1 (June 2020) [[DCAT-AP-20200608]]</li>
+<li>GeoDCAT-AP 2.0.0 (December 2020) [[GeoDCAT-AP-20201223]]</li>
 <li>StatDCAT-AP 1.0.1 (May 2019) [[StatDCAT-AP-20190528]]</li>
 </ul>
 
@@ -5530,6 +5540,18 @@ author = family-name , ", " , given-name
 <td>[[DCAT-AP]]</td>
 </tr>
 <tr>
+<td><a href="#distribution-access-service">access service</a></td>
+<td><strong>C</strong></td>
+<td>1</td>
+<td><a data-cite="VOCAB-DCAT#Property:distribution_access_service"><code title="http://www.w3.org/ns/dcat#accessService">dcat:accessService</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Property:distribution_access_service"><code title="http://www.w3.org/ns/dcat#DataService">dcat:DataService</code></a></td>
+<!--
+<td></td>
+-->
+<td><a class="scope" href="#metadata-scope">All</a></td>
+<td>[[DCAT-AP]]</td>
+</tr>
+<tr>
 <td><a href="#distribution-description">description</a></td>
 <td><em>R</em></td>
 <td>1*</td>
@@ -5674,7 +5696,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Scope</th>
-<td><a class="scope" href="#metadata-scope">Data Documentation</a></td>
+<td><a class="scope" href="#metadata-scope">All</a></td>
 </tr>
 <tr>
 <th>Specification</th>
@@ -5989,6 +6011,57 @@ author = family-name , ", " , given-name
 
 </section>
 
+<section id="distribution-access-service">
+
+<h2>Property: access service</h2>
+
+<table class="def">
+<tbody>
+<tr>
+<th>Label</th>
+<td>access service</td>
+</tr>
+<tr>
+<th>Obligation</th>
+<td><strong>Conditional</strong></td>
+</tr>
+<tr>
+<th>Max card.</th>
+<td>1</td>
+</tr>
+<tr>
+<th>RDF Property</th>
+<td><a data-cite="VOCAB-DCAT#Property:distribution_access_service"><code title="http://www.w3.org/ns/dcat#accessService">dcat:accessService</code></a></td>
+</tr>
+<tr>
+<th>Range</th>
+<td><a data-cite="VOCAB-DCAT#Class:Data_Service"><code title="http://www.w3.org/ns/dcat#DataService">dcat:DataService</code></a> (<a href="#data-service"></a>)</td>
+</tr>
+<tr>
+<th>Definition</th>
+<td>A data service that gives access to the distribution of the dataset. [[VOCAB-DCAT-3]]</td>
+</tr>
+<tr>
+<th>Usage note</th>
+<td><code>dcat:accessService</code> SHOULD be used to link to a description of a <a href="#data-service"><code>dcat:DataService</code></a> that can provide access to this distribution. [[VOCAB-DCAT-3]]</td>
+</tr>
+<tr>
+<th>Scope</th>
+<td><a class="scope" href="#metadata-scope">All</a></td>
+</tr>
+<tr>
+<th>Specification</th>
+<td>[[DCAT-AP]]</td>
+</tr>
+<tr>
+<th>Requirement</th>
+<td><a class="no-sectionRef" href="#req-distribution-types-and-functions"></a></td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
 <section id="distribution-description">
 
 <h2>Property: description</h2>
@@ -6026,6 +6099,750 @@ author = family-name , ", " , given-name
 <tr>
 <th>Specification</th>
 <td>[[DCAT-AP]]</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+</section>
+
+<section id="data-service">
+
+<h2>Class: Data service</h2>
+
+<table class="def">
+<tbody>
+<tr>
+<th>Label</th>
+<td>Data service</td>
+</tr>
+<tr>
+<th>Obligation</th>
+<td><em>Recommended</em></td>
+</tr>
+<tr>
+<th>RDF Class</th>
+<td><a data-cite="VOCAB-DCAT##Class:Data_Service"><code title="http://www.w3.org/ns/dcat#DataService">dcat:DataService</code></a></td>
+</tr>
+<tr>
+<th>Definition</th>
+<td>A collection of operations that provides access to one or more datasets or data processing functions.</td>
+</tr>
+<!--
+<tr>
+<th>Usage note</th>
+<td>.</td>
+</tr>
+-->
+<tr>
+<th>Scope</th>
+<td><a class="scope" href="#metadata-scope">Data Documentation</a></td>
+</tr>
+<tr>
+<th>Specification</th>
+<td>[[DCAT-AP]]</td>
+</tr>
+<tr>
+<th>Requirement</th>
+<td><a class="no-sectionRef" href="#req-distribution-types-and-functions"></a></td>
+</tr>
+</tbody>
+</table>
+
+<p>The following table lists the properties used for describing a data service.</p>
+
+<table class="simple">
+<thead>
+<tr>
+<th>Label</th>
+<th>Obl.</th>
+<th>MC</th>
+<th>RDF Property</th>
+<th>Range</th>
+<!--
+<th>Code list</th>
+-->
+<th>Scope</th>
+<th>Spec.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#data-service-title">title</a></td>
+<td><strong>M</strong></td>
+<td>1*</td>
+<td><a data-cite="DCTERMS#terms-title"><code title="http://purl.org/dc/terms/title">dct:title</code></a></td>
+<td><a data-cite="RDF-SCHEMA#ch_literal"><code title="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</code></a></td>
+<!--
+<td></td>
+-->
+<td><a class="scope" href="#metadata-scope">All</a></td>
+<td>[[DCAT-AP]]</td>
+</tr>
+<tr>
+<td><a href="#data-service-endpoint-url">endpoint URL</a></td>
+<td><strong>M</strong></td>
+<td>1</td>
+<td><a data-cite="VOCAB-DCAT#Property:Property:data_service_endpoint_url"><code title="http://www.w3.org/ns/dcat#endpointURL">dcat:endpointURL</code></a></td>
+<td><a data-cite="OWL-SEMANTICS#owl_Thing_syntax"><code title="http://www.w3.org/2002/07/owl#Thing">owl:Thing</code></a></td>
+<!--
+<td></td>
+-->
+<td><a class="scope" href="#metadata-scope">All</a></td>
+<td>[[DCAT-AP]]</td>
+</tr>
+<tr>
+<td><a href="#data-service-licence">licence</a></td>
+<td><strong>C</strong></td>
+<td>1</td>
+<td><a data-cite="DCTERMS#terms-licence"><code title="http://purl.org/dc/terms/license">dct:license</code></a></td>
+<td><a data-cite="DCTERMS#terms-LicenseDocument"><code title="http://purl.org/dc/terms/LicenseDocument">dct:LicenseDocument</code></a></td>
+<!--
+<td>[[MDR-LICENCES]]</td>
+-->
+<td><a class="scope" href="#metadata-scope">All</a></td>
+<td>[[DCAT-AP]]</td>
+</tr>
+<tr>
+<td><a href="#data-service-access-restrictions">access restrictions</a></td>
+<td><strong>C</strong></td>
+<td>1</td>
+<td><a data-cite="DCTERMS#terms-accessRights"><code title="http://purl.org/dc/terms/accessRights">dct:accessRights</code></a></td>
+<td><a data-cite="DCTERMS#terms-RightsStatement"><code title="http://purl.org/dc/terms/RightsStatement">dct:RightsStatement</code></a></td>
+<!--
+<td>See <a class="no-sectionRef" href="#registers-access-restrictions"></a></td>
+-->
+<td><a class="scope" href="#metadata-scope">All</a></td>
+<td>[[DCAT-AP]]</td>
+</tr>
+<!--
+<tr>
+<td><a href="#data-service-format">format</a></td>
+<td><strong>M</strong></td>
+<td>1</td>
+<td><a data-cite="DCTERMS#terms-format"><code title="http://purl.org/dc/terms/format">dct:format</code></a></td>
+<td><a data-cite="DCTERMS#terms-MediaTypeOrExtent"><code title="http://purl.org/dc/terms/MediaTypeOrExtent">dct:MediaTypeOrExtent</code></a></td>
+-->
+<!--
+<td>[[MDR-FT]]</td>
+-->
+<!--
+<td><a class="scope" href="#metadata-scope">All</a></td>
+<td>[[DCAT-AP]]</td>
+</tr>
+-->
+<!--
+<tr>
+<td><a href="#data-service-type">type</a></td>
+<td><strong>C</strong></td>
+<td>1</td>
+<td><a data-cite="DCTERMS#terms-type"><code title="http://purl.org/dc/terms/type">dct:type</code></a></td>
+<td><a data-cite="SKOS-REFERENCE#concepts"><code title="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</code></a></td>
+-->
+<!--
+<td>[[MDR-DT]]</td>
+-->
+<!--
+<td><a class="scope" href="#metadata-scope">All</a></td>
+<td>[[StatDCAT-AP]]</td>
+</tr>
+-->
+<tr>
+<td><a href="#data-service-function">function</a></td>
+<td><strong>C</strong></td>
+<td>1</td>
+<td><a data-cite="DCTERMS#terms-type"><code title="http://purl.org/dc/terms/type">dct:type</code></a></td>
+<td><a data-cite="SKOS-REFERENCE#concepts"><code title="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</code></a></td>
+<!--
+<td>[[MDR-DT]]</td>
+-->
+<td><a class="scope" href="#metadata-scope">All</a></td>
+<td>DCAT-AP-JRC</td>
+</tr>
+<tr>
+<td><a href="#data-service-conforms-to">conforms to</a></td>
+<td><strong>C</strong></td>
+<td>1</td>
+<td><a data-cite="DCTERMS#terms-conformsTo"><code title="http://purl.org/dc/terms/conformsTo">dct:conformsTo</code></a></td>
+<td><a data-cite="DCTERMS#terms-Standard"><code title="http://purl.org/dc/terms/Standard">dct:Standard</code></a></td>
+<!--
+<td></td>
+-->
+<td><a class="scope" href="#metadata-scope">All</a></td>
+<td>[[DCAT-AP]]</td>
+</tr>
+<tr>
+<td><a href="#data-service-endpoint-description">endpoint description</a></td>
+<td><strong>C</strong></td>
+<td>1</td>
+<td><a data-cite="VOCAB-DCAT#Property:data_service_endpoint_description"><code title="http://www.w3.org/ns/dcat#endpointDescription">dcat:endpointDescription</code></a></td>
+<td><a data-cite="OWL-SEMANTICS#owl_Thing_syntax"><code title="http://www.w3.org/2002/07/owl#Thing">owl:Thing</code></a></td>
+<!--
+<td></td>
+-->
+<td><a class="scope" href="#metadata-scope">All</a></td>
+<td>[[DCAT-AP]]</td>
+</tr>
+<tr>
+<td><a href="#data-service-description">description</a></td>
+<td><em>R</em></td>
+<td>1*</td>
+<td><a data-cite="DCTERMS#terms-description"><code title="http://purl.org/dc/terms/description">dct:description</code></a></td>
+<td><a data-cite="RDF-SCHEMA#ch_literal"><code title="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</code></a></td>
+<!--
+<td></td>
+-->
+<td><a class="scope" href="#metadata-scope">All</a></td>
+<td>[[DCAT-AP]]</td>
+</tr>
+<tr>
+<td><a href="#data-service-serves-dataset">serves dataset</a></td>
+<td><em>R</em></td>
+<td>1*</td>
+<td><a data-cite="VOCAB-DCAT#Property:data_service_serves_dataset"><code title="http://www.w3.org/ns/dcat#servesDataset">dcat:servesDataset</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a></td>
+<!--
+<td></td>
+-->
+<td><a class="scope" href="#metadata-scope">All</a></td>
+<td>[[DCAT-AP]]</td>
+</tr>
+</tbody>
+</table>
+
+<aside class="example" id="ex-data-service" title="Data service">
+<pre data-include-format="text" data-include="./examples/data-service.rdf"></pre>
+</aside>
+
+<section id="data-service-title">
+
+<h2>Property: title</h2>
+
+<table class="def">
+<tbody>
+<tr>
+<th>Label</th>
+<td>title</td>
+</tr>
+<tr>
+<th>Obligation</th>
+<td><strong>Mandatory</strong></td>
+</tr>
+<tr>
+<th>Max card.</th>
+<td>1*</td>
+</tr>
+<tr>
+<th>RDF Property</th>
+<td><a data-cite="DCTERMS#terms-title"><code title="http://purl.org/dc/terms/title">dct:title</code></a></td>
+</tr>
+<tr>
+<th>Range</th>
+<td><a data-cite="RDF-SCHEMA#ch_literal"><code title="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</code></a></td>
+</tr>
+<tr>
+<th>Definition</th>
+<td>The data service title.</td>
+</tr>
+<tr>
+<th>Scope</th>
+<td><a class="scope" href="#metadata-scope">All</a></td>
+</tr>
+<tr>
+<th>Specification</th>
+<td>[[DCAT-AP]]</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+<section id="data-service-endpoint-url">
+
+<h2>Property: endpoint URL</h2>
+
+<table class="def">
+<tbody>
+<tr>
+<th>Label</th>
+<td>access URL</td>
+</tr>
+<tr>
+<th>Obligation</th>
+<td><strong>Conditional</strong></td>
+</tr>
+<tr>
+<th>Max card.</th>
+<td>1</td>
+</tr>
+<tr>
+<th>RDF Property</th>
+<td><a data-cite="VOCAB-DCAT#Property:data_service_endpoint_url"><code title="http://www.w3.org/ns/dcat#endpointURL">dcat:endpointURL</code></a></td>
+</tr>
+<tr>
+<th>Range</th>
+<td><a data-cite="OWL-SEMANTICS#owl_Thing_syntax"><code title="http://www.w3.org/2002/07/owl#Thing">owl:Thing</code></a></td>
+</tr>
+<tr>
+<th>Definition</th>
+<td>The root location or primary endpoint of the service (a Web-resolvable IRI). [[VOCAB-DCAT-3]]</td>
+</tr>
+<!--
+<tr>
+<th>Usage note</th>
+<td>
+<p>This property MUST be used, unless the <a class="no-sectionRef" href="#distribution-download-url">download URL</a> is specified.</p>
+<p>Typically, the object of this property is specified only with its URI.</p>
+</td>
+</tr>
+-->
+<tr>
+<th>Scope</th>
+<td><a class="scope" href="#metadata-scope">All</a></td>
+</tr>
+<tr>
+<th>Specification</th>
+<td>[[DCAT-AP]]</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+<section id="data-service-licence">
+
+<h2>Property: licence</h2>
+
+<table class="def">
+<tbody>
+<tr>
+<th>Label</th>
+<td>licence</td>
+</tr>
+<tr>
+<th>Obligation</th>
+<td><strong>Conditional</strong></td>
+</tr>
+<tr>
+<th>Max card.</th>
+<td>1</td>
+</tr>
+<tr>
+<th>RDF Property</th>
+<td><a data-cite="DCTERMS#terms-licence"><code title="http://purl.org/dc/terms/license">dct:license</code></a></td>
+</tr>
+<tr>
+<th>Range</th>
+<td><a data-cite="DCTERMS#terms-LicenseDocument"><code title="http://purl.org/dc/terms/LicenseDocument">dct:LicenseDocument</code></a></td>
+</tr>
+<tr>
+<th>Definition</th>
+<td>The data service licence.</td>
+</tr>
+<tr>
+<th>Usage note</th>
+<td>This property MUST take as value one of the licences defined in [[MDR-LICENCES]]</td>
+</tr>
+<tr>
+<th>Scope</th>
+<td><a class="scope" href="#metadata-scope">All</a></td>
+</tr>
+<tr>
+<th>Specification</th>
+<td>[[DCAT-AP]]</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+<section id="data-service-access-restrictions">
+
+<h2>Property: access restrictions</h2>
+
+<table class="def">
+<tbody>
+<tr>
+<th>Label</th>
+<td>access restrictions</td>
+</tr>
+<tr>
+<th>Obligation</th>
+<td><strong>Conditional</strong></td>
+</tr>
+<tr>
+<th>Max card.</th>
+<td>1</td>
+</tr>
+<tr>
+<th>RDF Property</th>
+<td><a data-cite="DCTERMS#terms-accessRights"><code title="http://purl.org/dc/terms/accessRights">dct:accessRights</code></a></td>
+</tr>
+<tr>
+<th>Range</th>
+<td><a data-cite="DCTERMS#terms-RightsStatement"><code title="http://purl.org/dc/terms/RightsStatement">dct:RightsStatement</code></a></td>
+</tr>
+<tr>
+<th>Definition</th>
+<td>The data service access restrictions.</td>
+</tr>
+<tr>
+<th>Usage note</th>
+<td>This property SHOULD take as value one of the access restriction codes defined in the register illustrated in <a class="no-sectionRef" href="#registers-access-restrictions"></a></td>
+</tr>
+<tr>
+<th>Scope</th>
+<td><a class="scope" href="#metadata-scope">All</a></td>
+</tr>
+<tr>
+<th>Specification</th>
+<td>[[DCAT-AP]]</td>
+</tr>
+<tr>
+<th>Requirement</th>
+<td><a class="no-sectionRef" href="#req-distribution-access-restrictions"></a></td>
+</tr>
+</tbody>
+</table>
+
+</section>
+<!--
+<section id="data-service-format">
+
+<h2>Property: format</h2>
+
+<table class="def">
+<tbody>
+<tr>
+<th>Label</th>
+<td>format</td>
+</tr>
+<tr>
+<th>Obligation</th>
+<td><strong>Mandatory</strong></td>
+</tr>
+<tr>
+<th>Max card.</th>
+<td>1</td>
+</tr>
+<tr>
+<th>RDF Property</th>
+<td><a data-cite="DCTERMS#terms-format"><code title="http://purl.org/dc/terms/format">dct:format</code></a></td>
+</tr>
+<tr>
+<th>Range</th>
+<td><a data-cite="DCTERMS#terms-MediaTypeOrExtent"><code title="http://purl.org/dc/terms/MediaTypeOrExtent">dct:MediaTypeOrExtent</code></a></td>
+</tr>
+<tr>
+<th>Definition</th>
+<td>The data service format.</td>
+</tr>
+<tr>
+<th>Usage note</th>
+<td>This property MUST take as value one of the file formats defined in [[MDR-FT]]</td>
+</tr>
+<tr>
+<th>Scope</th>
+<td><a class="scope" href="#metadata-scope">All</a></td>
+</tr>
+<tr>
+<th>Specification</th>
+<td>[[DCAT-AP]]</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+-->
+<!--
+<section id="data-service-type">
+
+<h2>Property: type</h2>
+
+<table class="def">
+<tbody>
+<tr>
+<th>Label</th>
+<td>type</td>
+</tr>
+<tr>
+<th>Obligation</th>
+<td><strong>Conditional</strong></td>
+</tr>
+<tr>
+<th>Max card.</th>
+<td>1</td>
+</tr>
+<tr>
+<th>RDF Property</th>
+<td><a data-cite="DCTERMS#terms-type"><code title="http://purl.org/dc/terms/type">dct:type</code></a></td>
+</tr>
+<tr>
+<th>Range</th>
+<td><a data-cite="SKOS-REFERENCE#concepts"><code title="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</code></a></td>
+</tr>
+<tr>
+<th>Definition</th>
+<td>The data service type, i.e., whether the distribution points to a file / download page, or instead to a service interface.</td>
+</tr>
+<tr>
+<th>Usage note</th>
+<td>This property MUST take as value one of the relevant distribution types defined in [[MDR-DT]].</td>
+</tr>
+<tr>
+<th>Scope</th>
+<td><a class="scope" href="#metadata-scope">All</a></td>
+</tr>
+<tr>
+<th>Specification</th>
+<td>[[StatDCAT-AP]]</td>
+</tr>
+<tr>
+<th>Requirement</th>
+<td><a class="no-sectionRef" href="#req-distribution-types-and-functions"></a></td>
+</tr>
+</tbody>
+</table>
+
+</section>
+-->
+<section id="data-service-function">
+
+<h2>Property: function</h2>
+
+<table class="def">
+<tbody>
+<tr>
+<th>Label</th>
+<td>function</td>
+</tr>
+<tr>
+<th>Obligation</th>
+<td><strong>Conditional</strong></td>
+</tr>
+<tr>
+<th>Max card.</th>
+<td>1</td>
+</tr>
+<tr>
+<th>RDF Property</th>
+<td><a data-cite="DCTERMS#terms-type"><code title="http://purl.org/dc/terms/type">dct:type</code></a></td>
+</tr>
+<tr>
+<th>Range</th>
+<td><a data-cite="SKOS-REFERENCE#concepts"><code title="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</code></a></td>
+</tr>
+<tr>
+<th>Definition</th>
+<td>The data service function, i.e., whether the data service gives access to the data, or instead provides a visualisation of it.</td>
+</tr>
+<tr>
+<th>Usage note</th>
+<td>This property is specified only if the data service provides a visualisation of the data. In such a case, it MUST take as value the relevant term in [[MDR-DT]]. If not specified, it is assumed that the data service has an "access" function.</td>
+</tr>
+<tr>
+<th>Scope</th>
+<td><a class="scope" href="#metadata-scope">All</a></td>
+</tr>
+<tr>
+<th>Specification</th>
+<td>DCAT-AP-JRC</td>
+</tr>
+<tr>
+<th>Requirement</th>
+<td><a class="no-sectionRef" href="#req-distribution-types-and-functions"></a></td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+<section id="data-service-conforms-to">
+
+<h2>Property: conforms to</h2>
+
+<table class="def">
+<tbody>
+<tr>
+<th>Label</th>
+<td>conforms to</td>
+</tr>
+<tr>
+<th>Obligation</th>
+<td><strong>Conditional</strong></td>
+</tr>
+<tr>
+<th>Max card.</th>
+<td>1</td>
+</tr>
+<tr>
+<th>RDF Property</th>
+<td><a data-cite="DCTERMS#terms-conformsTo"><code title="http://purl.org/dc/terms/conformsTo">dct:conformsTo</code></a></td>
+</tr>
+<tr>
+<th>Range</th>
+<td><a data-cite="DCTERMS#terms-Standard"><code title="http://purl.org/dc/terms/Standard">dct:Standard</code></a></td>
+</tr>
+<tr>
+<th>Definition</th>
+<td>A specification the data service conforms to.</td>
+</tr>
+<tr>
+<th>Usage note</th>
+<td>This property specifies the service / API protocol by using the URI identifying it (see <a class="no-sectionRef" href="#registers-service-protocols"></a>).</td>
+</tr>
+<tr>
+<th>Scope</th>
+<td><a class="scope" href="#metadata-scope">All</a></td>
+</tr>
+<tr>
+<th>Specification</th>
+<td>[[DCAT-AP]]</td>
+</tr>
+<tr>
+<th>Requirement</th>
+<td><a class="no-sectionRef" href="#req-distribution-types-and-functions"></a></td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+<section id="data-service-endpoint-description">
+
+<h2>Property: endpoint description</h2>
+
+<table class="def">
+<tbody>
+<tr>
+<th>Label</th>
+<td>endpoint description</td>
+</tr>
+<tr>
+<th>Obligation</th>
+<td><strong>Conditional</strong></td>
+</tr>
+<tr>
+<th>Max card.</th>
+<td>1</td>
+</tr>
+<tr>
+<th>RDF Property</th>
+<td><a data-cite="VOCAB-DCAT#Property:data_service_endpoint_description"><code title="http://www.w3.org/ns/dcat#endpointDescription">dcat:endpointDescription</code></a></td>
+</tr>
+<tr>
+<th>Range</th>
+<td><a data-cite="OWL-SEMANTICS#owl_Thing_syntax"><code title="http://www.w3.org/2002/07/owl#Thing">owl:Thing</code></a></td>
+</tr>
+<tr>
+<th>Definition</th>
+<td>A description of the services available via the end-points, including their operations, parameters etc. [[VOCAB-DCAT-3]]</td>
+</tr>
+<tr>
+<th>Usage note</th>
+<td>
+<p>The endpoint description gives specific details of the actual endpoint instances, while <a href="#data-service-conforms-to"><code>dcterms:conformsTo</code></a> is used to indicate the general standard or specification that the endpoints implement.</p>
+<p>An endpoint description may be expressed in a machine-readable form, such as an OpenAPI (Swagger) description [[?OpenAPI]], an OGC <code>GetCapabilities</code> response [[?WFS]], [[?ISO-19142]], [[?WMS]], [[?ISO-19128]], a SPARQL Service Description [[?SPARQL11-SERVICE-DESCRIPTION]], an [[?OpenSearch]] or [[?WSDL20]] document, a Hydra API description [[?HYDRA]], else in text or some other informal mode if a formal representation is not possible. [[VOCAB-DCAT-3]]</p>
+</td>
+</tr>
+<tr>
+<th>Scope</th>
+<td><a class="scope" href="#metadata-scope">All</a></td>
+</tr>
+<tr>
+<th>Specification</th>
+<td>[[DCAT-AP]]</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+<section id="data-service-description">
+
+<h2>Property: description</h2>
+
+<table class="def">
+<tbody>
+<tr>
+<th>Label</th>
+<td>description</td>
+</tr>
+<tr>
+<th>Obligation</th>
+<td><em>Recommended</em></td>
+</tr>
+<tr>
+<th>Max card.</th>
+<td>1</td>
+</tr>
+<tr>
+<th>RDF Property</th>
+<td><a data-cite="DCTERMS#terms-description"><code title="http://purl.org/dc/terms/description">dct:description</code></a></td>
+</tr>
+<tr>
+<th>Range</th>
+<td><a data-cite="RDF-SCHEMA#ch_literal"><code title="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</code></a></td>
+</tr>
+<tr>
+<th>Definition</th>
+<td>The data service description.</td>
+</tr>
+<tr>
+<th>Scope</th>
+<td><a class="scope" href="#metadata-scope">All</a></td>
+</tr>
+<tr>
+<th>Specification</th>
+<td>[[DCAT-AP]]</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+<section id="data-service-serves-dataset">
+
+<h2>Property: serves dataset</h2>
+
+<table class="def">
+<tbody>
+<tr>
+<th>Label</th>
+<td>serves dataset</td>
+</tr>
+<tr>
+<th>Obligation</th>
+<td><strong>Conditional</strong></td>
+</tr>
+<tr>
+<th>Max card.</th>
+<td>1</td>
+</tr>
+<tr>
+<th>RDF Property</th>
+<td><a data-cite="VOCAB-DCAT#Property:data_service_serves_dataset"><code title="http://www.w3.org/ns/dcat#servesDataset">dcat:servesDataset</code></a></td>
+</tr>
+<tr>
+<th>Range</th>
+<td><a data-cite="VOCAB-DCAT#Class:Dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a> (<a href="#dataset"></a>)</td>
+</tr>
+<tr>
+<th>Definition</th>
+<td>A collection of data that this data service can distribute. [[VOCAB-DCAT-3]]</td>
+</tr>
+<tr>
+<th>Scope</th>
+<td><a class="scope" href="#metadata-scope">All</a></td>
+</tr>
+<tr>
+<th>Specification</th>
+<td>[[DCAT-AP]]</td>
+</tr>
+<tr>
+<th>Requirement</th>
+<td><a class="no-sectionRef" href="#req-distribution-types-and-functions"></a></td>
 </tr>
 </tbody>
 </table>
@@ -12055,6 +12872,30 @@ code list has been created, based on the identifier schemes supported in [[?Data
 <!--
 </article>
 -->
+
+<section class="appendix" id="changes">
+
+<h2>Change history</h2>
+
+<p>A full change-log is available on <a href="https://github.com/ec-jrc/dcat-ap-jrc/commits/master/">GitHub</a>.</p>
+
+<section id="changes-since-version-1">
+
+<h2>Changes since version 1</h2>
+
+<p>The document has undergone the following changes since version 1 [[DCAT-AP-JRC-1]].</p>
+
+<ul>
+<li>Editorial revisions.</li>
+<li>Added section <a href="#scope-of-the-revision"></a>.</li>
+<li>Added class <code>dcat:DataService</code> and related properties (<a href="#data-service"></a>).</li>
+<li>Added property <code>dcat:accessService</code> to <code>dcat:Distribution</code> (<a href="#distribution-access-service"></a>).</li>
+<li>Revised class diagram in section <a href="#vocabulary-overview"></a> to include class <code>dcat:DataService</code>.</li>
+</ul>
+
+</section>
+
+</section>
 
 </body>
 </html>
