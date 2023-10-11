@@ -227,6 +227,12 @@ var respecConfig = {
         "href":"http://geonames.org/",
         "title":"Geonames"
        },
+      "HVD": {
+        "href":"http://data.europa.eu/eli/reg_impl/2023/138/oj",
+        "title":"Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use (Text with EEA relevance)",
+        "publisher":"OJ L 19",
+        "date":"21 December 2022"
+      },
       "iiWAS17-JRC": {
         "href": "https://doi.org/10.1145/3151759.3151810",
         "title": "The JRC multidisciplinary research data infrastructure",
