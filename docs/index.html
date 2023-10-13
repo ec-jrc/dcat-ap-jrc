@@ -81,31 +81,31 @@ The views expressed are purely those of the author and may not in any circumstan
 
 <p>This document describes DCAT-AP-JRC, the [[DCAT-AP]] extension developed by the <a href="https://ec.europa.eu/jrc/">European Commission's Joint Research Centre</a> (<abbr title="Joint Research Centre">JRC</abbr>), and used in the <a href="http://data.jrc.ec.europa.eu/">JRC Data Catalogue</a> for the documentation of multidisciplinary research data.</p>
 
-<p>The following sections first illustrate the background (<a class="no-sectionRef" href="#background"></a>) and the methodology (<a class="no-sectionRef" href="#methodology"></a>) for the design of DCAT-AP-JRC, and then describe the underlying requirements (<a class="no-sectionRef" href="#requirements"></a>).</p>
+<p>The following sections first illustrate the background (<a href="#background"></a>) and the methodology (<a href="#methodology"></a>) for the design of DCAT-AP-JRC, and then describe the underlying requirements (<a href="#requirements"></a>).</p>
 
-<p>The DCAT-AP-JRC vocabulary specification is introduced by the list of used vocabularies (<a class="no-sectionRef" href="#namespaces"></a>), a conformance statement (<a class="no-sectionRef" href="#conformance"></a>), and a high-level overview by the main entities represented in DCAT-AP-JRC (<a class="no-sectionRef" href="#vocabulary-overview"></a>).</p>
+<p>The DCAT-AP-JRC vocabulary specification is introduced by the list of used vocabularies (<a href="#namespaces"></a>), a conformance statement (<a href="#conformance"></a>), and a high-level overview by the main entities represented in DCAT-AP-JRC (<a href="#vocabulary-overview"></a>).</p>
 
 <p>The actual definition of the classes and properties used in DCAT-AP-JRC is organised in the following sections:</p>
 
 <ul>
-<li><a class="no-sectionRef" href="#vocabulary-specification"></a>.</li>
-<li><a class="no-sectionRef" href="#classes"></a>.</li>
-<li><a class="no-sectionRef" href="#mandatory-classes"></a>.</li>
-<li><a class="no-sectionRef" href="#recommended-classes"></a>.</li>
-<li><a class="no-sectionRef" href="#optional-classes"></a>.</li>
-<li><a class="no-sectionRef" href="#secondary-classes"></a>.</li>
+<li><a href="#vocabulary-specification"></a>.</li>
+<li><a href="#classes"></a>.</li>
+<li><a href="#mandatory-classes"></a>.</li>
+<li><a href="#recommended-classes"></a>.</li>
+<li><a href="#optional-classes"></a>.</li>
+<li><a href="#secondary-classes"></a>.</li>
 </ul>
 
 
 <p>Finally, the document is complemented with the following appendices:</p>
 
 <ul>
-<li><a class="no-sectionRef" href="#ref-code-lists"></a>: It describes the code lists used in DCAT-AP-JRC.</li>
-<li><a class="no-sectionRef" href="#mapping-identifiers-to-uris"></a>: It illustrates how identifiers are mapped to <abbr title="Uniform Resource Identifiers">URIs</abbr> in DCAT-AP-JRC.</li>
-<li><a class="no-sectionRef" href="#schema-org-mapping"></a>: It illustrates the mapping rules used to generate [[?SCHEMA-ORG]] records from DCAT-AP-JRC metadata.</li>
-<li><a class="no-sectionRef" href="#dxwg-ucr"></a>: It lists the use cases and requirements contributed to the <a href="https://www.w3.org/2017/dxwg/charter">W3C Dataset Exchange Working Group</a>.</li>
+<li><a href="#ref-code-lists"></a>: It describes the code lists used in DCAT-AP-JRC.</li>
+<li><a href="#mapping-identifiers-to-uris"></a>: It illustrates how identifiers are mapped to <abbr title="Uniform Resource Identifiers">URIs</abbr> in DCAT-AP-JRC.</li>
+<li><a href="#schema-org-mapping"></a>: It illustrates the mapping rules used to generate [[?SCHEMA-ORG]] records from DCAT-AP-JRC metadata.</li>
+<li><a href="#dxwg-ucr"></a>: It lists the use cases and requirements contributed to the <a href="https://www.w3.org/2017/dxwg/charter">W3C Dataset Exchange Working Group</a>.</li>
 <!--
-<li><a class="no-sectionRef" href="#rdf-template"></a>: It includes an RDF/XML template for DCAT-AP-JRC metadata.</li>
+<li><a href="#rdf-template"></a>: It includes an RDF/XML template for DCAT-AP-JRC metadata.</li>
 -->
 </ul>
 
@@ -164,7 +164,7 @@ The views expressed are purely those of the author and may not in any circumstan
 <p>The reference metadata specifications on which DCAT-AP-JRC is based are the following ones:</p>
 
 <ul>
-<li>DCAT-AP 2.0.1 (June 2020) [[DCAT-AP-20200608]]</li>
+<li>DCAT-AP 3 (?? 2023) [[DCAT-AP-3]]</li>
 <li>GeoDCAT-AP 2.0.0 (December 2020) [[GeoDCAT-AP-20201223]]</li>
 <li>StatDCAT-AP 1.0.1 (May 2019) [[StatDCAT-AP-20190528]]</li>
 </ul>
@@ -186,7 +186,7 @@ The views expressed are purely those of the author and may not in any circumstan
 
 <h2>DCAT-AP-JRC extensions</h2>
 
-<p>As already mentioned in <a class="no-sectionRef" href="#background"></a>, DCAT-AP-JRC includes all the classes and properties common to all metadata, irrespective of their domain.</p>
+<p>As already mentioned in <a href="#background"></a>, DCAT-AP-JRC includes all the classes and properties common to all metadata, irrespective of their domain.</p>
 
 <p>Domain-specific metadata are nonetheless supported in DCAT-AP-JRC by integrating the corresponding [[DCAT-AP]] extensions. Currently, the supported extensions are the following ones:</p>
 
@@ -233,7 +233,7 @@ The views expressed are purely those of the author and may not in any circumstan
 <h2>Requirements</h2>
 
 <p>This section illustrates the requirements behind the development of DCAT-AP-JRC, and provides as well an outline of the proposed solutions.</p>
-<p>Part of these requirements has been described in [[SDSVoc16-27]], and afterwards contributed for further assessment to the the <a href="https://www.w3.org/2017/dxwg/charter">W3C Dataset Exchange Working Group</a> (<abbr title="W3C Dataset Exchange Working Group">DXWG</abbr>), in charge of the revision of [[VOCAB-DCAT]]. For the list of these requirements, and the corresponding DXWG use cases, see <a class="no-sectionRef" href="#dxwg-ucr"></a>.</p>
+<p>Part of these requirements has been described in [[SDSVoc16-27]], and afterwards contributed for further assessment to the the <a href="https://www.w3.org/2017/dxwg/charter">W3C Dataset Exchange Working Group</a> (<abbr title="W3C Dataset Exchange Working Group">DXWG</abbr>), in charge of the revision of [[VOCAB-DCAT]]. For the list of these requirements, and the corresponding DXWG use cases, see <a href="#dxwg-ucr"></a>.</p>
 
 <section id="requirements-scientific-data">
 
@@ -256,11 +256,11 @@ The views expressed are purely those of the author and may not in any circumstan
 <ul>
 <li>
 <p>[[DCAT-AP]] includes only two agent roles, namely, publisher and contact point, but not one for dataset authors. However, [[GeoDCAT-AP]] does include this role, which is specified by using property <code title="http://purl.org/dc/terms/creator">dct:creator</code>. DCAT-AP-JRC uses the same approach.</p>
-<p>For more details, see <a class="no-sectionRef" href="#dataset-contributor"></a>.</p>
+<p>For more details, see <a href="#dataset-contributor"></a>.</p>
 </li>
 <li>
 <p>[[DCAT-AP]] does not include specific properties for usage notes and publications about datasets, and they can only be specified by using the property <code title="http://purl.org/dc/terms/relation">dct:relation</code>, which is too generic to address the identified requirements. Consequently, new properties have been included in DCAT-AP-JRC for this purpose, namely, <code title="http://purl.org/vocab/vann/usageNote">vann:usageNote</code> (for usage notes) and <code title="http://purl.org/dc/terms/isReferencedBy">dct:isReferencedBy</code> (for publications).</p>
-<p>For more details, see <a class="no-sectionRef" href="#dataset-usage-notes"></a> and <a class="no-sectionRef" href="#dataset-publication"></a>, respectively.</p>
+<p>For more details, see <a href="#dataset-usage-notes"></a> and <a href="#dataset-publication"></a>, respectively.</p>
 </li>
 </ul>
 
@@ -285,17 +285,17 @@ For the other ones, our approach is as follows:</p>
 
 <p>Since DataCite is currently the <em>de facto</em> standard for data citation, we started by carrying out a preliminary study concerning the mapping of DataCite with DCAT-AP [[CiteDCAT-AP]].</p>
 
-<p>Based on this work, we recognised that what needs to be added in [[DCAT-AP]] for data citation purposes is basically only one "field" (already mentioned above), namely, "data authors" - which matches one of the requirements illustrated in <a class="no-sectionRef" href="#req-across-disciplines"></a>.</p>
+<p>Based on this work, we recognised that what needs to be added in [[DCAT-AP]] for data citation purposes is basically only one "field" (already mentioned above), namely, "data authors" - which matches one of the requirements illustrated in <a href="#req-across-disciplines"></a>.</p>
 <!--
 <p>Other issues concern mainly (a) identifiers (DOIs, ORCIDs, ISNIs, ISSNs, etc.) and (b) agent roles, which are elaborated in the following sections.</p>
 -->
 <p>In addition to this, data citation requirements have been taken into account to determine which resource properties are mandatory, as they are essential to create a bibliographic citation. More precisely, these properties are the following ones:</p>
 <ul>
-<li>Contributor / author (see <a class="no-sectionRef" href="#dataset-contributor"></a>).</li>
-<li>Title (see <a class="no-sectionRef" href="#dataset-title"></a>).</li>
-<li>Publisher (see <a class="no-sectionRef" href="#dataset-publisher"></a>).</li>
-<li>Publication date (see <a class="no-sectionRef" href="#dataset-publication-date"></a>).</li>
-<li>Identifiers for both the dataset (<a class="no-sectionRef" href="#dataset-identifier"></a> and <a class="no-sectionRef" href="#dataset-other-identifier"></a>) and the contributors (<a class="no-sectionRef" href="#agent-individual-other-identifier"></a>).</li>
+<li>Contributor / author (see <a href="#dataset-contributor"></a>).</li>
+<li>Title (see <a href="#dataset-title"></a>).</li>
+<li>Publisher (see <a href="#dataset-publisher"></a>).</li>
+<li>Publication date (see <a href="#dataset-publication-date"></a>).</li>
+<li>Identifiers for both the dataset (<a href="#dataset-identifier"></a> and <a href="#dataset-other-identifier"></a>) and the contributors (<a href="#agent-individual-other-identifier"></a>).</li>
 </ul>
 
 <p>Finally, the information above has been complemented with a specific field for the full biliographic citation, which is meant to indicate which is the preferred way to cite a resource.</p>
@@ -304,7 +304,7 @@ For the other ones, our approach is as follows:</p>
 <p>In the current version of DCAT-AP-JRC, the field specifying a bibliographic citation is supported only for datasets and publications.</p>
 </aside>
 
-<p>For more details, see <a class="no-sectionRef" href="#dataset-bibliographic-citation"></a> (for datasets) and <a class="no-sectionRef" href="#publication-bibliographic-citation"></a> (for publications).</p>
+<p>For more details, see <a href="#dataset-bibliographic-citation"></a> (for datasets) and <a href="#publication-bibliographic-citation"></a> (for publications).</p>
 
 </section>
 
@@ -325,8 +325,8 @@ For the other ones, our approach is as follows:</p>
 <p>For more details on this approach, see:</p>
 
 <ul>
-<li>for datasets, <a class="no-sectionRef" href="#dataset-contributor"></a> and <a class="no-sectionRef" href="#dataset-contributor-as-literal"></a></li>
-<li>for publications, <a class="no-sectionRef" href="#publication-author"></a> and <a class="no-sectionRef" href="#publication-author-as-literal"></a></li>
+<li>for datasets, <a href="#dataset-contributor"></a> and <a href="#dataset-contributor-as-literal"></a></li>
+<li>for publications, <a href="#publication-author"></a> and <a href="#publication-author-as-literal"></a></li>
 </ul>
 
 </section>
@@ -346,7 +346,7 @@ For the other ones, our approach is as follows:</p>
 <p>The data published on the JRC Data Catalogue are maintained by different teams, and are the output of different projects. As a result, different people are in charge of documenting only a given subset of the published data.</p>
 <p>In order to cope with this situation, DCAT-AP-JRC includes the notion of "dataset collection" ("collection", for short), which includes the datasets whose maintenance and documentation are in charge of a specific team. Moreover, a team can be in charge of multiple collections, in case the related datasets are the output of different projects, or belong to different thematic areas, etc.</p>
 <p>The possibility of grouping the datasets of a catalogue into subsets is already supported in [[DCAT-AP]], via the notion of "sub-catalogue". Therefore, DCAT-AP-JRC follows the same approach for modelling collections.</p>
-<p>For more details, see <a class="no-sectionRef" href="#collection"></a>.</p>
+<p>For more details, see <a href="#collection"></a>.</p>
 
 </section>
 
@@ -360,7 +360,7 @@ For the other ones, our approach is as follows:</p>
 
 <p>To model endpoints as services, DCAT-AP-JRC follows the approach defined in [[GeoDCAT-AP]].</p>
 
-<p>For more details, see <a class="no-sectionRef" href="#endpoint"></a>.</p>
+<p>For more details, see <a href="#endpoint"></a>.</p>
 
 </section>
 
@@ -370,7 +370,7 @@ For the other ones, our approach is as follows:</p>
 
 <p>When metadata records are harvested across catalogues, one of the important pieces of information is the original catalogue from which a record has been harvested. [[DCAT-AP]] and [[VOCAB-DCAT]] include a relationship, namely, <code>dcat:dataset</code>, to link a catalogue to the documented datasets, but this information will be lost when a dataset record is harvested in another catalogue. In order to address this issue, DCAT-AP-JRC makes use of property <code>dct:isPartOf</code> as the inverse property of <code>dcat:dataset</code>. Notably, <code>dct:isPartOf</code> is the inverse property of <code>dct:hasPart</code>, which is in turn the super-property of <code>dcat:dataset</code>.</p> 
 
-<p>For more details, see <a class="no-sectionRef" href="#catalogue-dataset"></a> and <a class="no-sectionRef" href="#dataset-catalogue"></a>.</p>
+<p>For more details, see <a href="#catalogue-dataset"></a> and <a href="#dataset-catalogue"></a>.</p>
 
 </section>
 
@@ -382,7 +382,7 @@ For the other ones, our approach is as follows:</p>
 <p>A typical example, applying both to scientific and government data, are the data policies determining why and how for a dataset is published, its use and access conditions, etc. Other examples concern compliance with best practices (as those defined in [[?DWBP]], [[?SDW-BP]], and [[?FAIR]]), interoperability frameworks (as the one defined in INSPIRE [[?INSPIRE-SDSS-REG]]), and specific quality policies. For a more details and examples on the notion of quality conformance, we refer the reader to [[?VOCAB-DQV]] - in particular, <a data-cite="?VOCAB-DQV#ExpressConformanceWithStandard">&sect;&nbsp;<span class="secno">6.11 </span>Express the conformance of a dataset's metadata with a standard</a> and <a data-cite="?VOCAB-DQV#ExpressConformanceWithPolicy">&sect;&nbsp;<span class="secno">6.12 </span>Express the conformance of a dataset with a quality policy</a>.</p>
 <p>For this purpose, [[DCAT-AP]] supports the use of property <code>dct:conformsTo</code> to express conformance in the general sense, and [[GeoDCAT-AP]] re-uses it specifically to (a) specify conformance with test results against data quality criteria, and (b) the coordinate reference system used. DCAT-AP-JRC follows the same approach and, in addition, it uses property <code>dct:conformsTo</code> with class <code>dct:Policy</code> for the specific cases when the relevant resource is a data policy.</p>
 
-<p>For more details, see <a class="no-sectionRef" href="#dataset-conforms-to"></a> and <a class="no-sectionRef" href="#dataset-data-policy"></a>.</p>
+<p>For more details, see <a href="#dataset-conforms-to"></a> and <a href="#dataset-data-policy"></a>.</p>
 
 </section>
 
@@ -392,13 +392,13 @@ For the other ones, our approach is as follows:</p>
 
 <p>Besides landing pages, distributions, publications, data lineage and usage notes, JRC datasets are often associated with resources with other types of relationships. They can be any type of resource - a document, a piece of software, a Web site, a service / API, as well as another dataset.</p>
 
-<p>None of these additional relationships is used in JRC datasets so frequently to require specific properties. For this reason, following [[DCAT-AP]], these resources are specified in DCAT-AP-JRC by using the generic property <code title="http://purl.org/dc/terms/relation">dct:relation</code> (see <a class="no-sectionRef" href="#dataset-other-resource"></a>).</p>
+<p>None of these additional relationships is used in JRC datasets so frequently to require specific properties. For this reason, following [[DCAT-AP]], these resources are specified in DCAT-AP-JRC by using the generic property <code title="http://purl.org/dc/terms/relation">dct:relation</code> (see <a href="#dataset-other-resource"></a>).</p>
 
 <p>To describe this type of generic resources, which are left untyped, DCAT-AP-JRC makes use of the same properties used for distributions. The reason of this choice is that these properties are fit for describing heterogeneous resources. The difference is that the only mandatory properties are the resource title (<code title="http://purl.org/dc/terms/title">dct:title</code>) and the resource URL (<code title="http://www.w3.org/ns/dcat#accessURL">dcat:accessURL</code> / <code title="http://www.w3.org/ns/dcat#downloadURL">dcat:downloadURL</code>), whereas description, format, licence, and access restrictions are recommended or optional.</p> 
 
 <p>The use of <code title="http://www.w3.org/ns/dcat#accessURL">dcat:accessURL</code> / <code title="http://www.w3.org/ns/dcat#downloadURL">dcat:downloadURL</code> for generic resources is theoretically incorrect, as the range of these properties is <code title="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</code>. However, since these resources are left untyped, formally this use does not break compliance with [[VOCAB-DCAT]] or [[DCAT-AP]].</p> 
  
-<p>For more details, see <a class="no-sectionRef" href="#other-resource"></a>.</p>
+<p>For more details, see <a href="#other-resource"></a>.</p>
 
 </section>
 
@@ -415,22 +415,22 @@ For the other ones, our approach is as follows:</p>
 
 <p>In DCAT-AP-JRC, internal / primary identifiers are assigned to all resources that are maintained in the catalogue, and that are supposed to be harvested by other catalogues. This includes:</p>
 <ul>
-<li>Catalogues (see <a class="no-sectionRef" href="#catalogue-identifier"></a>)</li>
-<li>Catalogue records (see <a class="no-sectionRef" href="#catalogue-record-identifier"></a>)</li>
-<li>Collections (see <a class="no-sectionRef" href="#collection-identifier"></a>)</li>
-<li>Endpoints (see <a class="no-sectionRef" href="#endpoint-identifier"></a>)</li>
-<li>Datasets (see <a class="no-sectionRef" href="#dataset-identifier"></a>)</li>
-<li>Agents - i.e., contributors, authors, publishers (see <a class="no-sectionRef" href="#agent-individual-identifier"></a> for individuals, and <a class="no-sectionRef" href="#agent-organisation-identifier"></a> for organisations)</li>
-<li>Publications (see <a class="no-sectionRef" href="#publication-identifier"></a>)</li>
+<li>Catalogues (see <a href="#catalogue-identifier"></a>)</li>
+<li>Catalogue records (see <a href="#catalogue-record-identifier"></a>)</li>
+<li>Collections (see <a href="#collection-identifier"></a>)</li>
+<li>Endpoints (see <a href="#endpoint-identifier"></a>)</li>
+<li>Datasets (see <a href="#dataset-identifier"></a>)</li>
+<li>Agents - i.e., contributors, authors, publishers (see <a href="#agent-individual-identifier"></a> for individuals, and <a href="#agent-organisation-identifier"></a> for organisations)</li>
+<li>Publications (see <a href="#publication-identifier"></a>)</li>
 </ul>
 
 <p>As far as additional / secondary identifiers are concerned, they are used in DCAT-AP-JRC for all resources that could be cited, or that could be part of a citation (e.g., authors / contributors). This includes:</p>
 <ul>
-<li>Catalogues (see <a class="no-sectionRef" href="#catalogue-other-identifier"></a>)</li>
-<li>Collections (see <a class="no-sectionRef" href="#collection-other-identifier"></a>)</li>
-<li>Datasets (see <a class="no-sectionRef" href="#dataset-other-identifier"></a>)</li>
-<li>Agents - i.e., contributors, authors, publishers (see <a class="no-sectionRef" href="#agent-individual-other-identifier"></a> for individuals, and <a class="no-sectionRef" href="#agent-organisation-other-identifier"></a> for organisations)
-<li>Publications (see <a class="no-sectionRef" href="#publication-other-identifier"></a>)</li>
+<li>Catalogues (see <a href="#catalogue-other-identifier"></a>)</li>
+<li>Collections (see <a href="#collection-other-identifier"></a>)</li>
+<li>Datasets (see <a href="#dataset-other-identifier"></a>)</li>
+<li>Agents - i.e., contributors, authors, publishers (see <a href="#agent-individual-other-identifier"></a> for individuals, and <a href="#agent-organisation-other-identifier"></a> for organisations)
+<li>Publications (see <a href="#publication-other-identifier"></a>)</li>
 </ul>
 
 <p>It is worth noting that, for citation purposes, it is important to make explicit the identifier "type" (e.g., DOI, ORCID, ISNI).</p>
@@ -457,7 +457,7 @@ For the other ones, our approach is as follows:</p>
 </ul>
 </li>
 </ul>
-<p>For more details, see <a class="no-sectionRef" href="#identifier"></a> (for identifiers modelled as literals) and <a class="no-sectionRef" href="#mapping-identifiers-to-uris"></a> (for identifiers modelled as URIs).</p>
+<p>For more details, see <a href="#identifier"></a> (for identifiers modelled as literals) and <a href="#mapping-identifiers-to-uris"></a> (for identifiers modelled as URIs).</p>
 
 </section>
 
@@ -465,7 +465,7 @@ For the other ones, our approach is as follows:</p>
 
 <h2>Agent roles</h2>
 
-<p>The need of agent roles in addition to those supported in [[DCAT-AP]] has been already illustrated in <a class="no-sectionRef" href="#req-across-disciplines"></a> and <a class="no-sectionRef" href="#req-data-citation"></a>, where the importance of being able to specify the dataset author(s) / contributor(s) has been motivated.</p>
+<p>The need of agent roles in addition to those supported in [[DCAT-AP]] has been already illustrated in <a href="#req-across-disciplines"></a> and <a href="#req-data-citation"></a>, where the importance of being able to specify the dataset author(s) / contributor(s) has been motivated.</p>
 <p>However, another issue is that the agent roles supported in [[DCAT-AP]] for specific resource types could also be relevant for other ones. This applies in particular to "contact points", a key role for any type of resource, whereas in [[DCAT-AP]] and [[VOCAB-DCAT]] they are associated only with datasets.</p>
 <p>In order to address this issue, DCAT-AP-JRC extends [[DCAT-AP]] by supporting the specification of contact points not only for datasets, but also for catalogues, endpoints, collections, and collection records. Following [[GeoDCAT-AP]], this is done by using property <code title="http://www.w3.org/ns/dcat#contactPoint">dcat:contactPoint</code>.</p>
 <p>It is worth noting that this use of <code title="http://www.w3.org/ns/dcat#contactPoint">dcat:contactPoint</code> does not respect the domain restriction of this property - namely, <code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code>. This property is however used also on other resource types as the alternative would have been defining a new one, with exactly the same semantics.</p>
@@ -476,11 +476,11 @@ For the other ones, our approach is as follows:</p>
 
 <p>For more details on the use of contact points in DCAT-AP-JRC, see:</p>
 <ul>
-<li>for catalogues, <a class="no-sectionRef" href="#catalogue-contact-point"></a></li>
-<li>for datasets, <a class="no-sectionRef" href="#dataset-contact-point"></a></li>
-<li>for endpoints, <a class="no-sectionRef" href="#endpoint-contact-point"></a></li>
-<li>for collections, <a class="no-sectionRef" href="#collection-contact-point"></a></li>
-<li>for catalogue records, <a class="no-sectionRef" href="#catalogue-record-contact-point"></a></li>
+<li>for catalogues, <a href="#catalogue-contact-point"></a></li>
+<li>for datasets, <a href="#dataset-contact-point"></a></li>
+<li>for endpoints, <a href="#endpoint-contact-point"></a></li>
+<li>for collections, <a href="#collection-contact-point"></a></li>
+<li>for catalogue records, <a href="#catalogue-record-contact-point"></a></li>
 </ul>
 
 </section>
@@ -495,9 +495,9 @@ For the other ones, our approach is as follows:</p>
 
 <p>For more details on the use of short names / acronyms in DCAT-AP-JRC, see:</p>
 <ul>
-<li>for catalogues, <a class="no-sectionRef" href="#catalogue-acronym"></a></li>
-<li>for endpoints, <a class="no-sectionRef" href="#endpoint-acronym"></a>.</li>
-<li>for collections, <a class="no-sectionRef" href="#collection-acronym"></a></li>
+<li>for catalogues, <a href="#catalogue-acronym"></a></li>
+<li>for endpoints, <a href="#endpoint-acronym"></a>.</li>
+<li>for collections, <a href="#collection-acronym"></a></li>
 </ul>
 </section>
 
@@ -510,7 +510,7 @@ For the other ones, our approach is as follows:</p>
 <p>For this reason, DCAT-AP-JRC includes support for [[UNSD-M49]] to complement [[MDR-CONT]] and [[MDR-COUNTRIES]] with additional levels of granularity (global, sub-regions, intermediate regions).</p>
 <p>As a formal definition of [[UNSD-M49]] is not available, a <abbr title="Simple Knowledge Organization System">SKOS</abbr> [[SKOS-REFERENCE]] representation of it has been developed, and integrated it with the [[MDR-CONT]] and [[MDR-COUNTRIES]] code lists. More precisely, this integrated code list makes use of [[MDR-CONT]] and [[MDR-COUNTRIES]] for continents and countries, respectively, and of [[UNSD-M49]] for the other geographical areas.</p>
 <p>These code lists cover all the relevant geographical areas, also in terms of granularity, used to indicate spatial coverage in JRC data. Therefore, DCAT-AP-JRC does not make use of [[?MDR-PLACES]] and [[?GEONAMES]].</p>
-<p>For more details, see <a class="no-sectionRef" href="#spatial-coverage"></a> and <a class="no-sectionRef" href="#registers-unsd-m49"></a>.</p>
+<p>For more details, see <a href="#spatial-coverage"></a> and <a href="#registers-unsd-m49"></a>.</p>
 
 </section>
 
@@ -519,7 +519,7 @@ For the other ones, our approach is as follows:</p>
 <h2>Dataset status</h2>
 
 <p>Knowing the status of a dataset with respect to its lifecycle can be important both for administrative purposes and for users. E.g., if a catalogue makes use of persistent identifiers, datasets (or, at least, their metadata) cannot be deleted even when they are discontinued, deprecated, or withdrawn. However, it is important for users to know that they should not use those data, or that a given dataset is no longer maintained.</p>
-<p>In order to address this issue, DCAT-AP-JRC extends [[DCAT-AP]] by supporting the specification of the dataset status by using the [[MDR-DS]] code list. For more details, see <a class="no-sectionRef" href="#dataset-status"></a>.</p>
+<p>In order to address this issue, DCAT-AP-JRC extends [[DCAT-AP]] by supporting the specification of the dataset status by using the [[MDR-DS]] code list. For more details, see <a href="#dataset-status"></a>.</p>
 
 </section>
 
@@ -539,7 +539,7 @@ For the other ones, our approach is as follows:</p>
 <dt>Authorisation required</dt>
 <dd>The distribution can be accessed only by authorized users.</dd>
 </dl>
-<p>These access restrictions are defined in an <em>ad hoc</em> code list. For more details, see <a class="no-sectionRef" href="#registers-access-restrictions"></a>.</p>
+<p>These access restrictions are defined in an <em>ad hoc</em> code list. For more details, see <a href="#registers-access-restrictions"></a>.</p>
 
 </section>
 
@@ -549,9 +549,10 @@ For the other ones, our approach is as follows:</p>
 
 <p>It is often the case that distributions do not point to a file or a download page, but rather to a service / API from which users can access the data. Examples include SPARQL endpoints and services like [[WMS]], [[WFS]], etc., typically used for geospatial data. The result is that users are returned resources (as machine- or human-readable description of the service / API interface) providing no direct means to access the data. Morever, using these services / APIs may require specific expertise and/or software tools.</p>
 <p>It is therefore important to flag a distribution to clarify the "type" of resource which will be returned - namely, if it gives access to a service / API, or rather to a file / download page.</p>
-<p>This issue was already addressed in the framework of the DCAT-AP Implementation Guidelines [[DCAT-AP-IG]] - see <a href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/discussion/dt2-service-based-data-access"><cite>DT2: Service-based data access</cite></a>. DCAT-AP-JRC follows the approach defined there, by using the relevant values from the [[MDR-DT]] code list, and by specifying the service / API type via a <abbr title="Uniform Resource Identifier">URI</abbr> identifying it (see <a class="no-sectionRef" href="#registers-service-protocols"></a>).</p>
-<p>An additional issue concerns whether the distribution points to a resource which gives access to the data or instead provides a visualisation of it. It is worth noting that this case is ortogonal to the one of the distribution "type" outlined above, as whether a resource has an access or visualisation "function" it is independent of whether this is obtained via a direct link to a file / download page or via a service / API. Although there is not a specific code list for this purpose, the [[MDR-DT]] code list includes a value to state that a distribution provides data visualisation. Therefore, DCAT-AP-JRC uses it for that purpose, whereas when the distribution function is not specified, the assumption is that the distribution gives access to the data.</p>
-<p>For more details, see <a class="no-sectionRef" href="#distribution-type"></a> and <a class="no-sectionRef" href="#distribution-function"></a>.</p>
+<p>This issue was already addressed in the framework of the DCAT-AP Implementation Guidelines [[DCAT-AP-IG]] - see <a href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/discussion/dt2-service-based-data-access"><cite>DT2: Service-based data access</cite></a>. DCAT-AP-JRC follows the approach defined there, by using the relevant values from the [[MDR-DT]] code list, and by specifying the service / API type via a <abbr title="Uniform Resource Identifier">URI</abbr> identifying it (see <a href="#registers-service-protocols"></a>).</p>
+<p>In addition, following [[DCAT-AP]], the service / API is described by a specific class (see <a href="#data-service"></a>), and the distribution is linked to it.</p>
+<p>Another issue concerns whether the distribution points to a resource which gives access to the data or instead provides a visualisation of it. It is worth noting that this case is ortogonal to the one of the distribution "type" outlined above, as whether a resource has an access or visualisation "function" it is independent of whether this is obtained via a direct link to a file / download page or via a service / API. Although there is not a specific code list for this purpose, the [[MDR-DT]] code list includes a value to state that a distribution provides data visualisation. Therefore, DCAT-AP-JRC uses it for that purpose, whereas when the distribution function is not specified, the assumption is that the distribution gives access to the data.</p>
+<p>For more details, see <a href="#distribution-type"></a>, <a href="#distribution-access-service"></a>, and <a href="#distribution-function"></a>.</p>
 
 </section>
 
@@ -567,7 +568,7 @@ For the other ones, our approach is as follows:</p>
 
 <p>Notably, the [[?SCHEMA-ORG]] subset for describing datasets is historically derived from [[?VOCAB-DCAT]], which in turn widely re-uses classes and properties from [[?DCTERMS]]. Consequently, the mapping between these vocabularies is pretty straightforward, although the conversion may lead to information loss - as illustrated by the [[?DCAT-AP]] to [[?SCHEMA-ORG]] mapping exercise documented in [[?DCAT-AP-SDO]].</p>
 
-<p>For more details, see <a class="no-sectionRef" href="#schema-org-mapping"></a>.</p>
+<p>For more details, see <a href="#schema-org-mapping"></a>.</p>
 
 </section>
 <!--
@@ -812,12 +813,12 @@ For the other ones, our approach is as follows:</p>
 
 <h2>Vocabulary specification</h2>
 
-<p>The following sections define the class and properties used in DCAT-AP-JRC. More precisely, after providing an overview of the classes used in DCAT-AP-JRC (<a class="no-sectionRef" href="#classes"></a>), class definitions and the corresponding properties are grouped as follows:</p>
+<p>The following sections define the class and properties used in DCAT-AP-JRC. More precisely, after providing an overview of the classes used in DCAT-AP-JRC (<a href="#classes"></a>), class definitions and the corresponding properties are grouped as follows:</p>
 <ul>
-<li><a class="no-sectionRef" href="#mandatory-classes"></a></li>
-<li><a class="no-sectionRef" href="#recommended-classes"></a></li>
-<li><a class="no-sectionRef" href="#optional-classes"></a></li>
-<li><a class="no-sectionRef" href="#secondary-classes"></a></li>
+<li><a href="#mandatory-classes"></a></li>
+<li><a href="#recommended-classes"></a></li>
+<li><a href="#optional-classes"></a></li>
+<li><a href="#secondary-classes"></a></li>
 </ul>
 
 <p>The tables in the following sections include these columns:</p>
@@ -827,7 +828,7 @@ For the other ones, our approach is as follows:</p>
 <!--
 <li>Column <strong>Code list</strong> specifies the code list (if any) used as values for properties and individuals for classes (in such a case, the individual MAY be specified only with the relevant code list URI, and therefore MAY be left untyped, and it is not described by any property).</li>
 -->
-<li>Column <strong>Scope</strong> indicates the metadata scope(s) (see <a class="no-sectionRef" href="#metadata-scope"></a>) for which a specific class or property is relevant. The supported scopes are: data documentation (<abbr title="Data Documentation">DD</abbr>), data citation (<abbr title="Data Citation">DC</abbr>), metadata management (<abbr title="Metadata Management">MM</abbr>), and metadata sharing and re-use (<abbr title="Metadata Sharing and Re-use">MS</abbr>). When a class or property is relevant to all scopes, keyword "All" is used.</li>
+<li>Column <strong>Scope</strong> indicates the metadata scope(s) (see <a href="#metadata-scope"></a>) for which a specific class or property is relevant. The supported scopes are: data documentation (<abbr title="Data Documentation">DD</abbr>), data citation (<abbr title="Data Citation">DC</abbr>), metadata management (<abbr title="Metadata Management">MM</abbr>), and metadata sharing and re-use (<abbr title="Metadata Sharing and Re-use">MS</abbr>). When a class or property is relevant to all scopes, keyword "All" is used.</li>
 <li>Column <strong><abbr title="Specification">Spec.</abbr></strong> ("Specification") indicates the metadata specification (namely, [[DCAT-AP]], [[GeoDCAT-AP]], [[StatDCAT-AP]], or DCAT-AP-JRC) where the use of a specific class or property is first defined.</li>
 </ul>
 
@@ -860,7 +861,7 @@ For the other ones, our approach is as follows:</p>
 <tr>
 <td colspan="2"><a title="Detailed definition" href="#catalogue">Catalogue</a></td>
 <td><strong>M</strong></td>
-<td><a data-cite="VOCAB-DCAT#class-catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a></td>
 <!--
 <td></td>
 -->
@@ -870,7 +871,7 @@ For the other ones, our approach is as follows:</p>
 <tr>
 <td colspan="2"><a title="Detailed definition" href="#dataset">Dataset</a></td>
 <td><strong>M</strong></td>
-<td><a data-cite="VOCAB-DCAT#class-dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a></td>
 <!--
 <td></td>
 -->
@@ -918,7 +919,17 @@ For the other ones, our approach is as follows:</p>
 <tr>
 <td colspan="2"><a title="Detailed definition" href="#distribution">Distribution</a></td>
 <td><em>R</em></td>
-<td><a data-cite="VOCAB-DCAT#class-distribution"><code title="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Distribution"><code title="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</code></a></td>
+<!--
+<td></td>
+-->
+<td><a class="scope" href="#metadata-scope">All</a></td>
+<td>[[DCAT-AP]]</td>
+</tr>
+<tr>
+<td colspan="2"><a title="Detailed definition" href="#data-service">Data service</a></td>
+<td><em>R</em></td>
+<td><a data-cite="VOCAB-DCAT#Class:Data_Service"><code title="http://www.w3.org/ns/dcat#DataService">dcat:DataService</code></a></td>
 <!--
 <td></td>
 -->
@@ -938,7 +949,10 @@ For the other ones, our approach is as follows:</p>
 <tr>
 <td colspan="2"><a title="Detailed definition" href="#endpoint">Endpoint</a></td>
 <td>O</td>
-<td><a data-cite="VOCAB-DCAT#class-catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a> + <a data-cite="DCTERMS#dcmitype-Service"><code title="http://purl.org/dc/dcmitype/Service">dctype:Service</code></a></td>
+<!--
+<td><a data-cite="VOCAB-DCAT#Class:Catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a> + <a data-cite="DCTERMS#dcmitype-Service"><code title="http://purl.org/dc/dcmitype/Service">dctype:Service</code></a></td>
+-->
+<td><a data-cite="VOCAB-DCAT#Class:Catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a> + <a data-cite="VOCAB-DCAT#Class:Data_Service"><code title="http://www.w3.org/ns/dcat#DataService">dcat:DataService</code></a></td>
 <!--
 <td></td>
 -->
@@ -948,7 +962,7 @@ For the other ones, our approach is as follows:</p>
 <tr>
 <td colspan="2"><a title="Detailed definition" href="#collection">Collection</a></td>
 <td>O</td>
-<td><a data-cite="VOCAB-DCAT#class-catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a></td>
 <!--
 <td></td>
 -->
@@ -958,7 +972,7 @@ For the other ones, our approach is as follows:</p>
 <tr>
 <td colspan="2"><a title="Detailed definition" href="#catalogue-record">Catalogue record</a></td>
 <td>O</td>
-<td><a data-cite="VOCAB-DCAT#class-catalog-record"><code title="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog_Record"><code title="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</code></a></td>
 <!--
 <td></td>
 -->
@@ -984,10 +998,10 @@ For the other ones, our approach is as follows:</p>
 
 <h2>Secondary classes</h2>
 
-<p>The following table lists classes which are merely functional to the specification of characteristics of the <a class="no-sectionRef" href="#classes-primary">primary classes</a> in a structured way.</p>
+<p>The following table lists classes which are merely functional to the specification of characteristics of the <a href="#classes-primary">primary classes</a> in a structured way.</p>
 
 <aside class="note">
-<p>Differently from <a class="no-sectionRef" href="#classes-primary">primary classes</a>, secondary classes do not have obligations and cardinality constraints, as these are determined by the relevant properties from the corresponding primary classes.</p>
+<p>Differently from <a href="#classes-primary">primary classes</a>, secondary classes do not have obligations and cardinality constraints, as these are determined by the relevant properties from the corresponding primary classes.</p>
 </aside>
 
 <table class="simple">
@@ -1079,7 +1093,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>RDF Class</th>
-<td><a data-cite="VOCAB-DCAT#class-catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a></td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -1173,7 +1187,7 @@ For the other ones, our approach is as follows:</p>
 <td><strong>M</strong></td>
 <td><var>N</var></td>
 <td><a data-cite="VOCAB-DCAT#Property:catalog_dataset"><code title="http://www.w3.org/ns/dcat#dataset">dcat:dataset</code></a></td>
-<td><a data-cite="VOCAB-DCAT#class-dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a></td>
 <!--
 <td></td>
 -->
@@ -1244,7 +1258,7 @@ For the other ones, our approach is as follows:</p>
 <td>O</td>
 <td><var>N</var></td>
 <td><a data-cite="DCTERMS#terms-hasPart"><code title="http://purl.org/dc/terms/hasPart">dct:hasPart</code></a></td>
-<td><a data-cite="VOCAB-DCAT#class-catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a></td>
 <!--
 <td></td>
 -->
@@ -1256,7 +1270,7 @@ For the other ones, our approach is as follows:</p>
 <td>O</td>
 <td><var>N</var></td>
 <td><a data-cite="VOCAB-DCAT#Property:catalog_catalog_record"><code title="http://www.w3.org/ns/dcat#record">dcat:record</code></a></td>
-<td><a data-cite="VOCAB-DCAT#class-catalog-record"><code title="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog_Record"><code title="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</code></a></td>
 <!--
 <td></td>
 -->
@@ -1384,7 +1398,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VCARD-RDF#d4e1819"><code title="http://www.w3.org/2006/vcard/ns#Kind">vcard:Kind</code></a> (<a class="no-sectionRef" href="#contact-point"></a>)</td>
+<td><a data-cite="VCARD-RDF#d4e1819"><code title="http://www.w3.org/2006/vcard/ns#Kind">vcard:Kind</code></a> (<a href="#contact-point"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -1400,7 +1414,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-agent-roles"></a></td>
+<td><a href="#req-agent-roles"></a></td>
 </tr>
 </tbody>
 </table>
@@ -1431,7 +1445,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a> (<a class="no-sectionRef" href="#agent-organisation"></a>)</td>
+<td><a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a> (<a href="#agent-organisation"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -1439,7 +1453,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the corporate bodies defined in [[!MDR-CB]] (see <a class="no-sectionRef" href="#agent-organisation"></a>).</td>
+<td>This property MUST take as value one of the corporate bodies defined in [[!MDR-CB]] (see <a href="#agent-organisation"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -1478,7 +1492,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VOCAB-DCAT#class-dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a> (<a class="no-sectionRef" href="#dataset"></a>)</td>
+<td><a data-cite="VOCAB-DCAT#Class:Dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a> (<a href="#dataset"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -1537,7 +1551,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-identifiers"></a></td>
+<td><a href="#req-identifiers"></a></td>
 </tr>
 </tbody>
 </table>
@@ -1584,7 +1598,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-acronyms"></a></td>
+<td><a href="#req-acronyms"></a></td>
 </tr>
 </tbody>
 </table>
@@ -1644,7 +1658,7 @@ For the other ones, our approach is as follows:</p>
 
 <h2>Property: other identifier</h2>
 
-<p>The identifier is expressed both as a literal, using class <code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code>, and as a URI, via <code title="http://www.w3.org/2002/07/owl#sameAs">owl:sameAs</code>, whenever the identifier can be specified in form of URI (see <a class="no-sectionRef" href="#mapping-identifiers-to-uris"></a>).</p>
+<p>The identifier is expressed both as a literal, using class <code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code>, and as a URI, via <code title="http://www.w3.org/2002/07/owl#sameAs">owl:sameAs</code>, whenever the identifier can be specified in form of URI (see <a href="#mapping-identifiers-to-uris"></a>).</p>
 
 <aside class="note">
 <p>Typically, this property is used to specify the catalogue <abbr title="Digital Object Identifier">DOI</abbr>, if available.</p>
@@ -1682,7 +1696,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property SHOULD be used whenever it is possible to specify the identifier as a URI (see <a class="no-sectionRef" href="#mapping-identifiers-to-uris"></a>).</td>
+<td>This property SHOULD be used whenever it is possible to specify the identifier as a URI (see <a href="#mapping-identifiers-to-uris"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -1694,7 +1708,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-identifiers"></a></td>
+<td><a href="#req-identifiers"></a></td>
 </tr>
 </tbody>
 </table>
@@ -1725,7 +1739,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VOCAB-ADMS#dt_identifier"><code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code></a> (<a class="no-sectionRef" href="#identifier"></a>)</td>
+<td><a data-cite="VOCAB-ADMS#dt_identifier"><code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code></a> (<a href="#identifier"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -1733,7 +1747,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property SHOULD be used whenever it is necessary to specify the identifier type (see <a class="no-sectionRef" href="#identifier"></a>).</td>
+<td>This property SHOULD be used whenever it is necessary to specify the identifier type (see <a href="#identifier"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -1745,7 +1759,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-identifiers"></a></td>
+<td><a href="#req-identifiers"></a></td>
 </tr>
 </tbody>
 </table>
@@ -1778,7 +1792,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VOCAB-DCAT#class-catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a> (<a class="no-sectionRef" href="#collection"></a>)</td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a> (<a href="#collection"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -1786,7 +1800,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MAY be used when datasets in a catalogue are organised into groups, corresponding to different thematic areas, maintained by different teams, etc. (see <a class="no-sectionRef" href="#collection"></a>).</td>
+<td>This property MAY be used when datasets in a catalogue are organised into groups, corresponding to different thematic areas, maintained by different teams, etc. (see <a href="#collection"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -1798,7 +1812,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-collections"></a></td>
+<td><a href="#req-dataset-collections"></a></td>
 </tr>
 </tbody>
 </table>
@@ -1829,7 +1843,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VOCAB-DCAT#class-catalog-record"><code title="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</code></a> (<a class="no-sectionRef" href="#catalogue-record"></a>)</td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog_Record"><code title="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</code></a> (<a href="#catalogue-record"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -1866,7 +1880,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>RDF Class</th>
-<td><a data-cite="VOCAB-DCAT#class-dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a></td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -2150,7 +2164,7 @@ For the other ones, our approach is as follows:</p>
 <td><em>R</em></td>
 <td><var>N</var></td>
 <td><a data-cite="VOCAB-DCAT#Property:dataset_distribution"><code title="http://www.w3.org/ns/dcat#distribution">dcat:distribution</code></a></td>
-<td><a data-cite="VOCAB-DCAT#class-distribution"><code title="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Distribution"><code title="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</code></a></td>
 <!--
 <td></td>
 -->
@@ -2210,7 +2224,7 @@ For the other ones, our approach is as follows:</p>
 <td>O</td>
 <td><var>N</var></td>
 <td><a data-cite="DCTERMS#terms-source"><code title="http://purl.org/dc/terms/source">dct:source</code></a></td>
-<td><a data-cite="VOCAB-DCAT#class-dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a></td>
 <!--
 <td></td>
 -->
@@ -2234,7 +2248,7 @@ For the other ones, our approach is as follows:</p>
 <td>O</td>
 <td>1</td>
 <td><a data-cite="DCTERMS#terms-isPartOf"><code title="http://purl.org/dc/terms/isPartOf">dct:isPartOf</code></a></td>
-<td><a data-cite="VOCAB-DCAT#class-catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a></td>
 <!--
 <td></td>
 -->
@@ -2324,7 +2338,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-identifiers"></a></td>
+<td><a href="#req-identifiers"></a></td>
 </tr>
 </tbody>
 </table>
@@ -2371,7 +2385,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-data-citation"></a></td>
+<td><a href="#req-data-citation"></a></td>
 </tr>
 </tbody>
 </table>
@@ -2465,7 +2479,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-data-citation"></a></td>
+<td><a href="#req-data-citation"></a></td>
 </tr>
 </tbody>
 </table>
@@ -2506,7 +2520,7 @@ For the other ones, our approach is as follows:</p>
 <th>Usage note</th>
 <td>
 <p>This property is meant to indicate which is the preferred way to cite the dataset.</p>
-<p>The value for this property MAY be automatically generated by re-using information contained in existing fields - e.g., <a href="#dataset-contributor">contributor(s)</a>, <a href="#dataset-publication-date">publication date</a>, <a href="#dataset-title">title</a>, <a href="#dataset-publisher">publisher</a>, persistent identifier(s) - i.e., <a class="no-sectionRef" href="#dataset-identifier">the dataset URI</a>, plus <a class="no-sectionRef" href="#dataset-other-identifier">other persistent identifiers</a>, when available.</p>
+<p>The value for this property MAY be automatically generated by re-using information contained in existing fields - e.g., <a href="#dataset-contributor">contributor(s)</a>, <a href="#dataset-publication-date">publication date</a>, <a href="#dataset-title">title</a>, <a href="#dataset-publisher">publisher</a>, persistent identifier(s) - i.e., <a href="#dataset-identifier">the dataset URI</a>, plus <a href="#dataset-other-identifier">other persistent identifiers</a>, when available.</p>
 </td>
 </tr>
 <tr>
@@ -2519,7 +2533,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-data-citation"></a></td>
+<td><a href="#req-data-citation"></a></td>
 </tr>
 </tbody>
 </table>
@@ -2644,7 +2658,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VCARD-RDF#d4e1819"><code title="http://www.w3.org/2006/vcard/ns#Kind">vcard:Kind</code></a> (<a class="no-sectionRef" href="#contact-point"></a>)</td>
+<td><a data-cite="VCARD-RDF#d4e1819"><code title="http://www.w3.org/2006/vcard/ns#Kind">vcard:Kind</code></a> (<a href="#contact-point"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -2660,7 +2674,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-agent-roles"></a></td>
+<td><a href="#req-agent-roles"></a></td>
 </tr>
 </tbody>
 </table>
@@ -2698,7 +2712,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="FOAF#term_Person"><code title="http://xmlns.com/foaf/0.1/Person">foaf:Person</code></a> (<a class="no-sectionRef" href="#agent-individual"></a>)</td>
+<td><a data-cite="FOAF#term_Person"><code title="http://xmlns.com/foaf/0.1/Person">foaf:Person</code></a> (<a href="#agent-individual"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -2718,8 +2732,8 @@ For the other ones, our approach is as follows:</p>
 <tr>
 <th>Requirement</th>
 <td>
-<a class="no-sectionRef" href="#req-across-disciplines"></a>,
-<a class="no-sectionRef" href="#req-data-citation"></a>
+<a href="#req-across-disciplines"></a>,
+<a href="#req-data-citation"></a>
 </td>
 </tr>
 </tbody>
@@ -2751,7 +2765,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a> (<a class="no-sectionRef" href="#agent-organisation"></a>)</td>
+<td><a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a> (<a href="#agent-organisation"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -2759,7 +2773,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the corporate bodies defined in [[!MDR-CB]], or a complementary one, in case the organisation is not included in [[!MDR-CB]] - see <a class="no-sectionRef" href="#agent-organisation"></a> for more details.</td>
+<td>This property MUST take as value one of the corporate bodies defined in [[!MDR-CB]], or a complementary one, in case the organisation is not included in [[!MDR-CB]] - see <a href="#agent-organisation"></a> for more details.</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -2772,8 +2786,8 @@ For the other ones, our approach is as follows:</p>
 <tr>
 <th>Requirement</th>
 <td>
-<a class="no-sectionRef" href="#req-across-disciplines"></a>,
-<a class="no-sectionRef" href="#req-data-citation"></a>
+<a href="#req-across-disciplines"></a>,
+<a href="#req-data-citation"></a>
 </td>
 </tr>
 </tbody>
@@ -2842,8 +2856,8 @@ author = family-name , ", " , given-name
 <tr>
 <th>Requirement</th>
 <td>
-<a class="no-sectionRef" href="#req-across-disciplines"></a>,
-<a class="no-sectionRef" href="#req-data-citation"></a>
+<a href="#req-across-disciplines"></a>,
+<a href="#req-data-citation"></a>
 </td>
 </tr>
 </tbody>
@@ -2875,7 +2889,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a> (<a class="no-sectionRef" href="#agent-organisation"></a>)</td>
+<td><a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a> (<a href="#agent-organisation"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -2895,7 +2909,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-data-citation"></a></td>
+<td><a href="#req-data-citation"></a></td>
 </tr>
 </tbody>
 </table>
@@ -2906,7 +2920,7 @@ author = family-name , ", " , given-name
 
 <h2>Property: other identifier</h2>
 
-<p>The identifier is expressed both as a literal, using class <code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code>, and as a URI, via <code title="http://www.w3.org/2002/07/owl#sameAs">owl:sameAs</code>, whenever the identifier can be specified in form of URI (see <a class="no-sectionRef" href="#mapping-identifiers-to-uris"></a>).</p>
+<p>The identifier is expressed both as a literal, using class <code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code>, and as a URI, via <code title="http://www.w3.org/2002/07/owl#sameAs">owl:sameAs</code>, whenever the identifier can be specified in form of URI (see <a href="#mapping-identifiers-to-uris"></a>).</p>
 
 <aside class="note">
 <p>Typically, this property is used to specify the dataset <abbr title="Digital Object Identifier">DOI</abbr>, if available.</p>
@@ -2944,7 +2958,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property SHOULD be used whenever it is possible to specify the identifier as a URI (see <a class="no-sectionRef" href="#mapping-identifiers-to-uris"></a>).</td>
+<td>This property SHOULD be used whenever it is possible to specify the identifier as a URI (see <a href="#mapping-identifiers-to-uris"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -2956,7 +2970,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-data-citation"></a></td>
+<td><a href="#req-data-citation"></a></td>
 </tr>
 </tbody>
 </table>
@@ -2983,7 +2997,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VOCAB-ADMS#dt_identifier"><code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code></a> (<a class="no-sectionRef" href="#identifier"></a>)</td>
+<td><a data-cite="VOCAB-ADMS#dt_identifier"><code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code></a> (<a href="#identifier"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -2991,7 +3005,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property SHOULD be used whenever it is necessary to specify the identifier type (see <a class="no-sectionRef" href="#identifier"></a>).</td>
+<td>This property SHOULD be used whenever it is necessary to specify the identifier type (see <a href="#identifier"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -3003,7 +3017,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-data-citation"></a></td>
+<td><a href="#req-data-citation"></a></td>
 </tr>
 </tbody>
 </table>
@@ -3056,7 +3070,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-status"></a></td>
+<td><a href="#req-dataset-status"></a></td>
 </tr>
 </tbody>
 </table>
@@ -3177,7 +3191,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="DCTERMS#terms-PeriodOfTime"><code title="http://purl.org/dc/terms/PeriodOfTime">dct:PeriodOfTime</code></a> (<a class="no-sectionRef" href="#temporal-coverage"></a>)</td>
+<td><a data-cite="DCTERMS#terms-PeriodOfTime"><code title="http://purl.org/dc/terms/PeriodOfTime">dct:PeriodOfTime</code></a> (<a href="#temporal-coverage"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -3224,7 +3238,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="DCTERMS#terms-Location"><code title="http://purl.org/dc/terms/Location">dct:Location</code></a> (<a class="no-sectionRef" href="#spatial-coverage"></a>)</td>
+<td><a data-cite="DCTERMS#terms-Location"><code title="http://purl.org/dc/terms/Location">dct:Location</code></a> (<a href="#spatial-coverage"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -3232,7 +3246,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>The spatial coverage MUST be specified as defined in [[DCAT-AP]], namely, either by using a geographical name or with a geometry. In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:spatial</code> MUST take as value one of the geographical names defined in [[!MDR-CONT]] (for continents), [[!MDR-COUNTRIES]] (for countries), and [[!UNSD-M49]] (for the other geographical areas). In the latter case, the geometry MUST be specified by using <code title="http://purl.org/dc/terms/Location">dct:Location</code>, with property <code title="http://www.w3.org/ns/locn#geometry">locn:geometry</code> [[!LOCN]] (see <a class="no-sectionRef" href="#spatial-coverage-geometry-geometry"></a>).</td>
+<td>The spatial coverage MUST be specified as defined in [[DCAT-AP]], namely, either by using a geographical name or with a geometry. In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:spatial</code> MUST take as value one of the geographical names defined in [[!MDR-CONT]] (for continents), [[!MDR-COUNTRIES]] (for countries), and [[!UNSD-M49]] (for the other geographical areas). In the latter case, the geometry MUST be specified by using <code title="http://purl.org/dc/terms/Location">dct:Location</code>, with property <code title="http://www.w3.org/ns/locn#geometry">locn:geometry</code> [[!LOCN]] (see <a href="#spatial-coverage-geometry-geometry"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -3318,7 +3332,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VOCAB-DCAT#class-distribution"><code title="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</code></a> (<a class="no-sectionRef" href="#distribution"></a>)</td>
+<td><a data-cite="VOCAB-DCAT#Class:Distribution"><code title="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</code></a> (<a href="#distribution"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -3361,7 +3375,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="FOAF#terms_Document"><code title="http://xmlns.com/foaf/0.1/Document">foaf:Document</code></a> (<a class="no-sectionRef" href="#publication"></a>)</td>
+<td><a data-cite="FOAF#terms_Document"><code title="http://xmlns.com/foaf/0.1/Document">foaf:Document</code></a> (<a href="#publication"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -3377,7 +3391,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -3455,7 +3469,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="DCTERMS#terms-ProvenanceStatement"><code title="http://purl.org/dc/terms/ProvenanceStatement">dct:ProvenanceStatement</code></a> (<a class="no-sectionRef" href="#lineage"></a>)</td>
+<td><a data-cite="DCTERMS#terms-ProvenanceStatement"><code title="http://purl.org/dc/terms/ProvenanceStatement">dct:ProvenanceStatement</code></a> (<a href="#lineage"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -3463,7 +3477,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property can either point to an existing lineage document (human- or machine-readable) via its URI, or to a <code>dct:ProvenanceStatement</code> including such description (see <a class="no-sectionRef" href="#lineage"></a>).</td>
+<td>This property can either point to an existing lineage document (human- or machine-readable) via its URI, or to a <code>dct:ProvenanceStatement</code> including such description (see <a href="#lineage"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -3475,7 +3489,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -3506,7 +3520,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="FOAF#term_Document"><code title="http://xmlns.com/foaf/0.1/Document">foaf:Document</code></a> (<a class="no-sectionRef" href="#usage-notes"></a>)</td>
+<td><a data-cite="FOAF#term_Document"><code title="http://xmlns.com/foaf/0.1/Document">foaf:Document</code></a> (<a href="#usage-notes"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -3514,7 +3528,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property can either point to an existing document (human- or machine-readable) via its URI, or to a <code title="http://xmlns.com/foaf/0.1/Document">foaf:Document</code> including such description (see <a class="no-sectionRef" href="#usage-notes"></a>).</td>
+<td>This property can either point to an existing document (human- or machine-readable) via its URI, or to a <code title="http://xmlns.com/foaf/0.1/Document">foaf:Document</code> including such description (see <a href="#usage-notes"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -3526,7 +3540,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -3557,7 +3571,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VOCAB-DCAT#class-dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a></td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -3577,7 +3591,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -3608,7 +3622,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="OWL-SEMANTICS#owl_Thing_syntax"><code title="http://www.w3.org/2002/07/owl#Thing">owl:Thing</code></a> (<a class="no-sectionRef" href="#other-resource"></a>)</td>
+<td><a data-cite="OWL-SEMANTICS#owl_Thing_syntax"><code title="http://www.w3.org/2002/07/owl#Thing">owl:Thing</code></a> (<a href="#other-resource"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -3616,7 +3630,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property is meant to be used for resources whose relationship with the dataset are different from <a class="no-sectionRef" href="#dataset-distribution">distribution</a>, <a class="no-sectionRef" href="#dataset-publication">publication</a>, <a class="no-sectionRef" href="#dataset-input-data">input data</a>, <a class="no-sectionRef" href="#dataset-lineage">lineage</a>, <a class="no-sectionRef" href="#dataset-usage-notes">usage notes</a>. For more information on dataset-related resources, see <a class="no-sectionRef" href="#other-resource"></a>.</td>
+<td>This property is meant to be used for resources whose relationship with the dataset are different from <a href="#dataset-distribution">distribution</a>, <a href="#dataset-publication">publication</a>, <a href="#dataset-input-data">input data</a>, <a href="#dataset-lineage">lineage</a>, <a href="#dataset-usage-notes">usage notes</a>. For more information on dataset-related resources, see <a href="#other-resource"></a>.</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -3628,7 +3642,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-other-resources"></a></td>
+<td><a href="#req-dataset-other-resources"></a></td>
 </tr>
 </tbody>
 </table>
@@ -3659,7 +3673,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VOCAB-DCAT#class-catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a> (<a class="no-sectionRef" href="#catalogue"></a>)</td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a> (<a href="#catalogue"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -3667,7 +3681,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>The catalogue is typically denoted with its URI. Alternatively, it MAY be described as defined in <a class="no-sectionRef" href="#catalogue"></a>. In both cases, it MUST be typed as a <code>dcat:Catalog</code>.</td>
+<td>The catalogue is typically denoted with its URI. Alternatively, it MAY be described as defined in <a href="#catalogue"></a>. In both cases, it MUST be typed as a <code>dcat:Catalog</code>.</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -3679,7 +3693,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-catalogue"></a></td>
+<td><a href="#req-dataset-catalogue"></a></td>
 </tr>
 </tbody>
 </table>
@@ -3718,7 +3732,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>The specification is typically denoted with its URI. Alternatively, it MAY be described as a document, as defined in <a class="no-sectionRef" href="#publication"></a>.</td>
+<td>The specification is typically denoted with its URI. Alternatively, it MAY be described as a document, as defined in <a href="#publication"></a>.</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -3733,7 +3747,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-quality-conformance"></a></td>
+<td><a href="#req-dataset-quality-conformance"></a></td>
 </tr>
 </tbody>
 </table>
@@ -3772,7 +3786,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>The data policy is typically denoted with its URI. Alternatively, it MAY be described as a document, as defined in <a class="no-sectionRef" href="#publication"></a>. In both cases, it MUST be typed as a <code>dct:Policy</code>.</td>
+<td>The data policy is typically denoted with its URI. Alternatively, it MAY be described as a document, as defined in <a href="#publication"></a>. In both cases, it MUST be typed as a <code>dct:Policy</code>.</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -3787,7 +3801,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-quality-conformance"></a></td>
+<td><a href="#req-dataset-quality-conformance"></a></td>
 </tr>
 </tbody>
 </table>
@@ -3917,7 +3931,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST be used, unless the <a class="no-sectionRef" href="#dataset-contact-point-page">contact page</a> is specified.</td>
+<td>This property MUST be used, unless the <a href="#dataset-contact-point-page">contact page</a> is specified.</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -3964,7 +3978,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST be used, unless the <a class="no-sectionRef" href="#dataset-contact-point-email">contact email</a> is specified.</td>
+<td>This property MUST be used, unless the <a href="#dataset-contact-point-email">contact email</a> is specified.</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -4033,7 +4047,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a>, <a class="no-sectionRef" href="#req-data-citation"></a></td>
+<td><a href="#req-across-disciplines"></a>, <a href="#req-data-citation"></a></td>
 </tr>
 </tbody>
 </table>
@@ -4188,7 +4202,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a>, <a class="no-sectionRef" href="#req-data-citation"></a></td>
+<td><a href="#req-across-disciplines"></a>, <a href="#req-data-citation"></a></td>
 </tr>
 </tbody>
 </table>
@@ -4235,7 +4249,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a>, <a class="no-sectionRef" href="#req-data-citation"></a></td>
+<td><a href="#req-across-disciplines"></a>, <a href="#req-data-citation"></a></td>
 </tr>
 </tbody>
 </table>
@@ -4276,7 +4290,7 @@ author = family-name , ", " , given-name
 <th>Usage note</th>
 <td>
 <p>The formatted name SHOULD be specified with family name and given name, separated with a comma. E.g.: <code>Doe, John</code></p>
-<p>This information can be automatically derived from properties <a class="no-sectionRef" href="#agent-individual-given-name"><code title="http://xmlns.com/foaf/0.1/familyName">foaf:familyName</code></a> and <a class="no-sectionRef" href="#agent-individual-given-name"><code title="http://xmlns.com/foaf/0.1/givenName">foaf:givenName</code></a>.</p>
+<p>This information can be automatically derived from properties <a href="#agent-individual-given-name"><code title="http://xmlns.com/foaf/0.1/familyName">foaf:familyName</code></a> and <a href="#agent-individual-given-name"><code title="http://xmlns.com/foaf/0.1/givenName">foaf:givenName</code></a>.</p>
 </td>
 </tr>
 <tr>
@@ -4289,7 +4303,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a>, <a class="no-sectionRef" href="#req-data-citation"></a></td>
+<td><a href="#req-across-disciplines"></a>, <a href="#req-data-citation"></a></td>
 </tr>
 </tbody>
 </table>
@@ -4334,7 +4348,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-identifiers"></a></td>
+<td><a href="#req-identifiers"></a></td>
 </tr>
 </tbody>
 </table>
@@ -4345,7 +4359,7 @@ author = family-name , ", " , given-name
 
 <h2>Property: other identifier</h2>
 
-<p>The identifier is expressed both as a literal, using class <code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code> and as a URI, via <code title="http://www.w3.org/2002/07/owl#sameAs">owl:sameAs</code>, whenever possible (see <a class="no-sectionRef" href="#mapping-identifiers-to-uris"></a>).</p>
+<p>The identifier is expressed both as a literal, using class <code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code> and as a URI, via <code title="http://www.w3.org/2002/07/owl#sameAs">owl:sameAs</code>, whenever possible (see <a href="#mapping-identifiers-to-uris"></a>).</p>
 
 <aside class="note">
 <p>Typically, this property is used to specify the individual's <abbr title="Open Research and Contributor Identifier">ORCID</abbr>, if available.</p>
@@ -4383,7 +4397,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property SHOULD be used whenever it is possible to specify the identifier as a URI (see <a class="no-sectionRef" href="#mapping-identifiers-to-uris"></a>).</td>
+<td>This property SHOULD be used whenever it is possible to specify the identifier as a URI (see <a href="#mapping-identifiers-to-uris"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -4398,7 +4412,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-data-citation"></a>, <a class="no-sectionRef" href="#req-identifiers"></a></td>
+<td><a href="#req-data-citation"></a>, <a href="#req-identifiers"></a></td>
 </tr>
 </tbody>
 </table>
@@ -4429,7 +4443,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VOCAB-ADMS#dt_identifier"><code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code></a> (<a class="no-sectionRef" href="#identifier"></a>)</td>
+<td><a data-cite="VOCAB-ADMS#dt_identifier"><code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code></a> (<a href="#identifier"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -4437,7 +4451,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property SHOULD be used whenever it is necessary to specify the identifier type (see <a class="no-sectionRef" href="#identifier"></a>).</td>
+<td>This property SHOULD be used whenever it is necessary to specify the identifier type (see <a href="#identifier"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -4452,7 +4466,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-data-citation"></a>, <a class="no-sectionRef" href="#req-identifiers"></a></td>
+<td><a href="#req-data-citation"></a>, <a href="#req-identifiers"></a></td>
 </tr>
 </tbody>
 </table>
@@ -4501,7 +4515,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -4549,7 +4563,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a>, <a class="no-sectionRef" href="#req-data-citation"></a></td>
+<td><a href="#req-across-disciplines"></a>, <a href="#req-data-citation"></a></td>
 </tr>
 </tbody>
 </table>
@@ -4761,7 +4775,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-identifiers"></a></td>
+<td><a href="#req-identifiers"></a></td>
 </tr>
 </tbody>
 </table>
@@ -4852,10 +4866,10 @@ author = family-name , ", " , given-name
 
 <h2>Property: other identifier</h2>
 
-<p>The identifier is expressed both as a literal, using class <code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code> and as a URI, via <code title="http://www.w3.org/2002/07/owl#sameAs">owl:sameAs</code>, whenever possible (see <a class="no-sectionRef" href="#mapping-identifiers-to-uris"></a>).</p>
+<p>The identifier is expressed both as a literal, using class <code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code> and as a URI, via <code title="http://www.w3.org/2002/07/owl#sameAs">owl:sameAs</code>, whenever possible (see <a href="#mapping-identifiers-to-uris"></a>).</p>
 
 <aside class="note">
-<p>Typically, this property is used to specify additional organisation identifiers, if available, from existing registries (see <a class="no-sectionRef" href="#registers-identifier-schemes"></a>).</p>
+<p>Typically, this property is used to specify additional organisation identifiers, if available, from existing registries (see <a href="#registers-identifier-schemes"></a>).</p>
 </aside>
 
 <section id="agent-organisation-other-identifier-uri">
@@ -4890,7 +4904,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property SHOULD be used whenever it is possible to specify the identifier as a URI (see <a class="no-sectionRef" href="#mapping-identifiers-to-uris"></a>).</td>
+<td>This property SHOULD be used whenever it is possible to specify the identifier as a URI (see <a href="#mapping-identifiers-to-uris"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -4905,7 +4919,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-data-citation"></a>, <a class="no-sectionRef" href="#req-identifiers"></a></td>
+<td><a href="#req-data-citation"></a>, <a href="#req-identifiers"></a></td>
 </tr>
 </tbody>
 </table>
@@ -4936,7 +4950,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VOCAB-ADMS#dt_identifier"><code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code></a> (<a class="no-sectionRef" href="#identifier"></a>)</td>
+<td><a data-cite="VOCAB-ADMS#dt_identifier"><code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code></a> (<a href="#identifier"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -4944,7 +4958,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property SHOULD be used whenever it is necessary to specify the identifier type (see <a class="no-sectionRef" href="#identifier"></a>).</td>
+<td>This property SHOULD be used whenever it is necessary to specify the identifier type (see <a href="#identifier"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -4959,7 +4973,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-data-citation"></a>, <a class="no-sectionRef" href="#req-identifiers"></a></td>
+<td><a href="#req-data-citation"></a>, <a href="#req-identifiers"></a></td>
 </tr>
 </tbody>
 </table>
@@ -5049,7 +5063,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-identifiers"></a></td>
+<td><a href="#req-identifiers"></a></td>
 </tr>
 </tbody>
 </table>
@@ -5390,7 +5404,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>RDF Class</th>
-<td><a data-cite="VOCAB-DCAT#class-distribution"><code title="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Distribution"><code title="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</code></a></td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -5462,7 +5476,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="DCTERMS#terms-accessRights"><code title="http://purl.org/dc/terms/accessRights">dct:accessRights</code></a></td>
 <td><a data-cite="DCTERMS#terms-RightsStatement"><code title="http://purl.org/dc/terms/RightsStatement">dct:RightsStatement</code></a></td>
 <!--
-<td>See <a class="no-sectionRef" href="#registers-access-restrictions"></a></td>
+<td>See <a href="#registers-access-restrictions"></a></td>
 -->
 <td><a class="scope" href="#metadata-scope">All</a></td>
 <td>DCAT-AP-JRC</td>
@@ -5692,7 +5706,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property SHOULD take as value one of the access restriction codes defined in the register illustrated in <a class="no-sectionRef" href="#registers-access-restrictions"></a></td>
+<td>This property SHOULD take as value one of the access restriction codes defined in the register illustrated in <a href="#registers-access-restrictions"></a></td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -5704,7 +5718,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-distribution-access-restrictions"></a></td>
+<td><a href="#req-distribution-access-restrictions"></a></td>
 </tr>
 </tbody>
 </table>
@@ -5802,7 +5816,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-distribution-types-and-functions"></a></td>
+<td><a href="#req-distribution-types-and-functions"></a></td>
 </tr>
 </tbody>
 </table>
@@ -5853,7 +5867,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-distribution-types-and-functions"></a></td>
+<td><a href="#req-distribution-types-and-functions"></a></td>
 </tr>
 </tbody>
 </table>
@@ -5892,7 +5906,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>In case the distribution points to data available via a service / API, this property specifies the service / API protocol by using the URI identifying it (see <a class="no-sectionRef" href="#registers-service-protocols"></a>).</td>
+<td>In case the distribution points to data available via a service / API, this property specifies the service / API protocol by using the URI identifying it (see <a href="#registers-service-protocols"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -5904,7 +5918,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-distribution-types-and-functions"></a></td>
+<td><a href="#req-distribution-types-and-functions"></a></td>
 </tr>
 </tbody>
 </table>
@@ -5944,7 +5958,7 @@ author = family-name , ", " , given-name
 <tr>
 <th>Usage note</th>
 <td>
-<p>This property MUST be used, unless the <a class="no-sectionRef" href="#distribution-download-url">download URL</a> is specified.</p>
+<p>This property MUST be used, unless the <a href="#distribution-download-url">download URL</a> is specified.</p>
 <p>Typically, the object of this property is specified only with its URI.</p>
 </td>
 </tr>
@@ -5994,7 +6008,7 @@ author = family-name , ", " , given-name
 <tr>
 <th>Usage note</th>
 <td>
-<p>This property MUST be used, unless the <a class="no-sectionRef" href="#distribution-access-url">access URL</a> is specified.
+<p>This property MUST be used, unless the <a href="#distribution-access-url">access URL</a> is specified.
 <p>Typically, the object of this property is specified only with its URI.</p>
 </td>
 </tr>
@@ -6055,7 +6069,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-distribution-types-and-functions"></a></td>
+<td><a href="#req-distribution-types-and-functions"></a></td>
 </tr>
 </tbody>
 </table>
@@ -6145,7 +6159,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-distribution-types-and-functions"></a></td>
+<td><a href="#req-distribution-types-and-functions"></a></td>
 </tr>
 </tbody>
 </table>
@@ -6211,7 +6225,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="DCTERMS#terms-accessRights"><code title="http://purl.org/dc/terms/accessRights">dct:accessRights</code></a></td>
 <td><a data-cite="DCTERMS#terms-RightsStatement"><code title="http://purl.org/dc/terms/RightsStatement">dct:RightsStatement</code></a></td>
 <!--
-<td>See <a class="no-sectionRef" href="#registers-access-restrictions"></a></td>
+<td>See <a href="#registers-access-restrictions"></a></td>
 -->
 <td><a class="scope" href="#metadata-scope">All</a></td>
 <td>[[DCAT-AP]]</td>
@@ -6392,7 +6406,7 @@ author = family-name , ", " , given-name
 <tr>
 <th>Usage note</th>
 <td>
-<p>This property MUST be used, unless the <a class="no-sectionRef" href="#distribution-download-url">download URL</a> is specified.</p>
+<p>This property MUST be used, unless the <a href="#distribution-download-url">download URL</a> is specified.</p>
 <p>Typically, the object of this property is specified only with its URI.</p>
 </td>
 </tr>
@@ -6489,7 +6503,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property SHOULD take as value one of the access restriction codes defined in the register illustrated in <a class="no-sectionRef" href="#registers-access-restrictions"></a></td>
+<td>This property SHOULD take as value one of the access restriction codes defined in the register illustrated in <a href="#registers-access-restrictions"></a></td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -6501,7 +6515,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-distribution-access-restrictions"></a></td>
+<td><a href="#req-distribution-access-restrictions"></a></td>
 </tr>
 </tbody>
 </table>
@@ -6600,7 +6614,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-distribution-types-and-functions"></a></td>
+<td><a href="#req-distribution-types-and-functions"></a></td>
 </tr>
 </tbody>
 </table>
@@ -6651,7 +6665,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-distribution-types-and-functions"></a></td>
+<td><a href="#req-distribution-types-and-functions"></a></td>
 </tr>
 </tbody>
 </table>
@@ -6690,7 +6704,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property specifies the service / API protocol by using the URI identifying it (see <a class="no-sectionRef" href="#registers-service-protocols"></a>).</td>
+<td>This property specifies the service / API protocol by using the URI identifying it (see <a href="#registers-service-protocols"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -6702,7 +6716,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-distribution-types-and-functions"></a></td>
+<td><a href="#req-distribution-types-and-functions"></a></td>
 </tr>
 </tbody>
 </table>
@@ -6842,7 +6856,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-distribution-types-and-functions"></a></td>
+<td><a href="#req-distribution-types-and-functions"></a></td>
 </tr>
 </tbody>
 </table>
@@ -6889,7 +6903,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -7109,7 +7123,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -7147,7 +7161,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="FOAF#term_Person"><code title="http://xmlns.com/foaf/0.1/Person">foaf:Person</code></a> (<a class="no-sectionRef" href="#agent-individual"></a>)</td>
+<td><a data-cite="FOAF#term_Person"><code title="http://xmlns.com/foaf/0.1/Person">foaf:Person</code></a> (<a href="#agent-individual"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -7164,7 +7178,7 @@ author = family-name , ", " , given-name
 <tr>
 <th>Requirement</th>
 <td>
-<a class="no-sectionRef" href="#req-across-disciplines"></a>
+<a href="#req-across-disciplines"></a>
 </td>
 </tr>
 </tbody>
@@ -7196,7 +7210,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a> (<a class="no-sectionRef" href="#agent-organisation"></a>)</td>
+<td><a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a> (<a href="#agent-organisation"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -7204,7 +7218,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the corporate bodies defined in [[!MDR-CB]], or a complementary one, in case the organisation is not included in [[!MDR-CB]] - see <a class="no-sectionRef" href="#agent-organisation"></a> for more details.</td>
+<td>This property MUST take as value one of the corporate bodies defined in [[!MDR-CB]], or a complementary one, in case the organisation is not included in [[!MDR-CB]] - see <a href="#agent-organisation"></a> for more details.</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -7219,7 +7233,7 @@ author = family-name , ", " , given-name
 <tr>
 <th>Requirement</th>
 <td>
-<a class="no-sectionRef" href="#req-across-disciplines"></a>
+<a href="#req-across-disciplines"></a>
 </td>
 </tr>
 </tbody>
@@ -7283,7 +7297,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -7314,7 +7328,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a> (<a class="no-sectionRef" href="#agent-organisation"></a>)</td>
+<td><a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a> (<a href="#agent-organisation"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -7322,7 +7336,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the corporate bodies defined in [[!MDR-CB]] (see <a class="no-sectionRef" href="#agent-organisation"></a>).</td>
+<td>This property MUST take as value one of the corporate bodies defined in [[!MDR-CB]] (see <a href="#agent-organisation"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -7334,7 +7348,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -7373,7 +7387,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MAY be used when the publisher is not included in the reference code list (see <a class="no-sectionRef" href="#publication-publisher"></a>).</td>
+<td>This property MAY be used when the publisher is not included in the reference code list (see <a href="#publication-publisher"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -7385,7 +7399,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -7432,7 +7446,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -7479,7 +7493,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -7490,7 +7504,7 @@ author = family-name , ", " , given-name
 
 <h2>Property: other identifier</h2>
 
-<p>The identifier is expressed both as a literal, using class <code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code>, and as a URI, via <code title="http://www.w3.org/2002/07/owl#sameAs">owl:sameAs</code>, whenever the identifier can be specified in form of URI (see <a class="no-sectionRef" href="#mapping-identifiers-to-uris"></a>).</p>
+<p>The identifier is expressed both as a literal, using class <code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code>, and as a URI, via <code title="http://www.w3.org/2002/07/owl#sameAs">owl:sameAs</code>, whenever the identifier can be specified in form of URI (see <a href="#mapping-identifiers-to-uris"></a>).</p>
 
 <aside class="note">
 <p>Typically, this property is used to specify the publication <abbr title="Digital Object Identifier">DOI</abbr>, if available.</p>
@@ -7528,7 +7542,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property SHOULD be used whenever it is possible to specify the identifier as a URI (see <a class="no-sectionRef" href="#mapping-identifiers-to-uris"></a>).</td>
+<td>This property SHOULD be used whenever it is possible to specify the identifier as a URI (see <a href="#mapping-identifiers-to-uris"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -7540,7 +7554,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -7571,7 +7585,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VOCAB-ADMS#dt_identifier"><code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code></a> (<a class="no-sectionRef" href="#identifier"></a>)</td>
+<td><a data-cite="VOCAB-ADMS#dt_identifier"><code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code></a> (<a href="#identifier"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -7579,7 +7593,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property SHOULD be used whenever it is necessary to specify the identifier type (see <a class="no-sectionRef" href="#identifier"></a>).</td>
+<td>This property SHOULD be used whenever it is necessary to specify the identifier type (see <a href="#identifier"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -7591,7 +7605,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -7640,7 +7654,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -7687,7 +7701,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -7734,7 +7748,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -7765,7 +7779,10 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>RDF Class</th>
-<td><a data-cite="VOCAB-DCAT#class-catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a> + <a data-cite="DCTERMS#dcmitype-Service"><code title="http://purl.org/dc/dcmitype/Service">dctype:Service</code></a></td>
+<!--
+<td><a data-cite="VOCAB-DCAT#Class:Catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a> + <a data-cite="DCTERMS#dcmitype-Service"><code title="http://purl.org/dc/dcmitype/Service">dctype:Service</code></a></td>
+-->
+<td><a data-cite="VOCAB-DCAT#Class:Catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a> + <a data-cite="VOCAB-DCAT#Class:Data_Service"><code title="http://www.w3.org/ns/dcat#DataService">dcat:DataService</code></a></td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -7787,7 +7804,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-catalogue-endpoints"></a></td>
+<td><a href="#req-catalogue-endpoints"></a></td>
 </tr>
 </tbody>
 </table>
@@ -7851,7 +7868,7 @@ author = family-name , ", " , given-name
 <td><strong>M</strong></td>
 <td>1</td>
 <td><a data-cite="DCTERMS#terms-isPartOf"><code title="http://purl.org/dc/terms/isPartOf">dct:isPartOf</code></a></td>
-<td><a data-cite="VOCAB-DCAT#class-catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a></td>
 <!--
 <td></td>
 -->
@@ -7863,7 +7880,7 @@ author = family-name , ", " , given-name
 <td><strong>M</strong></td>
 <td><var>N</var></td>
 <td><a data-cite="VOCAB-DCAT#Property:catalog_dataset"><code title="http://www.w3.org/ns/dcat#dataset">dcat:dataset</code></a></td>
-<td><a data-cite="VOCAB-DCAT#class-dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a></td>
 <!--
 <td></td>
 -->
@@ -7877,7 +7894,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="DCTERMS#terms-conformsTo"><code title="http://purl.org/dc/terms/conformsTo">dct:conformsTo</code></a></td>
 <td><a data-cite="DCTERMS#terms-Standard"><code title="http://purl.org/dc/terms/Standard">dct:Standard</code></a></td>
 <!--
-<td>See <a class="no-sectionRef" href="#registers-service-protocols"></a></td>
+<td>See <a href="#registers-service-protocols"></a></td>
 -->
 <td><a class="scope" href="#metadata-scope">MM</a>, <a class="scope" href="#metadata-scope">MS</a></td>
 <td>DCAT-AP-JRC</td>
@@ -7889,7 +7906,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="VOCAB-ADMS#adms-supportedschema"><code title="http://www.w3.org/ns/adms/supportedSchema">adms:supportedSchema</code></a></td>
 <td><a data-cite="VOCAB-ADMS#asset"><code title="http://www.w3.org/ns/adms/Asset">adms:Asset</code></a></td>
 <!--
-<td>See <a class="no-sectionRef" href="#registers-metadata-schemas"></a></td>
+<td>See <a href="#registers-metadata-schemas"></a></td>
 -->
 <td><a class="scope" href="#metadata-scope">MM</a>, <a class="scope" href="#metadata-scope">MS</a></td>
 <td>DCAT-AP-JRC</td>
@@ -7964,7 +7981,7 @@ author = family-name , ", " , given-name
 <td>O</td>
 <td>1</td>
 <td><a data-cite="DCTERMS#terms-isPartOf"><code title="http://purl.org/dc/terms/isPartOf">dct:isPartOf</code></a></td>
-<td><a data-cite="VOCAB-DCAT#class-catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a></td>
 <!--
 <td></td>
 -->
@@ -7976,7 +7993,7 @@ author = family-name , ", " , given-name
 <td>O</td>
 <td><var>N</var></td>
 <td><a data-cite="VOCAB-DCAT#Property:catalog_catalog_record"><code title="http://www.w3.org/ns/dcat#record">dcat:record</code></a></td>
-<td><a data-cite="VOCAB-DCAT#class-catalog-record"><code title="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog_Record"><code title="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</code></a></td>
 <!--
 <td></td>
 -->
@@ -8034,7 +8051,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-catalogue-endpoints"></a></td>
+<td><a href="#req-catalogue-endpoints"></a></td>
 </tr>
 </tbody>
 </table>
@@ -8081,7 +8098,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-catalogue-endpoints"></a>, <a class="no-sectionRef" href="#req-agent-roles"></a></td>
+<td><a href="#req-catalogue-endpoints"></a>, <a href="#req-agent-roles"></a></td>
 </tr>
 </tbody>
 </table>
@@ -8132,7 +8149,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-catalogue-endpoints"></a></td>
+<td><a href="#req-catalogue-endpoints"></a></td>
 </tr>
 </tbody>
 </table>
@@ -8198,7 +8215,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VOCAB-DCAT#class-catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a> (<a class="no-sectionRef" href="#catalogue"></a>)</td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a> (<a href="#catalogue"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -8214,7 +8231,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-catalogue-endpoints"></a></td>
+<td><a href="#req-catalogue-endpoints"></a></td>
 </tr>
 </tbody>
 </table>
@@ -8245,7 +8262,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VOCAB-DCAT#class-dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a> (<a class="no-sectionRef" href="#dataset"></a>)</td>
+<td><a data-cite="VOCAB-DCAT#Class:Dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a> (<a href="#dataset"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -8261,7 +8278,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-catalogue-endpoints"></a></td>
+<td><a href="#req-catalogue-endpoints"></a></td>
 </tr>
 </tbody>
 </table>
@@ -8292,7 +8309,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="DCTERMS#terms-Standard"><code title="http://purl.org/dc/terms/Standard">dct:Standard</code></a> (<a class="no-sectionRef" href="#registers-service-protocols"></a>)</td>
+<td><a data-cite="DCTERMS#terms-Standard"><code title="http://purl.org/dc/terms/Standard">dct:Standard</code></a> (<a href="#registers-service-protocols"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -8300,7 +8317,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property SHOULD take as value one of the URIs denoting a service / API protocols for catalogue services defined in the register illustrated in <a class="no-sectionRef" href="#registers-service-protocols"></a>.</td>
+<td>This property SHOULD take as value one of the URIs denoting a service / API protocols for catalogue services defined in the register illustrated in <a href="#registers-service-protocols"></a>.</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -8312,7 +8329,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-catalogue-endpoints"></a></td>
+<td><a href="#req-catalogue-endpoints"></a></td>
 </tr>
 </tbody>
 </table>
@@ -8343,7 +8360,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VOCAB-ADMS#asset"><code title="http://www.w3.org/ns/adms/Asset">adms:Asset</code></a> (<a class="no-sectionRef" href="#registers-metadata-schemas"></a>)</td>
+<td><a data-cite="VOCAB-ADMS#asset"><code title="http://www.w3.org/ns/adms/Asset">adms:Asset</code></a> (<a href="#registers-metadata-schemas"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -8351,7 +8368,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property SHOULD take as value one of the URIs denoting one of the metadata schemas defined in the register illustrated in <a class="no-sectionRef" href="#registers-metadata-schemas"></a>.</td>
+<td>This property SHOULD take as value one of the URIs denoting one of the metadata schemas defined in the register illustrated in <a href="#registers-metadata-schemas"></a>.</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -8363,7 +8380,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-catalogue-endpoints"></a></td>
+<td><a href="#req-catalogue-endpoints"></a></td>
 </tr>
 </tbody>
 </table>
@@ -8423,7 +8440,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-catalogue-endpoints"></a></td>
+<td><a href="#req-catalogue-endpoints"></a></td>
 </tr>
 </tbody>
 </table>
@@ -8475,7 +8492,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-catalogue-endpoints"></a></td>
+<td><a href="#req-catalogue-endpoints"></a></td>
 </tr>
 </tbody>
 </table>
@@ -8522,7 +8539,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-catalogue-endpoints"></a>, <a class="no-sectionRef" href="#req-acronyms"></a></td>
+<td><a href="#req-catalogue-endpoints"></a>, <a href="#req-acronyms"></a></td>
 </tr>
 </tbody>
 </table>
@@ -8569,7 +8586,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-catalogue-endpoints"></a></td>
+<td><a href="#req-catalogue-endpoints"></a></td>
 </tr>
 </tbody>
 </table>
@@ -8600,7 +8617,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VOCAB-DCAT#class-catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a> (<a class="no-sectionRef" href="#collection"></a>)</td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a> (<a href="#collection"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -8620,7 +8637,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-catalogue-endpoints"></a></td>
+<td><a href="#req-catalogue-endpoints"></a></td>
 </tr>
 </tbody>
 </table>
@@ -8651,7 +8668,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VOCAB-DCAT#class-catalog-record"><code title="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</code></a> (<a class="no-sectionRef" href="#catalogue-record"></a>)</td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog_Record"><code title="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</code></a> (<a href="#catalogue-record"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -8667,7 +8684,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-catalogue-endpoints"></a></td>
+<td><a href="#req-catalogue-endpoints"></a></td>
 </tr>
 </tbody>
 </table>
@@ -8692,7 +8709,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>RDF Class</th>
-<td><a data-cite="VOCAB-DCAT#class-catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a></td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -8714,7 +8731,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-collections"></a></td>
+<td><a href="#req-dataset-collections"></a></td>
 </tr>
 </tbody>
 </table>
@@ -8794,7 +8811,7 @@ author = family-name , ", " , given-name
 <td><strong>M</strong></td>
 <td><var>N</var></td>
 <td><a data-cite="VOCAB-DCAT#Property:catalog_dataset"><code title="http://www.w3.org/ns/dcat#dataset">dcat:dataset</code></a></td>
-<td><a data-cite="VOCAB-DCAT#class-dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a></td>
 <!--
 <td></td>
 -->
@@ -8865,7 +8882,7 @@ author = family-name , ", " , given-name
 <td>O</td>
 <td><var>N</var></td>
 <td><a data-cite="VOCAB-DCAT#Property:catalog_catalog_record"><code title="http://www.w3.org/ns/dcat#record">dcat:record</code></a></td>
-<td><a data-cite="VOCAB-DCAT#class-catalog-record"><code title="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog_Record"><code title="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</code></a></td>
 <!--
 <td></td>
 -->
@@ -8923,7 +8940,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-collections"></a></td>
+<td><a href="#req-dataset-collections"></a></td>
 </tr>
 </tbody>
 </table>
@@ -8970,7 +8987,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-collections"></a></td>
+<td><a href="#req-dataset-collections"></a></td>
 </tr>
 </tbody>
 </table>
@@ -9001,7 +9018,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VCARD-RDF#d4e1819"><code title="http://www.w3.org/2006/vcard/ns#Kind">vcard:Kind</code></a> (<a class="no-sectionRef" href="#contact-point"></a>)</td>
+<td><a data-cite="VCARD-RDF#d4e1819"><code title="http://www.w3.org/2006/vcard/ns#Kind">vcard:Kind</code></a> (<a href="#contact-point"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -9017,7 +9034,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-collections"></a>, <a class="no-sectionRef" href="#req-agent-roles"></a></td>
+<td><a href="#req-dataset-collections"></a>, <a href="#req-agent-roles"></a></td>
 </tr>
 </tbody>
 </table>
@@ -9068,7 +9085,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-collections"></a></td>
+<td><a href="#req-dataset-collections"></a></td>
 </tr>
 </tbody>
 </table>
@@ -9099,7 +9116,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VOCAB-DCAT#class-dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a> (<a class="no-sectionRef" href="#dataset"></a>)</td>
+<td><a data-cite="VOCAB-DCAT#Class:Dataset"><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></a> (<a href="#dataset"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -9115,7 +9132,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-collections"></a></td>
+<td><a href="#req-dataset-collections"></a></td>
 </tr>
 </tbody>
 </table>
@@ -9162,7 +9179,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-collections"></a></td>
+<td><a href="#req-dataset-collections"></a></td>
 </tr>
 </tbody>
 </table>
@@ -9209,7 +9226,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-collections"></a>, <a class="no-sectionRef" href="#req-acronyms"></a></td>
+<td><a href="#req-dataset-collections"></a>, <a href="#req-acronyms"></a></td>
 </tr>
 </tbody>
 </table>
@@ -9262,7 +9279,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-collections"></a></td>
+<td><a href="#req-dataset-collections"></a></td>
 </tr>
 </tbody>
 </table>
@@ -9273,7 +9290,7 @@ author = family-name , ", " , given-name
 
 <h2>Property: other identifier</h2>
 
-<p>The identifier is expressed both as a literal, using class <code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code>, and as a URI, via <code title="http://www.w3.org/2002/07/owl#sameAs">owl:sameAs</code>, whenever the identifier can be specified in form of URI (see <a class="no-sectionRef" href="#mapping-identifiers-to-uris"></a>).</p>
+<p>The identifier is expressed both as a literal, using class <code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code>, and as a URI, via <code title="http://www.w3.org/2002/07/owl#sameAs">owl:sameAs</code>, whenever the identifier can be specified in form of URI (see <a href="#mapping-identifiers-to-uris"></a>).</p>
 
 <aside class="note">
 <p>Typically, this property is used to specify the collection <abbr title="Digital Object Identifier">DOI</abbr>, if available.</p>
@@ -9311,7 +9328,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property SHOULD be used whenever it is possible to specify the identifier as a URI (see <a class="no-sectionRef" href="#mapping-identifiers-to-uris"></a>).</td>
+<td>This property SHOULD be used whenever it is possible to specify the identifier as a URI (see <a href="#mapping-identifiers-to-uris"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -9323,7 +9340,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-data-citation"></a></td>
+<td><a href="#req-data-citation"></a></td>
 </tr>
 </tbody>
 </table>
@@ -9354,7 +9371,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VOCAB-ADMS#dt_identifier"><code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code></a> (<a class="no-sectionRef" href="#identifier"></a>)</td>
+<td><a data-cite="VOCAB-ADMS#dt_identifier"><code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code></a> (<a href="#identifier"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -9362,7 +9379,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property SHOULD be used whenever it is necessary to specify the identifier type (see <a class="no-sectionRef" href="#identifier"></a>).</td>
+<td>This property SHOULD be used whenever it is necessary to specify the identifier type (see <a href="#identifier"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -9374,7 +9391,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-data-citation"></a></td>
+<td><a href="#req-data-citation"></a></td>
 </tr>
 </tbody>
 </table>
@@ -9407,7 +9424,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VOCAB-DCAT#class-catalog-record"><code title="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</code></a> (<a class="no-sectionRef" href="#catalogue-record"></a>)</td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog_Record"><code title="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</code></a> (<a href="#catalogue-record"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -9423,7 +9440,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-collections"></a></td>
+<td><a href="#req-dataset-collections"></a></td>
 </tr>
 </tbody>
 </table>
@@ -9448,7 +9465,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>RDF Class</th>
-<td><a data-cite="VOCAB-DCAT#class-catalog-record"><code title="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog_Record"><code title="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</code></a></td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -9470,7 +9487,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-agent-roles"></a></td>
+<td><a href="#req-agent-roles"></a></td>
 </tr>
 </tbody>
 </table>
@@ -9572,7 +9589,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="DCTERMS#terms-conformsTo"><code title="http://purl.org/dc/terms/conformsTo">dct:conformsTo</code></a></td>
 <td><a data-cite="DCTERMS#terms-Standard"><code title="http://purl.org/dc/terms/Standard">dct:Standard</code></a></td>
 <!--
-<td>See <a class="no-sectionRef" href="#registers-metadata-schemas"></a>.</td>
+<td>See <a href="#registers-metadata-schemas"></a>.</td>
 -->
 <td><a class="scope" href="#metadata-scope">MM</a>, <a class="scope" href="#metadata-scope">MS</a></td>
 <td>[[DCAT-AP]]</td>
@@ -9582,7 +9599,7 @@ author = family-name , ", " , given-name
 <td><em>R</em></td>
 <td>1</td>
 <td><a data-cite="DCTERMS#terms-source"><code title="http://purl.org/dc/terms/source">dct:source</code></a></td>
-<td><a data-cite="VOCAB-DCAT#class-catalog-record"><code title="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog_Record"><code title="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</code></a></td>
 <!--
 <td></td>
 -->
@@ -9761,7 +9778,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VCARD-RDF#d4e1819"><code title="http://www.w3.org/2006/vcard/ns#Kind">vcard:Kind</code></a> (<a class="no-sectionRef" href="#contact-point"></a>)</td>
+<td><a data-cite="VCARD-RDF#d4e1819"><code title="http://www.w3.org/2006/vcard/ns#Kind">vcard:Kind</code></a> (<a href="#contact-point"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -9777,7 +9794,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-agent-roles"></a></td>
+<td><a href="#req-agent-roles"></a></td>
 </tr>
 </tbody>
 </table>
@@ -9898,7 +9915,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="DCTERMS#terms-Standard"><code title="http://purl.org/dc/terms/Standard">dct:Standard</code></a> (<a class="no-sectionRef" href="#registers-metadata-schemas"></a>)</td>
+<td><a data-cite="DCTERMS#terms-Standard"><code title="http://purl.org/dc/terms/Standard">dct:Standard</code></a> (<a href="#registers-metadata-schemas"></a>)</td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -9906,7 +9923,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property SHOULD take as value one of the URIs denoting one of the metadata schemas defined in the register illustrated in <a class="no-sectionRef" href="#registers-metadata-schemas"></a>.</td>
+<td>This property SHOULD take as value one of the URIs denoting one of the metadata schemas defined in the register illustrated in <a href="#registers-metadata-schemas"></a>.</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -9945,7 +9962,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Range</th>
-<td><a data-cite="VOCAB-DCAT#class-catalog-record"><code title="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog_Record"><code title="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</code></a></td>
 </tr>
 <tr>
 <th>Definition</th>
@@ -9996,7 +10013,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This class is meant to be used for resources whose relationship with the dataset are different from <a class="no-sectionRef" href="#dataset-distribution">distribution</a>, <a class="no-sectionRef" href="#dataset-publication">publication</a>, <a class="no-sectionRef" href="#dataset-input-data">input data</a>, <a class="no-sectionRef" href="#dataset-lineage">lineage</a>, <a class="no-sectionRef" href="#dataset-usage-notes">usage notes</a>. It can be any type of resource - a document, a piece of software, a Web site, a service / API, as well as another dataset.</td>
+<td>This class is meant to be used for resources whose relationship with the dataset are different from <a href="#dataset-distribution">distribution</a>, <a href="#dataset-publication">publication</a>, <a href="#dataset-input-data">input data</a>, <a href="#dataset-lineage">lineage</a>, <a href="#dataset-usage-notes">usage notes</a>. It can be any type of resource - a document, a piece of software, a Web site, a service / API, as well as another dataset.</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -10008,7 +10025,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-other-resources"></a></td>
+<td><a href="#req-dataset-other-resources"></a></td>
 </tr>
 </tbody>
 </table>
@@ -10110,7 +10127,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="DCTERMS#terms-accessRights"><code title="http://purl.org/dc/terms/accessRights">dct:accessRights</code></a></td>
 <td><a data-cite="DCTERMS#terms-RightsStatement"><code title="http://purl.org/dc/terms/RightsStatement">dct:RightsStatement</code></a></td>
 <!--
-<td>See <a class="no-sectionRef" href="#registers-access-restrictions"></a></td>
+<td>See <a href="#registers-access-restrictions"></a></td>
 -->
 <td><a class="scope" href="#metadata-scope">DD</a></td>
 <td>DCAT-AP-JRC</td>
@@ -10162,7 +10179,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-other-resources"></a></td>
+<td><a href="#req-dataset-other-resources"></a></td>
 </tr>
 </tbody>
 </table>
@@ -10202,7 +10219,7 @@ author = family-name , ", " , given-name
 <tr>
 <th>Usage note</th>
 <td>
-<p>This property MUST be used, unless the <a class="no-sectionRef" href="#other-resource-download-url">download URL</a> is specified.</p>
+<p>This property MUST be used, unless the <a href="#other-resource-download-url">download URL</a> is specified.</p>
 <p>Typically, the object of this property is specified only with its URI.</p>
 </td>
 </tr>
@@ -10216,7 +10233,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-other-resources"></a></td>
+<td><a href="#req-dataset-other-resources"></a></td>
 </tr>
 </tbody>
 </table>
@@ -10256,7 +10273,7 @@ author = family-name , ", " , given-name
 <tr>
 <th>Usage note</th>
 <td>
-<p>This property MUST be used, unless the <a class="no-sectionRef" href="#other-resource-access-url">access URL</a> is specified.</p>
+<p>This property MUST be used, unless the <a href="#other-resource-access-url">access URL</a> is specified.</p>
 <p>Typically, the object of this property is specified only with its URI.</p>
 </td>
 </tr>
@@ -10270,7 +10287,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-other-resources"></a></td>
+<td><a href="#req-dataset-other-resources"></a></td>
 </tr>
 </tbody>
 </table>
@@ -10317,7 +10334,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-other-resources"></a></td>
+<td><a href="#req-dataset-other-resources"></a></td>
 </tr>
 </tbody>
 </table>
@@ -10368,7 +10385,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-other-resources"></a></td>
+<td><a href="#req-dataset-other-resources"></a></td>
 </tr>
 </tbody>
 </table>
@@ -10419,7 +10436,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-other-resources"></a></td>
+<td><a href="#req-dataset-other-resources"></a></td>
 </tr>
 </tbody>
 </table>
@@ -10458,7 +10475,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property SHOULD take as value one of the access restriction codes defined in the register illustrated in <a class="no-sectionRef" href="#registers-access-restrictions"></a>.</td>
+<td>This property SHOULD take as value one of the access restriction codes defined in the register illustrated in <a href="#registers-access-restrictions"></a>.</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -10470,7 +10487,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-dataset-other-resources"></a></td>
+<td><a href="#req-dataset-other-resources"></a></td>
 </tr>
 </tbody>
 </table>
@@ -10485,10 +10502,10 @@ author = family-name , ", " , given-name
 
 <h2>Secondary classes</h2>
 
-<p>The following classes are denoted as "secondary" since they are merely functional to the specification in a structured way of characteristics of the <a class="no-sectionRef" href="#classes-primary">primary classes</a> (i.e., the classes denoted as <a class="no-sectionRef" href="#mandatory-classes">mandatory</a>, <a class="no-sectionRef" href="#recommended-classes">recommended</a>, and <a class="no-sectionRef" href="#optional-classes">optional</a>).</p>
+<p>The following classes are denoted as "secondary" since they are merely functional to the specification in a structured way of characteristics of the <a href="#classes-primary">primary classes</a> (i.e., the classes denoted as <a href="#mandatory-classes">mandatory</a>, <a href="#recommended-classes">recommended</a>, and <a href="#optional-classes">optional</a>).</p>
 
 <aside class="note">
-<p>Differently from <a class="no-sectionRef" href="#classes-primary">primary classes</a>, secondary classes do not have obligations and cardinality constraints, as these are determined by the relevant properties from the corresponding primary classes.</p>
+<p>Differently from <a href="#classes-primary">primary classes</a>, secondary classes do not have obligations and cardinality constraints, as these are determined by the relevant properties from the corresponding primary classes.</p>
 </aside>
 
 <section id="lineage">
@@ -10517,7 +10534,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This class is meant to be used to record, in a structured way, the description of the lineage of a resource, instead of pointing to an existing document (see <a class="no-sectionRef" href="#dataset-lineage"></a>).</td>
+<td>This class is meant to be used to record, in a structured way, the description of the lineage of a resource, instead of pointing to an existing document (see <a href="#dataset-lineage"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -10529,7 +10546,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -10611,7 +10628,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -10646,7 +10663,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This class is meant to be used to record, in a structured way, the description of how a resource can be used, instead of pointing to an existing document (see <a class="no-sectionRef" href="#dataset-usage-notes"></a>).</td>
+<td>This class is meant to be used to record, in a structured way, the description of how a resource can be used, instead of pointing to an existing document (see <a href="#dataset-usage-notes"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -10658,7 +10675,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -10740,7 +10757,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 </tbody>
 </table>
@@ -10787,7 +10804,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a>, <a class="no-sectionRef" href="#req-data-citation"></a></td>
+<td><a href="#req-across-disciplines"></a>, <a href="#req-data-citation"></a></td>
 </tr>
 </tbody>
 </table>
@@ -10902,7 +10919,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a>, <a class="no-sectionRef" href="#req-data-citation"></a></td>
+<td><a href="#req-across-disciplines"></a>, <a href="#req-data-citation"></a></td>
 </tr>
 </tbody>
 </table>
@@ -10942,7 +10959,7 @@ author = family-name , ", " , given-name
 <tr>
 <th>Usage note</th>
 <td>
-<p>This property MUST take as value one of the identifier scheme names defined in the register illustrated in <a class="no-sectionRef" href="#registers-identifier-schemes"></a>, and it is used to specify the identifier "type".</p>
+<p>This property MUST take as value one of the identifier scheme names defined in the register illustrated in <a href="#registers-identifier-schemes"></a>, and it is used to specify the identifier "type".</p>
 <p>This information MUST be specified when the identifier is issued by a scheme agency and/or follows a specific identifier scheme (DOI, ORCID, etc.).</p>
 </td>
 </tr>
@@ -10956,7 +10973,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a>, <a class="no-sectionRef" href="#req-data-citation"></a></td>
+<td><a href="#req-across-disciplines"></a>, <a href="#req-data-citation"></a></td>
 </tr>
 </tbody>
 </table>
@@ -11007,7 +11024,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a>, <a class="no-sectionRef" href="#req-data-citation"></a></td>
+<td><a href="#req-across-disciplines"></a>, <a href="#req-data-citation"></a></td>
 </tr>
 </tbody>
 </table>
@@ -11047,7 +11064,7 @@ author = family-name , ", " , given-name
 <tr>
 <th>Usage note</th>
 <td>
-<p>This property MUST take as value one of the scheme agency URIs defined in the register illustrated in <a class="no-sectionRef" href="#registers-identifier-schemes"></a>.</p>
+<p>This property MUST take as value one of the scheme agency URIs defined in the register illustrated in <a href="#registers-identifier-schemes"></a>.</p>
 <p>This information is complementary to the one provided by property <a href="#identifier-scheme-agency-name"><code>adms:schemeAgency</code></a>, and it MAY be specified when the identifier is issued by a scheme agency and/or follows a specific identifier scheme (DOI, ORCID, etc.).</p>
 </td>
 </tr>
@@ -11061,7 +11078,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Requirement</th>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a>, <a class="no-sectionRef" href="#req-data-citation"></a></td>
+<td><a href="#req-across-disciplines"></a>, <a href="#req-data-citation"></a></td>
 </tr>
 </tbody>
 </table>
@@ -11197,7 +11214,7 @@ author = family-name , ", " , given-name
 <tr>
 <th>Usage note</th>
 <td>
-<p>This property MUST be specified, if the <a class="no-sectionRef" href="#temporal-coverage-end-date">end date</a> is missing.</p>
+<p>This property MUST be specified, if the <a href="#temporal-coverage-end-date">end date</a> is missing.</p>
 <p>The range of this property is intentionally generic, with the purpose of allowing different level of temporal precision for specifying the start of a period. E.g., it can be expressed with a date (<a data-cite="XMLSCHEMA11-2#date"><code title="http://www.w3.org/2001/XMLSchema#date">xsd:date</code></a>), a date and time (<a data-cite="XMLSCHEMA11-2#dateTime"><code title="http://www.w3.org/2001/XMLSchema#dateTime">xsd:dateTime</code></a>), or a year (<a data-cite="XMLSCHEMA11-2#gYear"><code title="http://www.w3.org/2001/XMLSchema#gYear">xsd:gYear</code></a>).</p>
 </td>
 </tr>
@@ -11247,7 +11264,7 @@ author = family-name , ", " , given-name
 <tr>
 <th>Usage note</th>
 <td>
-<p>This property MUST be specified, if the <a class="no-sectionRef" href="#temporal-coverage-start-date">start date</a> is missing.</p>
+<p>This property MUST be specified, if the <a href="#temporal-coverage-start-date">start date</a> is missing.</p>
 <p>The range of this property is intentionally generic, with the purpose of allowing different level of temporal precision for specifying the end of a period. E.g., it can be expressed with a date (<a data-cite="XMLSCHEMA11-2#date"><code title="http://www.w3.org/2001/XMLSchema#date">xsd:date</code></a>), a date and time (<a data-cite="XMLSCHEMA11-2#dateTime"><code title="http://www.w3.org/2001/XMLSchema#dateTime">xsd:dateTime</code></a>), or a year (<a data-cite="XMLSCHEMA11-2#gYear"><code title="http://www.w3.org/2001/XMLSchema#gYear">xsd:gYear</code></a>).</p>
 </td>
 </tr>
@@ -11318,7 +11335,7 @@ In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:
 
 <h2>Spatial coverage as geographical name</h2>
 
-<p>When the spatial coverage is specified as geographical name, property <code title="http://purl.org/dc/terms/spatial">dct:spatial</code> MUST take as direct value the URI of one of the geographical areas defined in [[MDR-CONT]], [[MDR-COUNTRIES]], and/or [[UNSD-M49]] (see <a class="no-sectionRef" href="#registers-unsd-m49"></a>), whereas class <code title="http://purl.org/dc/terms/Location">dct:Location</code> SHOULD be omitted.</p>
+<p>When the spatial coverage is specified as geographical name, property <code title="http://purl.org/dc/terms/spatial">dct:spatial</code> MUST take as direct value the URI of one of the geographical areas defined in [[MDR-CONT]], [[MDR-COUNTRIES]], and/or [[UNSD-M49]] (see <a href="#registers-unsd-m49"></a>), whereas class <code title="http://purl.org/dc/terms/Location">dct:Location</code> SHOULD be omitted.</p>
 
 <!--
 <section id="spatial-coverage-geoname">
@@ -11533,7 +11550,7 @@ In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:
 <tr>
 <td>DCAT-AP-JRC</td>
 <td><a href="https://unstats.un.org/unsd/methodology/m49/"><code>https://unstats.un.org/unsd/methodology/m49/</code></a></td>
-<td>See <a class="no-sectionRef" href="#registers-unsd-m49"></a></td>
+<td>See <a href="#registers-unsd-m49"></a></td>
 </tr>
 <tr>
 <td>[[DCAT-AP]]</td>
@@ -11649,13 +11666,13 @@ In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:
 <td>DCAT-AP-JRC</td>
 <td>Access restrictions</td>
 <td><a href="http://data.jrc.ec.europa.eu/access-rights"><code>http://data.jrc.ec.europa.eu/access-rights</code></a></td>
-<td>See <a class="no-sectionRef" href="#registers-access-restrictions"></a></td>
+<td>See <a href="#registers-access-restrictions"></a></td>
 </tr>
 <tr>
 <td>DCAT-AP-JRC</td>
 <td>Service protocols</td>
 <td><a href="http://data.jrc.ec.europa.eu/service-protocol"><code>http://data.jrc.ec.europa.eu/service-protocol</code></a></td>
-<td>See <a class="no-sectionRef" href="#registers-service-protocols"></a></td>
+<td>See <a href="#registers-service-protocols"></a></td>
 </tr>
 </tbody>
 </table>
@@ -11666,7 +11683,7 @@ In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:
 
 <h2>Identifier schemes</h2>
 
-<p>In order to use a reference register of identifier scheme agencies to denote the identifier "type" (see <a class="no-sectionRef" href="#identifier-scheme-agency-name"></a> and <a class="no-sectionRef" href="#identifier-scheme-agency-uri"></a>), an <em>ad hoc</em> 
+<p>In order to use a reference register of identifier scheme agencies to denote the identifier "type" (see <a href="#identifier-scheme-agency-name"></a> and <a href="#identifier-scheme-agency-uri"></a>), an <em>ad hoc</em> 
 <!--SKOS-->
 code list has been created, based on the identifier schemes supported in [[?DataCite]] (and, in turn, used in [[?CiteDCAT-AP]]), plus additional ones.</p>
 <p>The following table lists the names and URIs used for the scheme agencies of each of the supported identifiers.</p>
@@ -11830,7 +11847,7 @@ code list has been created, based on the identifier schemes supported in [[?Data
 
 <h2>Access restrictions</h2>
 
-<p>As explained in <a class="no-sectionRef" href="#req-distribution-access-restrictions"></a>, DCAT-AP-JRC makes use of a code list to specify access restrictions.</p>
+<p>As explained in <a href="#req-distribution-access-restrictions"></a>, DCAT-AP-JRC makes use of a code list to specify access restrictions.</p>
 
 <p>In the following table, the URIs of code list values are abbreviated for space constraints, specifying only the local part. For all of them, the base URI is <code>http://data.jrc.ec.europa.eu/acces-rights/</code></p>
 
@@ -11879,7 +11896,7 @@ code list has been created, based on the identifier schemes supported in [[?Data
 
 <h2>Metadata schemas</h2>
 
-<p>In order to use a reference register of metadata schemas (see <a class="no-sectionRef" href="#catalogue-record-conforms-to"></a>), an <em>ad hoc</em> SKOS code list has been created. Such code list is currently limited only to the subset of metadata schemas relevant for the JRC Data Catalogue.</p>
+<p>In order to use a reference register of metadata schemas (see <a href="#catalogue-record-conforms-to"></a>), an <em>ad hoc</em> SKOS code list has been created. Such code list is currently limited only to the subset of metadata schemas relevant for the JRC Data Catalogue.</p>
 
 <table class="simple">
 <thead>
@@ -11933,7 +11950,7 @@ code list has been created, based on the identifier schemes supported in [[?Data
 
 <h2>Service protocols</h2>
 
-<p>In order to use a reference register of service protocols (see <a class="no-sectionRef" href="#distribution-conforms-to"></a>), an <em>ad hoc</em> SKOS code list has been created, based on the relevant subset of the lookup table maintained in [[?LINK-PROP]], plus additional ones.</p>
+<p>In order to use a reference register of service protocols (see <a href="#distribution-conforms-to"></a>), an <em>ad hoc</em> SKOS code list has been created, based on the relevant subset of the lookup table maintained in [[?LINK-PROP]], plus additional ones.</p>
 
 <div data-include="./registers/service-protocols.html"></div>
 
@@ -11949,7 +11966,7 @@ code list has been created, based on the identifier schemes supported in [[?Data
 
 <h2>UNSD M49</h2>
 
-<p>As explained in <a class="no-sectionRef" href="#req-spatial-coverage-codelists"></a>, DCAT-AP-JRC makes use of a code list based on the UNSD Standard country or area codes for statistical use (M49) [[UNSD-M49]]] for specifying spatial coverage (<a class="no-sectionRef" href="#dataset-spatial-coverage"></a>).</p>  
+<p>As explained in <a href="#req-spatial-coverage-codelists"></a>, DCAT-AP-JRC makes use of a code list based on the UNSD Standard country or area codes for statistical use (M49) [[UNSD-M49]]] for specifying spatial coverage (<a href="#dataset-spatial-coverage"></a>).</p>  
 
 <p>The UNSD M49 code list provides a SKOS representation of [[UNSD-M49]], integrated with the [[MDR-CONT]] and [[MDR-COUNTRIES]] code lists. More precisely, it defines terms in [[UNSD-M49]] not included in [[MDR-CONT]] and [[MDR-COUNTRIES]], and specifies containment relationships between the geographical areas defined in these code lists by using the <code title="http://purl.org/dc/terms/hasPart">dct:hasPart</code> / <code title="http://purl.org/dc/terms/isPartOf">dct:isPartOf</code> properties.</p>
 
@@ -12233,10 +12250,10 @@ code list has been created, based on the identifier schemes supported in [[?Data
 
 <h2>Schema.org mapping</h2>
 
-<p>As explained in <a class="no-sectionRef" href="#req-data-discoverability"></a>, DCAT-AP-JRC is complemented with mapping rules for generating a [[?SCHEMA-ORG]] representation of metadata records, to be used for optimising the indexing of dataset pages.</p>
+<p>As explained in <a href="#req-data-discoverability"></a>, DCAT-AP-JRC is complemented with mapping rules for generating a [[?SCHEMA-ORG]] representation of metadata records, to be used for optimising the indexing of dataset pages.</p>
 <p>These mappings are based on those defined in [[?DCAT-AP-SDO]], partially revised to meet <a href="https://developers.google.com/search/docs/data-types/dataset">the Google guidelines for the description of datasets</a>. These guidelines are also used to choose the subset of DCAT-AP-JRC metadata to be mapped. The motivation for not using a full mapping of DCAT-AP-JRC records is that only a subset of [[?SCHEMA-ORG]] is used for indexing purposes by search engines. Consequently, the defined mappings cover only those classes and properties specified in the guidelines for creating records for the <a href="https://toolbox.google.com/datasetsearch">Google Dataset Search</a> service. For the same reason, the mapping is limited to dataset metadata records - which are currently the only type of resources indexed in Google Dataset Search.</p>
 
-<p>The following sections illustrate the defined mapping rules for the selected DCAT-AP-JRC classes and properties. Moreover, <a class="no-sectionRef" href="#schema-org-mapping-example"></a> shows an example of a [[?SCHEMA-ORG]] representation of a DCAT-AP-JRC record, obtained by applying the defined mapping rules.</p>
+<p>The following sections illustrate the defined mapping rules for the selected DCAT-AP-JRC classes and properties. Moreover, <a href="#schema-org-mapping-example"></a> shows an example of a [[?SCHEMA-ORG]] representation of a DCAT-AP-JRC record, obtained by applying the defined mapping rules.</p>
 
 <section id="schema-org-mapping-classes">
 
@@ -12254,17 +12271,17 @@ code list has been created, based on the identifier schemes supported in [[?Data
 </thead>
 <tbody>
 <tr>
-<td><a class="no-sectionRef" href="#schema-org-mapping-properties-catalogue">Catalogue</a></td>
+<td><a href="#schema-org-mapping-properties-catalogue">Catalogue</a></td>
 <td><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></td>
 <td><a href="http://schema.org/DataCatalog"><code title="http://schema.org/DataCatalog">schema:DataCatalog</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#schema-org-mapping-properties-dataset">Dataset</a></td>
+<td><a href="#schema-org-mapping-properties-dataset">Dataset</a></td>
 <td><code title="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</code></td>
 <td><a href="http://schema.org/Dataset"><code title="http://schema.org/Dataset">schema:Dataset</code></a></td>
 </tr>
 <tr>
-<td rowspan="2"><a class="no-sectionRef" href="#schema-org-mapping-properties-identifier">Identifier</a></td>
+<td rowspan="2"><a href="#schema-org-mapping-properties-identifier">Identifier</a></td>
 <td rowspan="2"><code title="http://www.w3.org/ns/adms#Identifier">adms:Identifier</code></td>
 <td><a href="http://schema.org/PropertyValue"><code title="http://schema.org/PropertyValue">schema:PropertyValue</code></a></td>
 </tr>
@@ -12272,22 +12289,22 @@ code list has been created, based on the identifier schemes supported in [[?Data
 <td><a href="http://schema.org/Text"><code title="http://schema.org/Text">schema:Text</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#schema-org-mapping-properties-agent-individual">Individual</a></td>
+<td><a href="#schema-org-mapping-properties-agent-individual">Individual</a></td>
 <td><code title="http://xmlns.com/foaf/0.1/Person">foaf:Person</code></td>
 <td><a href="http://schema.org/Person"><code title="http://schema.org/Person">schema:Person</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#schema-org-mapping-properties-agent-organisation">Organisation</a></td>
+<td><a href="#schema-org-mapping-properties-agent-organisation">Organisation</a></td>
 <td><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></td>
 <td><a href="http://schema.org/Organization"><code title="http://schema.org/Organization">schema:Organization</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#schema-org-mapping-properties-spatial-coverage">Spatial coverage</a></td>
+<td><a href="#schema-org-mapping-properties-spatial-coverage">Spatial coverage</a></td>
 <td><code title="http://purl.org/dc/terms/Location">dct:Location</code></td>
 <td><a href="http://schema.org/Place"><code title="http://schema.org/Place">schema:Place</code></a></td>
 </tr>
 <tr>
-<td rowspan="2"><a class="no-sectionRef" href="#schema-org-mapping-properties-temporal-coverage">Temporal coverage</a></td>
+<td rowspan="2"><a href="#schema-org-mapping-properties-temporal-coverage">Temporal coverage</a></td>
 <td rowspan="2"><code title="http://purl.org/dc/terms/PeriodOfTime">dct:PeriodOfTime</code></td>
 <td><a href="http://schema.org/DateTime"><code title="http://schema.org/DateTime">schema:DateTime</code></a></td>
 </tr>
@@ -12295,12 +12312,12 @@ code list has been created, based on the identifier schemes supported in [[?Data
 <td><a href="http://schema.org/Text"><code title="http://schema.org/Text">schema:Text</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#schema-org-mapping-properties-distribution">Distribution</a></td>
+<td><a href="#schema-org-mapping-properties-distribution">Distribution</a></td>
 <td><code title="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</code></td>
 <td><a href="http://schema.org/DataDownload"><code title="http://schema.org/DataDownload">schema:DataDownload</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#schema-org-mapping-properties-publication">Publication</a></td>
+<td><a href="#schema-org-mapping-properties-publication">Publication</a></td>
 <td><code title="http://xmlns.com/foaf/0.1/Document">foaf:Document</code></td>
 <td><a href="http://schema.org/Article"><code title="http://schema.org/Article">schema:Article</code></a></td>
 </tr>
@@ -12330,13 +12347,13 @@ code list has been created, based on the identifier schemes supported in [[?Data
 </thead>
 <tbody>
 <tr>
-<td><a class="no-sectionRef" href="#catalogue-title">title</a></td>
+<td><a href="#catalogue-title">title</a></td>
 <td><code title="http://purl.org/dc/terms/title">dct:title</code></td>
 <td><a href="http://schema.org/name"><code title="http://schema.org/name">schema:name</code></a></td>
 <td><a href="http://schema.org/Text"><code title="http://schema.org/Text">schema:Text</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#catalogue-landing-page">landing page</a></td>
+<td><a href="#catalogue-landing-page">landing page</a></td>
 <td><code title="http://xmlns.com/foaf/0.1/homepage">foaf:homepage</code></td>
 <td><a href="http://schema.org/url"><code title="http://schema.org/url">schema:url</code></a></td>
 <td><a href="http://schema.org/URL"><code title="http://schema.org/URL">schema:URL</code></a></td>
@@ -12361,86 +12378,86 @@ code list has been created, based on the identifier schemes supported in [[?Data
 </thead>
 <tbody>
 <tr>
-<td><a class="no-sectionRef" href="#dataset-title">title</a></td>
+<td><a href="#dataset-title">title</a></td>
 <td><code title="http://purl.org/dc/terms/title">dct:title</code></td>
 <td><a href="http://schema.org/name"><code title="http://schema.org/name">schema:name</code></a></td>
 <td><a href="http://schema.org/Text"><code title="http://schema.org/Text">schema:Text</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#dataset-description">description</a></td>
+<td><a href="#dataset-description">description</a></td>
 <td><code title="http://purl.org/dc/terms/description">dct:description</code></td>
 <td><a href="http://schema.org/description"><code title="http://schema.org/description">schema:description</code></a></td>
 <td><a href="http://schema.org/Text"><code title="http://schema.org/Text">schema:Text</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#dataset-publication-date">publication date</a></td>
+<td><a href="#dataset-publication-date">publication date</a></td>
 <td><code title="http://purl.org/dc/terms/issued">dct:issued</code></td>
 <td><a href="http://schema.org/datePublished"><code title="http://schema.org/datePublished">schema:datePublished</code></a></td>
 <td><a href="http://schema.org/Date"><code title="http://schema.org/Date">schema:Date</code></a></td>
 </tr>
 <tr>
-<td rowspan="2"><a class="no-sectionRef" href="#dataset-contributor">contributor</a></td>
+<td rowspan="2"><a href="#dataset-contributor">contributor</a></td>
 <td rowspan="2"><code title="http://purl.org/dc/terms/creator">dct:creator</code></td>
 <td rowspan="2"><a href="http://schema.org/creator"><code title="http://schema.org/creator">schema:creator</code></a></td>
-<td><a class="no-sectionRef" href="#schema-org-mapping-properties-agent-individual">Individual</a></td>
+<td><a href="#schema-org-mapping-properties-agent-individual">Individual</a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#schema-org-mapping-properties-agent-organisation">Organisation</a></td>
+<td><a href="#schema-org-mapping-properties-agent-organisation">Organisation</a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#dataset-publisher">publisher</a></td>
+<td><a href="#dataset-publisher">publisher</a></td>
 <td><code title="http://purl.org/dc/terms/publisher">dct:publisher</code></td>
 <td><a href="http://schema.org/publisher"><code title="http://schema.org/datePublished">schema:publisher</code></a></td>
-<td><a class="no-sectionRef" href="#schema-org-mapping-properties-agent-organisation">Organisation</a></td>
+<td><a href="#schema-org-mapping-properties-agent-organisation">Organisation</a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#dataset-other-identifier-literal">other identifier (as literal)</a></td>
+<td><a href="#dataset-other-identifier-literal">other identifier (as literal)</a></td>
 <td><code title="http://www.w3.org/ns/adms#identifier">adms:identifier</code></td>
 <td><a href="http://schema.org/identifier"><code title="http://schema.org/identifier">schema:identifier</code></a></td>
-<td><a class="no-sectionRef" href="#schema-org-mapping-properties-identifier">Identifier</a></td>
+<td><a href="#schema-org-mapping-properties-identifier">Identifier</a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#dataset-theme">theme</a></td>
+<td><a href="#dataset-theme">theme</a></td>
 <td><code title="http://www.w3.org/ns/dcat#theme">dcat:theme</code></td>
 <td rowspan="2"><a href="http://schema.org/keywords"><code title="http://schema.org/keywords">schema:keywords</code></a></td>
 <td rowspan="2"><a href="http://schema.org/Text"><code title="http://schema.org/Text">schema:Text</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#dataset-keyword">keyword</a></td>
+<td><a href="#dataset-keyword">keyword</a></td>
 <td><code title="http://www.w3.org/ns/dcat#keyword">dcat:keyword</code></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#dataset-temporal-coverage">temporal coverage</a></td>
+<td><a href="#dataset-temporal-coverage">temporal coverage</a></td>
 <td><code title="http://purl.org/dc/terms/temporal">dct:temporal</code></td>
 <td><a href="http://schema.org/temporalCoverage"><code title="http://schema.org/temporalCoverage">schema:temporalCoverage</code></a></td>
-<td><a class="no-sectionRef" href="#schema-org-mapping-properties-temporal-coverage">Temporal coverage</a></td>
+<td><a href="#schema-org-mapping-properties-temporal-coverage">Temporal coverage</a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#dataset-spatial-coverage">spatial coverage</a></td>
+<td><a href="#dataset-spatial-coverage">spatial coverage</a></td>
 <td><code title="http://purl.org/dc/terms/spatial">dct:spatial</code></td>
 <td><a href="http://schema.org/spatialCoverage"><code title="http://schema.org/spatialCoverage">schema:spatialCoverage</code></a></td>
-<td><a class="no-sectionRef" href="#schema-org-mapping-properties-spatial-coverage">Spatial coverage</a></td>
+<td><a href="#schema-org-mapping-properties-spatial-coverage">Spatial coverage</a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#dataset-distribution">distribution</a></td>
+<td><a href="#dataset-distribution">distribution</a></td>
 <td><code title="http://www.w3.org/ns/dcat#distribution">dcat:distribution</code></td>
 <td><a href="http://schema.org/distribution"><code title="http://schema.org/distribution">schema:distribution</code></a></td>
-<td><a class="no-sectionRef" href="#schema-org-mapping-properties-distribution">Distribution</a></td>
+<td><a href="#schema-org-mapping-properties-distribution">Distribution</a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#dataset-publication">publication</a></td>
+<td><a href="#dataset-publication">publication</a></td>
 <td><code title="http://purl.org/dc/terms/isReferencedBy">dct:isReferencedBy</code></td>
 <td><a href="http://schema.org/citation"><code title="http://schema.org/citation">schema:citation</code></a></td>
-<td><a class="no-sectionRef" href="#schema-org-mapping-properties-publication">Publication</a></td>
+<td><a href="#schema-org-mapping-properties-publication">Publication</a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#dataset-catalogue">catalogue</a></td>
+<td><a href="#dataset-catalogue">catalogue</a></td>
 <td><code title="http://purl.org/dc/terms/isPartOf">dct:isPartOf</code></td>
 <td><a href="http://schema.org/includedInDataCatalog"><code title="http://schema.org/includedInDataCatalog">schema:includedInDataCatalog</code></a></td>
-<td><a class="no-sectionRef" href="#schema-org-mapping-properties-catalogue">Catalogue</a></td>
+<td><a href="#schema-org-mapping-properties-catalogue">Catalogue</a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#dataset-data-policy">data policy</a></td>
+<td><a href="#dataset-data-policy">data policy</a></td>
 <td><code title="http://purl.org/dc/terms/conformsTo">dct:conformsTo</code></td>
 <td><a href="http://schema.org/publishingPrinciples"><code title="http://schema.org/publishingPrinciples">schema:publishingPrinciples</code></a></td>
 <td><a href="http://schema.org/URL"><code title="http://schema.org/URL">schema:URL</code></a></td>
@@ -12451,9 +12468,9 @@ code list has been created, based on the identifier schemes supported in [[?Data
 <p>Additional mapping rules:</p>
 <ul>
 <li>The dataset URI is used as value of properties <code>schema:url</code> and <code>schema:sameAs</code>.</li>
-<li>Property <a class="no-sectionRef" href="#dataset-theme"><code>dcat:theme</code></a> is mapped to <a href="http://schema.org/keywords"><code>schema:keywords</code></a>, although the latter is meant to be used for free text keywords (as property <a class="no-sectionRef" href="#dataset-keyword"><code>dcat:keyword</code></a> in [[VOCAB-DCAT]]). The reason is that [[?SCHEMA-ORG]] does not currently support a way to specify terms from controlled vocabularies, code lists, thesauri, and taxonomies. For more details on this issue, see <a data-cite="?DCAT-AP-SDO#categories-and-category-schemes">&sect;&nbsp;<span class="secno">4.1 </span>Categories and category schemes</a> in [[?DCAT-AP-SDO]].</li>
-<li>In DCAT-AP-JRC, <a class="no-sectionRef" href="#dataset-theme"><code>dcat:theme</code></a> takes as value only the URI of the relevant concept. However, since <a href="http://schema.org/keywords"><code>schema:keywords</code></a> is instead meant to specify textual labels, the mapping rules take this information from the controlled vocabulary used for <a class="no-sectionRef" href="#dataset-theme"><code>dcat:theme</code></a> (namely, [[MDR-THEMES]]).</li>
-<li>Differently from <a class="no-sectionRef" href="#dataset-theme"><code>dcat:theme</code></a> and <a class="no-sectionRef" href="#dataset-keyword"><code>dcat:keyword</code></a>, which take as value a single keyword / concept, property <a href="http://schema.org/keywords"><code>schema:keywords</code></a> specifies a list of keywords, using a given character as a delimiter (a comma or a semi-colon). Consequently, the mapping rules join the values of possibly multiple instances of <a class="no-sectionRef" href="#dataset-theme"><code>dcat:theme</code></a> and <a class="no-sectionRef" href="#dataset-keyword"><code>dcat:keyword</code></a> to generate the string to be used as value of <a href="http://schema.org/keywords"><code>schema:keywords</code></a>.</li>
+<li>Property <a href="#dataset-theme"><code>dcat:theme</code></a> is mapped to <a href="http://schema.org/keywords"><code>schema:keywords</code></a>, although the latter is meant to be used for free text keywords (as property <a href="#dataset-keyword"><code>dcat:keyword</code></a> in [[VOCAB-DCAT]]). The reason is that [[?SCHEMA-ORG]] does not currently support a way to specify terms from controlled vocabularies, code lists, thesauri, and taxonomies. For more details on this issue, see <a data-cite="?DCAT-AP-SDO#categories-and-category-schemes">&sect;&nbsp;<span class="secno">4.1 </span>Categories and category schemes</a> in [[?DCAT-AP-SDO]].</li>
+<li>In DCAT-AP-JRC, <a href="#dataset-theme"><code>dcat:theme</code></a> takes as value only the URI of the relevant concept. However, since <a href="http://schema.org/keywords"><code>schema:keywords</code></a> is instead meant to specify textual labels, the mapping rules take this information from the controlled vocabulary used for <a href="#dataset-theme"><code>dcat:theme</code></a> (namely, [[MDR-THEMES]]).</li>
+<li>Differently from <a href="#dataset-theme"><code>dcat:theme</code></a> and <a href="#dataset-keyword"><code>dcat:keyword</code></a>, which take as value a single keyword / concept, property <a href="http://schema.org/keywords"><code>schema:keywords</code></a> specifies a list of keywords, using a given character as a delimiter (a comma or a semi-colon). Consequently, the mapping rules join the values of possibly multiple instances of <a href="#dataset-theme"><code>dcat:theme</code></a> and <a href="#dataset-keyword"><code>dcat:keyword</code></a> to generate the string to be used as value of <a href="http://schema.org/keywords"><code>schema:keywords</code></a>.</li>
 </ul>
 
 </section>
@@ -12464,7 +12481,7 @@ code list has been created, based on the identifier schemes supported in [[?Data
 
 <p>Identifiers are mapped differently depending of their type. More precisely:</p>
 <ol>
-<li>As <code>schema:Text</code> in case of DOIs and ORCIDs, by using the value specified by property <a class="no-sectionRef" href="#identifier-notation"><code>skos:notation</code></a> of class <code>adms:Identifier</code>. This approach follows the guidelines for the Google Dataset Search service.</li>
+<li>As <code>schema:Text</code> in case of DOIs and ORCIDs, by using the value specified by property <a href="#identifier-notation"><code>skos:notation</code></a> of class <code>adms:Identifier</code>. This approach follows the guidelines for the Google Dataset Search service.</li>
 <li>As <code>schema:PropertyValue</code> in all the other cases.</li>
 </ol>
 
@@ -12481,13 +12498,13 @@ code list has been created, based on the identifier schemes supported in [[?Data
 </thead>
 <tbody>
 <tr>
-<td><a class="no-sectionRef" href="#identifier-notation">notation</a></td>
+<td><a href="#identifier-notation">notation</a></td>
 <td><code title="http://www.w3.org/2004/02/skos/core#notation">skos:notation</code></td>
 <td><a href="http://schema.org/value"><code title="http://schema.org/value">schema:value</code></a></td>
 <td><a href="http://schema.org/Text"><code title="http://schema.org/Text">schema:Text</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#identifier-scheme-agency-name">scheme agency name</a></td>
+<td><a href="#identifier-scheme-agency-name">scheme agency name</a></td>
 <td><code title="http://www.w3.org/ns/adms#schemeAgency">adms:schemeAgency</code></td>
 <td><a href="http://schema.org/propertyID"><code title="http://schema.org/propertyID">schema:propertyID</code></a></td>
 <td><a href="http://schema.org/Text"><code title="http://schema.org/Text">schema:Text</code></a></td>
@@ -12514,25 +12531,25 @@ code list has been created, based on the identifier schemes supported in [[?Data
 </thead>
 <tbody>
 <tr>
-<td><a class="no-sectionRef" href="#agent-individual-given-name">given name</a></td>
+<td><a href="#agent-individual-given-name">given name</a></td>
 <td><code title="http://xmlns.com/foaf/0.1/givenName">foaf:givenName</code></td>
 <td><a href="http://schema.org/givenName"><code title="http://schema.org/givenName">schema:givenName</code></a></td>
 <td><a href="http://schema.org/Text"><code title="http://schema.org/Text">schema:Text</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#agent-individual-family-name">family name</a></td>
+<td><a href="#agent-individual-family-name">family name</a></td>
 <td><code title="http://xmlns.com/foaf/0.1/familyName">foaf:familyName</code></td>
 <td><a href="http://schema.org/familyName"><code title="http://schema.org/familyName">schema:familyName</code></a></td>
 <td><a href="http://schema.org/Text"><code title="http://schema.org/Text">schema:Text</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#agent-individual-formatted-name">formatted name</a></td>
+<td><a href="#agent-individual-formatted-name">formatted name</a></td>
 <td><code title="http://xmlns.com/foaf/0.1/name">foaf:name</code></td>
 <td><a href="http://schema.org/name"><code title="http://schema.org/name">schema:name</code></a></td>
 <td><a href="http://schema.org/Text"><code title="http://schema.org/Text">schema:Text</code></a></td>
 </tr>
 <tr>
-<td rowspan="2"><a class="no-sectionRef" href="#agent-individual-other-identifier-uri">other identifier (as URI)</a></td>
+<td rowspan="2"><a href="#agent-individual-other-identifier-uri">other identifier (as URI)</a></td>
 <td rowspan="2"><code title="http://www.w3.org/2002/07/owl#sameAs">owl:sameAs</code></td>
 <td><a href="http://schema.org/sameAs"><code title="http://schema.org/sameAs">schema:sameAs</code></a></td>
 <td rowspan="2"><a href="http://schema.org/URL"><code title="http://schema.org/URL">schema:URL</code></a></td>
@@ -12541,10 +12558,10 @@ code list has been created, based on the identifier schemes supported in [[?Data
 <td><a href="http://schema.org/url"><code title="http://schema.org/url">schema:url</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#agent-individual-other-identifier-literal">other identifier (as literal)</a></td>
+<td><a href="#agent-individual-other-identifier-literal">other identifier (as literal)</a></td>
 <td><code title="http://www.w3.org/ns/adms#identifier">adms:identifier</code></td>
 <td><a href="http://schema.org/identifier"><code title="http://schema.org/identifier">schema:identifier</code></a></td>
-<td><a class="no-sectionRef" href="#schema-org-mapping-properties-identifier">Identifier</a></td>
+<td><a href="#schema-org-mapping-properties-identifier">Identifier</a></td>
 </tr>
 </tbody>
 </table>
@@ -12568,13 +12585,13 @@ code list has been created, based on the identifier schemes supported in [[?Data
 </thead>
 <tbody>
 <tr>
-<td><a class="no-sectionRef" href="#agent-organisation-name">name</a></td>
+<td><a href="#agent-organisation-name">name</a></td>
 <td><code title="http://xmlns.com/foaf/0.1/name">foaf:name</code></td>
 <td><a href="http://schema.org/name"><code title="http://schema.org/name">schema:name</code></a></td>
 <td><a href="http://schema.org/Text"><code title="http://schema.org/Text">schema:Text</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#agent-organisation-home-page">home page</a></td>
+<td><a href="#agent-organisation-home-page">home page</a></td>
 <td><code title="http://xmlns.com/foaf/0.1/homepage">foaf:homepage</code></td>
 <td><a href="http://schema.org/url"><code title="http://schema.org/url">schema:url</code></a></td>
 <td><a href="http://schema.org/URL"><code title="http://schema.org/URL">schema:URL</code></a></td>
@@ -12589,7 +12606,7 @@ code list has been created, based on the identifier schemes supported in [[?Data
 <h2>Spatial coverage</h2>
 
 <p>The mapping described in the following table are mutually exclusive, and their use depends on whether the spatial coverage is specified as a geographical name or as a geometry.</p>
-<p>In the former case, the actual geographical name is taken from the reference code list used, as DCAT-AP-JRC uses only the corresponding URI (see <a class="no-sectionRef" href="#spatial-coverage-geoname"></a>).</p>
+<p>In the former case, the actual geographical name is taken from the reference code list used, as DCAT-AP-JRC uses only the corresponding URI (see <a href="#spatial-coverage-geoname"></a>).</p>
 <p>When instead a geometry is used, the mapping rule requires an additional transformation of the geometry encoding from the one used in DCAT-AP-JRC to the one used in [[?SCHEMA-ORG]]. For this specific issue, we refer the reader to <a data-cite="?DCAT-AP-SDO#geometries">&sect;&nbsp;<span class="secno">4.7 </span>Geometries</a> of [[?DCAT-AP-SDO]].</p>
 
 <table class="simple">
@@ -12603,13 +12620,13 @@ code list has been created, based on the identifier schemes supported in [[?Data
 </thead>
 <tbody>
 <tr>
-<td><a class="no-sectionRef" href="#spatial-coverage-geoname">name</a></td>
+<td><a href="#spatial-coverage-geoname">name</a></td>
 <td><code title="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</code></td>
 <td><a href="http://schema.org/name"><code title="http://schema.org/name">schema:name</code></a></td>
 <td><a href="http://schema.org/Text"><code title="http://schema.org/Text">schema:Text</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#spatial-coverage-geometry-geometry">geometry</a></td>
+<td><a href="#spatial-coverage-geometry-geometry">geometry</a></td>
 <td><code title="http://www.w3.org/ns/locn#geometry">locn:geometry</code></td>
 <td><a href="http://schema.org/geo"><code title="http://schema.org/geo">schema:geo</code></a></td>
 <td><a href="http://schema.org/GeoShape"><code title="http://schema.org/GeoShape">schema:GeoShape</code></a></td>
@@ -12623,7 +12640,7 @@ code list has been created, based on the identifier schemes supported in [[?Data
 
 <h2>Temporal coverage</h2>
 
-<p><a class="no-sectionRef" href="#temporal-coverage">Temporal coverage</a> is mapped to the literal value used by property <a href="http://schema.org/temporalCoverage"><code title="http://schema.org/temporalCoverage">schema:temporalCoverage</code></a>, namely (quoting) "a textual string indicating a time period in ISO 8601 time interval format", following the syntax <code>YYYY-MM-DD/YYYY-MM-DD</code> [[?ISO-8061]]. The dates before and after the slash (<code>/</code>) are taken from the properties used in DCAT-AP-JRC to specify the <a class="no-sectionRef" href="#temporal-coverage-start-date">start</a> and the <a class="no-sectionRef" href="#temporal-coverage-end-date">end</a> of the interval, respectively.</p>
+<p><a href="#temporal-coverage">Temporal coverage</a> is mapped to the literal value used by property <a href="http://schema.org/temporalCoverage"><code title="http://schema.org/temporalCoverage">schema:temporalCoverage</code></a>, namely (quoting) "a textual string indicating a time period in ISO 8601 time interval format", following the syntax <code>YYYY-MM-DD/YYYY-MM-DD</code> [[?ISO-8061]]. The dates before and after the slash (<code>/</code>) are taken from the properties used in DCAT-AP-JRC to specify the <a href="#temporal-coverage-start-date">start</a> and the <a href="#temporal-coverage-end-date">end</a> of the interval, respectively.</p>
 
 </section>
 
@@ -12644,25 +12661,25 @@ code list has been created, based on the identifier schemes supported in [[?Data
 </thead>
 <tbody>
 <tr>
-<td><a class="no-sectionRef" href="#distribution-title">title</a></td>
+<td><a href="#distribution-title">title</a></td>
 <td><code title="http://purl.org/dc/terms/title">dct:title</code></td>
 <td><a href="http://schema.org/name"><code title="http://schema.org/name">schema:name</code></a></td>
 <td><a href="http://schema.org/Text"><code title="http://schema.org/Text">schema:Text</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#distribution-format">format</a></td>
+<td><a href="#distribution-format">format</a></td>
 <td><code title="http://purl.org/dc/terms/format">dct:format</code></td>
 <td><a href="http://schema.org/fileFormat"><code title="http://schema.org/fileFormat">schema:fileFormat</code></a></td>
 <td><a href="http://schema.org/Text"><code title="http://schema.org/Text">schema:Text</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#distribution-access-url">access URL</a></td>
+<td><a href="#distribution-access-url">access URL</a></td>
 <td><code title="http://www.w3.org/ns/dcat#accessURL">dcat:accessURL</code></td>
 <td rowspan="2"><a href="http://schema.org/contentUrl"><code title="http://schema.org/contentUrl">schema:contentUrl</code></a></td>
 <td rowspan="2"><a href="http://schema.org/URL"><code title="http://schema.org/URL">schema:URL</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#distribution-download-url">download URL</a></td>
+<td><a href="#distribution-download-url">download URL</a></td>
 <td><code title="http://www.w3.org/ns/dcat#downloadURL">dcat:downloadURL</code></td>
 </tr>
 </tbody>
@@ -12670,7 +12687,7 @@ code list has been created, based on the identifier schemes supported in [[?Data
 
 <p>Additional mapping rules:</p>
 <ul>
-<li>In DCAT-AP-JRC, <a class="no-sectionRref" href="#distribution-format"><code>dct:format</code></a> takes as value only the URI of the relevant file format / media type. However, since <a href="http://schema.org/fileFormat"><code>schema:fileFormat</code></a> is instead meant to specify this information as a textual label, the mapping rules take this information from the controlled vocabulary used for <a class="no-sectionRef" href="#distribution-format"><code>dct:format</code></a> (namely, [[MDR-FT]]).</li>
+<li>In DCAT-AP-JRC, <a class="no-sectionRref" href="#distribution-format"><code>dct:format</code></a> takes as value only the URI of the relevant file format / media type. However, since <a href="http://schema.org/fileFormat"><code>schema:fileFormat</code></a> is instead meant to specify this information as a textual label, the mapping rules take this information from the controlled vocabulary used for <a href="#distribution-format"><code>dct:format</code></a> (namely, [[MDR-FT]]).</li>
 </ul>
 
 </section>
@@ -12692,25 +12709,25 @@ code list has been created, based on the identifier schemes supported in [[?Data
 </thead>
 <tbody>
 <tr>
-<td><a class="no-sectionRef" href="#publication-title">title</a></td>
+<td><a href="#publication-title">title</a></td>
 <td><code title="http://purl.org/dc/terms/title">dct:title</code></td>
 <td><a href="http://schema.org/name"><code title="http://schema.org/name">schema:name</code></a></td>
 <td><a href="http://schema.org/Text"><code title="http://schema.org/Text">schema:Text</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#publication-other-identifier-uri">other identifier (as URI)</a></td>
+<td><a href="#publication-other-identifier-uri">other identifier (as URI)</a></td>
 <td><code title="http://www.w3.org/2002/07/owl#sameAs">owl:sameAs</code></td>
 <td><a href="http://schema.org/url"><code title="http://schema.org/url">schema:url</code></a></td>
 <td><a href="http://schema.org/URL"><code title="http://schema.org/URL">schema:URL</code></a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#publication-other-identifier-literal">other identifier (as literal)</a></td>
+<td><a href="#publication-other-identifier-literal">other identifier (as literal)</a></td>
 <td><code title="http://www.w3.org/ns/adms#identifier">adms:identifier</code></td>
 <td><a href="http://schema.org/identifier"><code title="http://schema.org/identifier">schema:identifier</code></a></td>
-<td><a class="no-sectionRef" href="#schema-org-mapping-properties-identifier">Identifier</a></td>
+<td><a href="#schema-org-mapping-properties-identifier">Identifier</a></td>
 </tr>
 <tr>
-<td><a class="no-sectionRef" href="#publication-bibliographic-citation">bibliographic citation</a></td>
+<td><a href="#publication-bibliographic-citation">bibliographic citation</a></td>
 <td><code title="http://purl.org/dc/terms/bibliographicCitation">dct:bibliographicCitation</code></td>
 <td><a href="http://schema.org/description"><code title="http://schema.org/description">schema:description</code></a></td>
 <td><a href="http://schema.org/Text"><code title="http://schema.org/Text">schema:Text</code></a></td>
@@ -12753,76 +12770,76 @@ code list has been created, based on the identifier schemes supported in [[?Data
 <tbody>
 <tr>
 <td><a data-cite="?DCAT-UCR#ID9">&sect;&nbsp;<span class="secno">5.9 </span>Common requirements for scientific data</a></td>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 <tr>
 <td><a data-cite="?DCAT-UCR#ID10">&sect;&nbsp;<span class="secno">5.10 </span>Requirements for data citation</a></td>
-<td><a class="no-sectionRef" href="#req-data-citation"></a></td>
+<td><a href="#req-data-citation"></a></td>
 </tr>
 <tr>
 <td><a data-cite="?DCAT-UCR#ID11">&sect;&nbsp;<span class="secno">5.11 </span>Modeling identifiers and making them actionable</a></td>
-<td><a class="no-sectionRef" href="#req-identifiers"></a></td>
+<td><a href="#req-identifiers"></a></td>
 </tr>
 <tr>
 <td><a data-cite="?DCAT-UCR#ID12">&sect;&nbsp;<span class="secno">5.12 </span>Modeling data lineage</a></td>
-<td><a class="no-sectionRef" href="#req-across-disciplines"></a></td>
+<td><a href="#req-across-disciplines"></a></td>
 </tr>
 <tr>
 <td><a data-cite="?DCAT-UCR#ID13">&sect;&nbsp;<span class="secno">5.13 </span>Modeling agent roles</a></td>
 <td>
-<a class="no-sectionRef" href="#req-across-disciplines"></a>,
-<a class="no-sectionRef" href="#req-data-citation"></a>,
-<a class="no-sectionRef" href="#req-agent-roles"></a>
+<a href="#req-across-disciplines"></a>,
+<a href="#req-data-citation"></a>,
+<a href="#req-agent-roles"></a>
 </td>
 </tr>
 <!--
 <tr>
 <td><a data-cite="?DCAT-UCR#ID14">&sect;&nbsp;<span class="secno">5.14 </span>Data quality modeling patterns</a></td>
-<td><a class="no-sectionRef" href="#"></a></td>
+<td><a href="#"></a></td>
 </tr>
 <tr>
 <td><a data-cite="?DCAT-UCR#ID15">&sect;&nbsp;<span class="secno">5.15 </span>Modeling data precision and accuracy</a></td>
-<td><a class="no-sectionRef" href="#"></a></td>
+<td><a href="#"></a></td>
 </tr>
 <tr>
 <td><a data-cite="?DCAT-UCR#ID16">&sect;&nbsp;<span class="secno">5.16 </span>Modeling conformance test results on data quality</a></td>
-<td><a class="no-sectionRef" href="#"></a></td>
+<td><a href="#"></a></td>
 </tr>
 -->
 <tr>
 <td><a data-cite="?DCAT-UCR#ID17">&sect;&nbsp;<span class="secno">5.17 </span>Data access restrictions</a></td>
-<td><a class="no-sectionRef" href="#req-distribution-access-restrictions"></a></td>
+<td><a href="#req-distribution-access-restrictions"></a></td>
 </tr>
 <tr>
 <td><a data-cite="?DCAT-UCR#ID18">&sect;&nbsp;<span class="secno">5.18 </span>Modeling service-based data access</a></td>
-<td><a class="no-sectionRef" href="#req-distribution-types-and-functions"></a></td>
+<td><a href="#req-distribution-types-and-functions"></a></td>
 </tr>
 <!--
 <tr>
 <td><a data-cite="?DCAT-UCR#ID19">&sect;&nbsp;<span class="secno">5.19 </span>Guidance on the use of qualified forms</a></td>
-<td><a class="no-sectionRef" href="#"></a></td>
+<td><a href="#"></a></td>
 </tr>
 -->
 <tr>
 <td><a data-cite="?DCAT-UCR#ID20">&sect;&nbsp;<span class="secno">5.20 </span>Modeling resources different from datasets</a></td>
-<td><a class="no-sectionRef" href="#req-catalogue-endpoints"></a></td>
+<td><a href="#req-catalogue-endpoints"></a></td>
 </tr>
 <!--
 <tr>
 <td><a data-cite="?DCAT-UCR#ID27">&sect;&nbsp;<span class="secno">5.27 </span>Modeling temporal coverage</a></td>
-<td><a class="no-sectionRef" href="#"></a></td>
+<td><a href="#"></a></td>
 </tr>
 <tr>
 <td><a data-cite="?DCAT-UCR#ID28">&sect;&nbsp;<span class="secno">5.28 </span>Modeling reference systems</a></td>
-<td><a class="no-sectionRef" href="#"></a></td>
+<td><a href="#"></a></td>
 </tr>
 <tr>
 <td><a data-cite="?DCAT-UCR#ID29">&sect;&nbsp;<span class="secno">5.29 </span>Modeling spatial coverage</a></td>
-<td><a class="no-sectionRef" href="#"></a></td>
+<td><a href="#"></a></td>
 </tr>
 <tr>
 <td><a data-cite="?DCAT-UCR#ID30">&sect;&nbsp;<span class="secno">5.30 </span>Standard APIs for metadata profile negotiation</a></td>
-<td><a class="no-sectionRef" href="#"></a></td>
+<td><a href="#"></a></td>
 </tr>
 -->
 </tbody>
@@ -12839,11 +12856,11 @@ code list has been created, based on the identifier schemes supported in [[?Data
 <tbody>
 <tr>
 <td><a href="https://github.com/w3c/dxwg/issues/95">Issue #95: Proposal for relaxing domain of dcat:contactPoint</a></td>
-<td><a class="no-sectionRef" href="#req-agent-roles"></a></td>
+<td><a href="#req-agent-roles"></a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/w3c/dxwg/issues/132">Issue #132: Linking a metadata record to the relevant catalogue(s)</a></td>
-<td><a class="no-sectionRef" href="#req-dataset-catalogue"></a></td>
+<td><a href="#req-dataset-catalogue"></a></td>
 </tr>
 </tbody>
 </table>
@@ -12888,9 +12905,10 @@ code list has been created, based on the identifier schemes supported in [[?Data
 <ul>
 <li>Editorial revisions.</li>
 <li>Added section <a href="#scope-of-the-revision"></a>.</li>
-<li>Added class <code>dcat:DataService</code> and related properties (<a href="#data-service"></a>).</li>
-<li>Added property <code>dcat:accessService</code> to <code>dcat:Distribution</code> (<a href="#distribution-access-service"></a>).</li>
 <li>Revised class diagram in section <a href="#vocabulary-overview"></a> to include class <code>dcat:DataService</code>.</li>
+<li>Added property <code>dcat:accessService</code> to <code>dcat:Distribution</code> (<a href="#distribution-access-service"></a>).</li>
+<li>Added class <code>dcat:DataService</code> and related properties (<a href="#data-service"></a>).</li>
+<li>Replaced <code>dctype:Service</code> with <code>dcat:DataService</code> for endpoints (<a href="#endpoint"></a>).</li>
 </ul>
 
 </section>
