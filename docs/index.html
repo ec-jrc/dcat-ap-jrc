@@ -12813,30 +12813,33 @@ code list has been created, based on the identifier schemes supported in [[?Data
 
 <h2>Upgrading metadata to the current version</h2>
 
-<p>The following SPARQL queries can be used to upgrade metadata records following [[DCAT-AP-JRC-1]] to the current version.</p>
+<p>This section illustrates the approach that can be used to upgrade metadata records following [[DCAT-AP-JRC-1]] to the current version.</p>
 
 <section id="add-data-service-to-distribution">
 
 <h2>Adding a data service to a distribution</h2>
 
-<p>This query performs the following operations:</p>
+<p>The current version of DCAT-AP-JRC introduces a new class, <code>dcat:DataService</code>, to describe services / APIs giving access to distributions (<a href="#data-service"></a>).</p>
+
+<p>To upgrade metadata records following [[DCAT-AP-JRC-1]], it is necessary to automatically provide a description of data services associated with existing distributions.</p>
+
+<p>The approach to be implemented is as follows:</p>
 
 <ul>
-<li>adds a <code>dcat:DataService</code> for each <code>dcat:Distribution</code> accessible via a service / API.</li>
-<li>links the <code>dcat:Distribution</code> to the created <code>dcat:DataService</code> via property <code>dcat:accessService</code> (<a href="#distribution-access-service"></a>).</li>
-<li>links the <code>dcat:DataService</code> to the corresponding <code>dcat:Dataset</code> via property <code>dcat:servesDataset</code> (<a href="#data-service-serves-dataset"></a>).</li>
+<li>Add a <code>dcat:DataService</code> for each <code>dcat:Distribution</code> accessible via a service / API.</li>
+<li>Link the <code>dcat:Distribution</code> to the created <code>dcat:DataService</code> via property <code>dcat:accessService</code> (<a href="#distribution-access-service"></a>).</li>
+<li>Link the <code>dcat:DataService</code> to the corresponding <code>dcat:Dataset</code> via property <code>dcat:servesDataset</code> (<a href="#data-service-serves-dataset"></a>).</li>
 </ul>
+
+<p>Each instance of <code>dcat:DataService</code> will be identified by a URI with the following pattern [[RFC6570]]:</p>
+
+<pre>
+https://data.jrc.ec.europa.eu/{UUID}
+</pre>
+
+<p>where <var>UUID</var> is a randomly generated Universally Unique Identifier (UUID) [[RFC4122]].</p>
 
 <p>The information describing the data service is taken from the distribution, as described in the following table.</p>
-
-<!--
-<ul>
-<li>Property <code>dcat:accessURL</code>: the data service endpoint URL and description (<a href="#data-service-endpoint-url"></a>, <a href="#data-service-endpoint-description"></a>).</li>
-<li>Property <code>dct:license</code>: the data service licence (<a href="#data-service-licence"></a>).</li>
-<li>Property <code>dct:accessRights</code>: the data service access restrictions (<a href="#data-service-access-restrictions"></a>).</li>
-<li>Property <code>dct:conformsTo</code>: the data service protocol (<a href="#data-service-conforms-to"></a>).</li>
-</ul>
--->
 
 <table id="table-distribution-to-data-service-mapping" class="simple">
 <thead>
@@ -12870,7 +12873,7 @@ code list has been created, based on the identifier schemes supported in [[?Data
 
 <p>Finally, to avoid duplicates, the record for the data service is created only if there does not already exist a data service for the same distribution and with the same <code>dcat:endpointURL</code>.</p>
 
-<p>The SPARQL query is included below. The corresponding file is maintained in <a href="./sparql/add-data-service-to-distribution.rq">the DCAT-AP-JRC GitHub repository</a>.</p> 
+<p>The SPARQL query included below implements the approach described above. The corresponding file is maintained in <a href="./sparql/add-data-service-to-distribution.rq">the DCAT-AP-JRC GitHub repository</a>.</p> 
 
 <aside id="add-data-service-to-distribution" class="def">
 <pre data-include-format="text" data-include="./sparql/add-data-service-to-distribution.rq"></pre>
@@ -12882,9 +12885,13 @@ code list has been created, based on the identifier schemes supported in [[?Data
 
 <h2>Replace <code>dctype:Service</code> with <code>dcat:DataService</code></h2>
 
-<p>This query replaces all instances of <code>dctype:Service</code> with instances of <code>dcat:DataService</code> (see <a href="#deprecated-classes"></a>).</p>
+<p>[[DCAT-AP-JRC-1]] used class <code>dctype:Service</code> (together with class <code>dcat:Catalog</code>) to describe a metadata harvesting endpoint (<a href="#endpoint"></a>).</p>
 
-<p>The SPARQL query is included below. The corresponding file is maintained in <a href="./sparql/replace-dctype-service-with-dcat-data-service.rq">the DCAT-AP-JRC GitHub repository</a>.</p> 
+<p>The current version of DCAT-AP-JRC deprecates class <code>dctype:Service</code>, and replaces it class <code>dcat:DataService</code> (see <a href="#deprecated-classes"></a>).</p>
+
+<p>To upgrade accordingly metadata records following [[DCAT-AP-JRC-1]], all the instances of <code>dctype:Service</code> must be replaced <code>dcat:DataService</code>.</p>
+
+<p>The SPARQL query included below implements these changes. The corresponding file is maintained in <a href="./sparql/replace-dctype-service-with-dcat-data-service.rq">the DCAT-AP-JRC GitHub repository</a>.</p> 
 
 <aside id="replace-dctype-service-with-dcat-data-service" class="def">
 <pre data-include-format="text" data-include="./sparql/replace-dctype-service-with-dcat-data-service.rq"></pre>
