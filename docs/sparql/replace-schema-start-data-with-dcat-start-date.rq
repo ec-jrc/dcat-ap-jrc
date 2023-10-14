@@ -1,0 +1,10 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX schema: <http://schema.org//>
+
+DELETE {
+  ?s schema:startDate ?o .
+} INSERT {
+  ?s dcat:startDate ?o .
+} WHERE {
+  ?s schema:startDate ?o .
+}
