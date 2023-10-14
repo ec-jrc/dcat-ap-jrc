@@ -12,16 +12,14 @@ CONSTRUCT {
   ?DataService dct:conformsTo ?Standard .
   ?DataService dct:license ?licence .
   ?DataService dct:title ?title .
-  ?DataService dct:type ?type .
 } WHERE {
   ?Dataset dcat:distribution ?Distribution .
   ?Distribution dcat:accessURL ?URL . 
   ?Distribution dct:type distribution-type:WEB_SERVICE .
   OPTIONAL { ?Distribution dct:accessRight ?accessRights . } .
   OPTIONAL { ?Distribution dct:conformsTo ?Standard . } .
-  OPTIONAL { ?Distribution dct:conformsTo/skos:prefLabel ?title . FILTER(LANG(?title) = "en")} .
+  OPTIONAL { ?Distribution dct:conformsTo/skos:prefLabel ?title . FILTER ( LANG( ?title ) = "en" ) } .
   OPTIONAL { ?Distribution dct:license ?licence . } .
-  OPTIONAL { ?Distribution dct:type ?type . FILTER (?type = distribution-type:VISUALIZATION) } .
-  BIND(IRI(CONCAT("https://data.jrc.europa.eu/data-service/",STRUUID())) AS ?DataService)
-  FILTER NOT EXISTS (?Distribution dcat:accessService/dcat:endpointURL ?URL)
+  BIND ( IRI( CONCAT( "https://data.jrc.europa.eu/data-service/", STRUUID() ) ) AS ?DataService )
+  FILTER NOT EXISTS { ?Distribution dcat:accessService/dcat:endpointURL ?URL . }
 }
