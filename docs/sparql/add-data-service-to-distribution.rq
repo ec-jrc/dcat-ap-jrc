@@ -8,18 +8,18 @@ CONSTRUCT {
   ?DataService dcat:endpointDescription ?URL .
   ?DataService dcat:endpointURL ?URL .
   ?DataService dcat:servesDataset ?Dataset .
-  ?DataService dct:accessRights ?accessRights .
+  ?DataService dct:accessRights ?AccessRights .
   ?DataService dct:conformsTo ?Standard .
-  ?DataService dct:license ?licence .
+  ?DataService dct:license ?Licence .
   ?DataService dct:title ?title .
 } WHERE {
   ?Dataset dcat:distribution ?Distribution .
   ?Distribution dcat:accessURL ?URL . 
   ?Distribution dct:type distribution-type:WEB_SERVICE .
-  OPTIONAL { ?Distribution dct:accessRight ?accessRights . } .
+  OPTIONAL { ?Distribution dct:accessRight ?AccessRights . } .
   OPTIONAL { ?Distribution dct:conformsTo ?Standard . } .
   OPTIONAL { ?Distribution dct:conformsTo/skos:prefLabel ?title . FILTER ( LANG( ?title ) = "en" ) } .
-  OPTIONAL { ?Distribution dct:license ?licence . } .
+  OPTIONAL { ?Distribution dct:license ?Licence . } .
   BIND ( IRI( CONCAT( "https://data.jrc.europa.eu/data-service/", STRUUID() ) ) AS ?DataService )
   FILTER NOT EXISTS { ?Distribution dcat:accessService/dcat:endpointURL ?URL . }
 }
