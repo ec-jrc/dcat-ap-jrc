@@ -513,11 +513,11 @@ For the other ones, our approach is as follows:</p>
 
 <h2>Spatial coverage code lists</h2>
 
-<p>[[DCAT-AP]] recommends the use of code lists [[MDR-CONT]] (continents) and [[MDR-COUNTRIES]] (countries) when spatial coverage is to be specified with a geographical name, with the fall-back option of using [[?GEONAMES]].</p>
-<p>By reviewing JRC datasets, we realised that there is another reference code list used, especially for statistical data, namely, the <abbr title="United Nations Statistics Division">UNSD</abbr> <cite>Standard country or area codes for statistical use</cite> (M49) [[UNSD-M49]]. Notably, [[UNSD-M49]] includes geographical areas not covered by [[MDR-CONT]] and [[MDR-COUNTRIES]] - as global and sub-continental areas.</p>
-<p>For this reason, DCAT-AP-JRC includes support for [[UNSD-M49]] to complement [[MDR-CONT]] and [[MDR-COUNTRIES]] with additional levels of granularity (global, sub-regions, intermediate regions).</p>
-<p>As a formal definition of [[UNSD-M49]] is not available, a <abbr title="Simple Knowledge Organization System">SKOS</abbr> [[SKOS-REFERENCE]] representation of it has been developed, and integrated it with the [[MDR-CONT]] and [[MDR-COUNTRIES]] code lists. More precisely, this integrated code list makes use of [[MDR-CONT]] and [[MDR-COUNTRIES]] for continents and countries, respectively, and of [[UNSD-M49]] for the other geographical areas.</p>
-<p>These code lists cover all the relevant geographical areas, also in terms of granularity, used to indicate spatial coverage in JRC data. Therefore, DCAT-AP-JRC does not make use of [[?MDR-PLACES]] and [[?GEONAMES]].</p>
+<p>[[DCAT-AP]] recommends the use of code lists [[EUV-CONT]] (continents) and [[EUV-COUNTRIES]] (countries) when spatial coverage is to be specified with a geographical name, with the fall-back option of using [[?GEONAMES]].</p>
+<p>By reviewing JRC datasets, we realised that there is another reference code list used, especially for statistical data, namely, the <abbr title="United Nations Statistics Division">UNSD</abbr> <cite>Standard country or area codes for statistical use</cite> (M49) [[UNSD-M49]]. Notably, [[UNSD-M49]] includes geographical areas not covered by [[EUV-CONT]] and [[EUV-COUNTRIES]] - as global and sub-continental areas.</p>
+<p>For this reason, DCAT-AP-JRC includes support for [[UNSD-M49]] to complement [[EUV-CONT]] and [[EUV-COUNTRIES]] with additional levels of granularity (global, sub-regions, intermediate regions).</p>
+<p>As a formal definition of [[UNSD-M49]] is not available, a <abbr title="Simple Knowledge Organization System">SKOS</abbr> [[SKOS-REFERENCE]] representation of it has been developed, and integrated it with the [[EUV-CONT]] and [[EUV-COUNTRIES]] code lists. More precisely, this integrated code list makes use of [[EUV-CONT]] and [[EUV-COUNTRIES]] for continents and countries, respectively, and of [[UNSD-M49]] for the other geographical areas.</p>
+<p>These code lists cover all the relevant geographical areas, also in terms of granularity, used to indicate spatial coverage in JRC data. Therefore, DCAT-AP-JRC does not make use of [[?EUV-PLACES]] and [[?GEONAMES]].</p>
 <p>For more details, see <a href="#spatial-coverage"></a> and <a href="#registers-unsd-m49"></a>.</p>
 
 </section>
@@ -527,7 +527,7 @@ For the other ones, our approach is as follows:</p>
 <h2>Dataset status</h2>
 
 <p>Knowing the status of a dataset with respect to its lifecycle can be important both for administrative purposes and for users. E.g., if a catalogue makes use of persistent identifiers, datasets (or, at least, their metadata) cannot be deleted even when they are discontinued, deprecated, or withdrawn. However, it is important for users to know that they should not use those data, or that a given dataset is no longer maintained.</p>
-<p>In order to address this issue, DCAT-AP-JRC extends [[DCAT-AP]] by supporting the specification of the dataset status by using the [[MDR-DS]] code list. For more details, see <a href="#dataset-status"></a>.</p>
+<p>In order to address this issue, DCAT-AP-JRC extends [[DCAT-AP]] by supporting the specification of the dataset status by using the [[EUV-DS]] code list. For more details, see <a href="#dataset-status"></a>.</p>
 
 </section>
 
@@ -536,7 +536,7 @@ For the other ones, our approach is as follows:</p>
 <h2>Distribution access restrictions</h2>
 
 <p>The types of possible access restrictions of a dataset are one of the key filtering criteria for data consumers. For instance, while searching in a data catalogue, users may not be interested in those data they cannot access (closed data), or in those data requiring users provide personal information (as data that can be accessible by anyone, but only after registration).</p>
-<p>In [[DCAT-AP]], this issue is partially addressed by supporting the specification of access restrictions at the dataset level via the [[MDR-AR]] code list (which although does not cover the case when data are accessible only after registration). However, in some cases, a dataset is associated with multiple distributions posing different constraints in terms of access rights. E.g., one distribution may be an anonymised version of the dataset, and it can be made publicly available, whereas the other one can be the non-anonymised version, which can therefore be accessible only by authorised users.</p>
+<p>In [[DCAT-AP]], this issue is partially addressed by supporting the specification of access restrictions at the dataset level via the [[EUV-AR]] code list (which although does not cover the case when data are accessible only after registration). However, in some cases, a dataset is associated with multiple distributions posing different constraints in terms of access rights. E.g., one distribution may be an anonymised version of the dataset, and it can be made publicly available, whereas the other one can be the non-anonymised version, which can therefore be accessible only by authorised users.</p>
 <p>For this reason, DCAT-AP-JRC supports the specification of access restrictions at the distribution level.</p>
 <p>The identified types of access restrictions are the following ones:</p>
 <dl>
@@ -557,9 +557,9 @@ For the other ones, our approach is as follows:</p>
 
 <p>It is often the case that distributions do not point to a file or a download page, but rather to a service / API from which users can access the data. Examples include SPARQL endpoints and services like [[WMS]], [[WFS]], etc., typically used for geospatial data. The result is that users are returned resources (as machine- or human-readable description of the service / API interface) providing no direct means to access the data. Morever, using these services / APIs may require specific expertise and/or software tools.</p>
 <p>It is therefore important to flag a distribution to clarify the "type" of resource which will be returned - namely, if it gives access to a service / API, or rather to a file / download page.</p>
-<p>This issue was already addressed in the framework of the DCAT-AP Implementation Guidelines [[DCAT-AP-IG]] - see <a href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/discussion/dt2-service-based-data-access"><cite>DT2: Service-based data access</cite></a>. DCAT-AP-JRC follows the approach defined there, by using the relevant values from the [[MDR-DT]] code list, and by specifying the service / API type via a <abbr title="Uniform Resource Identifier">URI</abbr> identifying it (see <a href="#registers-service-protocols"></a>).</p>
+<p>This issue was already addressed in the framework of the DCAT-AP Implementation Guidelines [[DCAT-AP-IG]] - see <a href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/discussion/dt2-service-based-data-access"><cite>DT2: Service-based data access</cite></a>. DCAT-AP-JRC follows the approach defined there, by using the relevant values from the [[EUV-DT]] code list, and by specifying the service / API type via a <abbr title="Uniform Resource Identifier">URI</abbr> identifying it (see <a href="#registers-service-protocols"></a>).</p>
 <p>In addition, following [[DCAT-AP]], the service / API is described by a specific class (see <a href="#data-service"></a>), and the distribution is linked to it.</p>
-<p>Another issue concerns whether the distribution points to a resource which gives access to the data or instead provides a visualisation of it. It is worth noting that this case is ortogonal to the one of the distribution "type" outlined above, as whether a resource has an access or visualisation "function" it is independent of whether this is obtained via a direct link to a file / download page or via a service / API. Although there is not a specific code list for this purpose, the [[MDR-DT]] code list includes a value to state that a distribution provides data visualisation. Therefore, DCAT-AP-JRC uses it for that purpose, whereas when the distribution function is not specified, the assumption is that the distribution gives access to the data.</p>
+<p>Another issue concerns whether the distribution points to a resource which gives access to the data or instead provides a visualisation of it. It is worth noting that this case is ortogonal to the one of the distribution "type" outlined above, as whether a resource has an access or visualisation "function" it is independent of whether this is obtained via a direct link to a file / download page or via a service / API. Although there is not a specific code list for this purpose, the [[EUV-DT]] code list includes a value to state that a distribution provides data visualisation. Therefore, DCAT-AP-JRC uses it for that purpose, whereas when the distribution function is not specified, the assumption is that the distribution gives access to the data.</p>
 <p>For more details, see <a href="#distribution-type"></a>, <a href="#distribution-access-service"></a>, and <a href="#distribution-function"></a>.</p>
 
 </section>
@@ -911,7 +911,7 @@ For the other ones, our approach is as follows:</p>
 <td><a title="Detailed definition" href="#agent-organisation">Organisation</a></td>
 <td><a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a></td>
 <!--
-<td>[[MDR-CB]]</td>
+<td>[[EUV-CB]]</td>
 -->
 </tr>
 <!--
@@ -919,7 +919,7 @@ For the other ones, our approach is as follows:</p>
 <td colspan="2"><a title="Detailed definition" href="#agent-organisation">Publisher</a></td>
 <td><strong>M</strong></td>
 <td><a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a></td>
-<td>[[MDR-CB]]</td>
+<td>[[EUV-CB]]</td>
 <td><a class="scope" href="#metadata-scope">All</a></td>
 <td>[[DCAT-AP]]</td>
 </tr>
@@ -1057,7 +1057,7 @@ For the other ones, our approach is as follows:</p>
 <td><a title="Detailed definition" href="#spatial-coverage-geoname">as geoname</a></td>
 <td rowspan="2"><a data-cite="DCTERMS#terms-Location"><code title="http://purl.org/dc/terms/Location">dct:Location</code></a></td>
 <!--
-<td>[[MDR-CONT]], [[MDR-COUNTRIES]], [[UNSD-M49]]</td>
+<td>[[EUV-CONT]], [[EUV-COUNTRIES]], [[UNSD-M49]]</td>
 -->
 <td rowspan="2"><a class="scope" href="#metadata-scope">DD</a></td>
 <td rowspan="2">[[DCAT-AP]]</td>
@@ -1220,7 +1220,7 @@ For the other ones, our approach is as follows:</p>
 <td><a data-cite="DCTERMS#terms-publisher"><code title="http://purl.org/dc/terms/publisher">dct:publisher</code></a></td>
 <td><a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a></td>
 <!--
-<td>[[MDR-CB]]</td>
+<td>[[EUV-CB]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">All</a></td>
 <td>[[DCAT-AP]]</td>
@@ -1496,7 +1496,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the corporate bodies defined in [[!MDR-CB]] (see <a href="#agent-organisation"></a>).</td>
+<td>This property MUST take as value one of the corporate bodies defined in [[!EUV-CB]] (see <a href="#agent-organisation"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -2031,7 +2031,7 @@ For the other ones, our approach is as follows:</p>
 <td><a data-cite="VOCAB-DCAT#Property:dataset_frequency"><code title="http://purl.org/dc/terms/accrualPeriodicity">dct:accrualPeriodicity</code></a></td>
 <td><a data-cite="SKOS-REFERENCE#concepts"><code title="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</code></a></td>
 <!--
-<td>[[MDR-FREQ]]</td>
+<td>[[EUV-FREQ]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">All</a></td>
 <td>[[DCAT-AP]]</td>
@@ -2043,7 +2043,7 @@ For the other ones, our approach is as follows:</p>
 <td><a data-cite="VOCAB-DCAT#Property:dataset_theme"><code title="http://www.w3.org/ns/dcat#theme">dcat:theme</code></a></td>
 <td><a data-cite="SKOS-REFERENCE#concepts"><code title="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</code></a></td>
 <!--
-<td>[[MDR-THEMES]]</td>
+<td>[[EUV-THEMES]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">All</a></td>
 <td>[[DCAT-AP]]</td>
@@ -2079,7 +2079,7 @@ For the other ones, our approach is as follows:</p>
 <td><a data-cite="DCTERMS#terms-creator"><code title="http://purl.org/dc/terms/creator">dct:creator</code></a></td>
 <td><a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a></td>
 <!--
-<td>[[MDR-CB]]</td>
+<td>[[EUV-CB]]</td>
 -->
 <td>
 <a class="scope" href="#metadata-scope">DD</a>, 
@@ -2109,7 +2109,7 @@ For the other ones, our approach is as follows:</p>
 <td><a data-cite="VOCAB-DCAT#Property:dataset_publisher"><code title="http://purl.org/dc/terms/publisher">dct:publisher</code></a></td>
 <td><a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a></td>
 <!--
-<td>[[MDR-CB]]</td>
+<td>[[EUV-CB]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">All</a></td>
 <td>[[DCAT-AP]]</td>
@@ -2137,7 +2137,7 @@ For the other ones, our approach is as follows:</p>
 <td><a data-cite="VOCAB-ADMS#adms_status"><code title="http://www.w3.org/ns/adms#status">adms:status</code></a></td>
 <td><a data-cite="SKOS-REFERENCE#concepts"><code title="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</code></a></td>
 <!--
-<td>[[MDR-DS]]</td>
+<td>[[EUV-DS]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">All</a></td>
 <td>[[StatDCAT-AP]]</td>
@@ -2185,7 +2185,7 @@ For the other ones, our approach is as follows:</p>
 <td><a data-cite="VOCAB-DCAT#Property:dataset_spatial"><code title="http://purl.org/dc/terms/spatial">dct:spatial</code></a></td>
 <td><a data-cite="DCTERMS#terms-Location"><code title="http://purl.org/dc/terms/Location">dct:Location</code></a></td>
 <!--
-<td>[[MDR-CONT]], [[MDR-COUNTRIES]], [[UNSD-M49]]</td>
+<td>[[EUV-CONT]], [[EUV-COUNTRIES]], [[UNSD-M49]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">All</a></td>
 <td>[[DCAT-AP]]</td>
@@ -2233,7 +2233,7 @@ For the other ones, our approach is as follows:</p>
 <td><a data-cite="VOCAB-DCAT#Property:dataset_language"><code title="http://purl.org/dc/terms/language">dct:language</code></a></td>
 <td><a data-cite="DCTERMS#terms-LinguisticSystem"><code title="http://purl.org/dc/terms/LinguisticSystem">dct:LinguisticSystem</code></a></td>
 <!--
-<td>[[MDR-LANG]]</td>
+<td>[[EUV-LANG]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">All</a></td>
 <td>[[DCAT-AP]]</td>
@@ -2615,7 +2615,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the frequency codes defined in [[!MDR-FREQ]]</td>
+<td>This property MUST take as value one of the frequency codes defined in [[!EUV-FREQ]]</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -2662,7 +2662,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the themes defined in [[MDR-THEMES]]</td>
+<td>This property MUST take as value one of the themes defined in [[EUV-THEMES]]</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -2816,7 +2816,7 @@ For the other ones, our approach is as follows:</p>
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the corporate bodies defined in [[!MDR-CB]], or a complementary one, in case the organisation is not included in [[!MDR-CB]] - see <a href="#agent-organisation"></a> for more details.</td>
+<td>This property MUST take as value one of the corporate bodies defined in [[!EUV-CB]], or a complementary one, in case the organisation is not included in [[!EUV-CB]] - see <a href="#agent-organisation"></a> for more details.</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -2940,7 +2940,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the corporate bodies defined in [[!MDR-CB]].</td>
+<td>This property MUST take as value one of the corporate bodies defined in [[!EUV-CB]].</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -3101,7 +3101,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the statuses defined in [[!MDR-DS]].</td>
+<td>This property MUST take as value one of the statuses defined in [[!EUV-DS]].</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -3289,7 +3289,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>The spatial coverage MUST be specified as defined in [[DCAT-AP]], namely, either by using a geographical name or with a geometry. In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:spatial</code> MUST take as value one of the geographical names defined in [[!MDR-CONT]] (for continents), [[!MDR-COUNTRIES]] (for countries), and [[!UNSD-M49]] (for the other geographical areas). In the latter case, the geometry MUST be specified by using <code title="http://purl.org/dc/terms/Location">dct:Location</code>, with property <code title="http://www.w3.org/ns/locn#geometry">locn:geometry</code> [[!LOCN]] (see <a href="#spatial-coverage-geometry-geometry"></a>).</td>
+<td>The spatial coverage MUST be specified as defined in [[DCAT-AP]], namely, either by using a geographical name or with a geometry. In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:spatial</code> MUST take as value one of the geographical names defined in [[!EUV-CONT]] (for continents), [[!EUV-COUNTRIES]] (for countries), and [[!UNSD-M49]] (for the other geographical areas). In the latter case, the geometry MUST be specified by using <code title="http://purl.org/dc/terms/Location">dct:Location</code>, with property <code title="http://www.w3.org/ns/locn#geometry">locn:geometry</code> [[!LOCN]] (see <a href="#spatial-coverage-geometry-geometry"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -3473,7 +3473,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the languages defined in [[!MDR-LANG]]</td>
+<td>This property MUST take as value one of the languages defined in [[!EUV-LANG]]</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -4045,7 +4045,7 @@ author = family-name , ", " , given-name
 <!--
 <p>Agents can be either individuals or organisations - usually, not both.</p>
 
-<p>Individual and corporate contributors are modelled differently in DCAT-AP-JRC. More precisely, corporate contributors are referred to by using the relevant URI from the [[MDR-CB]] code list (or a complementary one, in case the organisations is not included there). By contrast, individual contributors are associated with a set of attributes describing them.</p>
+<p>Individual and corporate contributors are modelled differently in DCAT-AP-JRC. More precisely, corporate contributors are referred to by using the relevant URI from the [[EUV-CB]] code list (or a complementary one, in case the organisations is not included there). By contrast, individual contributors are associated with a set of attributes describing them.</p>
 
 <aside class="note">
 <p>In theory, individual contributors could be specified as corporate ones, by using reference registers from which it is possible to derive information as the contributor's name. Examples of such registers could be those operating <abbr title="Open Researcher and Contributor Identifiers">ORCIDs</abbr> or <abbr title="International Standard Name Identifiers">ISNIs</abbr>.</p>
@@ -4592,8 +4592,8 @@ author = family-name , ", " , given-name
 <tr>
 <th>Usage note</th>
 <td>
-<p>Organisations MUST be specified by using the relevant URI from the [[MDR-CB]] code list.</p>
-<p>When the organisation is not registered in [[MDR-CB]], they SHOULD be specified by using URIs from other registries.</p>
+<p>Organisations MUST be specified by using the relevant URI from the [[EUV-CB]] code list.</p>
+<p>When the organisation is not registered in [[EUV-CB]], they SHOULD be specified by using URIs from other registries.</p>
 </td>
 </tr>
 <tr>
@@ -4612,7 +4612,7 @@ author = family-name , ", " , given-name
 </table>
 
 <aside class="note">
-<p>Examples of registries complementary to [[MDR-CB]] include (but are not limited to):</p>
+<p>Examples of registries complementary to [[EUV-CB]] include (but are not limited to):</p>
 <ul>
 <li><a href="http://www.isni.org/">International Standard Name Identifier (ISNI) registry</a></li>
 <li><a href="https://www.grid.ac/">Global Research Identifier Database (GRID)</a></li>
@@ -4716,7 +4716,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="VOCAB-ORG#org:subOrganizationOf"><code title="http://www.w3.org/ns/org#subOrganizationOf">org:subOrganizationOf</code></a></td>
 <td><a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a></td>
 <!--
-<td>[[!MDR-CB]]</td>
+<td>[[!EUV-CB]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">DD</a></td>
 <td>DCAT-AP-JRC</td>
@@ -5053,7 +5053,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the corporate bodies defined in [[!MDR-CB]].</td>
+<td>This property MUST take as value one of the corporate bodies defined in [[!EUV-CB]].</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -5121,8 +5121,8 @@ author = family-name , ", " , given-name
 
 <h2>Class: Publisher</h2>
 
-<p>Publishers MUST be specified by using the relevant URI from the [[MDR-CB]] code list.</p>
-<p>When the publisher is not registered in [[MDR-CB]], they SHOULD be specified by using URIs from other registries.</p>
+<p>Publishers MUST be specified by using the relevant URI from the [[EUV-CB]] code list.</p>
+<p>When the publisher is not registered in [[EUV-CB]], they SHOULD be specified by using URIs from other registries.</p>
 <p>Examples of such registries include (but are not limited to):</p>
 <ul>
 <li><a href="http://www.isni.org/">International Standard Name Identifier (ISNI) registry</a></li>
@@ -5205,7 +5205,7 @@ author = family-name , ", " , given-name
 <td><strong>C</strong></td>
 <td><a data-cite="VOCAB-ORG#org:subOrganizationOf"><code title="http://www.w3.org/ns/org#subOrganizationOf">org:subOrganizationOf</code></a></td>
 <td><a data-cite="SKOS-REFERENCE#concepts"><code title="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</code></a> + <a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a></td>
-<td>[[MDR-CB]]</td>
+<td>[[EUV-CB]]</td>
 </tr>
 <tr>
 <td><a href="#publisher-home-page">home page</a></td>
@@ -5349,7 +5349,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the corporate bodies defined in [[!MDR-CB]].</td>
+<td>This property MUST take as value one of the corporate bodies defined in [[!EUV-CB]].</td>
 </tr>
 </tbody>
 </table>
@@ -5384,7 +5384,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the corporate bodies defined in [[MDR-CB]].</td>
+<td>This property MUST take as value one of the corporate bodies defined in [[EUV-CB]].</td>
 </tr>
 </tbody>
 </table>
@@ -5507,7 +5507,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="DCTERMS#terms-licence"><code title="http://purl.org/dc/terms/license">dct:license</code></a></td>
 <td><a data-cite="DCTERMS#terms-LicenseDocument"><code title="http://purl.org/dc/terms/LicenseDocument">dct:LicenseDocument</code></a></td>
 <!--
-<td>[[MDR-LICENCES]]</td>
+<td>[[EUV-LICENCES]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">All</a></td>
 <td>[[DCAT-AP]]</td>
@@ -5531,7 +5531,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="DCTERMS#terms-format"><code title="http://purl.org/dc/terms/format">dct:format</code></a></td>
 <td><a data-cite="DCTERMS#terms-MediaTypeOrExtent"><code title="http://purl.org/dc/terms/MediaTypeOrExtent">dct:MediaTypeOrExtent</code></a></td>
 <!--
-<td>[[MDR-FT]]</td>
+<td>[[EUV-FT]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">All</a></td>
 <td>[[DCAT-AP]]</td>
@@ -5543,7 +5543,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="DCTERMS#terms-type"><code title="http://purl.org/dc/terms/type">dct:type</code></a></td>
 <td><a data-cite="SKOS-REFERENCE#concepts"><code title="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</code></a></td>
 <!--
-<td>[[MDR-DT]]</td>
+<td>[[EUV-DT]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">All</a></td>
 <td>[[StatDCAT-AP]]</td>
@@ -5555,7 +5555,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="DCTERMS#terms-type"><code title="http://purl.org/dc/terms/type">dct:type</code></a></td>
 <td><a data-cite="SKOS-REFERENCE#concepts"><code title="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</code></a></td>
 <!--
-<td>[[MDR-DT]]</td>
+<td>[[EUV-DT]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">All</a></td>
 <td>DCAT-AP-JRC</td>
@@ -5702,7 +5702,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the licences defined in [[MDR-LICENCES]]</td>
+<td>This property MUST take as value one of the licences defined in [[EUV-LICENCES]]</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -5800,7 +5800,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the file formats defined in [[MDR-FT]]</td>
+<td>This property MUST take as value one of the file formats defined in [[EUV-FT]]</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -5847,7 +5847,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the relevant distribution types defined in [[MDR-DT]].</td>
+<td>This property MUST take as value one of the relevant distribution types defined in [[EUV-DT]].</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -5898,7 +5898,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property is specified only if the distribution points to a resource providing a visualisation of the data. In such a case, it MUST take as value the relevant term in [[MDR-DT]]. If not specified, it is assumed that the distribution has an "access" function.</td>
+<td>This property is specified only if the distribution points to a resource providing a visualisation of the data. In such a case, it MUST take as value the relevant term in [[EUV-DT]]. If not specified, it is assumed that the distribution has an "access" function.</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -6264,7 +6264,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="DCTERMS#terms-licence"><code title="http://purl.org/dc/terms/license">dct:license</code></a></td>
 <td><a data-cite="DCTERMS#terms-LicenseDocument"><code title="http://purl.org/dc/terms/LicenseDocument">dct:LicenseDocument</code></a></td>
 <!--
-<td>[[MDR-LICENCES]]</td>
+<td>[[EUV-LICENCES]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">All</a></td>
 <td>[[DCAT-AP]]</td>
@@ -6290,7 +6290,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="DCTERMS#terms-MediaTypeOrExtent"><code title="http://purl.org/dc/terms/MediaTypeOrExtent">dct:MediaTypeOrExtent</code></a></td>
 -->
 <!--
-<td>[[MDR-FT]]</td>
+<td>[[EUV-FT]]</td>
 -->
 <!--
 <td><a class="scope" href="#metadata-scope">All</a></td>
@@ -6306,7 +6306,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="SKOS-REFERENCE#concepts"><code title="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</code></a></td>
 -->
 <!--
-<td>[[MDR-DT]]</td>
+<td>[[EUV-DT]]</td>
 -->
 <!--
 <td><a class="scope" href="#metadata-scope">All</a></td>
@@ -6322,7 +6322,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="SKOS-REFERENCE#concepts"><code title="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</code></a></td>
 -->
 <!--
-<td>[[MDR-DT]]</td>
+<td>[[EUV-DT]]</td>
 -->
 <!--
 <td><a class="scope" href="#metadata-scope">All</a></td>
@@ -6511,7 +6511,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the licences defined in [[MDR-LICENCES]]</td>
+<td>This property MUST take as value one of the licences defined in [[EUV-LICENCES]]</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -6609,7 +6609,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the file formats defined in [[MDR-FT]]</td>
+<td>This property MUST take as value one of the file formats defined in [[EUV-FT]]</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -6657,7 +6657,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the relevant distribution types defined in [[MDR-DT]].</td>
+<td>This property MUST take as value one of the relevant distribution types defined in [[EUV-DT]].</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -6709,7 +6709,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property is specified only if the data service provides a visualisation of the data. In such a case, it MUST take as value the relevant term in [[MDR-DT]]. If not specified, it is assumed that the data service has an "access" function.</td>
+<td>This property is specified only if the data service provides a visualisation of the data. In such a case, it MUST take as value the relevant term in [[EUV-DT]]. If not specified, it is assumed that the data service has an "access" function.</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -7015,7 +7015,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="DCTERMS#terms-creator"><code title="http://purl.org/dc/terms/creator">dct:creator</code></a></td>
 <td><a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a></td>
 <!--
-<td>[[MDR-CB]]</td>
+<td>[[EUV-CB]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">DD</a></td>
 <td>DCAT-AP-JRC</td>
@@ -7039,7 +7039,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="DCTERMS#terms-publisher"><code title="http://purl.org/dc/terms/publisher">dct:publisher</code></a></td>
 <td><a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a></td>
 <!--
-<td>[[MDR-CB]]</td>
+<td>[[EUV-CB]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">DD</a></td>
 <td>DCAT-AP-JRC</td>
@@ -7274,7 +7274,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the corporate bodies defined in [[!MDR-CB]], or a complementary one, in case the organisation is not included in [[!MDR-CB]] - see <a href="#agent-organisation"></a> for more details.</td>
+<td>This property MUST take as value one of the corporate bodies defined in [[!EUV-CB]], or a complementary one, in case the organisation is not included in [[!EUV-CB]] - see <a href="#agent-organisation"></a> for more details.</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -7392,7 +7392,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the corporate bodies defined in [[!MDR-CB]] (see <a href="#agent-organisation"></a>).</td>
+<td>This property MUST take as value one of the corporate bodies defined in [[!EUV-CB]] (see <a href="#agent-organisation"></a>).</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -7914,7 +7914,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="DCTERMS#terms-publisher"><code title="http://purl.org/dc/terms/publisher">dct:publisher</code></a></td>
 <td><a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a></td>
 <!--
-<td>[[MDR-CB]]</td>
+<td>[[EUV-CB]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">MM</a>, <a class="scope" href="#metadata-scope">MS</a></td>
 <td>[[GeoDCAT-AP]]</td>
@@ -8193,7 +8193,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the corporate bodies defined in [[!MDR-CB]].</td>
+<td>This property MUST take as value one of the corporate bodies defined in [[!EUV-CB]].</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -8857,7 +8857,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="DCTERMS#terms-publisher"><code title="http://purl.org/dc/terms/publisher">dct:publisher</code></a></td>
 <td><a data-cite="FOAF#term_Organization"><code title="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</code></a></td>
 <!--
-<td>[[MDR-CB]]</td>
+<td>[[EUV-CB]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">All</a></td>
 <td>[[DCAT-AP]]</td>
@@ -9129,7 +9129,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the corporate bodies defined in [[!MDR-CB]].</td>
+<td>This property MUST take as value one of the corporate bodies defined in [[!EUV-CB]].</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -9597,7 +9597,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="VOCAB-ADMS#adms_status"><code title="http://www.w3.org/ns/adms#status">adms:status</code></a></td>
 <td><a data-cite="SKOS-REFERENCE#concepts"><code title="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</code></a></td>
 <!--
-<td>[[MDR-DS]]</td>
+<td>[[EUV-DS]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">MM</a>, <a class="scope" href="#metadata-scope">MS</a></td>
 <td>DCAT-AP-JRC</td>
@@ -9795,7 +9795,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the statuses defined in [[MDR-DS]]</td>
+<td>This property MUST take as value one of the statuses defined in [[EUV-DS]]</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -10159,7 +10159,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="DCTERMS#terms-format"><code title="http://purl.org/dc/terms/format">dct:format</code></a></td>
 <td><a data-cite="DCTERMS#terms-MediaTypeOrExtent"><code title="http://purl.org/dc/terms/MediaTypeOrExtent">dct:MediaTypeOrExtent</code></a></td>
 <!--
-<td>[[MDR-FT]]</td>
+<td>[[EUV-FT]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">DD</a></td>
 <td>DCAT-AP-JRC</td>
@@ -10171,7 +10171,7 @@ author = family-name , ", " , given-name
 <td><a data-cite="DCTERMS#terms-licence"><code title="http://purl.org/dc/terms/license">dct:license</code></a></td>
 <td><a data-cite="DCTERMS#terms-LicenseDocument"><code title="http://purl.org/dc/terms/LicenseDocument">dct:LicenseDocument</code></a></td>
 <!--
-<td>[[MDR-LICENCES]]</td>
+<td>[[EUV-LICENCES]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">DD</a></td>
 <td>DCAT-AP-JRC</td>
@@ -10429,7 +10429,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the file formats defined in [[MDR-FT]]</td>
+<td>This property MUST take as value one of the file formats defined in [[EUV-FT]]</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -10480,7 +10480,7 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Usage note</th>
-<td>This property MUST take as value one of the licences defined in [[MDR-LICENCES]]</td>
+<td>This property MUST take as value one of the licences defined in [[EUV-LICENCES]]</td>
 </tr>
 <tr>
 <th>Scope</th>
@@ -11382,7 +11382,7 @@ author = family-name , ", " , given-name
 
 <p>The spatial coverage is specified as defined in [[DCAT-AP]], namely, either by using a geographical name or with a geometry.</p>
 <!--
-In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:spatial</code> MUST take as value one of the URIs for geographical areas defined in [[!MDR-CONT]] (for continents), [[!MDR-COUNTRIES]] (for countries), and [[UNSD-M49]] (for the other geographical areas). In the latter case, the geometry MUST be specified by using class <code title="http://purl.org/dc/terms/Location">dct:Location</code>, with property <a data-cite="LOCN#geometry"><code title="http://www.w3.org/ns/locn#geometry">locn:geometry</code></a> [[!LOCN]].</p>
+In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:spatial</code> MUST take as value one of the URIs for geographical areas defined in [[!EUV-CONT]] (for continents), [[!EUV-COUNTRIES]] (for countries), and [[UNSD-M49]] (for the other geographical areas). In the latter case, the geometry MUST be specified by using class <code title="http://purl.org/dc/terms/Location">dct:Location</code>, with property <a data-cite="LOCN#geometry"><code title="http://www.w3.org/ns/locn#geometry">locn:geometry</code></a> [[!LOCN]].</p>
 -->
 <p><em>These two options are mutually exclusive</em>, namely: if spatial coversage is specified as a geographical name, it MUST NOT be specified also as a geometry - and vice versa.</p>
 
@@ -11391,7 +11391,7 @@ In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:
 
 <h2>Spatial coverage as geographical name</h2>
 
-<p>When the spatial coverage is specified as geographical name, property <code title="http://purl.org/dc/terms/spatial">dct:spatial</code> MUST take as direct value the URI of one of the geographical areas defined in [[MDR-CONT]], [[MDR-COUNTRIES]], and/or [[UNSD-M49]] (see <a href="#registers-unsd-m49"></a>), whereas class <code title="http://purl.org/dc/terms/Location">dct:Location</code> SHOULD be omitted.</p>
+<p>When the spatial coverage is specified as geographical name, property <code title="http://purl.org/dc/terms/spatial">dct:spatial</code> MUST take as direct value the URI of one of the geographical areas defined in [[EUV-CONT]], [[EUV-COUNTRIES]], and/or [[UNSD-M49]] (see <a href="#registers-unsd-m49"></a>), whereas class <code title="http://purl.org/dc/terms/Location">dct:Location</code> SHOULD be omitted.</p>
 
 <!--
 <section id="spatial-coverage-geoname">
@@ -11566,14 +11566,14 @@ In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:
 <td>[[StatDCAT-AP]]</td>
 <td>Distribution type</td>
 <td><a href="http://publications.europa.eu/resource/authority/distribution-type"><code>http://publications.europa.eu/resource/authority/distribution-type</code></a></td>
-<td>[[MDR-DT]]</td>
+<td>[[EUV-DT]]</td>
 </tr>
 
 <tr>
 <td>[[DCAT-AP]]</td>
 <td>Format</td>
 <td><a href="http://publications.europa.eu/resource/authority/file-type"><code>http://publications.europa.eu/resource/authority/file-type</code></a></td>
-<td>[[MDR-FT]]</td>
+<td>[[EUV-FT]]</td>
 </tr>
 <!--
 <tr>
@@ -11587,16 +11587,16 @@ In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:
 <td rowspan="2">[[DCAT-AP]]</td>
 <td rowspan="3">Geographical names</td>
 <td><a href="http://publications.europa.eu/resource/authority/continent"><code>http://publications.europa.eu/resource/authority/continent</code></a></td>
-<td>[[MDR-CONT]]</td>
+<td>[[EUV-CONT]]</td>
 </tr>
 <tr>
 <td><a href="http://publications.europa.eu/resource/authority/country"><code>http://publications.europa.eu/resource/authority/country</code></a></td>
-<td>[[MDR-COUNTRIES]]</td>
+<td>[[EUV-COUNTRIES]]</td>
 </tr>
 <!--
 <tr>
 <td><a href="http://publications.europa.eu/resource/authority/place"><code>http://publications.europa.eu/resource/authority/place</code></a></td>
-<td>[[MDR-PLACES]]</td>
+<td>[[EUV-PLACES]]</td>
 </tr>
 <tr>
 <td><a href="http://sws.geonames.org/"><code>http://sws.geonames.org/</code></a></td>
@@ -11612,7 +11612,7 @@ In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:
 <td>[[DCAT-AP]]</td>
 <td>Language</td>
 <td><a href="http://publications.europa.eu/resource/authority/language"><code>http://publications.europa.eu/resource/authority/language</code></a></td>
-<td>[[MDR-LANG]]</td>
+<td>[[EUV-LANG]]</td>
 </tr>
 <!--
 <tr>
@@ -11626,7 +11626,7 @@ In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:
 <td>[[DCAT-AP]]</td>
 <td>Update frequency</td>
 <td><a href="http://publications.europa.eu/resource/authority/frequency"><code>http://publications.europa.eu/resource/authority/frequency</code></a></td>
-<td>[[MDR-FREQ]]</td>
+<td>[[EUV-FREQ]]</td>
 </tr>
 <!--
 <tr>
@@ -11639,7 +11639,7 @@ In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:
 <td>[[DCAT-AP]]</td>
 <td>MDR Data themes</td>
 <td><a href="http://publications.europa.eu/resource/authority/theme"><code>http://publications.europa.eu/resource/authority/theme</code></a></td>
-<td>[[MDR-THEMES]]</td>
+<td>[[EUV-THEMES]]</td>
 </tr>
 <!--
 <tr>
@@ -11653,7 +11653,7 @@ In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:
 <td>[[DCAT-AP]]</td>
 <td>Publisher</td>
 <td><a href="http://publications.europa.eu/resource/authority/corporate-body"><code>http://publications.europa.eu/resource/authority/corporate-body</code></a></td>
-<td>[[MDR-CB]]</td>
+<td>[[EUV-CB]]</td>
 </tr>
 <!--
 <tr>
@@ -11716,7 +11716,7 @@ In the former case, property <code title="http://purl.org/dc/terms/spatial">dct:
 <td>DCAT-AP-JRC</td>
 <td>Dataset status</td>
 <td><a href="http://publications.europa.eu/resource/authority/dataset-status"><code>http://publications.europa.eu/resource/authority/dataset-status</code></a></td>
-<td>[[MDR-DS]]</td>
+<td>[[EUV-DS]]</td>
 </tr>
 <tr>
 <td>DCAT-AP-JRC</td>
@@ -12024,7 +12024,7 @@ code list has been created, based on the identifier schemes supported in [[?Data
 
 <p>As explained in <a href="#req-spatial-coverage-codelists"></a>, DCAT-AP-JRC makes use of a code list based on the UNSD Standard country or area codes for statistical use (M49) [[UNSD-M49]]] for specifying spatial coverage (<a href="#dataset-spatial-coverage"></a>).</p>  
 
-<p>The UNSD M49 code list provides a SKOS representation of [[UNSD-M49]], integrated with the [[MDR-CONT]] and [[MDR-COUNTRIES]] code lists. More precisely, it defines terms in [[UNSD-M49]] not included in [[MDR-CONT]] and [[MDR-COUNTRIES]], and specifies containment relationships between the geographical areas defined in these code lists by using the <code title="http://purl.org/dc/terms/hasPart">dct:hasPart</code> / <code title="http://purl.org/dc/terms/isPartOf">dct:isPartOf</code> properties.</p>
+<p>The UNSD M49 code list provides a SKOS representation of [[UNSD-M49]], integrated with the [[EUV-CONT]] and [[EUV-COUNTRIES]] code lists. More precisely, it defines terms in [[UNSD-M49]] not included in [[EUV-CONT]] and [[EUV-COUNTRIES]], and specifies containment relationships between the geographical areas defined in these code lists by using the <code title="http://purl.org/dc/terms/hasPart">dct:hasPart</code> / <code title="http://purl.org/dc/terms/isPartOf">dct:isPartOf</code> properties.</p>
 
 <p>The following table lists the subset of the [[UNSD-M49]] entries used in DCAT-AP-JRC - i.e., all the [[UNSD-M49]] entries, with the exclusion of those corresponding to continents and countries.</p>
 
@@ -12525,7 +12525,7 @@ code list has been created, based on the identifier schemes supported in [[?Data
 <ul>
 <li>The dataset URI is used as value of properties <code>schema:url</code> and <code>schema:sameAs</code>.</li>
 <li>Property <a href="#dataset-theme"><code>dcat:theme</code></a> is mapped to <a href="http://schema.org/keywords"><code>schema:keywords</code></a>, although the latter is meant to be used for free text keywords (as property <a href="#dataset-keyword"><code>dcat:keyword</code></a> in [[VOCAB-DCAT]]). The reason is that [[?SCHEMA-ORG]] does not currently support a way to specify terms from controlled vocabularies, code lists, thesauri, and taxonomies. For more details on this issue, see <a data-cite="?DCAT-AP-SDO#categories-and-category-schemes">&sect;&nbsp;<span class="secno">4.1 </span>Categories and category schemes</a> in [[?DCAT-AP-SDO]].</li>
-<li>In DCAT-AP-JRC, <a href="#dataset-theme"><code>dcat:theme</code></a> takes as value only the URI of the relevant concept. However, since <a href="http://schema.org/keywords"><code>schema:keywords</code></a> is instead meant to specify textual labels, the mapping rules take this information from the controlled vocabulary used for <a href="#dataset-theme"><code>dcat:theme</code></a> (namely, [[MDR-THEMES]]).</li>
+<li>In DCAT-AP-JRC, <a href="#dataset-theme"><code>dcat:theme</code></a> takes as value only the URI of the relevant concept. However, since <a href="http://schema.org/keywords"><code>schema:keywords</code></a> is instead meant to specify textual labels, the mapping rules take this information from the controlled vocabulary used for <a href="#dataset-theme"><code>dcat:theme</code></a> (namely, [[EUV-THEMES]]).</li>
 <li>Differently from <a href="#dataset-theme"><code>dcat:theme</code></a> and <a href="#dataset-keyword"><code>dcat:keyword</code></a>, which take as value a single keyword / concept, property <a href="http://schema.org/keywords"><code>schema:keywords</code></a> specifies a list of keywords, using a given character as a delimiter (a comma or a semi-colon). Consequently, the mapping rules join the values of possibly multiple instances of <a href="#dataset-theme"><code>dcat:theme</code></a> and <a href="#dataset-keyword"><code>dcat:keyword</code></a> to generate the string to be used as value of <a href="http://schema.org/keywords"><code>schema:keywords</code></a>.</li>
 </ul>
 
@@ -12743,7 +12743,7 @@ code list has been created, based on the identifier schemes supported in [[?Data
 
 <p>Additional mapping rules:</p>
 <ul>
-<li>In DCAT-AP-JRC, <a class="no-sectionRref" href="#distribution-format"><code>dct:format</code></a> takes as value only the URI of the relevant file format / media type. However, since <a href="http://schema.org/fileFormat"><code>schema:fileFormat</code></a> is instead meant to specify this information as a textual label, the mapping rules take this information from the controlled vocabulary used for <a href="#distribution-format"><code>dct:format</code></a> (namely, [[MDR-FT]]).</li>
+<li>In DCAT-AP-JRC, <a class="no-sectionRref" href="#distribution-format"><code>dct:format</code></a> takes as value only the URI of the relevant file format / media type. However, since <a href="http://schema.org/fileFormat"><code>schema:fileFormat</code></a> is instead meant to specify this information as a textual label, the mapping rules take this information from the controlled vocabulary used for <a href="#distribution-format"><code>dct:format</code></a> (namely, [[EUV-FT]]).</li>
 </ul>
 
 </section>
