@@ -12819,10 +12819,10 @@ code list has been created, based on the identifier schemes supported in [[?Data
 
 <h2>Adding a data service to a distribution</h2>
 
-<p>The following SPARQL query</p>
+<p>This query performs the following operations:</p>
 
 <ul>
-<li>adds a <code>dcat:DataService</code> for each <code>dcat:Distribution</code> whose data are accessible via a service / API.</li>
+<li>adds a <code>dcat:DataService</code> for each <code>dcat:Distribution</code> accessible via a service / API.</li>
 <li>links the <code>dcat:Distribution</code> to the created <code>dcat:DataService</code> via property <code>dcat:accessService</code> (<a href="#distribution-access-service"></a>).</li>
 <li>links the <code>dcat:DataService</code> to the corresponding <code>dcat:Dataset</code> via property <code>dcat:servesDataset</code> (<a href="#data-service-serves-dataset"></a>).</li>
 </ul>
@@ -12870,6 +12870,7 @@ code list has been created, based on the identifier schemes supported in [[?Data
 
 <p>Finally, to avoid duplicates, the record for the data service is created only if there does not already exist a data service for the same distribution and with the same <code>dcat:endpointURL</code>.</p>
 
+<p>The SPARQL query is included below. The corresponding file is maintained in <a href="./sparql/add-data-service-to-distribution.rq">the DCAT-AP-JRC GitHub repository</a>.</p> 
 
 <aside id="add-data-service-to-distribution" class="def">
 <pre class="html" data-include="./sparql/add-data-service-to-distribution.rq"></pre>
@@ -12881,7 +12882,9 @@ code list has been created, based on the identifier schemes supported in [[?Data
 
 <h2>Replace <code>dctype:Service</code> with <code>dcat:DataService</code></h2>
 
-<p>The following SPARQL query replaces all instances of <code>dctype:Service</code> with instances of <code>dcat:DataService</code> (see <a href="#deprecated-classes"></a>).</p>
+<p>This query replaces all instances of <code>dctype:Service</code> with instances of <code>dcat:DataService</code> (see <a href="#deprecated-classes"></a>).</p>
+
+<p>The SPARQL query is included below. The corresponding file is maintained in <a href="./sparql/replace-dctype-service-with-dcat-data-service.rq">the DCAT-AP-JRC GitHub repository</a>.</p> 
 
 <aside id="replace-dctype-service-with-dcat-data-service" class="def">
 <pre class="html" data-include="./sparql/replace-dctype-service-with-dcat-data-service.rq"></pre>
