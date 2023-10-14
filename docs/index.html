@@ -12830,10 +12830,10 @@ code list has been created, based on the identifier schemes supported in [[?Data
 <p>The following information describing the data service is taken from the distribution:</p>
 
 <ul>
-<li>Property <code>dct:accessRights</code>: the data service access restrictions (<a href="#data-service-access-restrictions"></a>).</li>
-<li>Property <code>dct:license</code>: the data service licence (<a href="#data-service-licence"></a>).</li>
-<li>Property <code>dct:conformsTo</code>: the data service protocol (<a href="#data-service-conforms-to"></a>).</li>
 <li>Property <code>dcat:accessURL</code>: the data service endpoint URL and description (<a href="#data-service-endpoint-url"></a>, <a href="#data-service-endpoint-description"></a>).</li>
+<li>Property <code>dct:license</code>: the data service licence (<a href="#data-service-licence"></a>).</li>
+<li>Property <code>dct:accessRights</code>: the data service access restrictions (<a href="#data-service-access-restrictions"></a>).</li>
+<li>Property <code>dct:conformsTo</code>: the data service protocol (<a href="#data-service-conforms-to"></a>).</li>
 </ul>
 
 <p>The title of the data service (<a href="#data-service-title"></a>) is instead the name of the protocol, as specified in the code list illustrated in <a href="#registers-service-protocols"></a>.</p>
@@ -12842,7 +12842,7 @@ code list has been created, based on the identifier schemes supported in [[?Data
 
 
 <aside id="add-data-service-to-distribution" class="def">
-<pre data-include="./sparql/add-data-service-to-distribution.rq"></pre>
+<pre class="html" data-include="./sparql/add-data-service-to-distribution.rq"></pre>
 </aside>
 
 </section>
@@ -12854,7 +12854,7 @@ code list has been created, based on the identifier schemes supported in [[?Data
 <p>The following SPARQL query replaces all instances of <code>dctype:Service</code> with instances of <code>dcat:DataService</code> (see <a href="#deprecated-classes"></a>).</p>
 
 <aside id="replace-dctype-service-with-dcat-data-service" class="def">
-<pre data-include="./sparql/replace-dctype-service-with-dcat-data-service.rq"></pre>
+<pre class="html" data-include="./sparql/replace-dctype-service-with-dcat-data-service.rq"></pre>
 </aside>
 
 </section>
