@@ -1071,6 +1071,41 @@ For the other ones, our approach is as follows:</p>
 
 </section>
 
+<section id="deprecated-classes">
+
+<h2>Deprecated classes</h2>
+
+<table class="simple">
+<thead>
+<tr>
+<th>Label</th>
+<th>RDF Class</th>
+<th>Replaced by</th>
+<!--
+<th>Deprecated in</th>
+-->
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a title="Detailed definition" href="#endpoint">Endpoint</a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a> + <a data-cite="DCTERMS#dcmitype-Service"><code title="http://purl.org/dc/dcmitype/Service">dctype:Service</code></a></td>
+<td><a data-cite="VOCAB-DCAT#Class:Catalog"><code title="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</code></a> + <a data-cite="VOCAB-DCAT#Class:Data_Service"><code title="http://www.w3.org/ns/dcat#DataService">dcat:DataService</code></a></td>
+<!--
+<td>DCAT-AP-JRC 2</td>
+-->
+</tr>
+</tbody>
+</table>
+
+<aside class="note">
+<p>Following [[GeoDCAT-AP-20160802]], in [[DCAT-AP-JRC-1]] class <code>dctype:Service</code> was used to type resources as Data Services, as a more specific class was missing in reference vocabularies.</p>
+<p>[[VOCAB-DCAT-2]] has defined a specific class for this purpose, namely, <code>dcat:DataService</code>, which has been adopted in [[DCAT-AP-20191120]]. Therefore, <code>dcat:DataService</code> replaces <code>dctype:Service</code> starting from this version of DCAT-AP-JRC.</p>
+<p>It is worth noting that <code>dcat:DataService</code> is a subclass of <code>dctype:Service</code>.</p>
+</aside>
+
+</section>
+
 </section>
 
 <section id="mandatory-classes">
@@ -6029,7 +6064,11 @@ author = family-name , ", " , given-name
 
 <h2>Property: access service</h2>
 
-<table class="def">
+<aside class="note">
+<p>Poperty added in this version of DCAT-AP-JRC.</p>
+</aside>
+
+<<table class="def">
 <tbody>
 <tr>
 <th>Label</th>
@@ -6124,6 +6163,10 @@ author = family-name , ", " , given-name
 <section id="data-service">
 
 <h2>Class: Data service</h2>
+
+<aside class="note">
+<p>This class and the related properties have been added in this version of DCAT-AP-JRC.</p>
+</aside>
 
 <table class="def">
 <tbody>
@@ -12911,6 +12954,7 @@ code list has been created, based on the identifier schemes supported in [[?Data
 <li>Editorial revisions.</li>
 <li>Added section <a href="#scope-of-the-revision"></a>.</li>
 <li>Revised class diagram in section <a href="#vocabulary-overview"></a> to include class <code>dcat:DataService</code>.</li>
+<li>Added section <a href="#deprecated-classes"></a>.</li>
 <li>Added property <code>dcat:accessService</code> to <code>dcat:Distribution</code> (<a href="#distribution-access-service"></a>).</li>
 <li>Added class <code>dcat:DataService</code> and related properties (<a href="#data-service"></a>).</li>
 <li>Replaced <code>dctype:Service</code> with <code>dcat:DataService</code> for endpoints (<a href="#endpoint"></a>).</li>
