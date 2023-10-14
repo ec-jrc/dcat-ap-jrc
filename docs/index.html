@@ -12821,7 +12821,7 @@ code list has been created, based on the identifier schemes supported in [[?Data
 
 <p>The current version of DCAT-AP-JRC introduces a new class, <code>dcat:DataService</code>, to describe services / APIs giving access to distributions (<a href="#data-service"></a>).</p>
 
-<p>To upgrade metadata records following [[DCAT-AP-JRC-1]], it is necessary to automatically provide a description of data services associated with existing distributions.</p>
+<p>To upgrade accordingly metadata records following [[DCAT-AP-JRC-1]], it is necessary to automatically provide a description of data services associated with existing distributions.</p>
 
 <p>The approach to be implemented is as follows:</p>
 
@@ -12889,7 +12889,7 @@ https://data.jrc.ec.europa.eu/{UUID}
 
 <p>The current version of DCAT-AP-JRC deprecates class <code>dctype:Service</code>, and replaces it class <code>dcat:DataService</code> (see <a href="#deprecated-classes"></a>).</p>
 
-<p>To upgrade accordingly metadata records following [[DCAT-AP-JRC-1]], all the instances of <code>dctype:Service</code> must be replaced <code>dcat:DataService</code>.</p>
+<p>To upgrade accordingly metadata records following [[DCAT-AP-JRC-1]], all the instances of <code>dctype:Service</code> must be replaced with <code>dcat:DataService</code>.</p>
 
 <p>The SPARQL query included below implements these changes. The corresponding file is maintained in <a href="./sparql/replace-dctype-service-with-dcat-data-service.rq">the DCAT-AP-JRC GitHub repository</a>.</p> 
 
