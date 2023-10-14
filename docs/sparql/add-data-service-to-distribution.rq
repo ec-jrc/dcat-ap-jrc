@@ -1,6 +1,6 @@
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dct: <http://purl.org/dc/terms/>
-PREFIX distribution-type: <http://publications.europa.eu/resource/authority/distribution-type/>
+PREFIX aut-dt <http://publications.europa.eu/resource/authority/distribution-type/>
 
 CONSTRUCT {
   ?Distribution dcat:accessService ?DataService .
@@ -15,11 +15,13 @@ CONSTRUCT {
 } WHERE {
   ?Dataset dcat:distribution ?Distribution .
   ?Distribution dcat:accessURL ?URL . 
-  ?Distribution dct:type distribution-type:WEB_SERVICE .
+  ?Distribution dct:type aut-dt:WEB_SERVICE .
   OPTIONAL { ?Distribution dct:accessRight ?AccessRights . } .
   OPTIONAL { ?Distribution dct:conformsTo ?Standard . } .
-  OPTIONAL { ?Distribution dct:conformsTo/skos:prefLabel ?title . FILTER ( LANG( ?title ) = "en" ) } .
+  OPTIONAL { ?Distribution dct:conformsTo/skos:prefLabel ?title . 
+    FILTER ( LANG( ?title ) = "en" ) } .
   OPTIONAL { ?Distribution dct:license ?Licence . } .
-  BIND ( IRI( CONCAT( "https://data.jrc.europa.eu/data-service/", STRUUID() ) ) AS ?DataService )
+  BIND ( IRI( CONCAT( "https://data.jrc.europa.eu/data-service/", STRUUID() ) ) 
+    AS ?DataService )
   FILTER NOT EXISTS { ?Distribution dcat:accessService/dcat:endpointURL ?URL . }
 }
