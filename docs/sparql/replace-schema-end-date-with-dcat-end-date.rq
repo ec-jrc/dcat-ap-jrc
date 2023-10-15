@@ -1,4 +1,4 @@
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcat:   <http://www.w3.org/ns/dcat#>
 PREFIX schema: <http://schema.org/>
 
 DELETE {
