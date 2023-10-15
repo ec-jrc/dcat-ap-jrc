@@ -120,7 +120,15 @@ The views expressed are purely those of the author and may not in any circumstan
 <p>In particular:</p>
 
 <ul>
-<li>Class <code>dcat:DataService</code>, and related properties, has been added (<a href="#data-service"></a>). It replaces class <code>dctype:Service</code> for endpoints (<a href="#deprecated-classes"></a>), and it is associated with distributions giving access to data via a service / API (<a href="#distribution-access-service"></a>).</li>
+<li>
+<p>Class <code>dcat:DataService</code>, and related properties, has been added (<a href="#data-service"></a>). This class is used as follows:</p>
+<ul>
+<li>It is associated with distributions giving access to data via a service / API (<a href="#distribution-access-service"></a>).</li>
+<li>It replaces class <code>dctype:Service</code> for endpoints, which has been deprecated (<a href="#deprecated-classes"></a>).</li>
+</ul>
+</li>
+<li>Property <code>dcat:startDate</code> has been added (<a href="#temporal-coverage-start-date"></a>). It replaces property <code>schema:startDate</code>, which has been deprecated (<a href="#temporal-coverage-deprecated-properties"></a>).</li>
+<li>Property <code>dcat:endDate</code> has been added (<a href="#temporal-coverage-end-date"></a>). It replaces property <code>schema:endDate</code>, which has been deprecated (<a href="#temporal-coverage-deprecated-properties"></a>).</li>
 </ul>
 
 <p>These revisions can be applied to metadata records following [[DCAT-AP-JRC-1]] as described in <a href="#upgrading"></a>.</a>
@@ -12930,14 +12938,50 @@ https://data.jrc.ec.europa.eu/{UUID}
 
 <p>[[DCAT-AP-JRC-1]] used class <code>dctype:Service</code> (together with class <code>dcat:Catalog</code>) to describe a metadata harvesting endpoint (<a href="#endpoint"></a>).</p>
 
-<p>The current version of DCAT-AP-JRC deprecates class <code>dctype:Service</code>, and replaces it class <code>dcat:DataService</code> (see <a href="#deprecated-classes"></a>).</p>
+<p>The current version of DCAT-AP-JRC deprecates class <code>dctype:Service</code>, and replaces it with class <code>dcat:DataService</code> (see <a href="#deprecated-classes"></a>).</p>
 
 <p>To upgrade accordingly metadata records following [[DCAT-AP-JRC-1]], all the instances of <code>dctype:Service</code> must be replaced with <code>dcat:DataService</code>.</p>
 
-<p>The SPARQL query included below implements these changes. The corresponding file is maintained in <a href="./sparql/replace-dctype-service-with-dcat-data-service.rq">the DCAT-AP-JRC GitHub repository</a>.</p> 
+<p>The SPARQL query shown below implements these changes. The corresponding file is maintained in <a href="./sparql/replace-dctype-service-with-dcat-data-service.rq">the DCAT-AP-JRC GitHub repository</a>.</p> 
 
 <aside id="replace-dctype-service-with-dcat-data-service" class="def">
 <pre data-include-format="text" data-include="./sparql/replace-dctype-service-with-dcat-data-service.rq"></pre>
+</aside>
+
+</section>
+
+<section id="replace-schema-start-date-with-dcat-start-date">
+
+<h2>Replace <code>schema:startDate</code> with <code>dcat:startDate</code></h2>
+
+<p>[[DCAT-AP-JRC-1]] used property <code>schema:startDate</code> to indicate the start date of a period of time (<a href="#temporal-coverage"></a>).</p>
+
+<p>The current version of DCAT-AP-JRC deprecates property <code>schema:startDate</code>, and replaces it with property <code>dcat:startDate</code> (see <a href="#temporal-coverage-deprecated-properties"></a>).</p>
+
+<p>To upgrade accordingly metadata records following [[DCAT-AP-JRC-1]], all the instances of <code>schema:startDate</code> must be replaced with <code>dcat:startDate</code>.</p>
+
+<p>The SPARQL query shown below implements these changes. The corresponding file is maintained in <a href="./sparql/replace-schema-start-date-with-dcat-start-date.rq">the DCAT-AP-JRC GitHub repository</a>.</p> 
+
+<aside id="sparql-replace-schema-start-date-with-dcat-start-date" class="def">
+<pre data-include-format="text" data-include="./sparql/replace-schema-start-date-with-dcat-start-date.rq"></pre>
+</aside>
+
+</section>
+
+<section id="replace-schema-end-date-with-dcat-end-date">
+
+<h2>Replace <code>schema:endDate</code> with <code>dcat:endDate</code></h2>
+
+<p>[[DCAT-AP-JRC-1]] used property <code>schema:endDate</code> to indicate the end date of a period of time (<a href="#temporal-coverage"></a>).</p>
+
+<p>The current version of DCAT-AP-JRC deprecates property <code>schema:endDate</code>, and replaces it with property <code>dcat:endDate</code> (see <a href="#temporal-coverage-deprecated-properties"></a>).</p>
+
+<p>To upgrade accordingly metadata records following [[DCAT-AP-JRC-1]], all the instances of <code>schema:endDate</code> must be replaced with <code>dcat:endDate</code>.</p>
+
+<p>The SPARQL query shown below implements these changes. The corresponding file is maintained in <a href="./sparql/replace-schema-end-date-with-dcat-end-date.rq">the DCAT-AP-JRC GitHub repository</a>.</p> 
+
+<aside id="sparql-replace-schema-end-date-with-dcat-end-date" class="def">
+<pre data-include-format="text" data-include="./sparql/replace-schema-end-date-with-dcat-end-date.rq"></pre>
 </aside>
 
 </section>
