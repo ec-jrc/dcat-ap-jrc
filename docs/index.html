@@ -12898,9 +12898,22 @@ code list has been created, based on the identifier schemes supported in [[?Data
 https://data.jrc.ec.europa.eu/{UUID}
 </pre>
 
-<p>where <var>UUID</var> is a randomly generated Universally Unique Identifier (UUID) [[RFC4122]].</p>
+<p>where <code>UUID</code> is a randomly generated <em>Universally Unique Identifier</em> (<abbr title="Universally Unique Identifier">UUID</abbr>) [[RFC4122]].</p>
 
-<p>The information describing the data service is taken from the distribution, as shown in the following table.</p>
+<p>The title of the data service (<a href="#data-service-title"></a>) will correspond to:</p>
+
+<ul>
+<li>The name of the service protocol, if available in the register described in <a href="#registers-service-protocols"></a>; otherwise,</li>
+<li>The string "<code>Data Service</code>".</li>
+</ul>
+
+<!--
+<p>The value of property <code>dct:conformsTo</code> is used to retrieve the service protocol name from the code list described in <a href="#registers-service-protocols"></a>, which is then used for the title of the data service (<a href="#data-service-title"></a>).</p>
+-->
+
+<p>The description of the data service (<a href="#data-service-description"></a>) is instead left empty.</p>
+
+<p>The rest of the information describing the data service is taken from the distribution, as shown in the following table.</p>
 
 <table id="table-distribution-to-data-service-mapping" class="simple">
 <thead>
@@ -12929,8 +12942,6 @@ https://data.jrc.ec.europa.eu/{UUID}
 </tr>
 </tbody>
 </table>
-
-<p>The value of property <code>dct:conformsTo</code> is used to retrieve the service protocol name from the code list described in <a href="#registers-service-protocols"></a>, which is then used for the title of the data service (<a href="#data-service-title"></a>).</p>
 
 <p>Finally, to avoid duplicates, the record for the data service is created only if there does not already exist a data service for the same distribution and with the same <code>dcat:endpointURL</code>.</p>
 
