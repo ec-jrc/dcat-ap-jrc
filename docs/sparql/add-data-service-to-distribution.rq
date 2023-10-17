@@ -20,7 +20,7 @@ CONSTRUCT {
   OPTIONAL { ?Distribution dct:accessRight ?AccessRights . } .
   OPTIONAL { ?Distribution dct:conformsTo ?Standard . } .
   OPTIONAL { ?Distribution dct:conformsTo/skos:prefLabel ?protocolName . 
-    FILTER ( LANG( ?title ) = "en" ) } .
+    FILTER ( LANG( ?protocolName ) = "en" ) } .
   OPTIONAL { ?Distribution dct:license ?Licence . } .
   BIND ( IF ( BOUND(?protocolName), ?protocolName, STRLANG( "Data Service", "en" ) ) 
     AS ?title )
