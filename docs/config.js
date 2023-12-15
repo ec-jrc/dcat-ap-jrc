@@ -137,7 +137,15 @@ var respecConfig = {
         "authors":["DataCite Metadata Working Group"],
         "date":"3 February 2016"
       },
-      "DCAT-AP-JRC-1": {
+      "DCAT-AP-3": {
+        "href": "https://semiceu.github.io/DCAT-AP/releases/3.0.0/",
+        "title": "DCAT-AP 3.0",
+//        "authors": ["Makx Dekkers", "Pavlina Fragkou", "Natasa Sofou", "Bert Van Nuffelen"],
+        "status": "Working Draft",
+        "publisher":"European Commission",
+        "date": "17 July 2023"
+      },
+       "DCAT-AP-JRC-1": {
         "href": "https://ec-jrc.github.io/datacite-to-dcat-ap/1.0/",
         "title": "DCAT-AP-JRC - Version 1",
         "authors": ["Andrea Perego","Timothy Austin"],
