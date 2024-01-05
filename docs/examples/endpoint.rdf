@@ -1,6 +1,6 @@
   <rdf:Description rdf:about="http://data.jrc.ec.europa.eu/endpoint/liscoast">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
-    <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Service"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
     <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">
       http://data.jrc.ec.europa.eu/endpoint/liscoast
     </dct:identifier>
