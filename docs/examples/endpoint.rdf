@@ -12,7 +12,7 @@
     <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/JRC"/>
     <dcat:contactPoint>
       <vcard:Kind>
-        <vcard:hasURL rdf:resource="https://data.jrc.ec.europa.eu/contact"/>
+        <vcard:hasEmail rdf:resource="mailto:jrc-data-support@ec.europa.eu"/>
       </vcard:Kind>
     </dcat:contactPoint>
 

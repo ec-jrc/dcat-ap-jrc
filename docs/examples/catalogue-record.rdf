@@ -4,7 +4,7 @@
     </dct:identifier>
     <dcat:contactPoint>
       <vcard:Kind>
-        <vcard:hasURL rdf:resource="https://data.jrc.ec.europa.eu/contact"/>
+        <vcard:hasEmail rdf:resource="mailto:jrc-data-support@ec.europa.eu"/>
       </vcard:Kind>
     </dcat:contactPoint>
     <foaf:primaryTopic rdf:resource="http://data.europa.eu/89h/1234567890"/>
