@@ -1,0 +1,40 @@
+  <dcat:Dataset rdf:about="http://data.europa.eu/89h/eff7e328-2191-44ed-9100-4297156c280c">
+    ...
+
+    <!-- A distribution pointing to a downloadable file -->
+
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcterms:title xml:lang="en">INFORM GRI 2019, Excel</dcterms:title>
+        <dcterms:description xml:lang="en">
+          The Excel sheet contains all the source data and the calculation 
+          steps for functional levels, categories and dimensions.
+        </dcterms:description>
+        <dct:accessRights rdf:resource="http://data.jrc.ec.europa.eu/access-rights/no-limitations"/>
+        <dct:license rdf:resource="http://publications.europa.eu/resource/authority/licence/CC_BY"/>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XLSX"/>
+        <dct:type rdf:resource="http://publications.europa.eu/resource/authority/distribution-type/DOWNLOADABLE_FILE"/>
+        <dcat:accessURL rdf:resource="http://www.inform-index.org/LinkClick.aspx?fileticket=Z80oBfJxnl8%3d&amp;tabid=124&amp;portalid=0"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+    
+    <!-- A distribution pointing to a non-standard API -->
+    
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcterms:title xml:lang="en">INFORM GRI, API</dcterms:title>
+        <dcterms:description xml:lang="en">
+          INFORM is open, also for integration in other applications. 
+          INFORM has an API that allows access to INFORM data for 
+          programmers. Currently, a json API is available for reading 
+          data.
+        </dcterms:description>
+        <dct:accessRights rdf:resource="http://data.jrc.ec.europa.eu/access-rights/no-limitations"/>
+        <dct:license rdf:resource="http://publications.europa.eu/resource/authority/licence/CC_BY"/>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+        <dct:type rdf:resource="http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"/>
+        <dcat:accessURL rdf:resource="http://inform.jrc.ec.europa.eu/gnasystem/APIDocumentation/API_documentation.html"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+    
+  </dcat:Dataset>

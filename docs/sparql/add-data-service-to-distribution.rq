@@ -1,0 +1,30 @@
+PREFIX aut-dt: <http://publications.europa.eu/resource/authority/distribution-type/>
+PREFIX dcat:   <http://www.w3.org/ns/dcat#>
+PREFIX dct:    <http://purl.org/dc/terms/>
+PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+
+CONSTRUCT {
+  ?Distribution dcat:accessService ?DataService .
+  ?DataService a dcat:DataService .
+  ?DataService dcat:endpointDescription ?URL .
+  ?DataService dcat:endpointURL ?URL .
+  ?DataService dcat:servesDataset ?Dataset .
+  ?DataService dct:accessRights ?AccessRights .
+  ?DataService dct:conformsTo ?Standard .
+  ?DataService dct:license ?Licence .
+  ?DataService dct:title ?title .
+} WHERE {
+  ?Dataset dcat:distribution ?Distribution .
+  ?Distribution dcat:accessURL ?URL . 
+  ?Distribution dct:type aut-dt:WEB_SERVICE .
+  OPTIONAL { ?Distribution dct:accessRight ?AccessRights . } .
+  OPTIONAL { ?Distribution dct:conformsTo ?Standard . } .
+  OPTIONAL { ?Distribution dct:conformsTo/skos:prefLabel ?protocolName . 
+    FILTER ( LANG( ?protocolName ) = "en" ) } .
+  OPTIONAL { ?Distribution dct:license ?Licence . } .
+  BIND ( IF ( BOUND(?protocolName), ?protocolName, STRLANG( "Data Service", "en" ) ) 
+    AS ?title )
+  BIND ( IRI( CONCAT( "https://data.jrc.europa.eu/data-service/", STRUUID() ) ) 
+    AS ?DataService )
+  FILTER NOT EXISTS { ?Distribution dcat:accessService/dcat:endpointURL ?URL . }
+}

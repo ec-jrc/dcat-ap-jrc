@@ -84,12 +84,12 @@
 
     <dct:temporal>
       <dct:PeriodOfTime>
-        <dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
+        <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
           2015-12-01
-        </dcat:startDate>
-        <dcat:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
+        </schema:startDate>
+        <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
           2017-12-31
-        </dcat:endDate>
+        </schema:endDate>
       </dct:PeriodOfTime>
     </dct:temporal>
 

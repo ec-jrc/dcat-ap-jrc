@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF 
+  xmlns:dct="http://purl.org/dc/terms/" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+
+<rdf:Description rdf:about="http://data.jrc.ec.europa.eu/service-protocol">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+  <rdfs:label xml:lang="en">Service Protocols</rdfs:label>
+  <dct:title xml:lang="en">Service Protocols</dct:title>
+</rdf:Description>
+
+<!-- Added -->
+
+<rdf:Description rdf:about="https://www.openarchives.org/pmh">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OAI-PMH</dct:identifier>
+  <skos:notation>OAI-PMH</skos:notation>
+  <skos:prefLabel xml:lang="en">Open Archive Initiative - Protocol for Metadata Harvesting</skos:prefLabel>
+  <rdfs:label xml:lang="en">Open Archive Initiative - Protocol for Metadata Harvesting</rdfs:label>
+  <dct:title xml:lang="en">Open Archive Initiative - Protocol for Metadata Harvesting</dct:title>
+  <skos:definition xml:lang="en">Open Archive Initiative - Protocol for Metadata Harvesting</skos:definition>
+  <rdfs:comment xml:lang="en">Open Archive Initiative - Protocol for Metadata Harvesting</rdfs:comment>
+  <dct:description xml:lang="en">Open Archive Initiative - Protocol for Metadata Harvesting</dct:description>
+  <rdfs:isDefinedBy rdf:resource="https://www.openarchives.org/pmh"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://docs.ckan.org/en/latest/api/">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>CKAN</dct:identifier>
+  <skos:notation>CKAN</skos:notation>
+  <skos:prefLabel xml:lang="en">CKAN API</skos:prefLabel>
+  <rdfs:label xml:lang="en">CKAN API</rdfs:label>
+  <dct:title xml:lang="en">CKAN API</dct:title>
+  <skos:definition xml:lang="en">CKAN API</skos:definition>
+  <rdfs:comment xml:lang="en">CKAN API</rdfs:comment>
+  <dct:description xml:lang="en">CKAN API</dct:description>
+  <rdfs:isDefinedBy rdf:resource="https://docs.ckan.org/en/latest/api/"/>
+</rdf:Description>
+
+<!-- Original -->
+
+<rdf:Description rdf:about="http://www.opengis.net/def/serviceType/ogc/csw">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OGC:CSW</dct:identifier>
+  <skos:notation>OGC:CSW</skos:notation>
+  <skos:prefLabel xml:lang="en">OGC Catalogue Service for the Web</skos:prefLabel>
+  <rdfs:label xml:lang="en">OGC Catalogue Service for the Web</rdfs:label>
+  <dct:title xml:lang="en">OGC Catalogue Service for the Web</dct:title>
+  <skos:definition xml:lang="en">OGC Catalogue Service for the Web</skos:definition>
+  <rdfs:comment xml:lang="en">OGC Catalogue Service for the Web</rdfs:comment>
+  <dct:description xml:lang="en">OGC Catalogue Service for the Web</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://www.opengeospatial.org/standards/cat"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/def/serviceType/ogc/sos">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OGC:SOS</dct:identifier>
+  <skos:notation>OGC:SOS</skos:notation>
+  <skos:prefLabel xml:lang="en">OGC Sensor Observation Service</skos:prefLabel>
+  <rdfs:label xml:lang="en">OGC Sensor Observation Service</rdfs:label>
+  <dct:title xml:lang="en">OGC Sensor Observation Service</dct:title>
+  <skos:definition xml:lang="en">OGC Sensor Observation Service</skos:definition>
+  <rdfs:comment xml:lang="en">OGC Sensor Observation Service</rdfs:comment>
+  <dct:description xml:lang="en">OGC Sensor Observation Service</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://www.opengeospatial.org/standards/sos"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengeospatial.org/standards/sps">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OGC:SPS</dct:identifier>
+  <skos:notation>OGC:SPS</skos:notation>
+  <skos:prefLabel xml:lang="en">OGC Sensor Planning Service</skos:prefLabel>
+  <rdfs:label xml:lang="en">OGC Sensor Planning Service</rdfs:label>
+  <dct:title xml:lang="en">OGC Sensor Planning Service</dct:title>
+  <skos:definition xml:lang="en">OGC Sensor Planning Service</skos:definition>
+  <rdfs:comment xml:lang="en">OGC Sensor Planning Service</rdfs:comment>
+  <dct:description xml:lang="en">OGC Sensor Planning Service</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://www.opengeospatial.org/standards/sps"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ogcnetwork.net/SAS">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OGC:SAS</dct:identifier>
+  <skos:notation>OGC:SAS</skos:notation>
+  <skos:prefLabel xml:lang="en">OGC Sensor Alert Service</skos:prefLabel>
+  <rdfs:label xml:lang="en">OGC Sensor Alert Service</rdfs:label>
+  <dct:title xml:lang="en">OGC Sensor Alert Service</dct:title>
+  <skos:definition xml:lang="en">OGC Sensor Alert Service</skos:definition>
+  <rdfs:comment xml:lang="en">OGC Sensor Alert Service</rdfs:comment>
+  <dct:description xml:lang="en">OGC Sensor Alert Service</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://www.ogcnetwork.net/SAS"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ogcnetwork.net/WNS">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OGC:WNS</dct:identifier>
+  <skos:notation>OGC:WNS</skos:notation>
+  <skos:prefLabel xml:lang="en">OGC Web Notification Service</skos:prefLabel>
+  <rdfs:label xml:lang="en">OGC Web Notification Service</rdfs:label>
+  <dct:title xml:lang="en">OGC Web Notification Service</dct:title>
+  <skos:definition xml:lang="en">OGC Web Notification Service</skos:definition>
+  <rdfs:comment xml:lang="en">OGC Web Notification Service</rdfs:comment>
+  <dct:description xml:lang="en">OGC Web Notification Service</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://portal.opengeospatial.org/files/?artifact_id=1367"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/def/serviceType/ogc/wcs">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OGC:WCS</dct:identifier>
+  <skos:notation>OGC:WCS</skos:notation>
+  <skos:prefLabel xml:lang="en">OGC Web Coverage Service</skos:prefLabel>
+  <rdfs:label xml:lang="en">OGC Web Coverage Service</rdfs:label>
+  <dct:title xml:lang="en">OGC Web Coverage Service</dct:title>
+  <skos:definition xml:lang="en">OGC Web Coverage Service</skos:definition>
+  <rdfs:comment xml:lang="en">OGC Web Coverage Service</rdfs:comment>
+  <dct:description xml:lang="en">OGC Web Coverage Service</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://www.opengeospatial.org/standards/wcs"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/def/serviceType/ogc/wfs">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OGC:WFS</dct:identifier>
+  <skos:notation>OGC:WFS</skos:notation>
+  <skos:prefLabel xml:lang="en">OGC Web Feature Service</skos:prefLabel>
+  <rdfs:label xml:lang="en">OGC Web Feature Service</rdfs:label>
+  <dct:title xml:lang="en">OGC Web Feature Service</dct:title>
+  <skos:definition xml:lang="en">OGC Web Feature Service</skos:definition>
+  <rdfs:comment xml:lang="en">OGC Web Feature Service</rdfs:comment>
+  <dct:description xml:lang="en">OGC Web Feature Service</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://www.opengeospatial.org/standards/wfs"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/def/serviceType/ogc/wms">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OGC:WMS</dct:identifier>
+  <skos:notation>OGC:WMS</skos:notation>
+  <skos:prefLabel xml:lang="en">OGC Web Map Service</skos:prefLabel>
+  <rdfs:label xml:lang="en">OGC Web Map Service</rdfs:label>
+  <dct:title xml:lang="en">OGC Web Map Service</dct:title>
+  <skos:definition xml:lang="en">OGC Web Map Service</skos:definition>
+  <rdfs:comment xml:lang="en">OGC Web Map Service</rdfs:comment>
+  <dct:description xml:lang="en">OGC Web Map Service</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://www.opengeospatial.org/standards/wms"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengeospatial.org/standards/wmts">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OGC:WMTS</dct:identifier>
+  <skos:notation>OGC:WMTS</skos:notation>
+  <skos:prefLabel xml:lang="en">OGC Web Map Tile Service</skos:prefLabel>
+  <rdfs:label xml:lang="en">OGC Web Map Tile Service</rdfs:label>
+  <dct:title xml:lang="en">OGC Web Map Tile Service</dct:title>
+  <skos:definition xml:lang="en">OGC Web Map Tile Service</skos:definition>
+  <rdfs:comment xml:lang="en">OGC Web Map Tile Service</rdfs:comment>
+  <dct:description xml:lang="en">OGC Web Map Tile Service</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://www.opengeospatial.org/standards/wmts"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengis.net/def/serviceType/ogc/wps">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OGC:WPS</dct:identifier>
+  <skos:notation>OGC:WPS</skos:notation>
+  <skos:prefLabel xml:lang="en">OGC Web Processing Service</skos:prefLabel>
+  <rdfs:label xml:lang="en">OGC Web Processing Service</rdfs:label>
+  <dct:title xml:lang="en">OGC Web Processing Service</dct:title>
+  <skos:definition xml:lang="en">OGC Web Processing Service</skos:definition>
+  <rdfs:comment xml:lang="en">OGC Web Processing Service</rdfs:comment>
+  <dct:description xml:lang="en">OGC Web Processing Service</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://www.opengeospatial.org/standards/wps"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengeospatial.org/standards/ols#ods">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OGC:ODS</dct:identifier>
+  <skos:notation>OGC:ODS</skos:notation>
+  <skos:prefLabel xml:lang="en">OGC OpenLS Directory Service</skos:prefLabel>
+  <rdfs:label xml:lang="en">OGC OpenLS Directory Service</rdfs:label>
+  <dct:title xml:lang="en">OGC OpenLS Directory Service</dct:title>
+  <skos:definition xml:lang="en">OGC OpenLS Directory Service</skos:definition>
+  <rdfs:comment xml:lang="en">OGC OpenLS Directory Service</rdfs:comment>
+  <dct:description xml:lang="en">OGC OpenLS Directory Service</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://www.opengeospatial.org/standards/ols"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengeospatial.org/standards/ols#ogs">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OGC:OGS</dct:identifier>
+  <skos:notation>OGC:OGS</skos:notation>
+  <skos:prefLabel xml:lang="en">OGC OpenLS Gateway Service</skos:prefLabel>
+  <rdfs:label xml:lang="en">OGC OpenLS Gateway Service</rdfs:label>
+  <dct:title xml:lang="en">OGC OpenLS Gateway Service</dct:title>
+  <skos:definition xml:lang="en">OGC OpenLS Gateway Service</skos:definition>
+  <rdfs:comment xml:lang="en">OGC OpenLS Gateway Service</rdfs:comment>
+  <dct:description xml:lang="en">OGC OpenLS Gateway Service</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://www.opengeospatial.org/standards/ols"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengeospatial.org/standards/ols#ous">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OGC:OUS</dct:identifier>
+  <skos:notation>OGC:OUS</skos:notation>
+  <skos:prefLabel xml:lang="en">OGC OpenLS Utility Service</skos:prefLabel>
+  <rdfs:label xml:lang="en">OGC OpenLS Utility Service</rdfs:label>
+  <dct:title xml:lang="en">OGC OpenLS Utility Service</dct:title>
+  <skos:definition xml:lang="en">OGC OpenLS Utility Service</skos:definition>
+  <rdfs:comment xml:lang="en">OGC OpenLS Utility Service</rdfs:comment>
+  <dct:description xml:lang="en">OGC OpenLS Utility Service</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://www.opengeospatial.org/standards/ols"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengeospatial.org/standards/ols#ops">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OGC:OPS</dct:identifier>
+  <skos:notation>OGC:OPS</skos:notation>
+  <skos:prefLabel xml:lang="en">OGC OpenLS Presentation Service</skos:prefLabel>
+  <rdfs:label xml:lang="en">OGC OpenLS Presentation Service</rdfs:label>
+  <dct:title xml:lang="en">OGC OpenLS Presentation Service</dct:title>
+  <skos:definition xml:lang="en">OGC OpenLS Presentation Service</skos:definition>
+  <rdfs:comment xml:lang="en">OGC OpenLS Presentation Service</rdfs:comment>
+  <dct:description xml:lang="en">OGC OpenLS Presentation Service</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://www.opengeospatial.org/standards/ols"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengeospatial.org/standards/ols#ors">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OGC:ORS</dct:identifier>
+  <skos:notation>OGC:ORS</skos:notation>
+  <skos:prefLabel xml:lang="en">OGC OpenLS Route Service</skos:prefLabel>
+  <rdfs:label xml:lang="en">OGC OpenLS Route Service</rdfs:label>
+  <dct:title xml:lang="en">OGC OpenLS Route Service</dct:title>
+  <skos:definition xml:lang="en">OGC OpenLS Route Service</skos:definition>
+  <rdfs:comment xml:lang="en">OGC OpenLS Route Service</rdfs:comment>
+  <dct:description xml:lang="en">OGC OpenLS Route Service</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://www.opengeospatial.org/standards/ols"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengeospatial.org/standards/ct">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OGC:CT</dct:identifier>
+  <skos:notation>OGC:CT</skos:notation>
+  <skos:prefLabel xml:lang="en">OGC Coordinate Transformation Service</skos:prefLabel>
+  <rdfs:label xml:lang="en">OGC Coordinate Transformation Service</rdfs:label>
+  <dct:title xml:lang="en">OGC Coordinate Transformation Service</dct:title>
+  <skos:definition xml:lang="en">OGC Coordinate Transformation Service</skos:definition>
+  <rdfs:comment xml:lang="en">OGC Coordinate Transformation Service</rdfs:comment>
+  <dct:description xml:lang="en">OGC Coordinate Transformation Service</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://www.opengeospatial.org/standards/ct"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengeospatial.org/standards/wfs-g">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OGC:WFS-G</dct:identifier>
+  <skos:notation>OGC:WFS-G</skos:notation>
+  <skos:prefLabel xml:lang="en">Gazetteer Service Profile of the Web Feature Service Implementation Specification</skos:prefLabel>
+  <rdfs:label xml:lang="en">Gazetteer Service Profile of the Web Feature Service Implementation Specification</rdfs:label>
+  <dct:title xml:lang="en">Gazetteer Service Profile of the Web Feature Service Implementation Specification</dct:title>
+  <skos:definition xml:lang="en">Gazetteer Service Profile of the Web Feature Service Implementation Specification</skos:definition>
+  <rdfs:comment xml:lang="en">Gazetteer Service Profile of the Web Feature Service Implementation Specification</rdfs:comment>
+  <dct:description xml:lang="en">Gazetteer Service Profile of the Web Feature Service Implementation Specification</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://portal.opengeospatial.org/files/?artifact_id=7175"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opengeospatial.org/standards/owc">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OGC:OWC</dct:identifier>
+  <skos:notation>OGC:OWC</skos:notation>
+  <skos:prefLabel xml:lang="en">OGC OWS Context</skos:prefLabel>
+  <rdfs:label xml:lang="en">OGC OWS Context</rdfs:label>
+  <dct:title xml:lang="en">OGC OWS Context</dct:title>
+  <skos:definition xml:lang="en">OGC OWS Context</skos:definition>
+  <rdfs:comment xml:lang="en">OGC OWS Context</rdfs:comment>
+  <dct:description xml:lang="en">OGC OWS Context</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://www.opengeospatial.org/standards/owc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ogcnetwork.net/IoT">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OGC:IoT</dct:identifier>
+  <skos:notation>OGC:IoT</skos:notation>
+  <skos:prefLabel xml:lang="en">OGC SensorThings API</skos:prefLabel>
+  <rdfs:label xml:lang="en">OGC SensorThings API</rdfs:label>
+  <dct:title xml:lang="en">OGC SensorThings API</dct:title>
+  <skos:definition xml:lang="en">OGC SensorThings API</skos:definition>
+  <rdfs:comment xml:lang="en">OGC SensorThings API</rdfs:comment>
+  <dct:description xml:lang="en">OGC SensorThings API</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://ogc-iot.github.io/ogc-iot-api"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:x-esri:serviceType:ArcIMS">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>ESRI:ArcIMS</dct:identifier>
+  <skos:notation>ESRI:ArcIMS</skos:notation>
+  <skos:prefLabel xml:lang="en">ESRI ArcIMS Service</skos:prefLabel>
+  <rdfs:label xml:lang="en">ESRI ArcIMS Service</rdfs:label>
+  <dct:title xml:lang="en">ESRI ArcIMS Service</dct:title>
+  <skos:definition xml:lang="en">ESRI ArcIMS Service</skos:definition>
+  <rdfs:comment xml:lang="en">ESRI ArcIMS Service</rdfs:comment>
+  <dct:description xml:lang="en">ESRI ArcIMS Service</dct:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="urn:x-esri:serviceType:ArcGIS">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>ESRI:ArcGIS</dct:identifier>
+  <skos:notation>ESRI:ArcGIS</skos:notation>
+  <skos:prefLabel xml:lang="en">ESRI ArcGIS Service</skos:prefLabel>
+  <rdfs:label xml:lang="en">ESRI ArcGIS Service</rdfs:label>
+  <dct:title xml:lang="en">ESRI ArcGIS Service</dct:title>
+  <skos:definition xml:lang="en">ESRI ArcGIS Service</skos:definition>
+  <rdfs:comment xml:lang="en">ESRI ArcGIS Service</rdfs:comment>
+  <dct:description xml:lang="en">ESRI ArcGIS Service</dct:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/wsdl">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>WWW:WSDL</dct:identifier>
+  <skos:notation>WWW:WSDL</skos:notation>
+  <skos:prefLabel xml:lang="en">Web Service Description Language XML document describing service operation</skos:prefLabel>
+  <rdfs:label xml:lang="en">Web Service Description Language XML document describing service operation</rdfs:label>
+  <dct:title xml:lang="en">Web Service Description Language XML document describing service operation</dct:title>
+  <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/wsdl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/TR/sparql11-protocol">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>WWW:SPARQL:1.1</dct:identifier>
+  <skos:notation>WWW:SPARQL:1.1</skos:notation>
+  <skos:prefLabel xml:lang="en">SPARQL protocol for HTTP</skos:prefLabel>
+  <rdfs:label xml:lang="en">SPARQL protocol for HTTP</rdfs:label>
+  <dct:title xml:lang="en">SPARQL protocol for HTTP</dct:title>
+  <skos:definition xml:lang="en">SPARQL protocol for HTTP</skos:definition>
+  <rdfs:comment xml:lang="en">SPARQL protocol for HTTP</rdfs:comment>
+  <dct:description xml:lang="en">SPARQL protocol for HTTP</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/rdf-sparql-query"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opensearch.org/Specifications/OpenSearch/1.1#OpenSearch_URL_template_syntax">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OpenSearch1.1</dct:identifier>
+  <skos:notation>OpenSearch1.1</skos:notation>
+  <skos:prefLabel xml:lang="en">OpenSearch template</skos:prefLabel>
+  <rdfs:label xml:lang="en">OpenSearch template</rdfs:label>
+  <dct:title xml:lang="en">OpenSearch template</dct:title>
+  <skos:definition xml:lang="en">OpenSearch template</skos:definition>
+  <rdfs:comment xml:lang="en">OpenSearch template</rdfs:comment>
+  <dct:description xml:lang="en">OpenSearch template</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://www.opensearch.org/Specifications/OpenSearch/1.1#OpenSearch_URL_template_syntax"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.opensearch.org/Specifications/OpenSearch/1.1#OpenSearch_description_document">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OpenSearch1.1:Description</dct:identifier>
+  <skos:notation>OpenSearch1.1:Description</skos:notation>
+  <skos:prefLabel xml:lang="en">OpenSearch description document</skos:prefLabel>
+  <rdfs:label xml:lang="en">OpenSearch description document</rdfs:label>
+  <dct:title xml:lang="en">OpenSearch description document</dct:title>
+  <skos:definition xml:lang="en">OpenSearch description document</skos:definition>
+  <rdfs:comment xml:lang="en">OpenSearch description document</rdfs:comment>
+  <dct:description xml:lang="en">OpenSearch description document</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://www.opensearch.org/Specifications/OpenSearch/1.1#OpenSearch_description_document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://tools.ietf.org/html/rfc6570">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>uri-template</dct:identifier>
+  <skos:notation>uri-template</skos:notation>
+  <skos:prefLabel xml:lang="en">URI Template</skos:prefLabel>
+  <rdfs:label xml:lang="en">URI Template</rdfs:label>
+  <dct:title xml:lang="en">URI Template</dct:title>
+  <skos:definition xml:lang="en">URI Template</skos:definition>
+  <rdfs:comment xml:lang="en">URI Template</rdfs:comment>
+  <dct:description xml:lang="en">URI Template</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://tools.ietf.org/html/rfc6570"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://commons.esipfed.org/ns/discovery/1.2/collectionCast# ">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>esip:CollectionCast</dct:identifier>
+  <skos:notation>esip:CollectionCast</skos:notation>
+  <skos:prefLabel xml:lang="en">ESIP collection cast</skos:prefLabel>
+  <rdfs:label xml:lang="en">ESIP collection cast</rdfs:label>
+  <dct:title xml:lang="en">ESIP collection cast</dct:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://service.iris.edu/fdsnws/event/1/">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>iris:fdsnws-event</dct:identifier>
+  <skos:notation>iris:fdsnws-event</skos:notation>
+  <skos:prefLabel xml:lang="en">IRIS Seismic event service</skos:prefLabel>
+  <rdfs:label xml:lang="en">IRIS Seismic event service</rdfs:label>
+  <dct:title xml:lang="en">IRIS Seismic event service</dct:title>
+  <skos:definition xml:lang="en">IRIS Seismic event service</skos:definition>
+  <rdfs:comment xml:lang="en">IRIS Seismic event service</rdfs:comment>
+  <dct:description xml:lang="en">IRIS Seismic event service</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://service.iris.edu/fdsnws/event/1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://tools.ietf.org/html/rfc2616">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>http</dct:identifier>
+  <skos:notation>http</skos:notation>
+  <skos:prefLabel xml:lang="en">HyperText Transfer Protocol, v1.1</skos:prefLabel>
+  <rdfs:label xml:lang="en">HyperText Transfer Protocol, v1.1</rdfs:label>
+  <dct:title xml:lang="en">HyperText Transfer Protocol, v1.1</dct:title>
+  <skos:definition xml:lang="en">HyperText Transfer Protocol, v1.1</skos:definition>
+  <rdfs:comment xml:lang="en">HyperText Transfer Protocol, v1.1</rdfs:comment>
+  <dct:description xml:lang="en">HyperText Transfer Protocol, v1.1</dct:description>
+  <rdfs:isDefinedBy rdf:resource="https://tools.ietf.org/html/rfc2616"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://tools.ietf.org/html/rfc959">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>ftp</dct:identifier>
+  <skos:notation>ftp</skos:notation>
+  <skos:prefLabel xml:lang="en">File Transfer Protocol</skos:prefLabel>
+  <rdfs:label xml:lang="en">File Transfer Protocol</rdfs:label>
+  <dct:title xml:lang="en">File Transfer Protocol</dct:title>
+  <skos:definition xml:lang="en">File Transfer Protocol</skos:definition>
+  <rdfs:comment xml:lang="en">File Transfer Protocol</rdfs:comment>
+  <dct:description xml:lang="en">File Transfer Protocol</dct:description>
+  <rdfs:isDefinedBy rdf:resource="https://tools.ietf.org/html/rfc959"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://git-scm.com/">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>GIT</dct:identifier>
+  <skos:notation>GIT</skos:notation>
+  <skos:prefLabel xml:lang="en">GIT</skos:prefLabel>
+  <rdfs:label xml:lang="en">GIT</rdfs:label>
+  <dct:title xml:lang="en">GIT</dct:title>
+  <skos:definition xml:lang="en">GIT</skos:definition>
+  <rdfs:comment xml:lang="en">GIT</rdfs:comment>
+  <dct:description xml:lang="en">GIT</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://git-scm.com/book/commands"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geogig.org">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>boundless:geogig</dct:identifier>
+  <skos:notation>boundless:geogig</skos:notation>
+  <skos:prefLabel xml:lang="en">Boundless GeoGig</skos:prefLabel>
+  <rdfs:label xml:lang="en">Boundless GeoGig</rdfs:label>
+  <dct:title xml:lang="en">Boundless GeoGig</dct:title>
+  <skos:definition xml:lang="en">Boundless GeoGig</skos:definition>
+  <rdfs:comment xml:lang="en">Boundless GeoGig</rdfs:comment>
+  <dct:description xml:lang="en">Boundless GeoGig</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://geogig.org/docs/interaction/web-api.html"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://docs.oasis-open.org/odata/odata/v4.0">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OASIS:OData:4.0</dct:identifier>
+  <skos:notation>OASIS:OData:4.0</skos:notation>
+  <skos:prefLabel xml:lang="en">OData v4.0</skos:prefLabel>
+  <rdfs:label xml:lang="en">OData v4.0</rdfs:label>
+  <dct:title xml:lang="en">OData v4.0</dct:title>
+  <skos:definition xml:lang="en">OData v4.0</skos:definition>
+  <rdfs:comment xml:lang="en">OData v4.0</rdfs:comment>
+  <dct:description xml:lang="en">OData v4.0</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dat-data.com">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>maxogden:dat</dct:identifier>
+  <skos:notation>maxogden:dat</skos:notation>
+  <skos:prefLabel xml:lang="en">dat REST API</skos:prefLabel>
+  <rdfs:label xml:lang="en">dat REST API</rdfs:label>
+  <dct:title xml:lang="en">dat REST API</dct:title>
+  <skos:definition xml:lang="en">dat REST API</skos:definition>
+  <rdfs:comment xml:lang="en">dat REST API</rdfs:comment>
+  <dct:description xml:lang="en">dat REST API</dct:description>
+  <rdfs:isDefinedBy rdf:resource="https://github.com/maxogden/dat/blob/master/docs/rest-api.md"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://docs.geoserver.org/latest/en/user/rest">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>geoserver:rest</dct:identifier>
+  <skos:notation>geoserver:rest</skos:notation>
+  <skos:prefLabel xml:lang="en">GeoServer REST configuration API</skos:prefLabel>
+  <rdfs:label xml:lang="en">GeoServer REST configuration API</rdfs:label>
+  <dct:title xml:lang="en">GeoServer REST configuration API</dct:title>
+  <skos:definition xml:lang="en">GeoServer REST configuration API</skos:definition>
+  <rdfs:comment xml:lang="en">GeoServer REST configuration API</rdfs:comment>
+  <dct:description xml:lang="en">GeoServer REST configuration API</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://docs.geoserver.org/latest/en/user/rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://developers.google.com/protocol-buffers">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>google:protocol-buffers</dct:identifier>
+  <skos:notation>google:protocol-buffers</skos:notation>
+  <skos:prefLabel xml:lang="en">Google Protocol Buffers</skos:prefLabel>
+  <rdfs:label xml:lang="en">Google Protocol Buffers</rdfs:label>
+  <dct:title xml:lang="en">Google Protocol Buffers</dct:title>
+  <skos:definition xml:lang="en">Google Protocol Buffers</skos:definition>
+  <rdfs:comment xml:lang="en">Google Protocol Buffers</rdfs:comment>
+  <dct:description xml:lang="en">Google Protocol Buffers</dct:description>
+  <rdfs:isDefinedBy rdf:resource="https://developers.google.com/protocol-buffers"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://google.com/fusiontables">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>google:fusion-tables</dct:identifier>
+  <skos:notation>google:fusion-tables</skos:notation>
+  <skos:prefLabel xml:lang="en">Google Fusion Tables</skos:prefLabel>
+  <rdfs:label xml:lang="en">Google Fusion Tables</rdfs:label>
+  <dct:title xml:lang="en">Google Fusion Tables</dct:title>
+  <skos:definition xml:lang="en">Google Fusion Tables</skos:definition>
+  <rdfs:comment xml:lang="en">Google Fusion Tables</rdfs:comment>
+  <dct:description xml:lang="en">Google Fusion Tables</dct:description>
+  <rdfs:isDefinedBy rdf:resource="https://developers.google.com/fusiontables"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ferret.pmel.noaa.gov/LAS">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>NOAA:LAS</dct:identifier>
+  <skos:notation>NOAA:LAS</skos:notation>
+  <skos:prefLabel xml:lang="en">Live Access Server</skos:prefLabel>
+  <rdfs:label xml:lang="en">Live Access Server</rdfs:label>
+  <dct:title xml:lang="en">Live Access Server</dct:title>
+  <skos:definition xml:lang="en">Live Access Server</skos:definition>
+  <rdfs:comment xml:lang="en">Live Access Server</rdfs:comment>
+  <dct:description xml:lang="en">Live Access Server</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://ferret.pmel.noaa.gov/LAS/documentation/developer-documentation/the-xml-messages-used-by-las"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://wiki.openstreetmap.org/wiki/API">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>OSM</dct:identifier>
+  <skos:notation>OSM</skos:notation>
+  <skos:prefLabel xml:lang="en">Open Street Map API</skos:prefLabel>
+  <rdfs:label xml:lang="en">Open Street Map API</rdfs:label>
+  <dct:title xml:lang="en">Open Street Map API</dct:title>
+  <skos:definition xml:lang="en">Open Street Map API</skos:definition>
+  <rdfs:comment xml:lang="en">Open Street Map API</rdfs:comment>
+  <dct:description xml:lang="en">Open Street Map API</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://wiki.openstreetmap.org/wiki/API"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://coastwatch.pfeg.noaa.gov/erddap/griddap/documentation.html">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>ERDDAP:griddap</dct:identifier>
+  <skos:notation>ERDDAP:griddap</skos:notation>
+  <skos:prefLabel xml:lang="en">ERDDAP Data Service for Gridded Datasets</skos:prefLabel>
+  <rdfs:label xml:lang="en">ERDDAP Data Service for Gridded Datasets</rdfs:label>
+  <dct:title xml:lang="en">ERDDAP Data Service for Gridded Datasets</dct:title>
+  <skos:definition xml:lang="en">ERDDAP Data Service for Gridded Datasets</skos:definition>
+  <rdfs:comment xml:lang="en">ERDDAP Data Service for Gridded Datasets</rdfs:comment>
+  <dct:description xml:lang="en">ERDDAP Data Service for Gridded Datasets</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://coastwatch.pfeg.noaa.gov/erddap/griddap/documentation.html"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://coastwatch.pfeg.noaa.gov/erddap/tabledap/documentation.html">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/service-protocol"/>
+  <dct:identifier>ERDDAP:tabledap</dct:identifier>
+  <skos:notation>ERDDAP:tabledap</skos:notation>
+  <skos:prefLabel xml:lang="en">ERDDAP Data Service for Tabular Datasets</skos:prefLabel>
+  <rdfs:label xml:lang="en">ERDDAP Data Service for Tabular Datasets</rdfs:label>
+  <dct:title xml:lang="en">ERDDAP Data Service for Tabular Datasets</dct:title>
+  <skos:definition xml:lang="en">ERDDAP Data Service for Tabular Datasets</skos:definition>
+  <rdfs:comment xml:lang="en">ERDDAP Data Service for Tabular Datasets</rdfs:comment>
+  <dct:description xml:lang="en">ERDDAP Data Service for Tabular Datasets</dct:description>
+  <rdfs:isDefinedBy rdf:resource="http://coastwatch.pfeg.noaa.gov/erddap/tabledap/documentation.html"/>
+</rdf:Description>
+
+</rdf:RDF>

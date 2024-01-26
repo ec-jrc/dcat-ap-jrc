@@ -1,0 +1,7 @@
+   <dcat:Dataset rdf:about="http://data.europa.eu/89h/jrc-ghsl-10008">
+     ...
+
+     <dct:spatial rdf:resource="https://unstats.un.org/unsd/methodology/m49/001"/>
+
+     ...
+   </dcat:Dataset>

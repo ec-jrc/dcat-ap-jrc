@@ -1,6 +1,6 @@
   <rdf:Description rdf:about="http://data.jrc.ec.europa.eu/endpoint/liscoast">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
+    <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Service"/>
     <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">
       http://data.jrc.ec.europa.eu/endpoint/liscoast
     </dct:identifier>
@@ -12,7 +12,7 @@
     <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/JRC"/>
     <dcat:contactPoint>
       <vcard:Kind>
-        <vcard:hasEmail rdf:resource="mailto:jrc-data-support@ec.europa.eu"/>
+        <vcard:hasURL rdf:resource="https://data.jrc.ec.europa.eu/contact"/>
       </vcard:Kind>
     </dcat:contactPoint>
 

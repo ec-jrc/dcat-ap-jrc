@@ -1,0 +1,32 @@
+  <dcat:Dataset rdf:about="http://data.europa.eu/89h/1234567890">
+    ...
+
+<!-- Individual as dataset contributor -->    
+
+    <dct:creator rdf:resource="http://data.jrc.ec.europa.eu/contributor/andrea.perego">
+
+    ...
+  </dcat:Dataset>
+    
+<!-- Individual description -->
+
+  <foaf:Person rdf:about="http://data.jrc.ec.europa.eu/contributor/andrea.perego">
+
+    <foaf:givenName>Andrea</foaf:givenName>
+    <foaf:familyName>Perego</foaf:familyName>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">
+      http://data.jrc.ec.europa.eu/contributor/andrea.perego
+    </dct:identifier>
+    
+    <owl:sameAs rdf:resource="https://orcid.org/0000-0001-9300-2694"/>
+    <adms:identifier>
+      <adms:Identifier>
+        <skos:notation>0000-0001-9300-2694</skos:notation>
+        <adms:schemeAgency>ORCID</adms:schemeAgency>
+        <dct:creator rdf:resource="https://orcid.org/"/>
+      </adms:Identifier>
+    </adms:identifier>
+
+    <foaf:mbox rdf:resource="mailto:andrea.perego@ec.europa.eu"/>
+
+  </foaf:Person>

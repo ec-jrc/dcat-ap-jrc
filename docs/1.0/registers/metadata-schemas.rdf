@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF 
+  xmlns:dc   = "http://purl.org/dc/elements/1.1/"
+  xmlns:dct  = "http://purl.org/dc/terms/"
+  xmlns:owl  = "http://www.w3.org/2002/07/owl#"
+  xmlns:rdf  = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs = "http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:skos = "http://www.w3.org/2004/02/skos/core#"
+>
+ 
+  <skos:ConceptScheme rdf:about="http://data.jrc.ec.europa.eu/metadata-schema">
+    <dct:title xml:lang="en">Metadata schemas</dct:title>
+    <rdfs:label xml:lang="en">Metadata schemas</rdfs:label>
+  </skos:ConceptScheme>
+ 
+  <rdf:Description rdf:about="http://www.isotc211.org/2005/gmd">
+    <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/metadata-schema"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Standard"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
+    <dc:identifier>iso-19139</dc:identifier>
+    <skos:prefLabel xml:lang="en">ISO/TS 19139:2007 - Geographic MetaData extensible markup language (GMD)</skos:prefLabel>
+    <dct:title xml:lang="en">ISO/TS 19139:2007 - Geographic MetaData extensible markup language (GMD)</dct:title>
+    <skos:altLabel xml:lang="en">ISO 19139</skos:altLabel>
+    <dct:alternative xml:lang="en">ISO 19139</dct:alternative>
+    <rdfs:isDefinedBy rdf:resource="https://www.iso.org/standard/32557.html"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://sdmx.org/">
+    <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/metadata-schema"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Standard"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
+    <dc:identifier>sdmx</dc:identifier>
+    <skos:prefLabel xml:lang="en">Statistical Data and Metadata eXchange</skos:prefLabel>
+    <dct:title xml:lang="en">Statistical Data and Metadata eXchange</dct:title>
+    <skos:altLabel xml:lang="en">SDMX</skos:altLabel>
+    <dct:alternative xml:lang="en">SDMX</dct:alternative>
+    <rdfs:isDefinedBy rdf:resource="https://sdmx.org/"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/ns/dcat#">
+    <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/metadata-schema"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Standard"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
+    <dc:identifier>dcat</dc:identifier>
+    <skos:prefLabel xml:lang="en">Data Catalog Vocabulary</skos:prefLabel>
+    <dct:title xml:lang="en">Data Catalog Vocabulary</dct:title>
+    <skos:altLabel xml:lang="en">DCAT</skos:altLabel>
+    <dct:alternative xml:lang="en">DCAT</dct:alternative>
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/vocab-dcat/"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.europa.eu/r5r/">
+    <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/metadata-schema"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Standard"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
+    <dc:identifier>dcat-ap</dc:identifier>
+    <skos:prefLabel xml:lang="en">DCAT Application Profile for data portals in Europe</skos:prefLabel>
+    <dct:title xml:lang="en">DCAT Application Profile for data portals in Europe</dct:title>
+    <skos:altLabel xml:lang="en">DCAT-AP</skos:altLabel>
+    <dct:alternative xml:lang="en">DCAT-AP</dct:alternative>
+    <rdfs:isDefinedBy rdf:resource="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.europa.eu/930/">
+    <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/metadata-schema"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Standard"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
+    <dc:identifier>geodcat-ap</dc:identifier>
+    <skos:prefLabel xml:lang="en">GeoDCAT Application Profile for data portals in Europe</skos:prefLabel>
+    <dct:title xml:lang="en">GeoDCAT Application Profile for data portals in Europe</dct:title>
+    <skos:altLabel xml:lang="en">GeoDCAT-AP</skos:altLabel>
+    <dct:alternative xml:lang="en">GeoDCAT-AP</dct:alternative>
+    <rdfs:isDefinedBy rdf:resource="https://joinup.ec.europa.eu/solution/geodcat-application-profile-data-portals-europe"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://data.europa.eu/s1n/">
+    <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/metadata-schema"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Standard"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
+    <dc:identifier>statdcat-ap</dc:identifier>
+    <skos:prefLabel xml:lang="en">StatDCAT Application Profile for data portals in Europe</skos:prefLabel>
+    <dct:title xml:lang="en">StatDCAT Application Profile for data portals in Europe</dct:title>
+    <skos:altLabel xml:lang="en">StatDCAT-AP</skos:altLabel>
+    <dct:alternative xml:lang="en">StatDCAT-AP</dct:alternative>
+    <rdfs:isDefinedBy rdf:resource="https://joinup.ec.europa.eu/solution/statdcat-application-profile-data-portals-europe"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://datacite.org/schema/">
+    <skos:inScheme rdf:resource="http://data.jrc.ec.europa.eu/metadata-schema"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Standard"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
+    <dc:identifier>datacite</dc:identifier>
+    <skos:prefLabel xml:lang="en">DataCite Metadata Schema</skos:prefLabel>
+    <dct:title xml:lang="en">DataCite Metadata Schema</dct:title>
+    <skos:altLabel xml:lang="en">DataCite</skos:altLabel>
+    <dct:alternative xml:lang="en">DataCite</dct:alternative>
+    <rdfs:isDefinedBy rdf:resource="https://schema.datacite.org/"/>
+  </rdf:Description>
+
+</rdf:RDF>

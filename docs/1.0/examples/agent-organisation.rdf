@@ -1,0 +1,61 @@
+  <dcat:Dataset rdf:about="http://data.europa.eu/89h/1234567890">
+    ...
+
+<!-- Organisation as corporate dataset contributor --> 
+   
+    <dct:creator rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/JRC"/>
+    
+    ...
+  </dcat:Dataset>
+  
+<!-- Organisation description -->  
+
+  <foaf:Organization rdf:about="http://publications.europa.eu/resource/authority/corporate-body/JRC">
+  
+    <foaf:name xml:lang="en">European Commission, Joint Research Centre (JRC)</foaf:name>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">
+      http://publications.europa.eu/resource/authority/corporate-body/JRC
+    </dct:identifier>
+    <dct:alternative>JRC</dct:alternative>
+    <org:subOrganizationOf rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/COM"/>
+    
+    <owl:sameAs rdf:resource="http://isni.org/isni/000000040635247X"/>
+    <adms:identifier>    
+      <adms:Identifier>    
+        <skos:notation>000000040635247X</skos:notation>
+        <adms:schemeAgency>ISNI</adms:schemeAgency>
+        <dct:creator rdf:resource="http://isni.org/"/>
+      </adms:Identifier>    
+    </adms:identifier>    
+    
+    <owl:sameAs rdf:resource="https://doi.org/10.13039/501100000900"/>
+    <adms:identifier>    
+      <adms:Identifier>    
+        <skos:notation>501100000900</skos:notation>
+        <adms:schemeAgency>Crossref Funder ID</adms:schemeAgency>
+        <dct:creator rdf:resource="https://www.crossref.org/services/funder-registry/"/>
+      </adms:Identifier>    
+    </adms:identifier>    
+    
+    <owl:sameAs rdf:resource="https://grid.ac/institutes/grid.489339.c"/>
+    <adms:identifier>    
+      <adms:Identifier>    
+        <skos:notation>grid.489339.c</skos:notation>
+        <adms:schemeAgency>GRID</adms:schemeAgency>
+        <dct:creator rdf:resource="https://www.grid.ac/"/>
+      </adms:Identifier>    
+    </adms:identifier>    
+    
+    <owl:sameAs rdf:resource="https://ror.org/04j5wtv36"/>
+    <adms:identifier>    
+      <adms:Identifier>    
+        <skos:notation>04j5wtv36</skos:notation>
+        <adms:schemeAgency>ROR</adms:schemeAgency>
+        <dct:creator rdf:resource="https://ror.org/"/>
+      </adms:Identifier>    
+    </adms:identifier>    
+    
+    <foaf:homepage rdf:resource="https://ec.europa.eu/jrc/"/>
+    <foaf:logo rdf:resource="https://ec.europa.eu/info/sites/info/files/ec-logo-st-rvb-web_en.jpg"/>
+    
+  </foaf:Organization>

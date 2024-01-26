@@ -1,0 +1,10 @@
+PREFIX dcat:   <http://www.w3.org/ns/dcat#>
+PREFIX dctype: <http://purl.org/dc/dcmitype/>
+
+DELETE {
+  ?Service a dctype:Service .
+} INSERT {
+  ?Service a dcat:DataService .
+} WHERE {
+  ?Service a dctype:Service .
+}

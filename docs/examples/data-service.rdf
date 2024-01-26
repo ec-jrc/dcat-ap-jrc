@@ -1,0 +1,19 @@
+<dcat:Dataset rdf:about="http://data.europa.eu/89h/555e5d1d-1aae-4320-a716-2e6d18aa1e7c">
+  ...
+  <dcat:Distribution>
+    ..
+    <dcat:accessService>
+      <dcat:DataService>
+        <dct:accessRights rdf:resource="http://data.jrc.ec.europa.eu/access-rights/no-limitations" />
+        <dct:license rdf:resource="http://publications.europa.eu/resource/authority/licence/COM_REUSE" />
+        <dct:title xml:lang="en">WMS access to the EUCROPMAP 2022 and 2018</dct:title>
+        <dct:conformsTo rdf:resource="http://www.opengis.net/def/serviceType/ogc/wms" />
+        <dcat:endpointURL rdf:resource="https://jeodpp.jrc.ec.europa.eu/jeodpp/services/ows/wms/landcover/eucropmap" />
+        <dcat:endpointDescription rdf:resource="https://jeodpp.jrc.ec.europa.eu/jeodpp/services/ows/wms/landcover/eucropmap" />
+        <dcat:servesDataset rdf:resource="http://data.europa.eu/89h/555e5d1d-1aae-4320-a716-2e6d18aa1e7c" />
+      </dcat:DataService>
+    </dcat:accessService>
+    ...
+  </dcat:Distribution>
+  ...
+</dcat:Dataset>

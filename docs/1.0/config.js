@@ -24,7 +24,7 @@ var respecConfig = {
 //    copyrightHolder: "European Union",
 //    copyrightURL: "https://europa.eu/",
     copyrightStart: 2014,
-//    publishDate: "2019-07-03",
+    publishDate: "2019-07-03",
 /*
     alternateFormats: [{
       label: "PDF",
@@ -41,7 +41,7 @@ var respecConfig = {
 //    prevRecURI:           "",
 //    previousPublishDate:  "2016-08-02",
 //    previousMaturity:     "final",
-    previousURI:   "https://ec-jrc.github.io/dcat-ap-jrc/1.0/",
+//    previousURI:          "",
     latestVersion: "https://ec-jrc.github.io/dcat-ap-jrc/",
     edDraftURI:    "https://ec-jrc.github.io/dcat-ap-jrc/",
     issueBase:     "https://github.com/ec-jrc/dcat-ap-jrc/issues/",
@@ -49,21 +49,17 @@ var respecConfig = {
 //    overrideCopyright: '<p class="copyright"><a href="https://europa.eu/european-union/abouteuropa/legal_notices_en#copyright_notice">Copyright</a> © 2014-2019 <a href="https://europa.eu/">European Union</a>. This document is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" class="subfoot">Creative Commons Attribution 4.0 License</a>.</p>',
     editors: [
     {
-      name:       "Hagar Lowenthal",
-      company:    "European Commission, Joint Research Centre",
-      companyURL: "https://ec.europa.eu/jrc/"
-    },
-    {
       name:       "Andrea Perego",
-      company:    "European Parliament",
+      company:    "European Commission, Joint Research Centre",
       orcid:      "0000-0001-9300-2694",
-      companyURL: "https://europarl.europa.eu/"
+      companyURL: "https://ec.europa.eu/jrc/"
     }
     ],
     authors: [
     {
-      name:       "Hagar Lowenthal",
+      name:       "Andrea Perego",
       company:    "European Commission, Joint Research Centre",
+      orcid: "0000-0001-9300-2694",
       companyURL: "https://ec.europa.eu/jrc/"
     },
     {
@@ -71,13 +67,6 @@ var respecConfig = {
       company:    "European Commission, Joint Research Centre",
       companyURL: "https://ec.europa.eu/jrc/"
     },
-    {
-      name:       "Andrea Perego",
-      company:    "European Parliament",
-      orcid:      "0000-0001-9300-2694",
-      companyURL: "https://europarl.europa.eu/"
-    },
-/*
     {
       name:       "Lorenzino Vaccari",
       company:    "European Commission, Joint Research Centre",
@@ -88,7 +77,6 @@ var respecConfig = {
       company:    "European Commission, Joint Research Centre",
       companyURL: "https://ec.europa.eu/jrc/"
     }
-*/
     ],    
 //    otherLinks: [{
 //      key: "Contributors",
@@ -136,22 +124,6 @@ var respecConfig = {
         "title":"DataCite Dublin Core Application Profile (DC2AP). Version 1.8",
         "authors":["DataCite Metadata Working Group"],
         "date":"3 February 2016"
-      },
-      "DCAT-AP-3": {
-        "href": "https://semiceu.github.io/DCAT-AP/releases/3.0.0/",
-        "title": "DCAT-AP 3.0",
-//        "authors": ["Makx Dekkers", "Pavlina Fragkou", "Natasa Sofou", "Bert Van Nuffelen"],
-        "status": "Working Draft",
-        "publisher":"European Commission",
-        "date": "17 July 2023"
-      },
-       "DCAT-AP-JRC-1": {
-        "href": "https://ec-jrc.github.io/datacite-to-dcat-ap/1.0/",
-        "title": "DCAT-AP-JRC - Version 1",
-        "authors": ["Andrea Perego","Timothy Austin"],
-        "status": "Working Draft",
-        "publisher":"European Commission, Joint Research Centre (JRC)",
-        "date": "2019"
       },
       "DCAT-AP-SDO": {
         "href": "https://ec-jrc.github.io/dcat-ap-to-schema-org/",
@@ -235,12 +207,6 @@ var respecConfig = {
         "href":"http://geonames.org/",
         "title":"Geonames"
        },
-      "HVD": {
-        "href":"http://data.europa.eu/eli/reg_impl/2023/138/oj",
-        "title":"Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use (Text with EEA relevance)",
-        "publisher":"OJ L 19",
-        "date":"21 December 2022"
-      },
       "iiWAS17-JRC": {
         "href": "https://doi.org/10.1145/3151759.3151810",
         "title": "The JRC multidisciplinary research data infrastructure",
@@ -306,33 +272,13 @@ var respecConfig = {
         "date": "2004",
         "isoNumber": "ISO 8061:2004"
       },
-      "JRC-DP-2015": {
+      "JRC-DP": {
         "href": "https://doi.org/10.2788/607378",
         "title": "JRC Data Policy",
         "authors": ["Catherine Doldirina"],
         "etAl": true,
         "publisher":"Publications Office of the European Union",
         "date": "2015"
-      },
-      "JRC-DP-2019": {
-        "href": "https://doi.org/10.2760/637912",
-        "title": "JRC Data Policy",
-        "authors": [
-          "Anders-Friis Christensen",
-          "Jean-Paul Triaille"
-        ],
-        "publisher":"Publications Office of the European Union",
-        "date": "2019"
-      },
-      "JRC-DP": {
-        "href": "https://doi.org/10.2760/637912",
-        "title": "JRC Data Policy",
-        "authors": [
-          "Anders-Friis Christensen",
-          "Jean-Paul Triaille"
-        ],
-        "publisher":"Publications Office of the European Union",
-        "date": "2019"
       },
       "KML": {
         "href": "http://www.opengeospatial.org/standards/kml",
@@ -354,67 +300,67 @@ var respecConfig = {
         "title":"Link properties",
         "publisher":"OSGeo"
       },
-      "EUV-AR":{
+      "MDR-AR":{
         "href":"https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/access-right",
         "title":"Named Authority List: Access rights",
         "publisher":"Publications Office of the European Union"
        },
-      "EUV-CB":{
+      "MDR-CB":{
         "href":"https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/corporate-body",
         "title":"Named Authority List: Corporate bodies",
         "publisher":"Publications Office of the European Union"
        },
-      "EUV-CONT":{
+      "MDR-CONT":{
         "href":"https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/continent",
         "title":"Named Authority List: Continents",
         "publisher":"Publications Office of the European Union"
        },
-      "EUV-COUNTRIES":{
+      "MDR-COUNTRIES":{
         "href":"https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/country",
         "title":"Named Authority List: Countries",
         "publisher":"Publications Office of the European Union"
        },
-      "EUV-DS":{
+      "MDR-DS":{
         "href":"https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/dataset-status",
         "title":"Named Authority List: Dataset statuses",
         "publisher":"Publications Office of the European Union"
        },
-      "EUV-DT":{
+      "MDR-DT":{
         "href":"https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/distribution-type",
         "title":"Named Authority List: Distribution types",
         "publisher":"Publications Office of the European Union"
        },
-      "EUV-EUROVOC":{
+      "MDR-EUROVOC":{
         "href":"https://publications.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc",
         "title":"EuroVoc",
         "publisher":"Publications Office of the European Union"
        },
-      "EUV-FREQ":{
+      "MDR-FREQ":{
         "href":"https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/frequency",
         "title":"Named Authority List: Frequencies",
         "publisher":"Publications Office of the European Union"
        },
-      "EUV-FT":{
+      "MDR-FT":{
         "href":"https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/file-type",
         "title":"Named Authority List: File types",
         "publisher":"Publications Office of the European Union"
        },
-      "EUV-LANG":{
+      "MDR-LANG":{
         "href":"https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/language",
         "title":"Named Authority List: Languages",
         "publisher":"Publications Office of the European Union"
        },
-      "EUV-LICENCES":{
+      "MDR-LICENCES":{
         "href":"https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/licence",
         "title":"Named Authority List: Licences",
         "publisher":"Publications Office of the European Union"
        },
-      "EUV-PLACES":{
+      "MDR-PLACES":{
         "href":"https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/place",
         "title":"Named Authority List: Places",
         "publisher":"Publications Office of the European Union"
        },
-      "EUV-THEMES":{
+      "MDR-THEMES":{
         "href":"https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/data-theme",
         "title":"Named Authority List: Data Themes",
         "publisher":"Publications Office of the European Union"
@@ -488,16 +434,6 @@ var respecConfig = {
         "href":"https://unstats.un.org/unsd/methodology/m49/",
         "title":"Methodology - Standard country or area codes for statistical use (M49)",
         "publisher":"United Nations Statistics Division"
-       },
-      "HYDRA": {
-        authors: [
-          "Markus Lanthaler"
-        ],
-        href:"https://www.hydra-cg.com/spec/latest/core/",
-        title:"Hydra Core Vocabulary",
-        date:"15 March 2018",
-        publisher:"Hydra W3C Community Group",
-        status:"Unofficial Draft"
-      },
+       }
     }
   };
