@@ -146,7 +146,7 @@ var respecConfig = {
         "date": "17 July 2023"
       },
        "DCAT-AP-JRC-1": {
-        "href": "https://ec-jrc.github.io/datacite-to-dcat-ap/1.0/",
+        "href": "https://ec-jrc.github.io/dcat-ap-jrc/1.0/",
         "title": "DCAT-AP-JRC - Version 1",
         "authors": ["Andrea Perego","Timothy Austin"],
         "status": "Working Draft",
