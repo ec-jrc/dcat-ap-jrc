@@ -10,7 +10,7 @@
         <dct:conformsTo rdf:resource="http://www.opengis.net/def/serviceType/ogc/wms" />
         <dcat:endpointURL rdf:resource="https://jeodpp.jrc.ec.europa.eu/jeodpp/services/ows/wms/landcover/ghsl?" />
         <dcat:endpointDescription rdf:resource="https://jeodpp.jrc.ec.europa.eu/jeodpp/services/ows/wms/landcover/ghs-built?service=WMS&request=GetCapabilities" />
-        <dcat:servesDataset rdf:resource="http://data.europa.eu/89h/555e5d1d-1aae-4320-a716-2e6d18aa1e7c" />
+        <dcat:servesDataset rdf:resource="http://data.europa.eu/89h/016d1a34-b184-42dc-b586-e10b915dd863" />
       </dcat:DataService>
     </dcat:accessService>
     ...
