@@ -37,7 +37,7 @@ var respecConfig = {
     license: "cc-by",
     specStatus: "unofficial",
     shortName: "dcat-ap-jrc",
-    canonicalURI: "https://ec-jrc.github.io/dcat-ap-jrc/",
+    canonicalURI: "https://ec-jrc.github.io/dcat-ap-jrc/dev/",
 //    prevRecURI:           "",
 //    previousPublishDate:  "2016-08-02",
 //    previousMaturity:     "final",
