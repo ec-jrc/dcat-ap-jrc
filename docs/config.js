@@ -54,7 +54,7 @@ var respecConfig = {
       companyURL: "https://ec.europa.eu/jrc/"
     },
     {
-      name:       "Konstantins Bogucarslos",
+      name:       "Konstantins Bogucarskis",
       company:    "European Commission, Joint Research Centre",      
       companyURL: "https://ec.europa.eu/jrc/"
     }
