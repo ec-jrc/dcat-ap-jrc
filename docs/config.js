@@ -54,10 +54,9 @@ var respecConfig = {
       companyURL: "https://ec.europa.eu/jrc/"
     },
     {
-      name:       "Andrea Perego",
-      company:    "European Parliament",
-      orcid:      "0000-0001-9300-2694",
-      companyURL: "https://europarl.europa.eu/"
+      name:       "Konstantins Bogucarslos",
+      company:    "European Commission, Joint Research Centre",      
+      companyURL: "https://ec.europa.eu/jrc/"
     }
     ],
     authors: [
