@@ -370,7 +370,7 @@ var respecConfig = {
        },
       "EUV-COUNTRIES":{
         "href":"https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/country",
-        "title":"Named Authority List: Countries",
+        "title":"Named Authority List: Countries and territories",
         "publisher":"Publications Office of the European Union"
        },
       "EUV-DS":{
