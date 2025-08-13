@@ -524,7 +524,7 @@ For the other ones, our approach is as follows:</p>
 
 <h2>Spatial coverage code lists</h2>
 
-<p>[[DCAT-AP]] recommends the use of code lists [[EUV-CONT]] (continents) and [[EUV-COUNTRIES]] (countries) when spatial coverage is to be specified with a geographical name, with the fall-back option of using [[?GEONAMES]].</p>
+<p>[[DCAT-AP]] recommends the use of code lists [[EUV-CONT]] (continents) and [[EUV-COUNTRIES]] (countries and territories) when spatial coverage is to be specified with a geographical name, with the fall-back option of using [[?GEONAMES]].</p>
 <p>By reviewing JRC datasets, we realised that there is another reference code list used, especially for statistical data, namely, the <abbr title="United Nations Statistics Division">UNSD</abbr> <cite>Standard country or area codes for statistical use</cite> (M49) [[UNSD-M49]]. Notably, [[UNSD-M49]] includes geographical areas not covered by [[EUV-CONT]] and [[EUV-COUNTRIES]] - as global and sub-continental areas.</p>
 <p>For this reason, DCAT-AP-JRC includes support for [[UNSD-M49]] to complement [[EUV-CONT]] and [[EUV-COUNTRIES]] with additional levels of granularity (global, sub-regions, intermediate regions).</p>
 <p>As a formal definition of [[UNSD-M49]] is not available, a <abbr title="Simple Knowledge Organization System">SKOS</abbr> [[SKOS-REFERENCE]] representation of it has been developed, and integrated it with the [[EUV-CONT]] and [[EUV-COUNTRIES]] code lists. More precisely, this integrated code list makes use of [[EUV-CONT]] and [[EUV-COUNTRIES]] for continents and countries, respectively, and of [[UNSD-M49]] for the other geographical areas.</p>
