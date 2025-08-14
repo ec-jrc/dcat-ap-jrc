@@ -76,6 +76,11 @@ var respecConfig = {
       orcid:      "0000-0001-9300-2694",
       companyURL: "https://europarl.europa.eu/"
     },
+    {
+      name:       "Konstantins Bogucarskis",
+      company:    "European Commission, Joint Research Centre",      
+      companyURL: "https://ec.europa.eu/jrc/"
+    }
 /*
     {
       name:       "Lorenzino Vaccari",
