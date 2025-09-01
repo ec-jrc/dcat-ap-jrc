@@ -11296,6 +11296,144 @@ author = family-name , ", " , given-name
 </section>
 
 </section>
+<section id="rights-statement">
+
+<h2>Class: Rights statement</h2>
+
+<table class="def">
+<tbody>
+<tr>
+<th>Label</th>
+<td>Rights statement</td>
+</tr>
+<!--
+<tr>
+<th>Obligation</th>
+<td><strong>Mandatory</strong></td>
+</tr>
+-->
+<tr>
+<th>RDF Class</th>
+<td><a data-cite="DCTERMS#terms-RightsStatement"><code title="http://purl.org/dc/terms/RightsStatement">dct:RightsStatement</code></a></td>
+</tr>
+<tr>
+<th>Definition</th>
+<td>A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights. </td>
+</tr>
+
+<tr>
+<th>Usage note</th>
+<td>The rights statement MUST be used as defined in [DCAT-AP], namely as described in <a href="#dataset-access-rights>.</td>
+</tr>
+
+<tr>
+<th>Scope</th>
+<td><a class="scope" href="#metadata-scope">Data Documentation</a></td>
+</tr>
+<tr>
+<th>Specification</th>
+<td>[[DCAT-AP]]</td>
+</tr>
+</tbody>
+</table>
+
+<p>This specification does not impose any additional requirements to properties for this class.</p>
+<!--
+<table class="simple">
+<thead>
+<tr>
+<th>Label</th>
+<th><abbr title="Obligation">Obl.</abbr></th>
+<th><abbr title="Max Cardinality">MC</abbr></th>
+<th>RDF Property</th>
+<th>Range</th>
+<!--
+<th>Code list</th>
+-->
+<th>Scope</th>
+<th>Spec.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#rights-statement-access-rights">access rights</a></td>
+<td><strong>M</strong></td>
+<td>1</td>
+<td><a data-cite=="DCTERMS#terms-accessRights"><code title="http://purl.org/dc/terms/accessRights">dct:accessRights</code></a></td>
+<td><a data-cite="DCTERMS#terms-RightsStatement"><code title="http://purl.org/dc/terms/RightsStatement">dct:RightsStatement</code></a></td>
+<!--
+<td></td>
+-->
+<td><a class="scope" href="#metadata-scope">DD</a></td>
+<td>[[DCAT-AP]]</td>
+</tr>
+
+  <!-- have removed example because it is in the dataset example
+
+<aside class="example" id="ex-temporal-coverage" title="Temporal coverage">
+<pre data-include-format="text" data-include="./examples/temporal-coverage.rdf"></pre>
+</aside>
+-->
+<section id="rights-statement-access-rights">
+
+<h2>Property: access rights</h2>
+
+<aside class="note">
+<p>Property added in this version of DCAT-AP-JRC.</p>
+
+</aside>
+
+<table class="def">
+<tbody>
+<tr>
+<th>Label</th>
+<td>start date</td>
+</tr>
+<tr>
+<th>Obligation</th>
+<td><strong>Conditional</strong></td>
+</tr>
+<tr>
+<th>Max card.</th>
+<td>1</td>
+</tr>
+<tr>
+<th>RDF Property</th>
+<td><a data-cite="VOCAB-DCAT#Property:period_start_date"><code title="http://www.w3.org/ns/dcat#startDate">dcat:startDate</code></a></td>
+</tr>
+<tr>
+<th>Range</th>
+<td><a data-cite="RDF-SCHEMA#ch_literal"><code title="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</code></a></td>
+</tr>
+<tr>
+<th>Definition</th>
+<td>The start date of a period of time.</td>
+</tr>
+<tr>
+<th>Usage note</th>
+<td>
+<p>This property MUST be specified, if the <a href="#temporal-coverage-end-date">end date</a> is missing.</p>
+<p>The range of this property is intentionally generic, with the purpose of allowing different level of temporal precision for specifying the start of a period. E.g., it can be expressed with a date (<a data-cite="XMLSCHEMA11-2#date"><code title="http://www.w3.org/2001/XMLSchema#date">xsd:date</code></a>), a date and time (<a data-cite="XMLSCHEMA11-2#dateTime"><code title="http://www.w3.org/2001/XMLSchema#dateTime">xsd:dateTime</code></a>), or a year (<a data-cite="XMLSCHEMA11-2#gYear"><code title="http://www.w3.org/2001/XMLSchema#gYear">xsd:gYear</code></a>).</p>
+</td>
+</tr>
+<tr>
+<th>Scope</th>
+<td><a class="scope" href="#metadata-scope">Data Documentation</a></td>
+</tr>
+<tr>
+<th>Specification</th>
+<td>[[DCAT-AP]]</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+</section>
+
+</section>
+ 
+  -->
 
 <section id="temporal-coverage">
 
