@@ -1718,6 +1718,58 @@ For the other ones, our approach is as follows:</p>
 
 </section>
 
+<section id="dataset-access-rights">
+
+<aside class="note">
+<p>Property added in this version of DCAT-AP-JRC.</p>
+</aside>
+  
+<h2>Property: access rights</h2>
+
+<table class="def">
+<tbody>
+<tr>
+<th>Label</th>
+<td>access rights</td>
+</tr>
+<tr>
+<th>Obligation</th>
+<td><em>Recommended</em></td>
+</tr>
+<tr>
+<th>Max card.</th>
+<td>1</td>
+</tr>
+<tr>
+<th>RDF Property</th>
+<td><a data-cite="DCTERMS#terms-accessRights"><code title="http://purl.org/dc/terms/accessRights">dct:accessRights</code></a></td>
+</tr>
+<tr>
+<th>Range</th>
+<td><a data-cite="DCTERMS#terms-RightsStatement"><code title="http://purl.org/dc/terms/RightsStatement">dct:RightsStatement</code></a> (<a href="#rights-statement"></a>)</td>
+</tr>
+<tr>
+<th>Definition</th>
+<td>Information regarding access or restrictions based on privacy, security, or other policies</td>
+</tr>
+<tr>
+<th>Usage note</th>
+<td>This property MUST take of the values :PUBLIC, :RESTRICTED, or :NON_PUBLIC defined in [[!EUV-AR]].</td>
+</tr>
+<tr>
+<th>Scope</th>
+<td><a class="scope" href="#metadata-scope">All</a></td>
+</tr>
+<tr>
+<th>Specification</th>
+<td>[[DCAT-AP]]</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+  
 <section id="catalogue-other-identifier">
 
 <h2>Property: other identifier</h2>
@@ -2045,19 +2097,6 @@ For the other ones, our approach is as follows:</p>
 <td><a class="scope" href="#metadata-scope">DC</a></td>
 <td>DCAT-AP-JRC</td>
 </tr>
-
-<tr>
-<td><a href="#dataset-access-rights">access rights</a></td>
-<td><strong>M</strong></td>
-<td>1</td>
-<td><a data-cite="DCTERMS#terms-accessRights"><code title="http://purl.org/dc/terms/accessRights">dct:accessRights</code></a></td>
-<td><a data-cite="DCTERMS#terms-RightsStatement"><code title="http://purl.org/dc/terms/RightsStatement">dct:RightsStatement</code></a></td>
-<!--
-<td>[[EUV-FREQ]]</td>
--->
-<td><a class="scope" href="#metadata-scope">DD</a></td>
-<td>[[DCAT-AP]]</td>
-</tr>
   
 <tr>
 <td><a href="#dataset-update-frequency">update frequency</a></td>
@@ -2147,6 +2186,18 @@ For the other ones, our approach is as follows:</p>
 <td>[[EUV-CB]]</td>
 -->
 <td><a class="scope" href="#metadata-scope">All</a></td>
+<td>[[DCAT-AP]]</td>
+</tr>
+<tr>
+<td><a href="#dataset-access-rights">access rights</a></td>
+<td><em>Recommended</em></td>
+<td>1</td>
+<td><a data-cite="DCTERMS#terms-accessRights"><code title="http://purl.org/dc/terms/accessRights">dct:accessRights</code></a></td>
+<td><a data-cite="DCTERMS#terms-RightsStatement"><code title="http://purl.org/dc/terms/RightsStatement">dct:RightsStatement</code></a></td>
+<!--
+<td>[[EUV-AR]]</td>
+-->
+<td><a class="scope" href="#metadata-scope">DD</a></td>
 <td>[[DCAT-AP]]</td>
 </tr>
 <tr>
@@ -2617,59 +2668,6 @@ For the other ones, our approach is as follows:</p>
 </table>
 
 </section>
-
-
-<section id="dataset-access-rights">
-
-<aside class="note">
-<p>Property added in this version of DCAT-AP-JRC.</p>
-</aside>
-  
-<h2>Property: access rights</h2>
-
-<table class="def">
-<tbody>
-<tr>
-<th>Label</th>
-<td>access rights</td>
-</tr>
-<tr>
-<th>Obligation</th>
-<td><strong>Mandatory</strong></td>
-</tr>
-<tr>
-<th>Max card.</th>
-<td>1</td>
-</tr>
-<tr>
-<th>RDF Property</th>
-<td><a data-cite="DCTERMS#terms-accessRights"><code title="http://purl.org/dc/terms/accessRights">dct:accessRights</code></a></td>
-</tr>
-<tr>
-<th>Range</th>
-<td><a data-cite="DCTERMS#terms-RightsStatement"><code title="http://purl.org/dc/terms/RightsStatement">dct:RightsStatement</code></a> (<a href="#rights-statement"></a>)</td>
-</tr>
-<tr>
-<th>Definition</th>
-<td>Information regarding access or restrictions based on privacy, security, or other policies</td>
-</tr>
-<tr>
-<th>Usage note</th>
-<td>This property MUST take of the values :PUBLIC, :RESTRICTED, or :NON_PUBLIC defined in [[!EUV-AR]].</td>
-</tr>
-<tr>
-<th>Scope</th>
-<td><a class="scope" href="#metadata-scope">All</a></td>
-</tr>
-<tr>
-<th>Specification</th>
-<td>[[DCAT-AP]]</td>
-</tr>
-</tbody>
-</table>
-
-</section>
-
   
 <section id="dataset-update-frequency">
 
