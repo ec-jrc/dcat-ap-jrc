@@ -6110,6 +6110,10 @@ author = family-name , ", " , given-name
 
 <h2>Property: access URL</h2>
 
+<aside class="note">
+<p>The cardinality of this property has been changed in this version of DCAT-AP-JRC to align with [[DCAT-AP]].</p>
+</aside>
+  
 <table class="def">
 <tbody>
 <tr>
@@ -6118,11 +6122,11 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Obligation</th>
-<td><strong>Conditional</strong></td>
+<td><strong>Mandatory</strong></td>
 </tr>
 <tr>
-<th>Max card.</th>
-<td>1</td>
+<th><Max card.</th>
+<td><em>N</em></td>
 </tr>
 <tr>
 <th>RDF Property</th>
@@ -6134,12 +6138,13 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Definition</th>
-<td>A landing page, feed, SPARQL endpoint or other type of resource that gives access to the distribution of the dataset. [[VOCAB-DCAT]]</td>
+<td>A URL that gives access to a Distribution of the Dataset</td>
 </tr>
 <tr>
 <th>Usage note</th>
 <td>
-<p>This property MUST be used, unless the <a href="#distribution-download-url">download URL</a> is specified.</p>
+<p>The resource at the access URL may contain information about how to get a distribution of the Dataset. This property MUST be used and can be repeated if more than one accessURL can provide access to the same distribution.</p>
+<p>If the distribution access URL provides a direct link to a downloadable file in a given format, the value SHOULD be repeated as a <a href="#distribution-download-url">download URL</a>.</p>
 <p>Typically, the object of this property is specified only with its URI.</p>
 </td>
 </tr>
@@ -6160,6 +6165,10 @@ author = family-name , ", " , given-name
 
 <h2>Property: download URL</h2>
 
+<aside class="note">
+<p>The cardinality of this property has been changed in this version of DCAT-AP-JRC to align with [[DCAT-AP]].</p>
+</aside>
+  
 <table class="def">
 <tbody>
 <tr>
@@ -6168,11 +6177,11 @@ author = family-name , ", " , given-name
 </tr>
 <tr>
 <th>Obligation</th>
-<td><strong>Conditional</strong></td>
+<td><em>Recommended</em></td>
 </tr>
 <tr>
 <th>Max card.</th>
-<td>1</td>
+<td><em>N</em></td>
 </tr>
 <tr>
 <th>RDF Property</th>
@@ -6189,7 +6198,7 @@ author = family-name , ", " , given-name
 <tr>
 <th>Usage note</th>
 <td>
-<p>This property MUST be used, unless the <a href="#distribution-access-url">access URL</a> is specified.
+<p>When the <a href="#distribution-access-url">access URL</a> provides a direct link to a downloadable file in a given format, the value provided SHOULD be repeated as a download URL.</p>
 <p>Typically, the object of this property is specified only with its URI.</p>
 </td>
 </tr>
